@@ -1,0 +1,10 @@
+= simple_form_for talk, html: { class: 'form-horizontal', role: 'form' } do |f|
+  = f.input :title
+  = f.input :speaker_name
+  = f.input :speaker_email
+  = f.input :level, as: :radio_buttons
+  = f.input :duration, as: :radio_buttons
+
+  .form-group
+    .col-sm-9.col-sm-offset-3
+      = f.button :submit, class: 'btn-default'

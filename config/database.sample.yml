@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  host: localhost
+  username:
+  password:
+  database: rubyparis_dev

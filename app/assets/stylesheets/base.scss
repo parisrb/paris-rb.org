@@ -1,0 +1,99 @@
+.main-content {
+  font-weight: bold;
+
+  h1, p {
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  form {
+    text-align: left;
+  }
+}
+
+.section {
+  padding: 2em 0 3em;
+
+  header {
+    margin-bottom: 2em;
+  }
+}
+
+.section-guests,
+.section-page,
+.section-sponsors,
+.section-talks {
+  color: #FFF;
+}
+
+.section-guests,
+.section-page {
+  a {
+    color: #FFF;
+    text-decoration: underline;
+  }
+}
+
+.section-guests,
+.section-page {
+  background-color: rgb(93, 32, 38);
+}
+
+.section-ellipsis,
+.section-you {
+  color: rgb(93, 32, 38);
+}
+
+.section-sponsors {
+  background-color: rgb(116, 39, 47);
+}
+
+.section-talks {
+  background-color: rgb(197, 66, 76);
+}
+
+.section-guests {
+  cite p {
+    font-size: .9em;
+    font-weight: normal;
+  }
+}
+
+.sponsor {
+  margin-bottom: 1em;
+}
+
+.block {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding: 1em 15px 1em;
+
+  small {
+    font-size: .7em;
+  }
+}
+
+.faq {
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    text-align: left;
+    color: #CCC;
+    font-weight: normal;
+    margin: .2em 0 1em;
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  dd {
+    color: #CCC;
+    font-weight: normal;
+    margin: .2em 0 1em;
+  }
+}

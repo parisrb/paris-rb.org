@@ -1,0 +1,16 @@
+nav.navbar.navbar-default.navbar-static-top role="navigation"
+  .container
+    .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target="#menu"
+        span.sr-only Afficher le menu
+        - 3.times do
+          span.icon-bar
+      = link_to root_path, class: 'navbar-brand' do
+        = image_tag 'logo.png', width: '100'
+
+    #menu.collapse.navbar-collapse.navbar-right
+      ul.nav.navbar-nav
+        li = link_to 'Accueil', root_path
+        li = link_to 'Vidéos', videos_path
+        li = link_to 'Proposer un talk', talks_path
+        li = link_to 'Meetup', 'http://www.meetup.com/parisrb/'

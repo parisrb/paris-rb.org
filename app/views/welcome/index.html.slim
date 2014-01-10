@@ -1,0 +1,61 @@
+- description t('.description')
+
+.section.section-page.section-showoff
+  .container
+    header
+      h1 = t('.show-off.title')
+
+    .row
+      .col-sm-3.col-sm-offset-2
+        .block
+          = mustdown t('.show-off.members_count'), members: members_count
+      .col-sm-3.col-sm-offset-2
+        .block
+          p = t('.show-off.active_members')
+
+.section.section-ellipsis
+  .container
+    h1 = t('.ellipsis.title')
+
+.section.section-talks
+  .container
+    header
+      h1 = t('.talks.title')
+      p = t('.talks.subtitle')
+
+    p = link_to t('.talks.videos'), videos_path, class: 'btn btn-default btn-lg'
+
+.section.section-sponsors
+  .container
+    header
+      h1 = t('.sponsors.title')
+      p = t('.sponsors.subtitle')
+
+    - 2.times do
+      .row
+        - 4.times do
+          .sponsor.col-sm-3
+            = link_to '#' do
+              img.img-thumbnail src="http://placehold.it/180x100"
+
+.section.section-you
+  .container
+    header
+      h1 = t('.you.title')
+
+    p = link_to t('.you.give_a_talk'), talks_path, class: 'btn btn-default btn-lg'
+
+.section.section-guests
+  .container
+    header
+      h1 = t('.guests.title')
+
+    - tweets.each_slice(3) do |grouped_tweets|
+      .row
+        - grouped_tweets.each do |tweet|
+          .col-sm-4
+            blockquote.tweet lang="en"
+              p = tweet.text
+              footer
+                cite
+                  = mustdown t('.tweet_infos'), tweet

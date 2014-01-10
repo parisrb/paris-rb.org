@@ -1,0 +1,99 @@
+fr:
+  site_name: Paris.rb
+
+  activerecord:
+    attributes:
+      talk:
+        title: Titre
+        speaker_name: Speaker
+        speaker_email: Email
+        level: Difficulté
+        duration: Durée
+
+  enumerize:
+    talk:
+      duration:
+        lightning: Lightning - 5 min
+        long: Long - 20 min
+      level:
+        easy: Débutant
+        intermediate: Moyen
+        expert: Expert
+
+  helpers:
+    submit:
+      talk:
+        create: Ajouter mon talk
+
+  talks:
+    index:
+      description: >-
+        Voir la liste des talks proposés pour les prochains meetups. Proposez
+        votre talk !
+      faq: |
+        ## Je suis un newbie, et j'ai peeeeuuur de présenter
+        
+        À Paris.rb on n'est pas là pour se moquer des novices. Nous serons
+        TOUJOURS ravis d'accueillir les talks débutants comme confirmés.
+        
+        ## Je voudrais faire une présentation de + de 20 minutes
+        
+        Les présentations sont chronometrées, dans le but de ne pas trop
+        fatiguer les rubyistes qui vous écoutent, et des études ont prouvé
+        que les 2 meilleurs timings sont : 5 minutes et 20 minutes.
+        
+        ## Je veux présenter ma société, ou mon produit
+        
+        Nous sommes ici pour parler de Ruby, de Rails, et du monde des
+        startups sur Paris. Pour faire la promotion d'une société, d'un
+        produit, ou rechercher un profil, la coutume est d'aider la
+        communauté en sponsorisant les événements Ruby.
+        
+        Si vous avez d'autres questions, n'hésitez pas à envoyer un email à
+        [Thibaut](mailto:thibaut@milesrock.com)
+
+      next_talks: Talks proposés pour le prochain meetup
+      title: Proposer un talk
+
+  videos:
+    index:
+      description: Toutes les vidéos des talks du meetup Paris.rb
+      title: Vidéos des talks
+
+  views:
+    pagination:
+      first: «
+      last: »
+      next: →
+      previous: ←
+      truncate: …
+
+  welcome:
+    index:
+      description: >-
+        Le plus grand meetup Ruby d'Europe ! Toutes les vidéos de Paris.rb.
+        Liste des talks des prochains meetups.
+      ellipsis:
+        title: Paris.rb c'est aussi...
+      guests:
+        title: Ce que nos invités en disent
+      show-off:
+        active_members: Plus de 100 membres présents chaque mois.
+        members_count: >-
+          {{members}} membres sur [Meetup.org](http://meetup.rubyparis.org)
+
+        title: Le plus grand meetup Ruby d'Europe !
+      sponsors:
+        subtitle: À qui nous disons un grand MERCI !
+        title: Nos sponsors
+      talks:
+        subtitle: Toutes les présentations sont filmées
+        title: Des talks de qualité
+        videos: Voir les vidéos
+      tweet_infos: >-
+        {{author}}
+        ([@{{twitter_handle}}](https://twitter.com/{{twitter_handle}}))
+        {{cool_projects}}
+      you:
+        give_a_talk: Proposer un talk !
+        title: Mais Paris.rb c'est avant tout... VOUS!

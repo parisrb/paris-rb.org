@@ -1,0 +1,32 @@
+- title t('.title')
+- description t('.description')
+
+.section.section-page
+  .container
+    header
+      h1 = t('.title')
+
+    .row
+      .col-xs-12.col-sm-5.col-sm-offset-1
+        = render 'form'
+      .col-xs-12.faq.col-sm-6
+        = markdown t('.faq')
+
+.section
+  .container
+    .responsive-table
+      table#talks.table.table-striped
+        caption = t('.next_talks')
+        thead
+          tr
+            th = Talk.human_attribute_name(:title)
+            th = Talk.human_attribute_name(:speaker_name)
+            th = Talk.human_attribute_name(:level)
+            th = Talk.human_attribute_name(:duration)
+        tbody
+          - talks.each do |talk|
+            tr
+              td = talk.title
+              td = talk.speaker_name
+              td = talk.level
+              td = talk.duration

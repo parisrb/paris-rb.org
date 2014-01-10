@@ -1,0 +1,24 @@
+- title t('.title')
+- description t('.description')
+
+.section.section-page.videos
+  .container
+    header
+      h1 = t('.title')
+      / search form
+
+    - videos.each_slice(2) do |videos_group|
+      .row
+        - videos_group.each do |video|
+          .col-xs-12.col-sm-5{ class=cycle('col-sm-offset-1', '') }
+            - cache video do
+              = content_tag_for :div, video do
+                p.thumb
+                  = link_to video do
+                    = image_tag video.vimeo_thumbnail, width: 290, height: 180
+                p.title
+                  = link_to video.title, video, class: 'link'
+                p.date
+                  = time_ago_in_words video.event_date
+
+    = paginate videos, renderer: 'BootstrapRenderer'
