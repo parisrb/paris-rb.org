@@ -31,12 +31,13 @@
       h1 = t('.sponsors.title')
       p = t('.sponsors.subtitle')
 
-    - 2.times do
+    - sponsors.each_slice(4) do |sponsor_group|
       .row
-        - 4.times do
-          .sponsor.col-sm-3
-            = link_to '#' do
-              img.img-thumbnail src="http://placehold.it/180x100"
+        - sponsor_group.each do |sponsor|
+          - cache sponsor do
+            .sponsor.col-sm-3
+              = link_to sponsor.website, title: sponsor.name, rel: 'nofollow' do
+                = image_tag sponsor.logo_url(:thumb), alt: sponsor.name, class: 'img-thumbnail'
 
 .section.section-you
   .container

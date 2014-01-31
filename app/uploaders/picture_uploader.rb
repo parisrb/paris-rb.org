@@ -1,7 +1,7 @@
 class PictureUploader < CarrierWave::Uploader::Base
   include Cloudinary::CarrierWave
 
-  version :thumbnail do
-    resize_to_fit(180, 100)
+  version :thumb do
+    resize_to_fill(180, 100)
   end
 end
