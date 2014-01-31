@@ -83,6 +83,5 @@ ActiveRecord::Schema.define(version: 20140107180320) do
   end
 
   add_index "videos", ["slug"], name: "index_videos_on_slug", unique: true, using: :btree
-  add_index "videos", ["vimeo_url"], name: "index_videos_on_vimeo_id", unique: true, using: :btree
 
 end

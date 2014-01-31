@@ -11,7 +11,6 @@ class CreateVideos < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :videos, :vimeo_id, unique: true
     add_index :videos, :slug, unique: true
   end
 end
