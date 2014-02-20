@@ -12,5 +12,17 @@ SimpleForm.setup do |config|
     b.optional :pattern
   end
 
+  config.wrappers :input_group, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
+    b.use :html5
+    b.use :placeholder
+    b.use :label, wrap_with: { class: 'sr-only' }
+    b.wrapper tag: 'div', class: 'input-group' do |input_group|
+      input_group.use :input
+    end
+    b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
+    b.use :hint,  wrap_with: { tag: 'span', class: 'help-block' }
+    b.optional :pattern
+  end
+
   config.default_wrapper = :bootstrap_horizontal
 end

@@ -1,0 +1,5 @@
+= search_form_for search, url: videos_path, builder: SimpleForm::FormBuilder, html: { role: 'form' } do |f|
+  => f.input :title_cont, wrapper: :input_group do
+    = f.input_field :title_cont
+    = content_tag :span, class: 'input-group-btn' do
+      = f.button :button, class: 'btn-default'

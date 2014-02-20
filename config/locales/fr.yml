@@ -24,6 +24,8 @@ fr:
     submit:
       talk:
         create: Ajouter mon talk
+      q:
+        create: Ok
 
   talks:
     index:

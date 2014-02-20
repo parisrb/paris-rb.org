@@ -1,0 +1,19 @@
+fr:
+  simple_form:
+    "yes": 'Oui'
+    "no": 'Non'
+
+    error_notification:
+      default_message: "Please review the problems below:"
+
+    labels:
+      q:
+        title_cont: Recherche
+
+    required:
+      text: 'requis'
+      mark: '*'
+
+    placeholders:
+      q:
+        title_cont: 'Recherche: titre...'
