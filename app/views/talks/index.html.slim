@@ -12,10 +12,10 @@
       .col-xs-12.faq.col-sm-6
         = markdown t('.faq')
 
-.section
+.section.talks
   .container
     .responsive-table
-      table#talks.table.table-striped
+      table#next-talks.table.table-striped
         caption = t('.next_talks')
         thead
           tr
@@ -24,9 +24,28 @@
             th = Talk.human_attribute_name(:level)
             th = Talk.human_attribute_name(:duration)
         tbody
-          - talks.each do |talk|
+          - next_talks.each do |talk|
             tr
               td = talk.title
               td = talk.speaker_name
               td = talk.level
               td = talk.duration
+
+    .responsive-table
+      table#previous-talks.table.table-striped
+        caption = t('.previous_talks')
+        thead
+          tr
+            th = Talk.human_attribute_name(:title)
+            th = Talk.human_attribute_name(:speaker_name)
+            th = Talk.human_attribute_name(:level)
+            th = Talk.human_attribute_name(:duration)
+            th = Talk.human_attribute_name(:happened_at)
+        tbody
+          - prev_talks.each do |talk|
+            tr
+              td = talk.title
+              td = talk.speaker_name
+              td = talk.level
+              td = talk.duration
+              td = l(talk.duration, format: :short)

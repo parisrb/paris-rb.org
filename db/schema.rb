@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140107180320) do
+ActiveRecord::Schema.define(version: 20140220114849) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,10 @@ ActiveRecord::Schema.define(version: 20140107180320) do
     t.string   "duration"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "happened_at"
   end
+
+  add_index "talks", ["happened_at"], name: "index_talks_on_happened_at", using: :btree
 
   create_table "tweets", force: true do |t|
     t.string   "text"

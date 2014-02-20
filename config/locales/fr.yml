@@ -4,11 +4,12 @@ fr:
   activerecord:
     attributes:
       talk:
-        title: Titre
-        speaker_name: Speaker
-        speaker_email: Email
-        level: Difficulté
         duration: Durée
+        happened_at: Date
+        level: Difficulté
+        speaker_email: Email
+        speaker_name: Speaker
+        title: Titre
 
   enumerize:
     talk:
@@ -55,6 +56,7 @@ fr:
         [Thibaut](mailto:thibaut@milesrock.com)
 
       next_talks: Talks proposés pour le prochain meetup
+      previous_talks: Talks ayant déjà eu lieu
       title: Proposer un talk
 
   videos:

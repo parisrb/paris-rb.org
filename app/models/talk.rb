@@ -24,4 +24,10 @@ class Talk < ActiveRecord::Base
 
   validates :title,
     presence: true
+
+  scope :happened,
+    -> { where.not(happened_at: nil) }
+
+  scope :to_come,
+    -> { where(happened_at: nil) }
 end
