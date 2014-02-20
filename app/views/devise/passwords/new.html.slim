@@ -1,0 +1,15 @@
+section.container
+  header
+    h1 = t('.title')
+
+  .row
+    .col-sx-12.col-sm-4.col-sm-offset-4
+      = simple_form_for resource, as: resource_name, url: password_path(resource_name), html: { class: 'form-horizontal', role: 'form' } do |f|
+        = f.error_notification
+        = f.input :email, required: true, autofocus: true
+
+        .form-group
+          .col-sm-9.col-sm-offset-3
+            = f.button :submit, t('.send_instructions'), class: 'btn-default'
+        .col-sm-offset-3
+          = render 'devise/shared/links'
