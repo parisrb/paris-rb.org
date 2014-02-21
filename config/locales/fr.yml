@@ -1,4 +1,7 @@
 fr:
+  'yes': 'Oui'
+  'no': 'Non'
+
   site_name: Paris.rb
 
   activerecord:
@@ -9,11 +12,14 @@ fr:
         remember_me: Se souvenir de moi
       talk:
         duration: Durée
+        happened: A eu lieu
         happened_at: Date
         level: Difficulté
+        slides: Slides
         speaker_email: Email
         speaker_name: Speaker
         title: Titre
+        video_slug: Vidéo
 
   devise:
     passwords:
