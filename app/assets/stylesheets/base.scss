@@ -98,8 +98,16 @@
   }
 }
 
-.talks {
-  .responsive-table {
-    margin-bottom: 5em;
+.talks-list {
+  margin-bottom: 5em;
+
+  li {
+    font-weight: normal;
+    margin-bottom: 1em;
+  }
+
+  .title {
+    display: block;
+    font-weight: bold;
   }
 }
