@@ -22,6 +22,7 @@ gem 'ransack', '~> 1.1'
 gem 'redis', '~> 3.0'
 gem 'sass-rails', '~> 4.0'
 gem 'simple_form', '~> 3.0'
+gem 'sitemap_generator', '~> 5.0', require: false
 gem 'slim', '~> 2.0'
 gem 'therubyracer', '~> 0.12', platforms: :ruby
 gem 'uglifier', '>= 1.3.0'
