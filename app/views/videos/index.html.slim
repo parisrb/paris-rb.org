@@ -18,7 +18,7 @@
               = content_tag_for :div, video do
                 p.thumb
                   = link_to video do
-                    = image_tag video.vimeo_thumbnail, width: 290, height: 180
+                    = image_tag video.vimeo_thumbnail, width: 310, class: 'img-thumbnail'
                 p.title
                   = link_to video.title, video_path(video.slug), class: 'link'
                 p.date
