@@ -75,7 +75,10 @@ fr:
 
       next_talks: Talks proposés pour le prochain meetup
       previous_talks: Talks ayant déjà eu lieu
+      resources: Ressources
+      slides: slides
       title: Proposer un talk
+      video: vidéo
 
   videos:
     index:
