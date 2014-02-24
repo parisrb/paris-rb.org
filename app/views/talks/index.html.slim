@@ -59,17 +59,17 @@
               td
                 - if talk.slides?
                   => link_to t('.slides'), talk.slides, rel: 'nofollow'
-                - if talk.video_slug?
-                  => link_to t('.video'), video_path(talk.video_slug)
+                - if talk.video_url?
+                  => link_to t('.video'), talk.video_url
 
     .visible-xs
       ul.talks-list.list-unstyled
         = content_tag_for :li, prev_talks do |talk|
           span.title = talk.title
           | #{talk.speaker_name} - #{talk.level_text} - #{talk.duration_text}
-          - if talk.slides? || talk.video_slug?
+          - if talk.slides? || talk.video_url?
             span.resources
               - if talk.slides?
                 => link_to t('.slides'), talk.slides
-              - if talk.video_slug?
-                = link_to t('.video'), video_path(talk.video_slug), rel: 'nofollow'
+              - if talk.video_url?
+                = link_to t('.video'), talk.video_url, rel: 'nofollow'

@@ -29,7 +29,7 @@ RailsAdmin.config do |config|
       end
       field :video_slug do
         formatted_value do
-          if bindings[:object].video_slug?
+          if bindings[:object].video_url?
             bindings[:view].tag(:span, class: 'label label-success') << I18n.t('yes')
           else
             bindings[:view].tag(:span, class: 'label label-important') << I18n.t('no')
