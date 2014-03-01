@@ -9,9 +9,9 @@ RailsAdmin.config do |config|
       field :happened do
         formatted_value do
           if bindings[:object].happened_at
-            bindings[:view].tag(:span, class: 'label label-success') << I18n.t('yes')
+            bindings[:view].content_tag(:span, class: 'label label-success') { I18n.t('yes') }
           else
-            bindings[:view].tag(:span, class: 'label label-important') << I18n.t('no')
+            bindings[:view].content_tag(:span, class: 'label label-important') { I18n.t('no') }
           end
         end
       end
@@ -21,18 +21,18 @@ RailsAdmin.config do |config|
       field :slides do
         formatted_value do
           if bindings[:object].slides?
-            bindings[:view].tag(:span, class: 'label label-success') << I18n.t('yes')
+            bindings[:view].content_tag(:span, class: 'label label-success') { I18n.t('yes') }
           else
-            bindings[:view].tag(:span, class: 'label label-important') << I18n.t('no')
+            bindings[:view].content_tag(:span, class: 'label label-important') { I18n.t('no') }
           end
         end
       end
       field :video_slug do
         formatted_value do
           if bindings[:object].video_url?
-            bindings[:view].tag(:span, class: 'label label-success') << I18n.t('yes')
+            bindings[:view].content_tag(:span, class: 'label label-success') { I18n.t('yes') }
           else
-            bindings[:view].tag(:span, class: 'label label-important') << I18n.t('no')
+            bindings[:view].content_tag(:span, class: 'label label-important') { I18n.t('no') }
           end
         end
       end
