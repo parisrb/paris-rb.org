@@ -1,4 +1,21 @@
+require 'rails_admin/config/actions/lineup'
+
 RailsAdmin.config do |config|
+  config.actions do
+    dashboard
+    lineup
+    index
+    new
+    export
+    history_index
+    bulk_delete
+    show
+    edit
+    delete
+    history_show
+    show_in_app
+  end
+
   config.main_app_name = ['Paris.rb', 'Admin']
   config.authenticate_with { warden.authenticate! scope: :user }
   config.current_user_method(&:current_user)

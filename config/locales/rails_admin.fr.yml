@@ -43,6 +43,10 @@ fr:
         title: "Administration"
         menu: "Administration"
         breadcrumb: "Administration"
+      lineup:
+        title: "Lineup"
+        menu: "Lineup"
+        breadcrumb: "Lineup"
       index:
         title: "Listing des %{model_label_plural}"
         menu: "Liste"
