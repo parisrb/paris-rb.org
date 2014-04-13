@@ -112,7 +112,7 @@ fr:
       confirmation: "Oui, je suis sûr(e)"
       delete_confirmation: "Confirmation de suppression"
       bulk_delete: "Les objets suivants seront supprimés, ce qui pourrait supprimer ou rendre orpheline les dépendances affichées :"
-    export:      
+    export:
       confirmation: "Exporter en %{name}"
       select: "Sélectionner les champs à exporter"
       fields_from: "Champs pour '%{name}'"
