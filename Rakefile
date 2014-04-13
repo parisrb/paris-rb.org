@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'sitemap_generator/tasks'
 
-RubyparisOrg::Application.load_tasks
+Rails.application.load_tasks

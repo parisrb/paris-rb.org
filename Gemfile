@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.1'
 
-gem 'rails', '4.0.3'
+gem 'rails', '4.1.0'
 
 gem 'carrierwave', '~> 0.9'
 gem 'cloudinary', '~> 1.0'
@@ -35,6 +35,7 @@ group :development do
   gem 'irbtools', require: 'irbtools/configure'
   gem 'quiet_assets'
   gem 'rack-mini-profiler'
+  gem 'spring'
 end
 
 group :production do
