@@ -21,5 +21,10 @@ html lang="fr"
 
       = yield
 
+    footer
+      p
+        = link_to t('project_on_github'), 'https://github.com/parisrb/rubyparis.org'
+        = link_to t('contact_maintainer'), 'https://twitter.com/happynoff'
+
     = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
     = javascript_include_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js'

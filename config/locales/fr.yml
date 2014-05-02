@@ -2,6 +2,9 @@ fr:
   'yes': 'Oui'
   'no': 'Non'
 
+  contact_maintainer: Contacter le mainteneur (@happynoff)
+  project_on_github: Retrouver ce projet sur Github
+
   site_name: Paris.rb
 
   activerecord:

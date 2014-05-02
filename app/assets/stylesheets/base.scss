@@ -11,6 +11,24 @@
   }
 }
 
+body > footer p {
+  padding: 1em 0;
+  text-align: center;
+
+  a {
+    color: #5D2026;
+    padding: 0 2em;
+
+    &:hover, &:active, &:focus {
+      color: #5D2026;
+    }
+
+    &:visited {
+      color: lighten(#5D2026, 20%);
+    }
+  }
+}
+
 .section {
   padding: 2em 0 3em;
 
@@ -61,6 +79,7 @@
 
 .sponsor {
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .block {
