@@ -1,5 +1,22 @@
 fr:
   admin:
+    js:
+      true: Vrai
+      false: Faux
+      is_present: Est présent
+      is_blank: Est vide
+      date: Date ...
+      between_and_: Entre le ... et le ...
+      today: "Aujourd'hui"
+      yesterday: Hier
+      this_week: Cette semaine
+      last_week: Semaine précédente
+      number: Nombre ...
+      contains: Contient
+      is_exactly: Est exactement
+      starts_with: Commence par
+      ends_with: Termine par
+    loading: "Chargement..."
     home:
       name: Home
     pagination:
@@ -7,6 +24,7 @@ fr:
       next: "Suiv. &raquo;"
       truncate: "…"
     misc:
+      filter_date_format: "dd/mm/yy" # a combination of 'dd', 'mm' and 'yy' with any delimiter. No other interpolation will be done!
       search: "Rechercher"
       filter: "Filtrer"
       refresh: "Rafraîchir"
@@ -21,6 +39,7 @@ fr:
       up: "Monter"
       down: "Descendre"
       navigation: "Navigation"
+      navigation_static_label: "Liens"
       log_out: "Log out"
       ago: ""
     flash:
@@ -96,7 +115,6 @@ fr:
         menu: "Historique"
         breadcrumb: "Historique"
     form:
-      new_model: "%{name} (nouveau)"
       cancel: "Annuler"
       basic_info: "Informations de base"
       required: "Obligatoire"
@@ -110,11 +128,12 @@ fr:
       all_of_the_following_related_items_will_be_deleted: " ? Les objets suivants peuvent être affectés (supprimés ou orphelins) : "
       are_you_sure_you_want_to_delete_the_object: "Êtes-vous sûr de vouloir supprimer cet(te) %{model_name}"
       confirmation: "Oui, je suis sûr(e)"
-      delete_confirmation: "Confirmation de suppression"
       bulk_delete: "Les objets suivants seront supprimés, ce qui pourrait supprimer ou rendre orpheline les dépendances affichées :"
+      new_model: "%{name} (nouveau)"
     export:
       confirmation: "Exporter en %{name}"
       select: "Sélectionner les champs à exporter"
+      select_all_fields: "Selectionner Tous Les Champs"
       fields_from: "Champs pour '%{name}'"
       fields_from_associated: "Champs pour l'association '%{name}'"
       display: "Afficher %{name} : %{type}"
