@@ -36,6 +36,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-mini-profiler'
   gem 'spring'
+  gem 'annotate', ">=2.6.0"
 end
 
 group :production do
