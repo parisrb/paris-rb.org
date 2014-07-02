@@ -1,3 +1,24 @@
+# == Schema Information
+#
+# Table name: talks
+#
+#  id            :integer          not null, primary key
+#  title         :string(255)
+#  speaker_name  :string(255)
+#  speaker_email :string(255)
+#  level         :string(255)
+#  duration      :string(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  happened_at   :date
+#  slides        :string(255)
+#  video_url     :string(255)
+#
+# Indexes
+#
+#  index_talks_on_happened_at  (happened_at)
+#
+
 class Talk < ActiveRecord::Base
   extend Enumerize
 
