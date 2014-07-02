@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.2'
 
 gem 'rails', '4.1.0'
 
@@ -30,13 +30,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'unicorn', '~> 4.7'
 
 group :development do
+  gem 'annotate', ">=2.6.0"
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'dotenv-rails'
   gem 'irbtools', require: 'irbtools/configure'
   gem 'quiet_assets'
   gem 'rack-mini-profiler'
   gem 'spring'
-  gem 'annotate', ">=2.6.0"
 end
 
 group :production do
