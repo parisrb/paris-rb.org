@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140224181029) do
+ActiveRecord::Schema.define(version: 20140702174558) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20140224181029) do
     t.date     "happened_at"
     t.string   "slides"
     t.string   "video_url"
+    t.boolean  "lineup",        default: false
   end
 
   add_index "talks", ["happened_at"], name: "index_talks_on_happened_at", using: :btree

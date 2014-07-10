@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   resources :videos, only: [:index, :show]
   resources :talks, only: [:index, :create]
 
+  get '/lineup' => 'lineup#show'
+
   root to: 'welcome#index'
 end

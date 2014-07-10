@@ -13,6 +13,7 @@
 #  happened_at   :date
 #  slides        :string(255)
 #  video_url     :string(255)
+#  lineup        :boolean          default(FALSE)
 #
 # Indexes
 #
@@ -48,6 +49,9 @@ class Talk < ActiveRecord::Base
 
   scope :happened,
     -> { where.not(happened_at: nil) }
+
+  scope :lineup,
+    -> { to_come.where(lineup: true) }
 
   scope :to_come,
     -> { where(happened_at: nil) }

@@ -1,0 +1,14 @@
+section
+  h2 Talks <3
+
+  table
+    tbody
+      tr
+        th ParisRB
+        td Welcome
+      - talks.each do |talk|
+        tr
+          th = talk.speaker_name
+          td = talk.title
+
+  p Pizzas && Networking at some point ;)
