@@ -25,7 +25,7 @@ RailsAdmin.config do |config|
     list do
       field :happened do
         formatted_value do
-          if bindings[:object].happened_at
+          if bindings[:object].happened?
             bindings[:view].content_tag(:span, class: 'label label-success') { I18n.t('yes') }
           else
             bindings[:view].content_tag(:span, class: 'label label-important') { I18n.t('no') }

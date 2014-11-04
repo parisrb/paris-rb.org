@@ -1,8 +1,10 @@
 class TalksController < ApplicationController
-  expose(:next_talks) { Talk.to_come.order(created_at: :desc) }
-  expose(:prev_talks) do
-    Talk.happened.order(happened_at: :desc, created_at: :desc)
-  end
+  expose(:happened_talks) { Talk.happened }
+
+  expose(:lineup_talks) { Talk.lineup }
+
+  expose(:proposed_talks) { Talk.proposed }
+
   expose(:talk, attributes: :talk_params)
 
   def create

@@ -12,7 +12,7 @@ module RailsAdmin
 
         register_instance_option :controller do
           proc do
-            @talks = Talk.to_come
+            @talks = Talk.lineup
             render @action.template_name
           end
         end

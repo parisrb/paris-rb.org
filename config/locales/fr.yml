@@ -83,8 +83,9 @@ fr:
         Si vous avez d'autres questions, n'hésitez pas à envoyer un email à
         [Thibaut](mailto:thibaut@milesrock.com)
 
-      next_talks: Talks proposés pour le prochain meetup
-      previous_talks: Talks ayant déjà eu lieu
+      lineup: Lineup du prochain meetup
+      proposed_talks: Autres talks proposés
+      happened_talks: Talks ayant déjà eu lieu
       resources: Ressources
       slides: slides
       title: Proposer un talk

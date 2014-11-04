@@ -13,7 +13,6 @@
 #  happened_at   :date
 #  slides        :string(255)
 #  video_url     :string(255)
-#  lineup        :boolean          default(FALSE)
 #
 # Indexes
 #
@@ -48,11 +47,24 @@ class Talk < ActiveRecord::Base
     presence: true
 
   scope :happened,
-    -> { where.not(happened_at: nil) }
+    -> {
+      where('happened_at < ?', Date.today)
+        .order(happened_at: :desc, duration: :asc, created_at: :desc)
+    }
 
   scope :lineup,
-    -> { to_come.where(lineup: true) }
+    -> {
+      where('happened_at BETWEEN ? AND ?', 2.weeks.ago, 2.weeks.from_now)
+        .order(duration: :asc, created_at: :desc)
+    }
 
-  scope :to_come,
-    -> { where(happened_at: nil) }
+  scope :proposed,
+    -> {
+      where('happened_at IS NULL OR happened_at > ?', 2.weeks.from_now)
+        .order(duration: :asc, created_at: :desc)
+    }
+
+  def happened?
+    happened_at && happened_at < Date.today
+  end
 end
