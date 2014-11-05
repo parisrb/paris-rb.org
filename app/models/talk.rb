@@ -54,7 +54,7 @@ class Talk < ActiveRecord::Base
 
   scope :lineup,
     -> {
-      where('happened_at BETWEEN ? AND ?', 2.weeks.ago, 2.weeks.from_now)
+      where('happened_at BETWEEN ? AND ?', Date.today, 2.weeks.from_now)
         .order(duration: :asc, created_at: :desc)
     }
 
