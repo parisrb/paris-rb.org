@@ -111,6 +111,9 @@ fr:
         Liste des talks des prochains meetups.
       ellipsis:
         title: Paris.rb c'est aussi...
+      jobs:
+        title: Les jobs du moment
+        subtitle: vous tendent les bras ^^
       guests:
         title: Ce que nos invités en disent
       show-off:

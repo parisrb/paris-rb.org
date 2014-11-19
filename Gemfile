@@ -28,6 +28,7 @@ gem 'sucker_punch', '~> 1.0'
 gem 'therubyracer', '~> 0.12', platforms: :ruby
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn', '~> 4.7'
+gem 'activeresource'
 
 group :development do
   gem 'annotate', ">=2.6.0"
