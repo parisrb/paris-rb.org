@@ -39,6 +39,22 @@
               = link_to sponsor.website, title: sponsor.name, rel: 'nofollow' do
                 = image_tag sponsor.logo_url(:thumb), alt: sponsor.name, class: 'img-thumbnail'
 
+.section.section-jobs
+  .container
+    header
+      h1 = t('.jobs.title')
+      p = t('.jobs.subtitle')
+
+    - job_offers.each_slice(4) do |job_offer_group|
+      .row
+        - job_offer_group.each do |job_offer|
+          - cache job_offer do
+            .sponsor.col-sm-3
+              = link_to "http://parisrb.jobboardmaker.com/job_offers/#{job_offer.id}" do
+                = job_offer.title
+                br
+                = job_offer.company_name
+
 .section.section-you
   .container
     header
