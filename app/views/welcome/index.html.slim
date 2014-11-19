@@ -25,20 +25,6 @@
 
     p = link_to t('.talks.videos'), videos_path, class: 'btn btn-default btn-lg'
 
-.section.section-sponsors
-  .container
-    header
-      h1 = t('.sponsors.title')
-      p = t('.sponsors.subtitle')
-
-    - sponsors.each_slice(4) do |sponsor_group|
-      .row
-        - sponsor_group.each do |sponsor|
-          - cache sponsor do
-            .sponsor.col-sm-3
-              = link_to sponsor.website, title: sponsor.name, rel: 'nofollow' do
-                = image_tag sponsor.logo_url(:thumb), alt: sponsor.name, class: 'img-thumbnail'
-
 .section.section-jobs
   .container
     header
@@ -54,6 +40,21 @@
                 = job_offer.title
                 br
                 = job_offer.company_name
+        = link_to 'Poster un job...', "http://parisrb.jobboardmaker.com/job_offers/new"
+.section.section-sponsors
+  .container
+    header
+      h1 = t('.sponsors.title')
+      p = t('.sponsors.subtitle')
+
+    - sponsors.each_slice(4) do |sponsor_group|
+      .row
+        - sponsor_group.each do |sponsor|
+          - cache sponsor do
+            .sponsor.col-sm-3
+              = link_to sponsor.website, title: sponsor.name, rel: 'nofollow' do
+                = image_tag sponsor.logo_url(:thumb), alt: sponsor.name, class: 'img-thumbnail'
+
 
 .section.section-you
   .container
