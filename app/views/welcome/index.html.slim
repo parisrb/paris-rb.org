@@ -36,7 +36,7 @@
         - job_offer_group.each do |job_offer|
           - cache job_offer do
             .sponsor.col-sm-3
-              = link_to "http://parisrb.jobboardmaker.com/job_offers/#{job_offer.id}" do
+              = link_to "http://parisrb.jobboardmaker.com/job_offers/#{job_offer.slug}" do
                 = job_offer.title
                 br
                 = job_offer.company_name
