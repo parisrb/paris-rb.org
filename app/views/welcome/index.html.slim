@@ -36,13 +36,13 @@
         - job_offer_group.each do |job_offer|
           - cache job_offer do
             .sponsor.col-sm-3
-              = link_to "http://parisrb.jobboardmaker.com/job_offers/#{job_offer.slug}" do
+              = link_to "https://jobs.rubyparis.org/job_offers/#{job_offer.slug}" do
                 = job_offer.title
                 br
                 | Employeur :
                 | &nbsp;
                 = job_offer.company_name
-        = link_to 'Poster un job...', "http://parisrb.jobboardmaker.com/job_offers/new"
+        = link_to 'Poster un job...', "https://jobs.rubyparis.org/job_offers/new"
 .section.section-sponsors
   .container
     header
