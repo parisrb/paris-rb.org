@@ -31,17 +31,7 @@
       h1 = t('.jobs.title')
       p = t('.jobs.subtitle')
 
-    - job_offers.each_slice(4) do |job_offer_group|
-      .row
-        - job_offer_group.each do |job_offer|
-          - cache job_offer do
-            .sponsor.col-sm-3
-              = link_to "https://jobs.rubyparis.org/job_offers/#{job_offer.slug}" do
-                = job_offer.title
-                br
-                | Employeur :
-                | &nbsp;
-                = job_offer.company_name
+    = render '/job_offers/index'
     .row
       .sponsor.col-sm-3
         = link_to 'Poster un job...', "https://jobs.rubyparis.org/job_offers/new"
