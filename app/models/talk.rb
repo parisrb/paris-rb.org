@@ -13,6 +13,7 @@
 #  happened_at   :date
 #  slides        :string(255)
 #  video_url     :string(255)
+#  position      :integer
 #
 # Indexes
 #

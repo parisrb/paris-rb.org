@@ -1,14 +1,29 @@
+
 section
+
   h2 Talks <3
 
+
   table
-    tbody
+    thead
       tr
         th ParisRB
         td Welcome
+      / - talks.each do |talk|
+      /   tr
+      /     th = talk.speaker_name
+      /     td = talk.title
+
+      | <tbody id="talks" data-update-url="
+      = sort_talks_url
+      | ">
       - talks.each do |talk|
-        tr
+        tr.fa.fa-sort.handle
           th = talk.speaker_name
           td = talk.title
 
   p Pizzas && Networking at some point ;)
+
+
+
+

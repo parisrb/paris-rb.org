@@ -3,3 +3,5 @@
  *= require base
  *= require vimeo
  */
+ @import "font-awesome-sprockets";
+ @import "font-awesome";

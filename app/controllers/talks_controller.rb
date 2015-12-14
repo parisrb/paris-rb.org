@@ -7,6 +7,10 @@ class TalksController < ApplicationController
 
   expose(:talk, attributes: :talk_params)
 
+  def index
+    @talks = Talk.order("position")
+  end
+
   def create
     if talk.save
       TalkMailerWorker.new.async.perform(talk.id)
@@ -14,6 +18,13 @@ class TalksController < ApplicationController
     else
       render action: :index
     end
+  end
+
+  def sort
+    params[:talk].each_with_index do |id, index|
+      Talk.update_all({position: index+1}, {id: id})
+    end
+    render nothing: true
   end
 
   private
