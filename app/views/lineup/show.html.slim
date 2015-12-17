@@ -1,4 +1,7 @@
 .reveal
+  .header
+    .date = l(Date.today, format: :long)
+    .logo = image_tag 'logo.png', alt: 'Rubyparis'
   .slides
     = render 'lineup/welcome'
     = render 'lineup/sponsors'
