@@ -1,0 +1,14 @@
+section
+  h2 Upcoming
+
+  table
+    tbody
+      tr
+        th ParisRB
+      - next_talks.each do |talk|
+        tr
+          th = talk.speaker_name
+          td = talk.title
+
+  p And you?
+    a href="https://rubyparis.org/talks" Submit a talk to ParisRB!
