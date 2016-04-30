@@ -112,8 +112,9 @@ fr:
       ellipsis:
         title: Paris.rb c'est aussi...
       jobs:
-        title: Les jobs du moment
+        add: Poster un job…
         subtitle: vous tendent les bras ^^
+        title: Les jobs du moment
       guests:
         title: Ce que nos invités en disent
       show-off:

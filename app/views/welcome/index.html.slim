@@ -31,10 +31,11 @@
       h1 = t('.jobs.title')
       p = t('.jobs.subtitle')
 
-    = render '/job_offers/index'
-    .row
-      .sponsor.col-sm-3
-        = link_to 'Poster un job...', "https://jobs.rubyparis.org/job_offers/new"
+    #jobsList.row.jobsList
+
+    p.text-center
+      = link_to t('.jobs.add'), "https://jobs.rubyparis.org/job_offers/new", class: "btn btn-default btn-lg"
+
 .section.section-sponsors
   .container
     header
