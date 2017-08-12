@@ -24,6 +24,7 @@ class TalksController < ApplicationController
                                     speaker_email
                                     speaker_name
                                     speaker_twitter
+                                    preferred_month_talk
                                     title])
   end
 end

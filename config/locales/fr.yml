@@ -25,6 +25,20 @@ fr:
         speaker_twitter: Twitter
         title: Titre
         video_slug: Vidéo
+        preferred_month_talk: Quel mois ?
+        proposed_months:
+          january: Janvier
+          february: Février
+          march: Mars
+          april: Avril
+          may: Mai
+          june: Juin
+          july: Juillet
+          august: Août
+          september: Septembre
+          october: Octobre
+          november: Novembre
+          december: Decembre
 
   devise:
     passwords:

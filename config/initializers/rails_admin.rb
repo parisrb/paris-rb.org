@@ -35,6 +35,7 @@ RailsAdmin.config do |config|
       field :title
       field :speaker_name
       field :speaker_twitter
+      field :preferred_month_talk
       field :duration
       field :slides do
         formatted_value do
