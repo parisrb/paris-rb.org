@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
     t.string   "video_url"
     t.string   "speaker_twitter"
     t.string   "preferred_month_talk"
+    t.datetime "time_position"
   end
 
   add_index "talks", ["happened_at"], name: "index_talks_on_happened_at", using: :btree

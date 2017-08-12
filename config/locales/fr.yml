@@ -23,6 +23,7 @@ fr:
         speaker_email: Email
         speaker_name: Speaker
         speaker_twitter: Twitter
+        time_position: Heure du talk
         title: Titre
         video_slug: Vidéo
         preferred_month_talk: Quel mois ?
