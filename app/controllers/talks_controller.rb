@@ -23,6 +23,7 @@ class TalksController < ApplicationController
                                     level
                                     speaker_email
                                     speaker_name
+                                    speaker_twitter
                                     title])
   end
 end

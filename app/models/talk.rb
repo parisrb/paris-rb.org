@@ -2,17 +2,19 @@
 #
 # Table name: talks
 #
-#  id            :integer          not null, primary key
-#  title         :string(255)
-#  speaker_name  :string(255)
-#  speaker_email :string(255)
-#  level         :string(255)
-#  duration      :string(255)
-#  created_at    :datetime
-#  updated_at    :datetime
-#  happened_at   :date
-#  slides        :string(255)
-#  video_url     :string(255)
+#  id                   :integer          not null, primary key
+#  title                :string(255)
+#  speaker_name         :string(255)
+#  speaker_email        :string(255)
+#  level                :string(255)
+#  duration             :string(255)
+#  created_at           :datetime
+#  updated_at           :datetime
+#  happened_at          :date
+#  slides               :string(255)
+#  video_url            :string(255)
+#  speaker_twitter      :string(255)
+#  time_position        :datetime
 #
 # Indexes
 #
@@ -39,6 +41,10 @@ class Talk < ActiveRecord::Base
   validates :speaker_email,
     format: { with: /\A[^@]+@[^@]+\z/ },
     presence: true
+
+  validates :speaker_twitter,
+    format: { with: /\A@.+\z/ },
+    allow_nil: true
 
   validates :speaker_name,
     presence: true

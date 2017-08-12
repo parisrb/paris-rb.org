@@ -4,6 +4,7 @@ table.table.table-condensed.table-striped
       th = Talk.human_attribute_name(:title)
       th = Talk.human_attribute_name(:speaker_name)
       th = Talk.human_attribute_name(:speaker_email)
+      th = Talk.human_attribute_name(:speaker_twitter)
       th = Talk.human_attribute_name(:duration)
       th = Talk.human_attribute_name(:level)
   tbody
@@ -12,5 +13,6 @@ table.table.table-condensed.table-striped
         td title=talk.title = talk.title
         td = talk.speaker_name
         td = talk.speaker_email
+        td = talk.speaker_twitter
         td = talk.duration_text
         td = talk.level_text
