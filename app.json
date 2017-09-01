@@ -1,0 +1,15 @@
+{
+  "name": "rubyparis.org",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
