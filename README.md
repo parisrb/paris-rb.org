@@ -1,4 +1,5 @@
 # Paris.rb
+![ruby_paris_readme_image](https://user-images.githubusercontent.com/11463275/30087024-39bbad02-926c-11e7-9fb1-93ee7f38944e.png)
 
 ## Mac - Installation Instructions (using Rvm)
 
