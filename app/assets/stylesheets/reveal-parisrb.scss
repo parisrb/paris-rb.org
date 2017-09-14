@@ -83,4 +83,22 @@ body {
       border-bottom: 1px solid #EEE;
     }
   }
+
+  .header {
+    height: 60px;
+    line-height: 60px;
+
+    padding: 10px 30px;
+    pointer-events: none;
+
+    .date {
+      float: right;
+      font-size: 20px;
+    }
+
+    .logo {
+      float: left;
+      height: 100%;
+    }
+  }
 }

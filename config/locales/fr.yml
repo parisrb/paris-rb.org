@@ -57,6 +57,8 @@ fr:
         create: Ok
 
   talks:
+    form:
+      accept_coc: Je m’engage à respecter le Code of Conduct de ParisRB
     index:
       description: >-
         Voir la liste des talks proposés pour les prochains meetups. Proposez
@@ -112,8 +114,9 @@ fr:
       ellipsis:
         title: Paris.rb c'est aussi...
       jobs:
-        title: Les jobs du moment
+        add: Poster un job…
         subtitle: vous tendent les bras ^^
+        title: Les jobs du moment
       guests:
         title: Ce que nos invités en disent
       show-off:
