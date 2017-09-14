@@ -22,15 +22,21 @@
           tr
             th = Talk.human_attribute_name(:title)
             th = Talk.human_attribute_name(:speaker_name)
+            th = Talk.human_attribute_name(:speaker_twitter)
             th = Talk.human_attribute_name(:level)
             th = Talk.human_attribute_name(:duration)
+            th = Talk.human_attribute_name(:preferred_month_talk)
+            th = Talk.human_attribute_name(:time_position)
         tbody
           - lineup_talks.each do |talk|
             tr
               td = talk.title
               td = talk.speaker_name
+              td = talk.speaker_twitter
               td = talk.level_text
               td = talk.duration_text
+              td = talk.preferred_month_talk
+              td = talk.time_position
 
     .visible-xs
       ul.talks-list.list-unstyled

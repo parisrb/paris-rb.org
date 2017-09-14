@@ -6,6 +6,10 @@ Nom du speaker : <%= @talk.speaker_name.capitalize %>
 
 Email du speaker : <%= @talk.speaker_email %>
 
+Twitter du speaker : <%= @talk.speaker_twitter %>
+
+Mois préféré pour le speaker : <%= Talk::ALL_MONTHS[@talk.preferred_month_talk] %>
+
 Titre du talk : <%= @talk.title %>
 
 Niveau du talk : <%= @talk.level_text %>
