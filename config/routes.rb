@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :talks, only: [:index, :create]
 
   get '/lineup' => 'lineup#show'
+  get '/sponsoring' => 'sponsoring#show'
 
   root to: 'welcome#index'
 end

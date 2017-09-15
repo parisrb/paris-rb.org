@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
+ruby '2.4.2'
 
-gem 'rails', '4.1.7'
+gem 'rails', '~> 4.1'
 
 gem 'carrierwave', '~> 0.9'
 gem 'cloudinary', '~> 1.0'
 gem 'coffee-rails', '~> 4.0'
 gem 'decent_exposure', '~> 2.3'
-gem 'devise', '~> 3.2'
+gem 'devise', '~> 4.0'
 gem 'enumerize', '~> 0.7'
 gem 'jquery-rails', '~> 3.0'
 gem 'kaminari', '~> 0.15'
@@ -29,6 +29,7 @@ gem 'therubyracer', '~> 0.12', platforms: :ruby
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn', '~> 4.7'
 gem 'activeresource'
+gem 'webpacker', '~> 3.0'
 
 group :development do
   gem 'annotate', ">=2.6.0"

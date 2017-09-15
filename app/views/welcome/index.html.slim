@@ -50,6 +50,7 @@
               = link_to sponsor.website, title: sponsor.name, rel: 'nofollow' do
                 = image_tag sponsor.logo.thumb.url(secure: true), alt: sponsor.name, class: 'img-thumbnail'
 
+    p = link_to t('.sponsors.button'), sponsoring_path, class: 'btn btn-default btn-lg'
 
 .section.section-you
   .container
