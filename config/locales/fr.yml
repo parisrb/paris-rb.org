@@ -4,6 +4,7 @@ fr:
 
   contact_maintainer: Contacter le mainteneur (@happynoff)
   project_on_github: Retrouver ce projet sur Github
+  sponsoring_the_meetup: Sponsoriser le Meetup
 
   site_name: Paris.rb
 
@@ -113,6 +114,11 @@ fr:
     index:
       description: Toutes les vidéos des talks du meetup Paris.rb
       title: Vidéos des talks
+
+  sponsoring:
+    show:
+      description: Sponsoriser le Meetup Paris.rb
+      title: Sponsoring
 
   views:
     pagination:
