@@ -3,7 +3,7 @@ import Elm from '../elm/Sponsoring'
 document.addEventListener('DOMContentLoaded', () => {
   var app = Elm.Sponsoring.embed(document.getElementById('main'));
 
-  Stripe.setPublishableKey('pk_test_5PnH5aLwZzbYlDjsGijmGhGz')
+  Stripe.setPublishableKey(process.env.STRIPE_PUBLISHABLE_KEY)
   app.ports.askForToken.subscribe((creditCardModel) => {
     Stripe.card.createToken({
       number: creditCardModel.ccNumber,

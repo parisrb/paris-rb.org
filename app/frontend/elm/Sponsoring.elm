@@ -177,6 +177,7 @@ subscriptionForm model =
             [ borderColor Color.grey
             , borderSolid
             , borderWidth 1
+            , borderRadius 4
             , maxWidth (Px 300)
             , padding large
             , marginAuto
@@ -186,7 +187,7 @@ subscriptionForm model =
             ]
         ]
         [ alertContainer model.alertMessage
-            [ p [ style [ baseInput, margin (Px 0), textColor Color.black ] ] [ text "Attention, mauvaises données de carte bancaire" ] ]
+            [ p [ style [ baseInput, margin (Px 0), textColor (Color.rgb 60 50 40) ] ] [ text "Attention, mauvaises données de carte bancaire" ] ]
         , formFieldContainer
             [ inputText [ style [ baseInput, fullWidth ], onInput (CreditCard << SetName), name "email", value model.creditCard.email, placeholder "email" ]
             ]
@@ -197,7 +198,7 @@ subscriptionForm model =
             ]
         , button
             [ style
-                [ backgroundColor (Color.rgb 2 162 228)
+                [ backgroundColor (Color.rgb 197 66 76)
                 , baseInput
                 , textColor Color.white
                 , bold
@@ -206,6 +207,7 @@ subscriptionForm model =
                 , marginTop medium
                 , marginBottom medium
                 ]
+            , hoverStyle [ backgroundColor (Color.rgb 187 61 71) ]
             , onClick AskForToken
             ]
             [ text "Sponsoriser" ]
@@ -223,7 +225,7 @@ planSelectionButtons stripePlan =
             , selectionButton Semestrial "Semestriel" (Semestrial == stripePlan)
             , selectionButton Annual "Annuel" (Annual == stripePlan)
             ]
-        , p [] [ stripePlanDescription stripePlan ]
+        , p [ style [ h1S, marginVertical medium ] ] [ stripePlanDescription stripePlan ]
         ]
 
 
@@ -235,20 +237,16 @@ selectionButton :
 selectionButton stripePlan label selected =
     let
         bg =
-            Color.grayscale
-                (if selected then
-                    0.3
-                 else
-                    0.7
-                )
+            if selected then
+                Color.rgb 110 38 46
+            else
+                Color.rgb 197 66 76
 
         fg =
-            Color.grayscale
-                (if selected then
-                    0.8
-                 else
-                    0.2
-                )
+            if selected then
+                Color.rgb 197 66 76
+            else
+                Color.rgb 245 245 247
     in
         div
             [ style
