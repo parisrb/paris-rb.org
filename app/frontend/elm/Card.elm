@@ -6,8 +6,8 @@ import Regex
 
 
 limitSize : Int -> String -> String
-limitSize len str =
-    String.slice 0 len str
+limitSize =
+    String.slice 0
 
 
 splitAt : Int -> String -> List String
@@ -36,16 +36,13 @@ splitEvery pos str =
 
 
 putSpacesEvery : Int -> String -> String
-putSpacesEvery len str =
-    str
-        |> splitEvery len
-        |> join " "
+putSpacesEvery len =
+    splitEvery len >> join " "
 
 
 removeRegex : String -> String -> String
-removeRegex regex text =
-    text
-        |> Regex.replace Regex.All (Regex.regex regex) (\_ -> "")
+removeRegex regex =
+    Regex.replace Regex.All (Regex.regex regex) (\_ -> "")
 
 
 onlyNumbers : String -> String
@@ -70,25 +67,26 @@ removeSpace =
     removeRegex " "
 
 
-numberFormat : String -> String
-numberFormat text =
-    text
-        |> onlyNumbers
-        |> limitSize 16
-        |> putSpacesEvery 4
+cardNumberDisplay : String -> String
+cardNumberDisplay =
+    putSpacesEvery 4
+
+
+cardNumberFormat : String -> String
+cardNumberFormat =
+    onlyNumbers >> limitSize 16
 
 
 cvcFormat : String -> String
-cvcFormat text =
-    text
-        |> onlyNumbers
-        |> limitSize 4
+cvcFormat =
+    onlyNumbers >> limitSize 4
 
 
 dateFormat : String -> String
-dateFormat text =
-    text
-        |> onlyNumbers
-        |> limitSize 6
-        |> splitAt 2
-        |> join " / "
+dateFormat =
+    onlyNumbersAndSlash >> addSlashForThreeNumbers >> limitSize 7
+
+
+addSlashForThreeNumbers : String -> String
+addSlashForThreeNumbers =
+    Regex.replace Regex.All (Regex.regex "^([0-9]{3,})$") (\{ match } -> (splitAt 2 >> join "/") match)
