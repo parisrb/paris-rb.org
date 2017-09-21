@@ -14,6 +14,7 @@
 #  slides               :string(255)
 #  video_url            :string(255)
 #  speaker_twitter      :string(255)
+#  preferred_month_talk :string(255)
 #  time_position        :datetime
 #
 # Indexes
