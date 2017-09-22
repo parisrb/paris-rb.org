@@ -192,9 +192,9 @@ subscriptionForm model =
             [ inputText [ style [ baseInput, fullWidth ], onInput (CreditCard << SetName), name "email", value model.creditCard.email, placeholder "email" ]
             ]
         , formFieldContainer
-            [ inputText [ style [ baseInput, fullWidth, borderBottomColor gray, borderBottomSolid, borderBottomWidth 1 ], onInput (CreditCard << SetCcNumber), name "ccNumber", value (model.creditCard.ccNumber |> Card.numberFormat), placeholder "n° carte" ]
-            , inputText [ style [ baseInput, Elegant.width (Percent 50), borderRightColor gray, borderRightSolid, borderRightWidth 1 ], onInput (CreditCard << SetExpiration), name "expiration", value (model.creditCard.expiration), placeholder "expiration" ]
-            , inputText [ style [ baseInput, Elegant.width (Percent 50) ], onInput (CreditCard << SetCvc), name "cvc", value (model.creditCard.cvc |> Card.cvcFormat), placeholder "cvc" ]
+            [ inputText [ style [ baseInput, fullWidth, borderBottomColor gray, borderBottomSolid, borderBottomWidth 1 ], onInput (CreditCard << SetCcNumber), name "ccNumber", value (model.creditCard.ccNumber |> Card.cardNumberDisplay), placeholder "n° carte" ]
+            , inputText [ style [ baseInput, Elegant.width (Percent 50), borderRightColor gray, borderRightSolid, borderRightWidth 1 ], onInput (CreditCard << SetExpiration), name "expiration", value model.creditCard.expiration, placeholder "expiration" ]
+            , inputText [ style [ baseInput, Elegant.width (Percent 50) ], onInput (CreditCard << SetCvc), name "cvc", value model.creditCard.cvc, placeholder "cvc" ]
             ]
         , button
             [ style
@@ -352,13 +352,13 @@ updateCreditCard msg model =
             { model | email = email }
 
         SetCcNumber ccNumber ->
-            { model | ccNumber = ccNumber |> Card.onlyNumbers }
+            { model | ccNumber = ccNumber |> Card.cardNumberFormat }
 
         SetExpiration expiration ->
-            { model | expiration = expiration |> Card.onlyNumbersAndSlash }
+            { model | expiration = expiration |> Card.dateFormat }
 
         SetCvc cvc ->
-            { model | cvc = cvc |> Card.onlyNumbers }
+            { model | cvc = cvc |> Card.cvcFormat }
 
 
 
