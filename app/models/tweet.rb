@@ -3,10 +3,10 @@
 # Table name: tweets
 #
 #  id             :integer          not null, primary key
-#  text           :string(255)
-#  author         :string(255)
-#  twitter_handle :string(255)
-#  cool_projects  :string(255)
+#  text           :string
+#  author         :string
+#  twitter_handle :string
+#  cool_projects  :string
 #  created_at     :datetime
 #  updated_at     :datetime
 #

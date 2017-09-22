@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "rails_admin_histories", force: true do |t|
+  create_table "rails_admin_histories", force: :cascade do |t|
     t.text     "message"
     t.string   "username"
     t.integer  "item"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], name: "index_rails_admin_histories", using: :btree
 
-  create_table "sponsors", force: true do |t|
+  create_table "sponsors", force: :cascade do |t|
     t.string   "name"
     t.string   "website"
     t.string   "logo"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
     t.datetime "updated_at"
   end
 
-  create_table "talks", force: true do |t|
+  create_table "talks", force: :cascade do |t|
     t.string   "title"
     t.string   "speaker_name"
     t.string   "speaker_email"
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
 
   add_index "talks", ["happened_at"], name: "index_talks_on_happened_at", using: :btree
 
-  create_table "tweets", force: true do |t|
+  create_table "tweets", force: :cascade do |t|
     t.string   "text"
     t.string   "author"
     t.string   "twitter_handle"
@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  create_table "videos", force: true do |t|
+  create_table "videos", force: :cascade do |t|
     t.string   "vimeo_url"
     t.string   "vimeo_thumbnail"
     t.string   "title"

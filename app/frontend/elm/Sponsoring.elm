@@ -6,6 +6,8 @@ import Elegant exposing (..)
 import Color
 import Json.Decode as Decode
 import Json.Encode as Encode
+import Task
+import Regex
 import Card
 import Function exposing (..)
 
@@ -35,8 +37,17 @@ initialModel =
     , stripePlan = Mensual
     , alertMessage = NoAlert
     , token = Nothing
+    , sponsorDetails = initialSponsorDetails
     , creditCard = initialCreditCardModel
     , subscriptionResult = Nothing
+    }
+
+
+initialSponsorDetails : SponsorDetailsModel
+initialSponsorDetails =
+    { companyName = ""
+    , firstName = ""
+    , lastName = ""
     }
 
 
@@ -54,6 +65,7 @@ type alias Model =
     , stripePlan : StripePlan
     , alertMessage : MessageAlertType
     , token : Maybe String
+    , sponsorDetails : SponsorDetailsModel
     , creditCard : CreditCardModel
     , subscriptionResult : Maybe String
     }
@@ -62,6 +74,14 @@ type alias Model =
 type MessageAlertType
     = NoAlert
     | WrongCardDetails
+    | WrongSponsorDetails
+
+
+type alias SponsorDetailsModel =
+    { companyName : String
+    , firstName : String
+    , lastName : String
+    }
 
 
 type alias CreditCardModel =
@@ -124,7 +144,7 @@ alertContainer msg =
                 NoAlert ->
                     style [ displayNone ]
 
-                WrongCardDetails ->
+                _ ->
                     style
                         [ borderWidth 1
                         , borderSolid
@@ -135,6 +155,19 @@ alertContainer msg =
                         ]
     in
         div [ alertMessageStyle ]
+
+
+alertMessage : MessageAlertType -> String
+alertMessage msg =
+    case msg of
+        NoAlert ->
+            ""
+
+        WrongCardDetails ->
+            "Attention, mauvaises données de carte bancaire"
+
+        WrongSponsorDetails ->
+            "Attention, mauvaises informations de société"
 
 
 gray : Color.Color
@@ -187,14 +220,101 @@ subscriptionForm model =
             ]
         ]
         [ alertContainer model.alertMessage
-            [ p [ style [ baseInput, margin (Px 0), textColor (Color.rgb 60 50 40) ] ] [ text "Attention, mauvaises données de carte bancaire" ] ]
-        , formFieldContainer
-            [ inputText [ style [ baseInput, fullWidth ], onInput (CreditCard << SetName), name "email", value model.creditCard.email, placeholder "email" ]
+            [ p
+                [ style
+                    [ baseInput
+                    , margin (Px 0)
+                    , textColor (Color.rgb 60 50 40)
+                    ]
+                ]
+                [ text (alertMessage model.alertMessage) ]
             ]
         , formFieldContainer
-            [ inputText [ style [ baseInput, fullWidth, borderBottomColor gray, borderBottomSolid, borderBottomWidth 1 ], onInput (CreditCard << SetCcNumber), name "ccNumber", value (model.creditCard.ccNumber |> Card.cardNumberDisplay), placeholder "n° carte" ]
-            , inputText [ style [ baseInput, Elegant.width (Percent 50), borderRightColor gray, borderRightSolid, borderRightWidth 1 ], onInput (CreditCard << SetExpiration), name "expiration", value model.creditCard.expiration, placeholder "expiration" ]
-            , inputText [ style [ baseInput, Elegant.width (Percent 50) ], onInput (CreditCard << SetCvc), name "cvc", value model.creditCard.cvc, placeholder "cvc" ]
+            [ inputText
+                [ style
+                    [ baseInput
+                    , fullWidth
+                    ]
+                , onInput (SponsorDetails << SetCompanyName)
+                , name "companyName"
+                , value model.sponsorDetails.companyName
+                , placeholder "Société / Raison sociale"
+                ]
+            ]
+        , formFieldContainer
+            [ inputText
+                [ style
+                    [ baseInput
+                    , Elegant.width (Percent 50)
+                    , borderRightColor gray
+                    , borderRightSolid
+                    , borderRightWidth 1
+                    ]
+                , onInput (SponsorDetails << SetFirstName)
+                , name "firstName"
+                , value model.sponsorDetails.firstName
+                , placeholder "Prénom"
+                ]
+            , inputText
+                [ style
+                    [ baseInput
+                    , Elegant.width (Percent 50)
+                    ]
+                , onInput (SponsorDetails << SetLastName)
+                , name "lastName"
+                , value model.sponsorDetails.lastName
+                , placeholder "NOM"
+                ]
+            ]
+        , formFieldContainer
+            [ inputText
+                [ style
+                    [ baseInput
+                    , fullWidth
+                    ]
+                , onInput (CreditCard << SetName)
+                , name "email"
+                , value model.creditCard.email
+                , placeholder "email"
+                ]
+            ]
+        , formFieldContainer
+            [ inputText
+                [ style
+                    [ baseInput
+                    , fullWidth
+                    , borderBottomColor gray
+                    , borderBottomSolid
+                    , borderBottomWidth 1
+                    ]
+                , onInput (CreditCard << SetCcNumber)
+                , name "ccNumber"
+                , value (model.creditCard.ccNumber |> Card.cardNumberDisplay)
+                , placeholder "n° carte"
+                ]
+            , inputText
+                [ style
+                    [ baseInput
+                    , Elegant.width (Percent 50)
+                    , borderRightColor gray
+                    , borderRightSolid
+                    , borderRightWidth 1
+                    ]
+                , onInput (CreditCard << SetExpiration)
+                , name "expiration"
+                , value model.creditCard.expiration
+                , placeholder "expiration"
+                ]
+            , inputText
+                [ style
+                    [ baseInput
+                    , Elegant.width (Percent 50)
+                    ]
+                , onInput (CreditCard << SetCvc)
+                , name "cvc"
+                , value model.creditCard.cvc
+                , placeholder "cvc"
+                ]
             ]
         , button
             [ style
@@ -208,7 +328,7 @@ subscriptionForm model =
                 , marginBottom medium
                 ]
             , hoverStyle [ backgroundColor (Color.rgb 187 61 71) ]
-            , onClick AskForToken
+            , onClick ValidateSponsorDetails
             ]
             [ text "Sponsoriser" ]
         , p [ style [ fontSize (Px 11), textColor Color.black ] ] [ text "La résiliation se fait par simple mail à thibaut@milesrock.com" ]
@@ -287,6 +407,8 @@ stripePlanDescription stripePlan =
 
 type Msg
     = CreditCard CreditCardMsg
+    | SponsorDetails SponsorDetailsMsg
+    | ValidateSponsorDetails
     | AskForToken
     | ReceiveToken String
     | ReceiveSubscription (Result Http.Error LambdaResponse)
@@ -300,6 +422,29 @@ type CreditCardMsg
     | SetCvc String
 
 
+type SponsorDetailsMsg
+    = SetCompanyName String
+    | SetFirstName String
+    | SetLastName String
+
+
+performMsg : msg -> Cmd msg
+performMsg msg =
+    Task.succeed msg
+        |> Task.perform identity
+
+
+validSponsorDetails : SponsorDetailsModel -> Bool
+validSponsorDetails model =
+    let
+        validate str =
+            Regex.contains (Regex.regex "^[A-Za-z0-9 _-]{2,}$") str
+    in
+        validate model.companyName
+            && validate model.firstName
+            && validate model.lastName
+
+
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
@@ -311,6 +456,23 @@ update msg model =
               }
             , Cmd.none
             )
+
+        SponsorDetails sponsorDetailsMsg ->
+            ( { model
+                | alertMessage = NoAlert
+                , sponsorDetails =
+                    updateSponsorDetails sponsorDetailsMsg model.sponsorDetails
+              }
+            , Cmd.none
+            )
+
+        ValidateSponsorDetails ->
+            case (validSponsorDetails model.sponsorDetails) of
+                True ->
+                    ( model, performMsg AskForToken )
+
+                False ->
+                    { model | alertMessage = WrongSponsorDetails } ! []
 
         AskForToken ->
             ( model
@@ -359,6 +521,19 @@ updateCreditCard msg model =
 
         SetCvc cvc ->
             { model | cvc = cvc |> Card.cvcFormat }
+
+
+updateSponsorDetails : SponsorDetailsMsg -> SponsorDetailsModel -> SponsorDetailsModel
+updateSponsorDetails msg model =
+    case msg of
+        SetCompanyName input ->
+            { model | companyName = input }
+
+        SetFirstName input ->
+            { model | firstName = input }
+
+        SetLastName input ->
+            { model | lastName = input }
 
 
 

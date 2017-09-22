@@ -3,17 +3,18 @@
 # Table name: talks
 #
 #  id                   :integer          not null, primary key
-#  title                :string(255)
-#  speaker_name         :string(255)
-#  speaker_email        :string(255)
-#  level                :string(255)
-#  duration             :string(255)
+#  title                :string
+#  speaker_name         :string
+#  speaker_email        :string
+#  level                :string
+#  duration             :string
 #  created_at           :datetime
 #  updated_at           :datetime
 #  happened_at          :date
-#  slides               :string(255)
-#  video_url            :string(255)
-#  speaker_twitter      :string(255)
+#  slides               :string
+#  video_url            :string
+#  speaker_twitter      :string
+#  preferred_month_talk :string
 #  time_position        :datetime
 #
 # Indexes
