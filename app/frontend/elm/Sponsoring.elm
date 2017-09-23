@@ -291,7 +291,7 @@ whyView =
         [ h3 [ style [ paddingBottom (Px 24) ] ] [ text "Sponsoriser, c'est développer la communauté !" ]
         , p [ style [ textLeft, paddingBottom (Px 24) ] ] [ text "Ça nous permet d'organiser des évènements de qualité, où la nourriture reste gratuite pour les participants." ]
         , p [ style [ textLeft, paddingBottom (Px 24) ] ] [ text "Être partenaire de ParisRB vous apporte une crédibilité auprès des développeurs ruby. Vous devenez une société connue des développeurs, et participez activement au développement de ruby en France." ]
-        , p [ style [ textLeft, paddingBottom (Px 24) ] ] [ text "Votre logo sera visible sur le meetup, ainsi que sur le site, ainsi que sur les vidéos qui sortent de l'évènement mensuel, et Vous avez aussi droit à 5 minutes de présentation de votre société par mois, ce qui est clé si vous voulez recruter." ]
+        , p [ style [ textLeft, paddingBottom (Px 24) ] ] [ text "Votre logo est visible sur le meetup, ainsi que sur le site, ainsi que sur les vidéos qui sortent de l'évènement mensuel, et vous avez aussi droit à 5 minutes de présentation de votre société par mois, ce qui est clé si vous voulez recruter." ]
         , p [ style [ textLeft, fontSize (Px 12) ] ] [ text "Hexagonal consulting, Kosmogo et Appaloosa sont aujourd'hui partenaires, et de nombreuses sociétés telles que Keycoopt, Jobteaser, Hired, Scalingo, Mipise, Cosmic, Edgar People, Vodeclic, Aircall, Shopify, Doctolib, Drivy, Dimelo, Sociabliz, Follow analytics, Figaro classified, Google nous ont aussi supporté par le passé. Et nous serons toujours reconnaissant de tous ces partenaires qui nous ont permis de faire de ParisRB ce que c'est devenu." ]
         ]
 
@@ -307,22 +307,19 @@ planSelectionButtons stripePlan currentDate why =
             [ stripePlanDescription stripePlan
             ]
         , div []
-            (if stripePlan == Mensual then
-                case currentDate of
-                    Nothing ->
-                        []
+            (case currentDate of
+                Nothing ->
+                    []
 
-                    Just date ->
-                        [ a [ style [ cursorPointer ], onClick ToggleWhy ] [ text ("Pourquoi sponsoriser ParisRB ?") ]
-                        , (if why then
-                            whyView
-                           else
-                            text ""
-                          )
-                        , p [] [ text ("Votre premier meetup sponsorisé aura lieu le mardi " ++ (frenchFormat (nextMeetup date))) ]
-                        ]
-             else
-                []
+                Just date ->
+                    [ a [ style [ cursorPointer ], onClick ToggleWhy ] [ text ("Pourquoi sponsoriser ParisRB ?") ]
+                    , (if why then
+                        whyView
+                       else
+                        text ""
+                      )
+                    , p [] [ text ("Votre premier meetup sponsorisé aura lieu le mardi " ++ (frenchFormat (nextMeetup date))) ]
+                    ]
             )
         ]
 
