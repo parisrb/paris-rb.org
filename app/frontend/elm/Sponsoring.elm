@@ -8,7 +8,7 @@ import Json.Decode as Decode
 import Json.Encode as Encode
 import Task
 import Regex
-import Card
+import CreditCard as CC
 import Function exposing (..)
 import Task
 import Date
@@ -43,7 +43,7 @@ initialModel =
     , alertMessage = NoAlert
     , token = Nothing
     , sponsorDetails = initialSponsorDetails
-    , creditCard = initialCreditCard
+    , creditCard = CC.initCreditCardDefault
     , subscriptionResult = Nothing
     , maybeDate = Nothing
     , why = False
@@ -58,22 +58,13 @@ initialSponsorDetails =
     }
 
 
-initialCreditCard : CreditCard
-initialCreditCard =
-    { email = ""
-    , ccNumber = ""
-    , expiration = ""
-    , cvc = ""
-    }
-
-
 type alias Model =
     { currentPage : PageType
     , stripePlan : StripePlan
     , alertMessage : AlertMessage
     , token : Maybe String
     , sponsorDetails : SponsorDetails
-    , creditCard : CreditCard
+    , creditCard : CC.CreditCard
     , subscriptionResult : Maybe String
     , maybeDate : Maybe Date.Date
     , why : Bool
@@ -90,14 +81,6 @@ type alias SponsorDetails =
     { companyName : String
     , firstName : String
     , lastName : String
-    }
-
-
-type alias CreditCard =
-    { email : String
-    , ccNumber : String
-    , expiration : String
-    , cvc : String
     }
 
 
@@ -312,32 +295,32 @@ subscriptionForm model =
         , formFieldContainer
             [ fieldInput
                 "email"
-                model.creditCard.email
+                (CC.displayField model.creditCard.holderEmail)
                 "Email"
-                (CreditCardWrapper << SetEmail)
+                (UpdateCreditCard << CC.SetValue model.creditCard.holderEmail)
                 100
                 NoBorder
             ]
         , formFieldContainer
             [ fieldInput
                 "ccNumber"
-                (model.creditCard.ccNumber |> Card.cardNumberDisplay)
+                (CC.displayField model.creditCard.number)
                 "N° carte"
-                (CreditCardWrapper << SetCcNumber)
+                (UpdateCreditCard << CC.SetValue model.creditCard.number)
                 100
                 Bottom
             , fieldInput
                 "expiration"
-                model.creditCard.expiration
+                (CC.displayField model.creditCard.expiration)
                 "Expiration"
-                (CreditCardWrapper << SetExpiration)
+                (UpdateCreditCard << CC.SetValue model.creditCard.expiration)
                 50
                 Right
             , fieldInput
                 "cvc"
-                model.creditCard.cvc
+                (CC.displayField model.creditCard.cvc)
                 "Cvc"
-                (CreditCardWrapper << SetCvc)
+                (UpdateCreditCard << CC.SetValue model.creditCard.cvc)
                 50
                 NoBorder
             ]
@@ -485,7 +468,7 @@ stripePlanDescription stripePlan =
 
 
 type Msg
-    = CreditCardWrapper CreditCardMsg
+    = UpdateCreditCard CC.Msg
     | SponsorDetailsWrapper SponsorDetailsMsg
     | ValidateSponsorDetails
     | AskForToken
@@ -494,13 +477,6 @@ type Msg
     | Select StripePlan
     | SetDate Date.Date
     | ToggleWhy
-
-
-type CreditCardMsg
-    = SetEmail String
-    | SetCcNumber String
-    | SetExpiration String
-    | SetCvc String
 
 
 type SponsorDetailsMsg
@@ -529,14 +505,12 @@ validSponsorDetails model =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        CreditCardWrapper creditCardMsg ->
-            ( { model
+        UpdateCreditCard creditCardMsg ->
+            { model
                 | alertMessage = NoAlert
-                , creditCard =
-                    updateCreditCard creditCardMsg model.creditCard
-              }
-            , Cmd.none
-            )
+                , creditCard = CC.update creditCardMsg model.creditCard
+            }
+                ! []
 
         SponsorDetailsWrapper sponsorDetailsMsg ->
             ( { model
@@ -557,7 +531,7 @@ update msg model =
 
         AskForToken ->
             ( model
-            , askForToken model.creditCard
+            , askForToken (creditCardToStripe model.creditCard)
             )
 
         ReceiveToken token ->
@@ -594,22 +568,6 @@ update msg model =
             ( { model | why = not model.why }, Cmd.none )
 
 
-updateCreditCard : CreditCardMsg -> CreditCard -> CreditCard
-updateCreditCard msg model =
-    case msg of
-        SetEmail email ->
-            { model | email = email }
-
-        SetCcNumber ccNumber ->
-            { model | ccNumber = ccNumber |> Card.cardNumberFormat }
-
-        SetExpiration expiration ->
-            { model | expiration = expiration |> Card.dateFormat }
-
-        SetCvc cvc ->
-            { model | cvc = cvc |> Card.cvcFormat }
-
-
 updateSponsorDetails : SponsorDetailsMsg -> SponsorDetails -> SponsorDetails
 updateSponsorDetails msg model =
     case msg of
@@ -627,7 +585,22 @@ updateSponsorDetails msg model =
 -- PORTS
 
 
-port askForToken : CreditCard -> Cmd msg
+type alias StripeCreditCard =
+    { number : String
+    , cvc : String
+    , exp : String
+    }
+
+
+creditCardToStripe : CC.CreditCard -> StripeCreditCard
+creditCardToStripe creditCard =
+    { number = CC.fieldValue creditCard.number
+    , exp = CC.fieldValue creditCard.expiration
+    , cvc = CC.fieldValue creditCard.cvc
+    }
+
+
+port askForToken : StripeCreditCard -> Cmd msg
 
 
 port receiveStripeToken : (String -> msg) -> Sub msg
@@ -671,7 +644,7 @@ postSubscription model =
 
         body =
             [ ( "stripePlanId", Encode.string stripePlanId )
-            , ( "stripeEmail", Encode.string model.creditCard.email )
+            , ( "stripeEmail", Encode.string (CC.fieldValue model.creditCard.holderEmail) )
             , ( "stripeToken", Encode.string (Maybe.withDefault "" model.token) )
             ]
                 |> Encode.object
