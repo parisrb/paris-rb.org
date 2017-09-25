@@ -10,6 +10,11 @@ import Task
 import Regex
 import Card
 import Function exposing (..)
+import Task
+import Date
+import Date.Extra
+import Date.Format
+import Date.Local
 
 
 main : Program Never Model Msg
@@ -28,7 +33,7 @@ main =
 
 init : ( Model, Cmd Msg )
 init =
-    ( initialModel, Cmd.none )
+    ( initialModel, Task.perform SetDate Date.now )
 
 
 initialModel : Model
@@ -38,12 +43,14 @@ initialModel =
     , alertMessage = NoAlert
     , token = Nothing
     , sponsorDetails = initialSponsorDetails
-    , creditCard = initialCreditCardModel
+    , creditCard = initialCreditCard
     , subscriptionResult = Nothing
+    , maybeDate = Nothing
+    , why = False
     }
 
 
-initialSponsorDetails : SponsorDetailsModel
+initialSponsorDetails : SponsorDetails
 initialSponsorDetails =
     { companyName = ""
     , firstName = ""
@@ -51,8 +58,8 @@ initialSponsorDetails =
     }
 
 
-initialCreditCardModel : CreditCardModel
-initialCreditCardModel =
+initialCreditCard : CreditCard
+initialCreditCard =
     { email = ""
     , ccNumber = ""
     , expiration = ""
@@ -63,28 +70,30 @@ initialCreditCardModel =
 type alias Model =
     { currentPage : PageType
     , stripePlan : StripePlan
-    , alertMessage : MessageAlertType
+    , alertMessage : AlertMessage
     , token : Maybe String
-    , sponsorDetails : SponsorDetailsModel
-    , creditCard : CreditCardModel
+    , sponsorDetails : SponsorDetails
+    , creditCard : CreditCard
     , subscriptionResult : Maybe String
+    , maybeDate : Maybe Date.Date
+    , why : Bool
     }
 
 
-type MessageAlertType
+type AlertMessage
     = NoAlert
     | WrongCardDetails
     | WrongSponsorDetails
 
 
-type alias SponsorDetailsModel =
+type alias SponsorDetails =
     { companyName : String
     , firstName : String
     , lastName : String
     }
 
 
-type alias CreditCardModel =
+type alias CreditCard =
     { email : String
     , ccNumber : String
     , expiration : String
@@ -128,13 +137,13 @@ stripeAnswer result =
 stripeForm : Model -> Node Interactive NotPhrasing Spanning NotListElement Msg
 stripeForm model =
     div []
-        [ planSelectionButtons model.stripePlan
+        [ planSelectionButtons model.stripePlan model.maybeDate model.why
         , subscriptionForm model
         ]
 
 
 alertContainer :
-    MessageAlertType
+    AlertMessage
     -> List (Node interactiveContent phrasingContent Spanning NotListElement msg)
     -> Node interactiveContent phrasingContent Spanning NotListElement msg
 alertContainer msg =
@@ -157,7 +166,7 @@ alertContainer msg =
         div [ alertMessageStyle ]
 
 
-alertMessage : MessageAlertType -> String
+alertMessage : AlertMessage -> String
 alertMessage msg =
     case msg of
         NoAlert ->
@@ -235,7 +244,7 @@ subscriptionForm model =
                     [ baseInput
                     , fullWidth
                     ]
-                , onInput (SponsorDetails << SetCompanyName)
+                , onInput (SponsorDetailsWrapper << SetCompanyName)
                 , name "companyName"
                 , value model.sponsorDetails.companyName
                 , placeholder "Société / Raison sociale"
@@ -250,7 +259,7 @@ subscriptionForm model =
                     , borderRightSolid
                     , borderRightWidth 1
                     ]
-                , onInput (SponsorDetails << SetFirstName)
+                , onInput (SponsorDetailsWrapper << SetFirstName)
                 , name "firstName"
                 , value model.sponsorDetails.firstName
                 , placeholder "Prénom"
@@ -260,7 +269,7 @@ subscriptionForm model =
                     [ baseInput
                     , Elegant.width (Percent 50)
                     ]
-                , onInput (SponsorDetails << SetLastName)
+                , onInput (SponsorDetailsWrapper << SetLastName)
                 , name "lastName"
                 , value model.sponsorDetails.lastName
                 , placeholder "NOM"
@@ -272,10 +281,10 @@ subscriptionForm model =
                     [ baseInput
                     , fullWidth
                     ]
-                , onInput (CreditCard << SetName)
+                , onInput (CreditCardWrapper << SetName)
                 , name "email"
                 , value model.creditCard.email
-                , placeholder "email"
+                , placeholder "Email"
                 ]
             ]
         , formFieldContainer
@@ -287,10 +296,10 @@ subscriptionForm model =
                     , borderBottomSolid
                     , borderBottomWidth 1
                     ]
-                , onInput (CreditCard << SetCcNumber)
+                , onInput (CreditCardWrapper << SetCcNumber)
                 , name "ccNumber"
-                , value (model.creditCard.ccNumber |> Card.cardNumberDisplay)
-                , placeholder "n° carte"
+                , value (model.creditCard.ccNumber |> Card.cardNumberFormat)
+                , placeholder "N° carte"
                 ]
             , inputText
                 [ style
@@ -300,20 +309,20 @@ subscriptionForm model =
                     , borderRightSolid
                     , borderRightWidth 1
                     ]
-                , onInput (CreditCard << SetExpiration)
+                , onInput (CreditCardWrapper << SetExpiration)
                 , name "expiration"
                 , value model.creditCard.expiration
-                , placeholder "expiration"
+                , placeholder "Expiration"
                 ]
             , inputText
                 [ style
                     [ baseInput
                     , Elegant.width (Percent 50)
                     ]
-                , onInput (CreditCard << SetCvc)
+                , onInput (CreditCardWrapper << SetCvc)
                 , name "cvc"
                 , value model.creditCard.cvc
-                , placeholder "cvc"
+                , placeholder "Cvc"
                 ]
             ]
         , button
@@ -335,17 +344,71 @@ subscriptionForm model =
         ]
 
 
+nextMeetup : Date.Date -> Date.Date
+nextMeetup date =
+    let
+        currentMonthMeetup =
+            date
+                |> Date.Extra.floor Date.Extra.Month
+                |> Date.Extra.ceiling Date.Extra.Tuesday
+
+        nextMonthMeetup =
+            date
+                |> Date.Extra.ceiling Date.Extra.Month
+                |> Date.Extra.ceiling Date.Extra.Tuesday
+    in
+        if date |> Date.Extra.isBetween currentMonthMeetup nextMonthMeetup then
+            nextMonthMeetup
+        else
+            currentMonthMeetup
+
+
+frenchFormat : Date.Date -> String
+frenchFormat =
+    Date.Format.localFormat Date.Local.french "%e %B" >> String.toLower
+
+
+whyView : Node interactiveContent NotPhrasing Spanning NotListElement msg
+whyView =
+    div [ style [ backgroundColor Color.white, textColor Color.black, padding (Px 24), margin (Px 24), maxWidth (Px 600), marginAuto ] ]
+        [ h3 [ style [ paddingBottom (Px 24) ] ] [ text "Sponsoriser, c'est développer la communauté !" ]
+        , p [ style [ textLeft, paddingBottom (Px 24) ] ] [ text "Ça nous permet d'organiser des évènements de qualité, où la nourriture reste gratuite pour les participants." ]
+        , p [ style [ textLeft, paddingBottom (Px 24) ] ] [ text "Être partenaire de ParisRB vous apporte une crédibilité auprès des développeurs ruby. Vous devenez une société connue des développeurs, et participez activement au développement de ruby en France." ]
+        , p [ style [ textLeft, paddingBottom (Px 24) ] ] [ text "Votre logo est visible sur le meetup, ainsi que sur le site, ainsi que sur les vidéos qui sortent de l'évènement mensuel, et vous avez aussi droit à 5 minutes de présentation de votre société par mois, ce qui est clé si vous voulez recruter." ]
+        , p [ style [ textLeft, fontSize (Px 12) ] ] [ text "Hexagonal consulting, Kosmogo et Appaloosa sont aujourd'hui partenaires, et de nombreuses sociétés telles que Keycoopt, Jobteaser, Hired, Scalingo, Mipise, Cosmic, Edgar People, Vodeclic, Aircall, Shopify, Doctolib, Drivy, Dimelo, Sociabliz, Follow analytics, Figaro classified, Google nous ont aussi supporté par le passé. Et nous serons toujours reconnaissant de tous ces partenaires qui nous ont permis de faire de ParisRB ce que c'est devenu." ]
+        ]
+
+
 planSelectionButtons :
     StripePlan
-    -> Node interactiveContent NotPhrasing Spanning NotListElement Msg
-planSelectionButtons stripePlan =
+    -> Maybe Date.Date
+    -> Bool
+    -> Node Interactive NotPhrasing Spanning NotListElement Msg
+planSelectionButtons stripePlan currentDate why =
     div []
         [ div [ style [ displayFlex, justifyContentCenter ] ]
             [ selectionButton Mensual "Mensuel" (Mensual == stripePlan)
             , selectionButton Semestrial "Semestriel" (Semestrial == stripePlan)
             , selectionButton Annual "Annuel" (Annual == stripePlan)
             ]
-        , p [ style [ h1S, marginVertical medium ] ] [ stripePlanDescription stripePlan ]
+        , p [ style [ h1S, marginVertical medium ] ]
+            [ stripePlanDescription stripePlan
+            ]
+        , div []
+            (case currentDate of
+                Nothing ->
+                    []
+
+                Just date ->
+                    [ a [ style [ cursorPointer ], onClick ToggleWhy ] [ text ("Pourquoi sponsoriser ParisRB ?") ]
+                    , (if why then
+                        whyView
+                       else
+                        text ""
+                      )
+                    , p [] [ text ("Votre premier meetup sponsorisé aura lieu le mardi " ++ (frenchFormat (nextMeetup date))) ]
+                    ]
+            )
         ]
 
 
@@ -406,13 +469,15 @@ stripePlanDescription stripePlan =
 
 
 type Msg
-    = CreditCard CreditCardMsg
-    | SponsorDetails SponsorDetailsMsg
+    = CreditCardWrapper CreditCardMsg
+    | SponsorDetailsWrapper SponsorDetailsMsg
     | ValidateSponsorDetails
     | AskForToken
     | ReceiveToken String
     | ReceiveSubscription (Result Http.Error LambdaResponse)
     | Select StripePlan
+    | SetDate Date.Date
+    | ToggleWhy
 
 
 type CreditCardMsg
@@ -434,7 +499,7 @@ performMsg msg =
         |> Task.perform identity
 
 
-validSponsorDetails : SponsorDetailsModel -> Bool
+validSponsorDetails : SponsorDetails -> Bool
 validSponsorDetails model =
     let
         validate str =
@@ -448,7 +513,7 @@ validSponsorDetails model =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        CreditCard creditCardMsg ->
+        CreditCardWrapper creditCardMsg ->
             ( { model
                 | alertMessage = NoAlert
                 , creditCard =
@@ -457,7 +522,7 @@ update msg model =
             , Cmd.none
             )
 
-        SponsorDetails sponsorDetailsMsg ->
+        SponsorDetailsWrapper sponsorDetailsMsg ->
             ( { model
                 | alertMessage = NoAlert
                 , sponsorDetails =
@@ -506,8 +571,14 @@ update msg model =
         Select plan ->
             ( { model | stripePlan = plan }, Cmd.none )
 
+        SetDate date ->
+            ( { model | maybeDate = Just date }, Cmd.none )
 
-updateCreditCard : CreditCardMsg -> CreditCardModel -> CreditCardModel
+        ToggleWhy ->
+            ( { model | why = not model.why }, Cmd.none )
+
+
+updateCreditCard : CreditCardMsg -> CreditCard -> CreditCard
 updateCreditCard msg model =
     case msg of
         SetName email ->
@@ -523,7 +594,7 @@ updateCreditCard msg model =
             { model | cvc = cvc |> Card.cvcFormat }
 
 
-updateSponsorDetails : SponsorDetailsMsg -> SponsorDetailsModel -> SponsorDetailsModel
+updateSponsorDetails : SponsorDetailsMsg -> SponsorDetails -> SponsorDetails
 updateSponsorDetails msg model =
     case msg of
         SetCompanyName input ->
@@ -540,7 +611,7 @@ updateSponsorDetails msg model =
 -- PORTS
 
 
-port askForToken : CreditCardModel -> Cmd msg
+port askForToken : CreditCard -> Cmd msg
 
 
 port receiveStripeToken : (String -> msg) -> Sub msg
