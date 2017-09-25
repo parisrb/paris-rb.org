@@ -212,6 +212,52 @@ baseInput =
         |> compose
 
 
+type BorderSide
+    = NoBorder
+    | Right
+    | Bottom
+
+
+fieldInput :
+    String
+    -> String
+    -> String
+    -> (String -> msg)
+    -> Float
+    -> BorderSide
+    -> Node Interactive phrasingContent spanningContent listContent msg
+fieldInput nameContent valueContent placeholderContent onInputContent widthPercent borderSide =
+    let
+        border =
+            case borderSide of
+                NoBorder ->
+                    []
+
+                Right ->
+                    [ borderRightColor gray
+                    , borderRightSolid
+                    , borderRightWidth 1
+                    ]
+
+                Bottom ->
+                    [ borderBottomColor gray
+                    , borderBottomSolid
+                    , borderBottomWidth 1
+                    ]
+    in
+        inputText
+            [ style
+                [ baseInput
+                , Elegant.width (Percent widthPercent)
+                , border |> compose
+                ]
+            , name nameContent
+            , value valueContent
+            , placeholder placeholderContent
+            , onInput onInputContent
+            ]
+
+
 subscriptionForm : Model -> Node Interactive NotPhrasing Spanning NotListElement Msg
 subscriptionForm model =
     div
@@ -239,91 +285,61 @@ subscriptionForm model =
                 [ text (alertMessage model.alertMessage) ]
             ]
         , formFieldContainer
-            [ inputText
-                [ style
-                    [ baseInput
-                    , fullWidth
-                    ]
-                , onInput (SponsorDetailsWrapper << SetCompanyName)
-                , name "companyName"
-                , value model.sponsorDetails.companyName
-                , placeholder "Société / Raison sociale"
-                ]
+            [ fieldInput
+                "companyName"
+                model.sponsorDetails.companyName
+                "Société / Raison sociale"
+                (SponsorDetailsWrapper << SetCompanyName)
+                100
+                NoBorder
             ]
         , formFieldContainer
-            [ inputText
-                [ style
-                    [ baseInput
-                    , Elegant.width (Percent 50)
-                    , borderRightColor gray
-                    , borderRightSolid
-                    , borderRightWidth 1
-                    ]
-                , onInput (SponsorDetailsWrapper << SetFirstName)
-                , name "firstName"
-                , value model.sponsorDetails.firstName
-                , placeholder "Prénom"
-                ]
-            , inputText
-                [ style
-                    [ baseInput
-                    , Elegant.width (Percent 50)
-                    ]
-                , onInput (SponsorDetailsWrapper << SetLastName)
-                , name "lastName"
-                , value model.sponsorDetails.lastName
-                , placeholder "NOM"
-                ]
+            [ fieldInput
+                "firstName"
+                model.sponsorDetails.firstName
+                "Prénom"
+                (SponsorDetailsWrapper << SetFirstName)
+                50
+                Right
+            , fieldInput
+                "lastName"
+                model.sponsorDetails.lastName
+                "NOM"
+                (SponsorDetailsWrapper << SetLastName)
+                50
+                NoBorder
             ]
         , formFieldContainer
-            [ inputText
-                [ style
-                    [ baseInput
-                    , fullWidth
-                    ]
-                , onInput (CreditCardWrapper << SetName)
-                , name "email"
-                , value model.creditCard.email
-                , placeholder "Email"
-                ]
+            [ fieldInput
+                "email"
+                model.creditCard.email
+                "Email"
+                (CreditCardWrapper << SetEmail)
+                100
+                NoBorder
             ]
         , formFieldContainer
-            [ inputText
-                [ style
-                    [ baseInput
-                    , fullWidth
-                    , borderBottomColor gray
-                    , borderBottomSolid
-                    , borderBottomWidth 1
-                    ]
-                , onInput (CreditCardWrapper << SetCcNumber)
-                , name "ccNumber"
-                , value (model.creditCard.ccNumber |> Card.cardNumberFormat)
-                , placeholder "N° carte"
-                ]
-            , inputText
-                [ style
-                    [ baseInput
-                    , Elegant.width (Percent 50)
-                    , borderRightColor gray
-                    , borderRightSolid
-                    , borderRightWidth 1
-                    ]
-                , onInput (CreditCardWrapper << SetExpiration)
-                , name "expiration"
-                , value model.creditCard.expiration
-                , placeholder "Expiration"
-                ]
-            , inputText
-                [ style
-                    [ baseInput
-                    , Elegant.width (Percent 50)
-                    ]
-                , onInput (CreditCardWrapper << SetCvc)
-                , name "cvc"
-                , value model.creditCard.cvc
-                , placeholder "Cvc"
-                ]
+            [ fieldInput
+                "ccNumber"
+                (model.creditCard.ccNumber |> Card.cardNumberDisplay)
+                "N° carte"
+                (CreditCardWrapper << SetCcNumber)
+                100
+                Bottom
+            , fieldInput
+                "expiration"
+                model.creditCard.expiration
+                "Expiration"
+                (CreditCardWrapper << SetExpiration)
+                50
+                Right
+            , fieldInput
+                "cvc"
+                model.creditCard.cvc
+                "Cvc"
+                (CreditCardWrapper << SetCvc)
+                50
+                NoBorder
             ]
         , button
             [ style
@@ -481,7 +497,7 @@ type Msg
 
 
 type CreditCardMsg
-    = SetName String
+    = SetEmail String
     | SetCcNumber String
     | SetExpiration String
     | SetCvc String
@@ -581,7 +597,7 @@ update msg model =
 updateCreditCard : CreditCardMsg -> CreditCard -> CreditCard
 updateCreditCard msg model =
     case msg of
-        SetName email ->
+        SetEmail email ->
             { model | email = email }
 
         SetCcNumber ccNumber ->
