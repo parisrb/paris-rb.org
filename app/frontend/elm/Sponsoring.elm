@@ -444,10 +444,10 @@ stripePlanDescription stripePlan =
             text "450 € HT / mois"
 
         Semestrial ->
-            text "3060 € (soit 425€ HT / mois)"
+            text "3060 € HT (soit 425€ HT / mois)"
 
         Annual ->
-            text "5832 € (soit 405€ HT / mois)"
+            text "5832 € HT (soit 405€ HT / mois)"
 
 
 
