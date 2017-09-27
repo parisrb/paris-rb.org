@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   Stripe.setPublishableKey(process.env.STRIPE_PUBLISHABLE_KEY)
   app.ports.askForToken.subscribe((creditCardModel) => {
     Stripe.card.createToken({
-      number: creditCardModel.ccNumber,
+      number: creditCardModel.number,
       cvc: creditCardModel.cvc,
-      exp: creditCardModel.expiration
+      exp: creditCardModel.exp
     }, stripeResponseHandler)
   })
 
