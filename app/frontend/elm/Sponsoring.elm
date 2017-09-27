@@ -528,7 +528,7 @@ update msg model =
 
         AskForToken ->
             ( model
-            , askForToken (creditCardToStripe model.creditCard)
+            , askForToken (modelToStripe model)
             )
 
         ReceiveToken token ->
@@ -582,22 +582,22 @@ updateSponsorDetails msg model =
 -- PORTS
 
 
-type alias StripeCreditCard =
+type alias StripeCreditCardModel =
     { number : String
+    , expiration : String
     , cvc : String
-    , exp : String
     }
 
 
-creditCardToStripe : CC.CreditCard -> StripeCreditCard
-creditCardToStripe creditCard =
+modelToStripe : Model -> StripeCreditCardModel
+modelToStripe { creditCard, sponsorDetails } =
     { number = CC.fieldValue creditCard.number
-    , exp = CC.fieldValue creditCard.expiration
+    , expiration = CC.fieldValue creditCard.expiration
     , cvc = CC.fieldValue creditCard.cvc
     }
 
 
-port askForToken : StripeCreditCard -> Cmd msg
+port askForToken : StripeCreditCardModel -> Cmd msg
 
 
 port receiveStripeToken : (String -> msg) -> Sub msg
@@ -634,7 +634,7 @@ postSubscription model =
                     "mensual-parisrb"
 
                 Semestrial ->
-                    "semestrial ParisRB"
+                    "semestrial-parisrb"
 
                 Annual ->
                     "annual-parisrb"
@@ -643,6 +643,9 @@ postSubscription model =
             [ ( "stripePlanId", Encode.string stripePlanId )
             , ( "stripeEmail", Encode.string (CC.fieldValue model.creditCard.holderEmail) )
             , ( "stripeToken", Encode.string (Maybe.withDefault "" model.token) )
+            , ( "sponsorCompanyName", Encode.string model.sponsorDetails.companyName )
+            , ( "sponsorFirstName", Encode.string model.sponsorDetails.firstName )
+            , ( "sponsorLastName", Encode.string model.sponsorDetails.lastName )
             ]
                 |> Encode.object
                 |> Http.jsonBody

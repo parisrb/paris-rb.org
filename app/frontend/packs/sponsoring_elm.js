@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
   var app = Elm.Sponsoring.embed(document.getElementById('main'));
 
   Stripe.setPublishableKey(process.env.STRIPE_PUBLISHABLE_KEY)
-  app.ports.askForToken.subscribe((creditCardModel) => {
+  app.ports.askForToken.subscribe((stripeCreditCardModel) => {
     Stripe.card.createToken({
-      number: creditCardModel.number,
-      cvc: creditCardModel.cvc,
-      exp: creditCardModel.exp
+      number: stripeCreditCardModel.number,
+      cvc: stripeCreditCardModel.cvc,
+      exp: stripeCreditCardModel.expiration
     }, stripeResponseHandler)
   })
 
