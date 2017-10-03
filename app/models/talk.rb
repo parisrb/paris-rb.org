@@ -54,7 +54,7 @@ class Talk < ActiveRecord::Base
     presence: true
 
   def self.months_iterator(range)
-    range.map { |m| Date::MONTHNAMES[m].downcase }.inject({}) { |hash, month|
+    range.map { |m| Date::MONTHNAMES[((m - 1) % 12) + 1].downcase }.inject({}) { |hash, month|
       path_to_months = 'activerecord.attributes.talk.proposed_months'
       hash[month] = I18n.translate("#{path_to_months}.#{month}")
       hash
