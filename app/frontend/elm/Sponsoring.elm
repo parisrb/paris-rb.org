@@ -125,16 +125,10 @@ stripeForm model =
         ]
 
 
-alertContainer :
-    AlertMessage
-    -> List (Node interactiveContent phrasingContent Spanning NotListElement msg)
-    -> Node interactiveContent phrasingContent Spanning NotListElement msg
-alertContainer msg content =
-    case msg of
-        NoAlert ->
-            text ""
-
-        _ ->
+alertContainer : AlertMessage -> Node interactiveContent phrasingContent Spanning NotListElement msg
+alertContainer msg =
+    let
+        container val =
             div
                 [ style
                     [ borderWidth 1
@@ -143,22 +137,23 @@ alertContainer msg content =
                     , borderRadius 4
                     , backgroundColor (Color.rgb 255 220 224)
                     , formFieldFormat (Color.rgba 27 31 35 0.15)
+                    , textColor (Color.rgb 60 50 40)
+                    , padding medium
                     ]
                 ]
-                content
+                [ text val ]
+    in
+        case msg of
+            NoAlert ->
+                text ""
 
+            WrongCardDetails ->
+                container
+                    "Attention, mauvaises données de carte bancaire"
 
-alertMessage : AlertMessage -> String
-alertMessage msg =
-    case msg of
-        NoAlert ->
-            ""
-
-        WrongCardDetails ->
-            "Attention, mauvaises données de carte bancaire"
-
-        WrongSponsorDetails ->
-            "Attention, mauvaises informations de société"
+            WrongSponsorDetails ->
+                container
+                    "Attention, mauvaises informations de société"
 
 
 gray : Color.Color
@@ -257,14 +252,6 @@ subscriptionForm model =
             ]
         ]
         [ alertContainer model.alertMessage
-            [ p
-                [ style
-                    [ baseInput
-                    , textColor (Color.rgb 60 50 40)
-                    ]
-                ]
-                [ text "Attention, un ou plusieurs erreurs dans le formulaire." ]
-            ]
         , formFieldContainer
             [ fieldInput
                 "email"
@@ -336,7 +323,10 @@ subscriptionForm model =
             , onClick ValidateSponsorDetails
             ]
             [ text "Sponsoriser" ]
-        , p [ style [ fontSize (Px 11), textColor Color.black ] ] [ text "La résiliation se fait par simple mail à thibaut@milesrock.com" ]
+        , p [ style [ fontSize (Px 11), textColor Color.black ] ]
+            [ text "La résiliation se fait par simple mail à "
+            , a [ style [ textColor Color.black ], href "mailto:thibaut@milesrock.com" ] [ text "thibaut@milesrock.com" ]
+            ]
         ]
 
 
@@ -454,10 +444,10 @@ stripePlanDescription stripePlan =
             text "450 € HT / mois"
 
         Semestrial ->
-            text "3060 € (soit 425€ HT / mois)"
+            text "3060 € HT (soit 425€ HT / mois)"
 
         Annual ->
-            text "5832 € (soit 405€ HT / mois)"
+            text "5832 € HT (soit 405€ HT / mois)"
 
 
 
