@@ -75,6 +75,18 @@ body > footer p {
   }
 }
 
+.container {
+  h1, p {
+    text-align: center;
+  }
+}
+
+.elm-container {
+  h1, p {
+    text-align: unset;
+  }
+}
+
 .sponsor {
   margin-bottom: 1em;
   text-align: center;
