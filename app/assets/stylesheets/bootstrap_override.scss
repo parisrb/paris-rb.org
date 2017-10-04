@@ -19,6 +19,10 @@
   margin-top: 3em;
 }
 
+.navbar-collapse {
+  max-height: unset;
+}
+
 .pagination {
   > li {
     > a {
@@ -33,7 +37,7 @@
       color: #5D2026;
     }
   }
- 
+
   > .active {
     > a,
     > span,
