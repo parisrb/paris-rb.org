@@ -46,6 +46,7 @@ initialModel =
     , creditCard = CC.initCreditCardDefault
     , subscriptionResult = Nothing
     , maybeDate = Nothing
+    , isSubmitAuthorized = True
     , why = False
     }
 
@@ -67,6 +68,7 @@ type alias Model =
     , creditCard : CC.CreditCard
     , subscriptionResult : Maybe String
     , maybeDate : Maybe Date.Date
+    , isSubmitAuthorized : Bool
     , why : Bool
     }
 
@@ -235,6 +237,37 @@ fieldInput nameContent valueContent placeholderContent onInputContent widthPerce
             ]
 
 
+submitButton : Bool -> Node interactiveContent phrasingContent Spanning NotListElement Msg
+submitButton isSubmitAuthorized =
+    if isSubmitAuthorized then
+        div
+            [ style
+                [ backgroundColor (Color.rgb 197 66 76)
+                , baseInput
+                , textColor Color.white
+                , bold
+                , cursorPointer
+                , borderRadius 4
+                , marginVertical medium
+                ]
+            , hoverStyle [ backgroundColor (Color.rgb 187 61 71) ]
+            , onClick ValidateSponsorDetails
+            ]
+            [ text "Sponsoriser" ]
+    else
+        div
+            [ style
+                [ backgroundColor (Color.rgb 130 46 54)
+                , baseInput
+                , textColor Color.white
+                , bold
+                , borderRadius 4
+                , marginVertical medium
+                ]
+            ]
+            [ text "..." ]
+
+
 subscriptionForm : Model -> Node Interactive NotPhrasing Spanning NotListElement Msg
 subscriptionForm model =
     div
@@ -309,20 +342,7 @@ subscriptionForm model =
                 50
                 NoBorder
             ]
-        , button
-            [ style
-                [ backgroundColor (Color.rgb 197 66 76)
-                , baseInput
-                , textColor Color.white
-                , bold
-                , cursorPointer
-                , borderRadius 4
-                , marginVertical medium
-                ]
-            , hoverStyle [ backgroundColor (Color.rgb 187 61 71) ]
-            , onClick ValidateSponsorDetails
-            ]
-            [ text "Sponsoriser" ]
+        , submitButton model.isSubmitAuthorized
         , p [ style [ fontSize (Px 11), textColor Color.black ] ]
             [ text "La résiliation se fait par simple mail à "
             , a [ style [ textColor Color.black ], href "mailto:thibaut@milesrock.com" ] [ text "thibaut@milesrock.com" ]
@@ -511,7 +531,7 @@ update msg model =
         ValidateSponsorDetails ->
             case (validSponsorDetails model.sponsorDetails) of
                 True ->
-                    ( model, performMsg AskForToken )
+                    ( { model | isSubmitAuthorized = False }, performMsg AskForToken )
 
                 False ->
                     { model | alertMessage = WrongSponsorDetails } ! []
@@ -523,7 +543,11 @@ update msg model =
 
         ReceiveToken token ->
             if token == "" then
-                { model | alertMessage = WrongCardDetails } ! []
+                { model
+                    | alertMessage = WrongCardDetails
+                    , isSubmitAuthorized = True
+                }
+                    ! []
             else
                 let
                     newModel =
