@@ -347,6 +347,19 @@ subscriptionForm model =
             [ text "La résiliation se fait par simple mail à "
             , a [ style [ textColor Color.black ], href "mailto:thibaut@milesrock.com" ] [ text "thibaut@milesrock.com" ]
             ]
+        , a
+            [ style
+                [ Elegant.height (Px 30)
+                , Elegant.marginAuto
+                , Elegant.marginTop (Px 16)
+                ]
+            , href "https://stripe.com"
+            ]
+            [ img
+                "Powered by Stripe"
+                "https://stripe.com/img/about/logos/badge/solid-dark.svg"
+                []
+            ]
         ]
 
 
