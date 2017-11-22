@@ -46,7 +46,6 @@ body > footer p {
 .section-guests,
 .section-page {
   a {
-    color: #FFF;
     text-decoration: underline;
   }
 }
@@ -73,6 +72,18 @@ body > footer p {
   cite p {
     font-size: .9em;
     font-weight: normal;
+  }
+}
+
+.container {
+  h1, p {
+    text-align: center;
+  }
+}
+
+.elm-container {
+  h1, p {
+    text-align: unset;
   }
 }
 

@@ -8,6 +8,10 @@
       font-size: 1.2em;
       font-weight: bold;
     }
+
+    .navbar-highlight {
+      color: #c5424c;
+    }
   }
 }
 
@@ -17,6 +21,10 @@
 
 .navbar-toggle {
   margin-top: 3em;
+}
+
+.navbar-collapse {
+  max-height: unset;
 }
 
 .pagination {
@@ -33,7 +41,7 @@
       color: #5D2026;
     }
   }
- 
+
   > .active {
     > a,
     > span,
