@@ -477,10 +477,10 @@ stripePlanDescription stripePlan =
             text "450 € HT / mois"
 
         Semestrial ->
-            text "3060 € HT (soit 425€ HT / mois)"
+            text "2550 € HT (soit 425€ HT / mois)"
 
         Annual ->
-            text "5832 € HT (soit 405€ HT / mois)"
+            text "4860 € HT (soit 405€ HT / mois)"
 
 
 
@@ -653,7 +653,7 @@ postSubscription : Model -> Http.Request LambdaResponse
 postSubscription model =
     let
         endPoint =
-            "https://n3t7k7q6h0.execute-api.eu-west-2.amazonaws.com/dev/stripePayment"
+            "https://9096ef6c.ngrok.io/parisrb-functions/us-central1/newSponsor"
 
         stripePlanId =
             case model.stripePlan of
