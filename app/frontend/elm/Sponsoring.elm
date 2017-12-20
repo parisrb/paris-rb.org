@@ -661,10 +661,10 @@ postSubscription model =
                     "mensual-parisrb"
 
                 Semestrial ->
-                    "semestrial-parisrb"
+                    "semestrial-parisrb-v2"
 
                 Annual ->
-                    "annual-parisrb"
+                    "annual-parisrb-v2"
 
         body =
             [ ( "stripePlanId", Encode.string stripePlanId )
