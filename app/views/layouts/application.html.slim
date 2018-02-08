@@ -15,10 +15,9 @@ html lang="fr"
   body
     = render 'shared/navbar'
     .main-content
-      - if notice
-        p.notice = notice
-      - if alert
-        p.alert = alert
+      .notice
+        - if flash[:notice]
+          .container = flash[:notice]
 
       = yield
 

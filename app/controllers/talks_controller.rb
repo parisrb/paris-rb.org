@@ -10,8 +10,10 @@ class TalksController < ApplicationController
   def create
     if talk.save
       TalkMailerWorker.new.async.perform(talk.id)
+      flash[:notice] = I18n.t('talks.create.success')
       redirect_to talks_path(anchor: :talks)
     else
+      flash[:notice] = I18n.t('talks.create.error')
       render action: :index
     end
   end

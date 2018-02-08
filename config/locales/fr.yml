@@ -74,6 +74,9 @@ fr:
         create: Ok
 
   talks:
+    create:
+      error: S'il vous plaît corrigez les erreurs ci-dessous
+      success: Votre proposition de talk a été soumise
     form:
       accept_coc: Je m’engage à respecter le Code of Conduct de ParisRB
     index:
