@@ -5,7 +5,7 @@ class TalksController < ApplicationController
 
   expose(:proposed_talks) { Talk.proposed }
 
-  expose(:talk, attributes: :talk_params ) 
+  expose(:talk, attributes: :talk_params) 
 
   def create
     if talk.save
