@@ -24,6 +24,7 @@
 
 class Talk < ActiveRecord::Base
   extend Enumerize
+  attr_accessor :skip_twitter_validations
 
   enumerize :level,
     in: %i[easy intermediate expert],
@@ -45,7 +46,8 @@ class Talk < ActiveRecord::Base
 
   validates :speaker_twitter,
     format: { with: /\A@.+\z/ },
-    allow_nil: true
+    allow_nil: true,
+    unless: :skip_twitter_validations
 
   validates :speaker_name,
     presence: true

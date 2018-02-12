@@ -5,7 +5,7 @@ class TalksController < ApplicationController
 
   expose(:proposed_talks) { Talk.proposed }
 
-  expose(:talk, attributes: :talk_params)
+  expose(:talk, attributes: :talk_params ) 
 
   def create
     if talk.save
@@ -26,5 +26,6 @@ class TalksController < ApplicationController
                                     speaker_twitter
                                     preferred_month_talk
                                     title])
+                                      .merge!(skip_twitter_validations: true)
   end
 end
