@@ -46,8 +46,7 @@ class Talk < ActiveRecord::Base
 
   validates :speaker_twitter,
     format: { with: /\A@.+\z/ },
-    allow_nil: true,
-    unless: :skip_twitter_validations
+    allow_blank: true
 
   validates :speaker_name,
     presence: true

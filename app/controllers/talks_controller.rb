@@ -26,6 +26,5 @@ class TalksController < ApplicationController
                                     speaker_twitter
                                     preferred_month_talk
                                     title])
-                                      .merge!(skip_twitter_validations: true)
   end
 end
