@@ -24,7 +24,6 @@
 
 class Talk < ActiveRecord::Base
   extend Enumerize
-  attr_accessor :skip_twitter_validations
 
   enumerize :level,
     in: %i[easy intermediate expert],
