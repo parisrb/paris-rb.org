@@ -53,6 +53,13 @@ class Talk < ActiveRecord::Base
   validates :title,
     presence: true
 
+  def first_tuesday(date)
+    bom = date.beginning_of_month
+    return bom + 1.day if bom.wday == 1
+    return bom if bom.wday == 2
+    return bom + (9 - bom.wday).day  if bom.wday > 2
+  end
+
   def self.months_iterator(range)
     range.map { |m| Date::MONTHNAMES[((m - 1) % 12) + 1].downcase }.inject({}) { |hash, month|
       path_to_months = 'activerecord.attributes.talk.proposed_months'
@@ -62,7 +69,9 @@ class Talk < ActiveRecord::Base
   end
 
   def self.propose_upcoming_months
-    this_month = Date.today.month
+    today = Date.today
+    this_month = today.month
+    this_month += 1 if today > first_tuesday(today)
     months_iterator(this_month..this_month + 3)
   end
 
