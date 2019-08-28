@@ -53,7 +53,7 @@ class Talk < ActiveRecord::Base
   validates :title,
     presence: true
 
-  def first_tuesday(date)
+  def self.first_tuesday(date)
     bom = date.beginning_of_month
     return bom + 1.day if bom.wday == 1
     return bom if bom.wday == 2
