@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.2'
+ruby '2.6.3'
 
 gem 'rails', '~> 4.1'
 
@@ -30,6 +30,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'unicorn', '~> 4.7'
 gem 'activeresource'
 gem 'webpacker', '~> 3.0'
+gem 'puma'
 
 group :development do
   gem 'annotate', ">=2.6.0"
