@@ -1,0 +1,45 @@
+version: '2'
+services:
+  postgresql:
+    image: scalingo/postgresql:10.4.0-1
+    ports:
+      - 5432:5432
+    environment:
+      DB_UID: 1000
+    volumes:
+      - ./docker/postgresql-data:/var/lib/postgresql:rw
+    command: /postgresql
+  redis:
+    image: scalingo/redis:4.0.1-1
+    volumes:
+      - ./docker/redis-data:/var/lib/redis:rw
+    command: /redis
+    environment:
+      DB_PASSWORD: "pipo"
+  web:
+    build: .
+    volumes:
+      - .:/usr/src/app:rw
+      - ./docker/ssh:/root/.ssh:ro
+    environment:
+      CLOUDINARY_URL: "${CLOUDINARY_URL}"
+      DATABASE_URL: postgresql://admin:admin-secret@postgresql:5432/rubyparis_development
+      DATABASE_URL_TEST: postgresql://admin:admin-secret@postgresql:5432/rubyparis_test
+      MAIL_URL: "${MAIL_URL}"
+      RACK_ENV: "development"
+      RAILS_ENV: "development"
+      REDIS_URL: "redis://:pipo@redis:6379"
+      WEBPACKER_DEV_SERVER_HOST: 172.17.0.1
+    links:
+      - postgresql
+      - webpack
+    ports:
+      - 3000:3000
+    command: rails server -b 0.0.0.0 -p 3000
+  webpack:
+    build: .
+    ports:
+      - 3035:3035
+    volumes:
+      - ./:/usr/src/app
+    command: ./bin/webpack-dev-server
