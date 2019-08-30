@@ -15,7 +15,16 @@ module Meetup
     end
 
     def get_meetup_members
-      json = ::Net::HTTP.get(URI("http://api.meetup.com/2/groups?group_urlname=parisrb&format=json&key=#{@key}"))
+      doc = Nokogiri::HTML(open('https://www.meetup.com/parisrb/'))
+      text = doc.css('a.groupHomeHeaderInfo-memberLink span').first.text
+      count = text.split(' ').first.gsub(',', '').to_i
+      REDIS.set('meetup_members', count)
+      REDIS.expire('meetup_members', 24.hours)
+      members_count
+    end
+
+    def get_meetup_members_old
+      json = ::Net::HTTP.get(URI('http://api.meetup.com/2/groups?group_urlname=parisrb&format=json&key=#{@key}'))
       parisrb = JSON.parse(json).fetch('results').first
       REDIS.set('meetup_members', parisrb['members'])
       REDIS.expire('meetup_members', 24.hours)
