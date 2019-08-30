@@ -24,3 +24,7 @@
 /public/packs-test
 /elm-stuff
 /node_modules
+
+docker
+vendor/.bundle/
+
