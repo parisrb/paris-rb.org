@@ -12,7 +12,7 @@
 #  updated_at :datetime
 #
 
-class Sponsor < ActiveRecord::Base
+class Sponsor < ApplicationRecord
   mount_uploader :logo, PictureUploader
 
   scope :visible, ->{ where('until >= ? OR until IS NULL', Time.current) }

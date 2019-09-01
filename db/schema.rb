@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -22,12 +21,11 @@ ActiveRecord::Schema.define(version: 20170812155652) do
     t.integer  "item"
     t.string   "table"
     t.integer  "month",      limit: 2
-    t.integer  "year",       limit: 8
+    t.bigint   "year"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["item", "table", "month", "year"], name: "index_rails_admin_histories", using: :btree
   end
-
-  add_index "rails_admin_histories", ["item", "table", "month", "year"], name: "index_rails_admin_histories", using: :btree
 
   create_table "sponsors", force: :cascade do |t|
     t.string   "name"
@@ -53,9 +51,8 @@ ActiveRecord::Schema.define(version: 20170812155652) do
     t.string   "speaker_twitter"
     t.string   "preferred_month_talk"
     t.datetime "time_position"
+    t.index ["happened_at"], name: "index_talks_on_happened_at", using: :btree
   end
-
-  add_index "talks", ["happened_at"], name: "index_talks_on_happened_at", using: :btree
 
   create_table "tweets", force: :cascade do |t|
     t.string   "text"
@@ -74,10 +71,9 @@ ActiveRecord::Schema.define(version: 20170812155652) do
     t.datetime "remember_created_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "videos", force: :cascade do |t|
     t.string   "vimeo_url"
@@ -88,8 +84,7 @@ ActiveRecord::Schema.define(version: 20170812155652) do
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["slug"], name: "index_videos_on_slug", unique: true, using: :btree
   end
-
-  add_index "videos", ["slug"], name: "index_videos_on_slug", unique: true, using: :btree
 
 end

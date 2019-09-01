@@ -22,7 +22,7 @@
 #  index_talks_on_happened_at  (happened_at)
 #
 
-class Talk < ActiveRecord::Base
+class Talk < ApplicationRecord
   extend Enumerize
 
   enumerize :level,

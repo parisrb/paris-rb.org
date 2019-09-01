@@ -11,5 +11,5 @@
 #  updated_at     :datetime
 #
 
-class Tweet < ActiveRecord::Base
+class Tweet < ApplicationRecord
 end
