@@ -306,9 +306,9 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    simple_form (4.1.0)
-      actionpack (>= 5.0)
-      activemodel (>= 5.0)
+    simple_form (3.5.1)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     sitemap_generator (6.0.2)
       builder (~> 3.0)
     slim (4.0.1)
@@ -391,7 +391,7 @@ DEPENDENCIES
   record_tag_helper
   redis
   sass-rails
-  simple_form
+  simple_form (~> 3.5.1)
   sitemap_generator
   slim
   spring
@@ -402,7 +402,7 @@ DEPENDENCIES
   webpacker (~> 3.0)
 
 RUBY VERSION
-   ruby 2.6.3p62
+   ruby 2.6.4p104
 
 BUNDLED WITH
    1.17.2
