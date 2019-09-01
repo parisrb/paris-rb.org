@@ -296,8 +296,17 @@ GEM
     ruby_engine (1.0.1)
     ruby_info (1.0.1)
     ruby_version (1.0.1)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+    sass-rails (5.0.7)
+      railties (>= 4.0.0, < 6)
+      sass (~> 3.1)
+      sprockets (>= 2.8, < 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+      tilt (>= 1.1, < 3)
     sassc (2.2.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -338,6 +347,8 @@ GEM
     tilt (2.0.9)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uglifier (4.1.20)
+      execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
@@ -369,7 +380,7 @@ DEPENDENCIES
   binding_of_caller
   carrierwave
   cloudinary
-  coffee-rails
+  coffee-rails (~> 4.2)
   decent_exposure
   devise
   dotenv-rails
@@ -381,7 +392,7 @@ DEPENDENCIES
   meta-tags
   mustdown
   newrelic_rpm
-  pg (~> 0.17)
+  pg
   puma
   rack-mini-profiler
   rails (~> 5.0.0)
@@ -390,7 +401,7 @@ DEPENDENCIES
   ransack
   record_tag_helper
   redis
-  sass-rails
+  sass-rails (~> 5.0)
   simple_form (~> 3.5.1)
   sitemap_generator
   slim
@@ -398,6 +409,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   sucker_punch
   tzinfo-data
+  uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
   webpacker (~> 3.0)
 
