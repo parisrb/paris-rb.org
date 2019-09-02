@@ -25,6 +25,7 @@ services:
       CLOUDINARY_URL: "${CLOUDINARY_URL}"
       DATABASE_URL: postgresql://admin:admin-secret@postgresql:5432/rubyparis_development
       DATABASE_URL_TEST: postgresql://admin:admin-secret@postgresql:5432/rubyparis_test
+      EMAIL_RECIPIENTS: "toto@toto.com"
       MAIL_URL: "${MAIL_URL}"
       RACK_ENV: "development"
       RAILS_ENV: "development"
