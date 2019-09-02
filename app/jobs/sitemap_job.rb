@@ -1,6 +1,4 @@
-class SitemapWorker
-  include SuckerPunch::Job
-
+class SitemapJob < ApplicationJob
   def perform
     ApplicationRecord.connection_pool.with_connection do
       SitemapService.call

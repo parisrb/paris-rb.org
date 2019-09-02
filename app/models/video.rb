@@ -28,7 +28,7 @@ class Video < ApplicationRecord
   private
 
   def refresh_sitemap
-    SitemapWorker.new.async.perform
+    SitemapJob.perform_later
   end
 
   def set_slug

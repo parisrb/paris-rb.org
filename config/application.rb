@@ -3,7 +3,7 @@ require_relative 'boot'
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
-# require "active_job/railtie"
+require "active_job/railtie"
 require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
@@ -29,5 +29,8 @@ module RubyparisOrg
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :fr
+
+    # User sucker_punch as Active Job adapter
+    config.active_job.queue_adapter = :sucker_punch
   end
 end

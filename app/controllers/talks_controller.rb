@@ -9,7 +9,7 @@ class TalksController < ApplicationController
 
   def create
     if talk.save
-      TalkMailerWorker.new.async.perform(talk.id)
+      TalkMailer.new_talk(talk.id).deliver_later
       redirect_to talks_path(anchor: :talks)
     else
       render action: :index
