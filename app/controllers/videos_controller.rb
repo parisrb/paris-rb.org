@@ -1,5 +1,5 @@
 class VideosController < ApplicationController
-  expose(:search) { Video.search(params[:q]) }
+  expose(:search) { Video.ransack(params[:q]) }
   expose(:video) { Video.where(slug: params[:id]).first }
   expose(:videos) do |default|
     search.result(distinct: true)

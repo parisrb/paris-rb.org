@@ -17,7 +17,7 @@
 #  index_videos_on_slug  (slug) UNIQUE
 #
 
-class Video < ActiveRecord::Base
+class Video < ApplicationRecord
   before_save :set_slug
   after_save :refresh_sitemap
 
