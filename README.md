@@ -50,6 +50,21 @@ Démarrage des images :
 docker-compose down && docker-compose up
 ```
 
+##  Mac  -  Installation Avant Docker Instructions  (using  Rvm)
+```bash
+{
+  brew  install  postgresql
+  brew  install  redis
+  brew  services start  postgresql
+  brew  services start  redis
+  bundle install;
+  yarn install;
+  rails db:migrate;
+  rails server -b 0.0.0.0 -p 3000
+}
+
+```
+
 ## Workflow de développement
 
 Le workflow de développement est basé sur le [GitHub flow](https://guides.github.com/introduction/flow/) :
@@ -68,3 +83,14 @@ La bonne manière de créer une Pull Request est de :
 ## Déploiement en production
 
 Actuellement, la branche master est autodéployée sur Scalingo.
+```
+
+## Environnement de développement (une ligne)
+```bash
+{
+docker-compose build;
+docker-compose run web bundle install;
+docker-compose run web yarn install;
+docker-compose run web rails db:migrate;
+docker-compose down && docker-compose up;
+}
