@@ -1,4 +1,5 @@
-# Rubyparis.org
+# Paris.rb presents Rubyparis.org
+![ruby_paris_readme_image](https://user-images.githubusercontent.com/11463275/30087024-39bbad02-926c-11e7-9fb1-93ee7f38944e.png)
 
 ## Environnement de développement
 
