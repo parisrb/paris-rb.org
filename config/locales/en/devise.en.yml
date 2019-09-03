@@ -1,0 +1,61 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+fr:
+  devise:
+    confirmations:
+      confirmed: 'Your account has been validated.'
+      send_instructions: 'You will receive instructions to confirm your account in a few minutes'
+      send_paranoid_instructions: 'If your e-mail exists in our database, you will soon receive an e-mail containing the instructions for confirmation of your account.'
+    failure:
+      already_authenticated: "You are already connected !"
+      inactive: "Your account is not yet activated."
+      invalid: "Email or password incorrect."
+      invalid_token: "Invalid authentication token."
+      locked: "Your account is locked."
+      not_found_in_database: "Invalid email or password."
+      timeout: "Your session has expired, please sign in again to continue."
+      unauthenticated: "You must be logged in or register to continue."
+      unconfirmed: "You must verify your account to continue."
+    mailer:
+      confirmation_instructions:
+        subject: "Confirmation Instructions"
+      reset_password_instructions:
+        subject: "Instructions for changing your password"
+      unlock_instructions:
+        subject: "Instructions for unlocking your account"
+    omniauth_callbacks:
+      failure: "We could not authenticate you via %{kind} : '%{reason}'."
+      success: 'Successfully authenticated via %{kind}.'
+    passwords:
+      edit:
+        title: Réinitialisation de mot de passe
+      no_token: "You can not access this page without going through a password reset email. If you've been through an email of this type, make sure to use the full URL."
+      send_instructions: 'You will receive the instructions to reset the password in a few moments'
+      send_paranoid_instructions: "If your e-mail exists in our database, you will receive a reset link by e-mail"
+      updated: 'Your password has been successfully edited, you are now logged in'
+      updated_not_active: 'Your password has been successfully changed.'
+    registrations:
+      destroyed: 'Your account has been deleted successfully. We hope to see you soon.'
+      signed_up: 'Welcome, you are logged in'
+      signed_up_but_inactive: "You are registered. However, you can not log in because your account has not yet been activated."
+      signed_up_but_locked: "You are registered. However, you can not log in because your account is locked."
+      signed_up_but_unconfirmed: 'A message containing a confirmation link has been sent to your email address. Open this link to activate your account.'
+      update_needs_confirmation: "Your account has been updated but we need to check your new email address. Please check your emails and click on the confirmation link to finalize the validation of your new address."
+      updated: 'Your account has been successfully modified.'
+    sessions:
+      signed_in: "Signed In."
+      signed_out: "Signed Out."
+    unlocks:
+      send_instructions: 'You will receive the instructions necessary to unlock your account in a few moments'
+      send_paranoid_instructions: 'If your account exists, you will soon receive an email containing instructions to unlock it.'
+      unlocked: 'Your account has been successfully unlocked, you are now logged in.'
+  errors:
+    messages:
+      already_confirmed: "Already Validated"
+      confirmation_period_expired: "To be confirmed in the% {period}, please make a new request"
+      expired: "Application has expired, please make a new application"
+      not_found: "Was not found"
+      not_locked: "Was not locked"
+      not_saved:
+        one: "1 error prevented this {head}% {resource} from being saved +:"
+        other: "% {Count} errors prevented this% {resource} from being saved +:"

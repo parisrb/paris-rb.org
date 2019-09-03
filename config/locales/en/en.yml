@@ -1,0 +1,143 @@
+en:
+  'yes': 'yes'
+  'no': 'no'
+
+  contact_maintainer: Contact the maintainer (@happynoff)
+  project_on_github: Find this project on Github
+
+  site_name: Paris.rb
+
+  activerecord:
+    attributes:
+      user:
+        email: Email
+        password: Password
+        remember_me: Remember me
+      talk:
+        duration: Duration
+        happened: Was held
+        happened_at: Date
+        level: Difficulty
+        lineup: Add to lineup
+        slides: Slides
+        speaker_email: Email
+        speaker_name: Speaker
+        title: Title
+        video_slug: Video
+
+  devise:
+    passwords:
+      new:
+        send_instructions: Send instructions
+        title: Forgot your password
+    sessions:
+      new:
+        sign_in: Log in
+        title: Log in
+    shared:
+      links:
+        forgot_password: 'Forgot your password ?'
+        sign_in: Log in
+
+  enumerize:
+    talk:
+      duration:
+        lightning: Lightning - 5 min
+        long: Long - 20 min
+      level:
+        easy: Easy
+        intermediate: Intermediate
+        expert: Expert
+
+  helpers:
+    submit:
+      talk:
+        create: Add my talk
+      q:
+        create: Ok
+
+  talks:
+    form:
+      accept_coc: I agree to abide by the code of conduct of ParisRB
+    index:
+      description: >-
+        See the list of talks proposed for the next meetup.
+        Submit your talk!
+      faq: |
+        ## I am a newbie, and I have a presentation to introduce
+
+        In Paris.rb we are not there to make fun of the novices. We will be
+        ALWAYS delighted to welcome talks beginners as confirmed.
+
+
+        ## I would like to make a presentation of more than 20 minutes
+
+        The presentations are timed, with the aim not to
+        Tire rubyists who listen to you. Studies have proven
+        That the 2 best timings are: 5 minutes and 20 minutes.
+
+        ## Introduce company and or product
+
+
+        We are here to talk about Ruby, Rails, and the world of
+        Startups in Paris. To promote a company, a
+        Product, or look for a profile, the custom is to help the
+        Community by sponsoring Ruby events.
+
+        If you have any further questions, please send an email to
+        [Michael](mailto:michaelgdimmitt@gmail.com)
+
+      lineup: Lineup of the next meetup
+      proposed_talks: Talks proposed
+      happened_talks: Talks having already taken place
+      resources: Resources
+      slides: slides
+      title: Propose a talk
+      video: video
+
+  videos:
+    index:
+      description: All the talks videos of the meetup Paris.rb.
+      title: Videos of Talks
+
+  views:
+    pagination:
+      first: «
+      last: »
+      next: →
+      previous: ←
+      truncate: …
+
+  welcome:
+    index:
+      description: >-
+        The Paris Ruby meetup ! All videos by Paris.rb.
+        List of talks of the next meetups...
+      ellipsis:
+        title: Paris.rb is also...
+      jobs:
+        add: Post a job…
+        subtitle: For your consideration 
+        title: Current jobs
+      guests:
+        title: What our guests say
+      show-off:
+        active_members: More than 20 members present each month.
+        members_count: >-
+          {{members}} Members on [Meetup.org](http://www.meetup.com/parisrb/)
+
+        title: A Ruby meetup in Paris !
+      sponsors:
+        subtitle: To whom we say great THANK YOU !
+        title: Our sponsors
+      talks:
+        subtitle: All presentations are filmed
+        title: Quality Talks
+        videos: See the videos
+      tweet_infos: >-
+        {{author}}
+        ([@{{twitter_handle}}](https://twitter.com/{{twitter_handle}}))
+        {{cool_projects}}
+      you:
+        give_a_talk: Propose a talk !
+        title: But Paris.rb is above all ... YOU!
