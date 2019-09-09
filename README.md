@@ -3,12 +3,38 @@
 
 ## Environnement de développement
 
+##  Mac  -  Installation Avant Docker Instructions  (using  Rvm)
+```bash
+{
+  brew install postgresql;
+  brew install redis;
+  brew services start postgresql;
+  brew services start redis;
+  bundle install;
+  yarn install;
+  rails db:drop db:create db:schema:load db:seed db:migrate;
+  rails server -b 0.0.0.0 -p 3000;
+}
+```
+
 Application Ruby on Rails avec base de données PostgreSQL, assets compilés avec asset pipeline **et** webpack.
 
 Des fichiers de définition Docker docker-compose sont présents pour faciliter la mise en place de l'environnements de développement.
 
 Un fichier .env à la racine du projet local au développeur derait contenir les valeurs suivantes :
 
+## Environnement de développement (une ligne)
+Building the docker image could take up to 27 minutes.
+```bash
+{
+  docker-compose build;
+  docker-compose run web bundle install;
+  docker-compose run web yarn install;
+  docker-compose run web rails db:drop db:create db:schema:load db:seed db:migrate;
+  docker-compose down && docker-compose up;
+}
+
+## Environnement de développement (expliquer):
 ```bash
 CLOUDINARY_URL=cloudinary://blablah
 
@@ -48,24 +74,10 @@ docker-compose run web rails db:migrate
 ```
 
 Démarrage des images :
-
+This command may take up to 5 minutes please wait.
+<br/>When finished you will see: `web_1  | * Listening on tcp://0.0.0.0:3000`
 ```bash
 docker-compose down && docker-compose up
-```
-
-##  Mac  -  Installation Avant Docker Instructions  (using  Rvm)
-```bash
-{
-  brew  install  postgresql;
-  brew  install  redis;
-  brew  services start  postgresql;
-  brew  services start  redis;
-  bundle install;
-  yarn install;
-  rails db:migrate;
-  rails server -b 0.0.0.0 -p 3000;
-}
-
 ```
 
 ## Workflow de développement
@@ -86,13 +98,3 @@ La bonne manière de créer une Pull Request est de :
 ## Déploiement en production
 
 Actuellement, la branche master est autodéployée sur Scalingo.
-
-## Environnement de développement (une ligne)
-```bash
-{
-  docker-compose build;
-  docker-compose run web bundle install;
-  docker-compose run web yarn install;
-  docker-compose run web rails db:migrate;
-  docker-compose down && docker-compose up;
-}
