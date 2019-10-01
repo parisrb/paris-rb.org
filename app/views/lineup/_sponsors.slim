@@ -2,6 +2,9 @@ section
   h2 Sponsors <3
 
   - sponsors.each do |sponsor|
-    => image_tag sponsor.logo_url(:thumb), alt: sponsor.name
+    - if sponsor.logo.present?
+      => image_tag sponsor.logo_url(:thumb), alt: sponsor.name
+    - else
+      = sponsor.name
 
   p ... et vous ?
