@@ -3,9 +3,9 @@
 # Table name: sponsors
 #
 #  id         :integer          not null, primary key
-#  name       :string
-#  website    :string
-#  logo       :string
+#  name       :string(255)
+#  website    :string(255)
+#  logo       :string(255)
 #  from       :datetime
 #  until      :datetime
 #  created_at :datetime

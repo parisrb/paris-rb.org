@@ -1,0 +1,40 @@
+linters:
+  ColorVariable:
+    exclude:
+      - '*/_payments-container.scss'
+      - '*/_stripe-like-modal.scss'
+
+  ImportantRule:
+    exclude:
+      - '*/_fullcalendar-*override.scss'
+
+  NameFormat:
+    exclude:
+      - '*/_*override.scss'
+    mixin_convention: '^[a-z][a-zA-Z]*(-\w+)?$'
+    mixin_convention_explanation: Mixins should be of the form myMixin
+    placeholder_convention: '.+'
+    variable_convention: '^[a-z][a-zA-Z]*(-\w+)?$'
+    variable_convention_explanation: >
+      Variables should be of the form $color-someColorName or $fontSize-small
+
+  PlaceholderInExtend:
+    enabled: false
+
+  SelectorFormat:
+    convention: '^[a-z][a-zA-Z]*(-[a-z][a-zA-Z0-9]*)?$'
+    convention_explanation: >
+      Selectors should be of the form .componentName or
+      .componentName-propertyName
+    exclude:
+      - '*/_*override.scss'
+
+  SpaceBeforeBrace:
+    exclude:
+      - '*/_*override.scss'
+
+  StringQuotes:
+    style: single_quotes
+
+  UrlFormat:
+    enabled: false

@@ -1,0 +1,32 @@
+.keyArgumentsList {
+  margin-bottom: map-get($spacers, four);
+
+  @include md {
+    display: flex;
+  }
+}
+
+.keyArgument {
+  line-height: 1;
+  margin-bottom: map-get($spacers, double);
+
+  @include md {
+    margin-right: map-get($spacers, double);
+  }
+}
+
+.keyArgument-label {
+  margin: 0;
+  display: block;
+
+  @include md {
+    max-width: 180px;
+  }
+}
+
+.keyArgument-value {
+  @include flexFont(xxxl);
+
+  display: block;
+  margin: 0 0 map-get($spacers, 2);
+}

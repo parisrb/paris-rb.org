@@ -1,0 +1,18 @@
+.sponsorsList {
+  margin-bottom: map-get($spacers, double);
+
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.sponsor {
+  display: block;
+  margin-bottom: $spacer;
+
+  @include sm {
+    margin: map-get($spacers, 2);
+  }
+}

@@ -1,15 +1,13 @@
-section
-  h2 Talks <3
+- @talks.each_slice(4) do |section_talks|
+  section
+    h2.slide-title Talks
 
-  table
-    tbody
-      tr
-        th ParisRB
-        td Welcome
-      - talks.each do |talk|
-        tr
-          th = talk.speaker_name
-          td = talk.title
+    - section_talks.each_slice(2) do |talks|
+      .row
+        - talks.each do |talk|
+          .talk
+            .talk-speaker = talk.speaker_name
+            .talk-title = talk.title
+            .talk-details #{talk.duration_text} - #{talk.level_text}
 
-  p
-    | [Food, Drinks, Networking] at some point ;)
+    p Food, Drinks, Networking, at some point 😁

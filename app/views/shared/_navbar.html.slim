@@ -1,22 +1,57 @@
-nav.navbar.navbar-default.navbar-static-top role="navigation"
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
   .container
-    .navbar-header
-      button.navbar-toggle type="button" data-toggle="collapse" data-target="#menu"
-        span.sr-only Afficher le menu
-        - 3.times do
-          span.icon-bar
-      = link_to root_path, class: 'navbar-brand' do
-        = image_tag 'logo.png', width: '100'
+    = link_to root_path, class: 'navbar-brand' do
+      = image_tag 'logo.png', height: 70, width: 81
+    button.navbar-toggler{
+      aria-controls="menu"
+      aria-expanded="false"
+      aria-label=t('menu.toggle')
+      data-target="#menu"
+      data-toggle="collapse"
+      type="button"
+    }
+      span.navbar-toggler-icon
 
-    #menu.collapse.navbar-collapse.navbar-right
-      ul.nav.navbar-nav
-        li = link_to 'Conférence', 'https://2018.rubyparis.org', class: "navbar-highlight"
-        li = link_to 'Accueil', root_path
-        li = link_to 'Vidéos', videos_path
-        li = link_to 'Proposer un talk', talks_path
-        li = link_to 'Job board', 'https://jobs.rubyparis.org'
-        li = link_to 'Forum', 'http://forum.rubyparis.org'
-        li = link_to 'Meetup', 'http://www.meetup.com/parisrb/'
-        li = link_to 'Slack', 'http://parisrb-slack-invite.herokuapp.com/'
+    #menu.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item = link_to t('menu.home'), root_path, class: 'nav-link'
+        li.nav-item = link_to t('menu.talks'), talks_path, class: 'nav-link'
+        li.nav-item
+          a.nav-link href="http://parisrb-slack-invite.herokuapp.com/" target="_blank" = t('menu.slack')
+        / li.nav-item: a.nav-link href="http://forum.rubyparis.org/" target="_blank" = t('menu.forum')
 
-        li = link_to 'Sponsoriser', sponsoring_path
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ nav.navbar.navbar-default.navbar-static-top role="navigation"
+/   .container
+/     .navbar-header
+/       button.navbar-toggle type="button" data-toggle="collapse" data-target="#menu"
+/         span.sr-only Afficher le menu
+/         - 3.times do
+/           span.icon-bar
+/       = link_to root_path, class: 'navbar-brand' do
+/         = image_tag 'logo.png', width: '100'
+
+/     #menu.collapse.navbar-collapse.navbar-right
+/       ul.nav.navbar-nav
+/         li = link_to 'Conférence', 'https://2018.rubyparis.org', class: "navbar-highlight"
+/         li = link_to 'Accueil', root_path
+/         li = link_to 'Vidéos', videos_path
+/         li = link_to 'Proposer un talk', talks_path
+/         li = link_to 'Job board', 'https://jobs.rubyparis.org'
+/         li = link_to 'Forum', 'http://forum.rubyparis.org'
+/         li = link_to 'Meetup', 'http://www.meetup.com/parisrb/'
+/         li = link_to 'Slack', 'http://parisrb-slack-invite.herokuapp.com/'
+
+/         li = link_to 'Sponsoriser', sponsoring_path

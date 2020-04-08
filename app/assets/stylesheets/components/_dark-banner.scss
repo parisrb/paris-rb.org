@@ -1,0 +1,6 @@
+.darkBanner {
+  background-image: linear-gradient(212deg, $black 13%, $gray-900 72%);
+  color: $white;
+  overflow: hidden;
+  padding: map-get($spacers, double) 0;
+}

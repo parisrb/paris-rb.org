@@ -1,0 +1,22 @@
+.faq {
+  margin-bottom: map-get($spacers, 4);
+}
+
+.faq-answer {
+  @include flexFont(m);
+
+  font-style: italic;
+  margin-bottom: $spacer;
+}
+
+.faq-question {
+  @include flexFont(l);
+
+  font-family: $font-second;
+  margin: 0 auto map-get($spacers, 2);
+  max-width: 220px;
+
+  @include sm {
+    max-width: none;
+  }
+}

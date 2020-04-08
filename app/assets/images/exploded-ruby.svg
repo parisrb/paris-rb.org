@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390px" height="255px" viewBox="0 0 390 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>exploded-ruby</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-16.000000, 0.000000)">
+            <g id="exploded-ruby">
+                <g>
+                    <g id="Group-2" fill-rule="nonzero">
+                        <polygon id="Path-11" fill="#FFCECD" transform="translate(49.906551, 60.516946) rotate(-20.000000) translate(-49.906551, -60.516946) " points="7.36065075 88.9557142 65.5428061 32.0781784 92.4524509 88.8970519"></polygon>
+                        <polygon id="Path-12" fill="#E86F69" transform="translate(139.748440, 36.431242) rotate(-10.000000) translate(-139.748440, -36.431242) " points="95 8.03295301 121.918503 64.8624848 184.49686 8.00011748"></polygon>
+                        <polygon id="Path-14" fill="#EF8987" transform="translate(102.070769, 176.544540) rotate(-10.000000) translate(-102.070769, -176.544540) " points="28.3492379 103.480266 113.206952 103.446518 175.7923 249.642562"></polygon>
+                    </g>
+                    <g id="Group-2-Copy" transform="translate(327.500000, 131.000000) scale(-1, 1) translate(-327.500000, -131.000000) translate(233.000000, 0.000000)" fill-rule="nonzero">
+                        <polygon id="Path-11" fill="#E4726F" transform="translate(49.906551, 60.516946) rotate(-20.000000) translate(-49.906551, -60.516946) " points="7.36065075 88.9557142 65.5428061 32.0781784 92.4524509 88.8970519"></polygon>
+                        <polygon id="Path-12" fill="#D4534E" transform="translate(139.748440, 36.431242) rotate(-10.000000) translate(-139.748440, -36.431242) " points="95 8.03295301 121.918503 64.8624848 184.49686 8.00011748"></polygon>
+                        <polygon id="Path-14" fill="#EF8987" transform="translate(102.070769, 176.544540) rotate(-10.000000) translate(-102.070769, -176.544540) " points="28.3492379 103.480266 113.206952 103.446518 175.7923 249.642562"></polygon>
+                    </g>
+                    <g id="Group-3" transform="translate(148.000000, 13.000000)" fill-rule="nonzero">
+                        <polygon id="Path-13" fill="#F69794" points="-2.98427949e-13 56.849585 62.5487313 -1.42108547e-14 127.145677 57.1547987"></polygon>
+                        <polygon id="Path-15" fill="#D85F5C" points="1 96 126.157285 96 63.5786426 241.871218"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

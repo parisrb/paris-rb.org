@@ -1,6 +1,8 @@
 class LineupController < ApplicationController
   layout 'reveal'
 
-  expose(:sponsors) { Sponsor.visible }
-  expose(:talks) { Talk.lineup }
+  def show
+    @sponsors = Sponsor.visible
+    @talks = Talk.lineup
+  end
 end

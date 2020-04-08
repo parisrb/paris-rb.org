@@ -1,0 +1,53 @@
+.talksList {
+  padding: map-get($spacers, double) 0 0;
+}
+
+.talk {
+  margin-bottom: map-get($spacers, double);
+  text-align: left;
+
+  &-details {
+    @include flexFont(s);
+
+    margin-bottom: map-get($spacers, 1);
+  }
+
+  &-linksList {
+    @include flexFont(m);
+
+    margin: 0;
+  }
+
+  &-link {
+    color: inherit;
+    margin-right: map-get($spacers, 3);
+    text-decoration: underline;
+    text-transform: lowercase;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: map-get($theme-colors, primary);
+    }
+  }
+
+  &-speaker {
+    @include flexFont(m);
+
+    font-family: $font-second;
+    font-weight: bold;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  &-title {
+    @include flexFont(xl);
+
+    color: map-get($theme-colors, primary);
+    font-family: $font-second;
+    font-weight: bold;
+    line-height: 1.35;
+    margin-bottom: map-get($spacers, 1);
+    text-transform: uppercase;
+  }
+}

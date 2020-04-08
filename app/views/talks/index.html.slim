@@ -1,105 +1,21 @@
 - title t('.title')
 - description t('.description')
 
-.section.section-page
-  .container
-    header
-      h1 = t('.title')
+- @talks_by_meetup.each_with_index do |(meetup_date, meetup_talks), index|
+  - if index.zero?
+    section.darkBanner
+      .container
+        h1.pageSection-title.text-center.mb-triple = t('.last_meetup')
 
-    .row
-      .col-xs-12.col-sm-5.col-sm-offset-1
-        = render 'form'
-      .col-xs-12.faq.col-sm-6
-        = markdown t('.faq')
+        - meetup_talks.each_slice(2) do |talks|
+          .row
+            = render talks
 
-.section.talks
-  .container
-    h2 = t('.lineup')
+  - else
+    section.talksList
+      .container
+        h1.pageSection-title = t('.meetup_name', date: meetup_date)
 
-    .hidden-xs
-      table.talks-list.table.table-striped
-        thead
-          tr
-            th = Talk.human_attribute_name(:title)
-            th = Talk.human_attribute_name(:speaker_name)
-            th = Talk.human_attribute_name(:speaker_twitter)
-            th = Talk.human_attribute_name(:level)
-            th = Talk.human_attribute_name(:duration)
-            th = Talk.human_attribute_name(:preferred_month_talk)
-            th = Talk.human_attribute_name(:time_position)
-        tbody
-          - lineup_talks.each do |talk|
-            tr
-              td = talk.title
-              td = talk.speaker_name
-              td = talk.speaker_twitter
-              td = talk.level_text
-              td = talk.duration_text
-              td = talk.preferred_month_talk
-              td = talk.time_position
-
-    .visible-xs
-      ul.talks-list.list-unstyled
-        = content_tag_for :li, lineup_talks do |talk|
-          span.title = talk.title
-          | #{talk.speaker_name} - #{talk.level_text} - #{talk.duration_text}
-
-    / h2 = t('.proposed_talks')
-    /
-    / .hidden-xs
-    /   table.talks-list.table.table-striped
-    /     thead
-    /       tr
-    /         th = Talk.human_attribute_name(:title)
-    /         th = Talk.human_attribute_name(:speaker_name)
-    /         th = Talk.human_attribute_name(:level)
-    /         th = Talk.human_attribute_name(:duration)
-    /     tbody
-    /       - proposed_talks.each do |talk|
-    /         tr
-    /           td = talk.title
-    /           td = talk.speaker_name
-    /           td = talk.level_text
-    /           td = talk.duration_text
-    /
-    / .visible-xs
-    /   ul.talks-list.list-unstyled
-    /     = content_tag_for :li, proposed_talks do |talk|
-    /       span.title = talk.title
-    /       | #{talk.speaker_name} - #{talk.level_text} - #{talk.duration_text}
-
-    h2 = t('.happened_talks')
-
-    .hidden-xs
-      table.talks-list.table.table-striped
-        thead
-          tr
-            th = Talk.human_attribute_name(:title)
-            th = Talk.human_attribute_name(:speaker_name)
-            th = Talk.human_attribute_name(:level)
-            th = Talk.human_attribute_name(:duration)
-            th = t('.resources')
-        tbody
-          - happened_talks.each do |talk|
-            tr
-              td = talk.title
-              td = talk.speaker_name
-              td = talk.level_text
-              td = talk.duration_text
-              td
-                - if talk.slides?
-                  => link_to t('.slides'), talk.slides, rel: 'nofollow'
-                - if talk.video_url?
-                  => link_to t('.video'), talk.video_url
-
-    .visible-xs
-      ul.talks-list.list-unstyled
-        = content_tag_for :li, happened_talks do |talk|
-          span.title = talk.title
-          | #{talk.speaker_name} - #{talk.level_text} - #{talk.duration_text}
-          - if talk.slides? || talk.video_url?
-            span.resources
-              - if talk.slides?
-                => link_to t('.slides'), talk.slides
-              - if talk.video_url?
-                = link_to t('.video'), talk.video_url, rel: 'nofollow'
+        - meetup_talks.each_slice(2) do |talks|
+          .row
+            = render talks

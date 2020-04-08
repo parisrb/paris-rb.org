@@ -12,15 +12,20 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
-.DS_Store
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
-/public/sitemap*
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
 
-.rvmrc
-.env
-/public/packs
-/public/packs-test
-/elm-stuff
 /node_modules
+/yarn-error.log
+
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key

@@ -1,5 +1,3 @@
-/*
- *= require reveal
- *= require reveal-parisrb
- *= require_self
- */
+@import 'reveal';
+@import 'base/type';
+@import 'components/lineup';

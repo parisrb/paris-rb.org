@@ -1,14 +1,9 @@
 .reveal
-  .header
-    .date = l(Date.today, format: :long)
-    .logo = image_tag 'logo.png', alt: 'Rubyparis'
   .slides
     = render 'lineup/welcome'
-    = render 'lineup/sponsors'
-    = render 'lineup/talks'
+    = render 'lineup/sponsors', sponsors: @sponsors
+    = render 'lineup/talks', talks: @talks
     = render 'lineup/newcomers'
     = render 'lineup/speakers'
     = render 'lineup/social_media'
-    = render 'lineup/sponsors'
-    = render 'lineup/talks'
     = render 'lineup/welcome'

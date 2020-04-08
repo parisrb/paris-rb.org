@@ -1,26 +1,18 @@
-- title video.title
-- description video.description.truncate(170, separator: ' ')
+- title @video.title
+- description @video.description.truncate(170, separator: ' ')
 
-.section.section-page.video
+.video.darkBanner
   .container
-    header
-      h1 = video.title
+    .video-media
+      iframe{
+        src="//player.vimeo.com/video/#{@video.vimeo_id}"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+      }
 
-    .row
-      .col-md-8.col-md-offset-2
-        .embed-container
-          iframe{
-            src="//player.vimeo.com/video/#{video.vimeo_id}"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
-          }
-
-    .row
-      .video-description.col-md-6.col-md-offset-3
-        = markdown video.description
-
-    .row
-      .video-event-date.col-md-6.col-md-offset-3.text-center.text-muted
-        = time_ago_in_words video.event_date
+    p.talk-details = t('ui.time_ago', duration: time_ago_in_words(@video.event_date))
+    p.talk-title = @video.title
+    .video-description
+      == markdown @video.description

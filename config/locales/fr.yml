@@ -1,164 +1,262 @@
 fr:
-  'yes': 'Oui'
-  'no': 'Non'
-
-  contact_maintainer: Contacter le mainteneur (@happynoff)
-  project_on_github: Retrouver ce projet sur Github
-  sponsoring_the_meetup: Sponsoriser le Meetup
-
-  site_name: Paris.rb
-
-  activerecord:
-    attributes:
-      user:
-        email: Email
-        password: Mot de passe
-        remember_me: Se souvenir de moi
-      talk:
-        duration: Durée
-        happened: A eu lieu
-        happened_at: Date
-        level: Difficulté
-        lineup: Ajouter au lineup
-        slides: Slides
-        speaker_email: Email
-        speaker_name: Speaker
-        speaker_twitter: Twitter
-        time_position: Heure du talk
-        title: Titre
-        video_slug: Vidéo
-        preferred_month_talk: Quel mois ?
-        proposed_months:
-          january: Janvier
-          february: Février
-          march: Mars
-          april: Avril
-          may: Mai
-          june: Juin
-          july: Juillet
-          august: Août
-          september: Septembre
-          october: Octobre
-          november: Novembre
-          december: Decembre
-
-  devise:
-    passwords:
-      new:
-        send_instructions: Envoyer les instructions
-        title: Mot de passe oublié
-    sessions:
-      new:
-        sign_in: Me connecter
-        title: Connexion
-    shared:
-      links:
-        forgot_password: 'Mot de passe oublié ?'
-        sign_in: Connexion
-
   enumerize:
     talk:
       duration:
-        lightning: Lightning - 5 min
-        long: Long - 20 min
+        lightning: 5 min
+        long: 20 min
       level:
-        easy: Débutant
-        intermediate: Moyen
-        expert: Expert
+        easy: Débutant.e
+        intermediate: Intermédiaire
+        expert: Expert.e
+
+  footer:
+    contribute: Contribuer au site
+    contact_us: Contactez l’équipe
+    become_sponsor: Sponsorisez le meetup
 
   helpers:
     submit:
-      talk:
-        create: Ajouter mon talk
-      q:
-        create: Ok
+      create: 'Ajouter mon talk'
+
+  homepage:
+    show:
+      active_members: membres présents chaque mois
+      go_to_next_meetup: M’inscrire au prochain meetup
+      meetup_members: membres sur meetup.org
+      next_lineup: Voir le lineup du prochain meetup
+      title: Le plus grand meetup Ruby d’Europe
+
+      conf:
+        learn_more: En savoir plus
+        buy_ticket: Achetez votre ticket
+        speakers: Liste des speakers
+
+      jobs:
+        current_offers: Les jobs du moment
+        link: Poster une offre
+        text: >-
+          Que vous cherchiez un nouveau job ou que vous souhaitiez recruter, le
+          job board vous tend les bras.
+        title: Le job board
+
+      slack:
+        link: Demander une invitation
+        text: >-
+          Rejoignez la communauté, discutez avec d’autres rubyists, proposez un lieu
+          de meetup, posez une question.
+        title: La team Slack
+
+      sponsors:
+        link: Devenez sponsor!
+        title: Un grand merci à nos sponsors
+      
+      talks:
+        link: Voir la liste des talks
+        text: >-
+          Tous les mois les membres de Paris.rb se retrouvent et partagent autour de
+          Ruby, de Rails, de l’entrepreneuriat et de tout le reste !
+        title: Des talks de qualité
+
+      videos:
+        link: Voir les vidéos
+        text: >-
+          Retrouvez tous nos talks, partagez les vidéos de vos passage devant la communauté !
+        title: La chaîne Youtube
+
+  menu:
+    forum: Forum
+    home: Accueil
+    slack: Slack
+    talks: Talks
+    toggle: Afficher la navigation
 
   talks:
     form:
-      accept_coc: Je m’engage à respecter le Code of Conduct de ParisRB
+      accept_coc: Je m’engage à respecter le %{link}.
+      any_month: Peu importe
+      coc_link: Code of Conduct de Paris.rb
+      faq:
+        - question: Je suis un.e newbie, et j'ai peeeeuuur de présenter
+          answer: >-
+            À Paris.rb on n'est pas là pour se moquer des novices. Nous serons
+            TOUJOURS ravis d'accueillir les talks débutants comme confirmés.
+        - question: Je voudrais faire une présentation de + de 20 minutes
+          answer: >-
+            Les présentations sont chronometrées, dans le but de ne pas trop
+            fatiguer les rubyistes qui vous écoutent, et des études ont prouvé
+            que les 2 meilleurs timings sont : 5 minutes et 20 minutes.
+        - question: Je veux présenter ma société, ou mon produit
+          answer: >-
+            Nous sommes ici pour parler de Ruby, de Rails, et du monde des
+            startups sur Paris. Pour faire la promotion d'une société, d'un
+            produit, ou rechercher un profil, la coutume est d'aider la
+            communauté en sponsorisant les événements Ruby.
+      faq_contact: >-
+        Si vous avez d'autres questions, n'hésitez pas à envoyer un email à %{mail_link}
+        ou a venir discuter sur %{slack_link}.
+      faq_slack: le Slack Paris.rb
+      title: Proposez un talk
     index:
       description: >-
-        Voir la liste des talks proposés pour les prochains meetups. Proposez
-        votre talk !
-      faq: |
-        ## Je suis un newbie, et j'ai peeeeuuur de présenter
-
-        À Paris.rb on n'est pas là pour se moquer des novices. Nous serons
-        TOUJOURS ravis d'accueillir les talks débutants comme confirmés.
-
-        ## Je voudrais faire une présentation de + de 20 minutes
-
-        Les présentations sont chronometrées, dans le but de ne pas trop
-        fatiguer les rubyistes qui vous écoutent, et des études ont prouvé
-        que les 2 meilleurs timings sont : 5 minutes et 20 minutes.
-
-        ## Je veux présenter ma société, ou mon produit
-
-        Nous sommes ici pour parler de Ruby, de Rails, et du monde des
-        startups sur Paris. Pour faire la promotion d'une société, d'un
-        produit, ou rechercher un profil, la coutume est d'aider la
-        communauté en sponsorisant les événements Ruby.
-
-        Si vous avez d'autres questions, n'hésitez pas à envoyer un email à
-        [Thibaut](mailto:thibaut@milesrock.com)
-
-      lineup: Lineup du prochain meetup
-      proposed_talks: Autres talks proposés
-      happened_talks: Talks ayant déjà eu lieu
+        Retrouvez les vidéos, les slides et les speakers des talks qui ont eu lieu durant
+        un meetup Paris.rb.
+      happened_talks: Talk donnés
+      last_meetup: Dernier meetup
+      meetup_name: Meetup du %{date}
       resources: Ressources
-      slides: slides
-      title: Proposer un talk
-      video: vidéo
+      title: Les talks
+    talk:
+      slides: Slides
+      twitter: Twitter
+      video: Vidéo
 
-  videos:
-    index:
-      description: Toutes les vidéos des talks du meetup Paris.rb
-      title: Vidéos des talks
-
-  sponsoring:
-    show:
-      description: Sponsoriser le Meetup Paris.rb
-      title: Sponsoring
+  ui:
+    site_name: Paris.rb
+    time_ago: Il y a %{duration}
 
   views:
     pagination:
-      first: «
-      last: »
-      next: →
-      previous: ←
       truncate: …
 
-  welcome:
-    index:
-      description: >-
-        Le plus grand meetup Ruby d'Europe ! Toutes les vidéos de Paris.rb.
-        Liste des talks des prochains meetups.
-      ellipsis:
-        title: Paris.rb c'est aussi...
-      jobs:
-        add: Poster un job…
-        subtitle: vous tendent les bras ^^
-        title: Les jobs du moment
-      guests:
-        title: Ce que nos invités en disent
-      show-off:
-        active_members: Plus de 100 membres présents chaque mois.
-        members_count: >-
-          {{members}} membres sur [Meetup.org](http://www.meetup.com/parisrb/)
+    # fr:
+#   'yes': 'Oui'
+#   'no': 'Non'
 
-        title: Le plus grand meetup Ruby d'Europe !
-      sponsors:
-        subtitle: À qui nous disons un grand MERCI !
-        title: Nos sponsors
-        button: Sponsoriser
-      talks:
-        subtitle: Toutes les présentations sont filmées
-        title: Des talks de qualité
-        videos: Voir les vidéos
-      tweet_infos: >-
-        {{author}}
-        ([@{{twitter_handle}}](https://twitter.com/{{twitter_handle}}))
-        {{cool_projects}}
-      you:
-        give_a_talk: Proposer un talk !
-        title: Mais Paris.rb c'est avant tout... VOUS!
+#   contact_maintainer: Contacter le mainteneur (@happynoff)
+#   project_on_github: Retrouver ce projet sur Github
+#   sponsoring_the_meetup: Sponsoriser le Meetup
+
+#   site_name: Paris.rb
+
+#   activerecord:
+#     attributes:
+#       user:
+#         email: Email
+#         password: Mot de passe
+#         remember_me: Se souvenir de moi
+#       talk:
+#         duration: Durée
+#         happened: A eu lieu
+#         happened_on: Date
+#         level: Difficulté
+#         lineup: Ajouter au lineup
+#         slides: Slides
+#         speaker_email: Email
+#         speaker_name: Speaker
+#         speaker_twitter: Twitter
+#         time_position: Heure du talk
+#         title: Titre
+#         video_slug: Vidéo
+#         preferred_month_talk: Quel mois ?
+#         proposed_months:
+#           january: Janvier
+#           february: Février
+#           march: Mars
+#           april: Avril
+#           may: Mai
+#           june: Juin
+#           july: Juillet
+#           august: Août
+#           september: Septembre
+#           october: Octobre
+#           november: Novembre
+#           december: Decembre
+
+#   devise:
+#     passwords:
+#       new:
+#         send_instructions: Envoyer les instructions
+#         title: Mot de passe oublié
+#     sessions:
+#       new:
+#         sign_in: Me connecter
+#         title: Connexion
+#     shared:
+#       links:
+#         forgot_password: 'Mot de passe oublié ?'
+#         sign_in: Connexion
+
+#   enumerize:
+#     talk:
+#       duration:
+#         lightning: Lightning - 5 min
+#         long: Long - 20 min
+#       level:
+#         easy: Débutant
+#         intermediate: Moyen
+#         expert: Expert
+
+#   helpers:
+#     submit:
+#       talk:
+#         create: Ajouter mon talk
+#       q:
+#         create: Ok
+
+#   talks:
+#     form:
+#       accept_coc: Je m’engage à respecter le Code of Conduct de ParisRB
+#     index:
+#       description: >-
+#         Voir la liste des talks proposés pour les prochains meetups. Proposez
+#         votre talk !
+
+#       lineup: Lineup du prochain meetup
+#       happened_talks: Talks ayant déjà eu lieu
+#       resources: Ressources
+#       slides: slides
+#       title: Proposer un talk
+#       video: vidéo
+
+#   videos:
+#     index:
+#       description: Toutes les vidéos des talks du meetup Paris.rb
+#       title: Vidéos des talks
+
+#   sponsoring:
+#     show:
+#       description: Sponsoriser le Meetup Paris.rb
+#       title: Sponsoring
+
+#   views:
+#     pagination:
+#       first: «
+#       last: »
+#       next: →
+#       previous: ←
+#       truncate: …
+
+#   welcome:
+#     index:
+#       description: >-
+#         Le plus grand meetup Ruby d'Europe ! Toutes les vidéos de Paris.rb.
+#         Liste des talks des prochains meetups.
+#       ellipsis:
+#         title: Paris.rb c'est aussi...
+#       jobs:
+#         add: Poster un job…
+#         subtitle: vous tendent les bras ^^
+#         title: Les jobs du moment
+#       guests:
+#         title: Ce que nos invités en disent
+#       show-off:
+#         active_members: Plus de 100 membres présents chaque mois.
+#         members_count: >-
+#           {{members}} membres sur [Meetup.org](http://www.meetup.com/parisrb/)
+
+#         title: Le plus grand meetup Ruby d'Europe !
+#       sponsors:
+#         subtitle: À qui nous disons un grand MERCI !
+#         title: Nos sponsors
+#         button: Sponsoriser
+#       talks:
+#         subtitle: Toutes les présentations sont filmées
+#         title: Des talks de qualité
+#         videos: Voir les vidéos
+#       tweet_infos: >-
+#         {{author}}
+#         ([@{{twitter_handle}}](https://twitter.com/{{twitter_handle}}))
+#         {{cool_projects}}
+#       you:
+#         give_a_talk: Proposer un talk !
+#         title: Mais Paris.rb c'est avant tout... VOUS!

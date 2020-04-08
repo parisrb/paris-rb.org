@@ -1,0 +1,9 @@
+body {
+  @include flexFont(l);
+
+  text-align: center;
+
+  @include md {
+    text-align: left;
+  }
+}

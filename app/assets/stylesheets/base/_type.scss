@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:300,400,400i,600,700&subset=latin-ext');
+
+$font-fallbacks: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$font-main: 'Open Sans', $font-fallbacks;
+$font-second: 'Open Sans Condensed', $font-main;
+$font-icons: 'Font Awesome';
+
+$font-sizes: (
+      s: (min: 12px, max: 14px), // 12-14
+      m: (min: 14px, max: 16px), // 14-16
+      l: (min: 16px, max: 20px), // 16-20
+     xl: (min: 20px, max: 32px), // 20-32
+    xxl: (min: 24px, max: 48px), // 24-48
+   xxxl: (min: 32px, max: 70px), // 32-70
+  xxxxl: (min: 40px, max: 100px) // 40-100
+);
+
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin flexFont($size) {
+  $min-max: map-get($font-sizes, $size);
+  $min: map-get($min-max, min);
+  $max: map-get($min-max, max);
+
+  $min-vw: 320px;
+  $max-vw: 1200px;
+
+  font-size: $min;
+
+  @media (min-width: $min-vw) {
+    font-size: calc(
+      #{$min} +
+      #{stripUnit($max - $min)} *
+      ((100vw - #{$min-vw}) / #{stripUnit($max-vw - $min-vw)}));
+  }
+
+  @media (min-width: $max-vw) {
+    font-size: $max;
+  }
+}
+
+@each $size, $xxx in $font-sizes {
+  .flexFont-#{$size} {
+    @include flexFont($size);
+  }
+}

@@ -1,0 +1,27 @@
+.video {
+  text-align: left;
+
+  &-description {
+    @include flexFont(m);
+  }
+
+  &-media {
+    height: auto;
+    margin-bottom: 1em;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+
+    iframe,
+    object,
+    embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}

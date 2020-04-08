@@ -1,0 +1,77 @@
+.darkBanner.heroBanner
+  .container
+    .row
+      .col-md-20.col-lg-16
+        h1.heroBanner-title = t('.title')
+
+        .keyArgumentsList
+          p.keyArgument
+            span.keyArgument-value> = @members_count
+            span.keyArgument-label = t('.meetup_members')
+
+          p.keyArgument
+            span.keyArgument-value> 100+
+            span.keyArgument-label = t('.active_members')
+
+        p.mb-double
+          = link_to 'http://www.meetup.com/parisrb/', class: 'btn btn-primary btn-lg' do
+            i.fa.fa-meetup>
+            = t('.go_to_next_meetup')
+
+        p.heroBanner-linkWrapper
+          = link_to t('.next_lineup'), lineup_path, class: 'heroBanner-link'
+
+.container
+  = render 'talks/form', talk_form: @talk_form
+
+  .pageSection.mod-talks
+    h2.pageSection-title = t('.talks.title')
+    p.pageSection-text = t('.talks.text')
+    p = link_to t('.talks.link'), '#', class: 'pageSection-link'
+
+  .pageSection.mod-sponsors
+    h2.pageSection-title = t('.sponsors.title')
+    p.sponsorsList
+      a.sponsor> href="#": img.sponsor-logo src="http://placehold.it/180x100"
+      a.sponsor> href="#": img.sponsor-logo src="http://placehold.it/180x100"
+      a.sponsor> href="#": img.sponsor-logo src="http://placehold.it/180x100"
+      a.sponsor> href="#": img.sponsor-logo src="http://placehold.it/180x100"
+      a.sponsor> href="#": img.sponsor-logo src="http://placehold.it/180x100"
+    p = link_to t('.sponsors.link'), '#', class: 'pageSection-link'
+
+  .pageSection.mod-slack
+    h2.pageSection-title = t('.slack.title')
+    p.pageSection-text = t('.slack.text')
+    p = link_to t('.slack.link'), 'http://parisrb-slack-invite.herokuapp.com/', class: 'pageSection-link'
+
+  .conferenceBanner
+    h2.conferenceBanner-title
+      span.conferenceBanner-name>
+        ' Paris.rb
+        = image_tag 'conf-ruby.svg', alt: 'Ruby', class: 'conferenceBanner-ruby'
+      span.conferenceBanner-year Conf 2019
+    .conferenceBanner-details
+      p.conferenceBanner-dates 29 &amp; 30 juin
+      p.conferenceBanner-linksList
+        => link_to t('.conf.learn_more'), '#', class: 'conferenceBanner-link'
+        => link_to t('.conf.buy_ticket'), '#', class: 'conferenceBanner-link'
+        = link_to t('.conf.speakers'), '#', class: 'conferenceBanner-link'
+
+  .pageSection.mod-jobs
+    h2.pageSection-title = t('.jobs.title')
+    p.pageSection-text = t('.jobs.text')
+    p = link_to t('.jobs.link'), '#', class: 'pageSection-link'
+
+    h3.pageSection-subtitle = t('.jobs.current_offers')
+    .jobsList
+      .job
+        p.job-company Barnaby
+        p = link_to 'Développeur BACKEND RUBY ON RAILS (H/F) - CDI', '#', class: 'job-link'
+      .job
+        p.job-company Sequencity (Actialuna SAS)
+        p = link_to 'Développeur Ruby On Rails H/F - BD / mangas / comics numériques', '#', class: 'job-link'
+
+  .pageSection.mod-videos
+    h2.pageSection-title = t('.videos.title')
+    p.pageSection-text = t('.videos.text')
+    p = link_to t('.videos.link'), '#', class: 'pageSection-link'

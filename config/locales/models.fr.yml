@@ -1,0 +1,17 @@
+fr:
+  activemodel:
+    attributes:
+      talk:
+        duration: Durée
+        happened: A eu lieu
+        happened_on: Date
+        level: Difficulté
+        pitch: Pitch
+        slides: Slides
+        speaker_email: Email
+        speaker_name: Speaker
+        speaker_twitter: Twitter
+        time_position: Heure du talk
+        title: Titre
+        video_slug: Vidéo
+        preferred_month_talk: Mois

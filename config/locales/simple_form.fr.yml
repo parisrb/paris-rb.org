@@ -10,6 +10,9 @@ fr:
       q:
         title_cont: Recherche
 
+    optional:
+      text: '(optionel)'
+
     required:
       text: 'requis'
       mark: '*'

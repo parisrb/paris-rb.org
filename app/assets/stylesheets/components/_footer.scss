@@ -1,0 +1,34 @@
+.footer {
+  background-color: $black;
+  background-image: linear-gradient(212deg, $black 13%, $gray-900 72%);
+  overflow: hidden;
+  padding: map-get($spacers, double);
+  text-align: center;
+}
+
+.footer-linksList {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: $spacer;
+
+  &,
+  &:active,
+  &:hover {
+    color: $white
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include md {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: $spacer;
+    margin-right: $spacer;
+  }
+}

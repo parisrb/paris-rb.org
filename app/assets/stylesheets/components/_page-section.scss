@@ -1,0 +1,122 @@
+.pageSection {
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin: 0 auto map-get($spacers, five);
+  max-width: 1015px;
+
+  &.mod-jobs {
+    background-image: image-url('jobs.svg');
+    background-size: 154px 214px;
+    padding-top: 246px;
+
+    @include md {
+      background-size: 217px 297px;
+      min-height: 297px;
+    }
+  }
+
+  &.mod-slack {
+    --color: #{color('pink')};
+
+    background-image: image-url('slack.svg');
+    background-size: 156px 198px;
+    padding-top: 230px;
+
+    @include md {
+      background-size: 234px 297px;
+      min-height: 297px;
+    }
+  }
+
+  &.mod-sponsors {
+    text-align: center;
+  }
+
+  &.mod-talks {
+    --color: #{color('red2')};
+
+    background-image: image-url('talks.svg');
+    background-size: 145px 198px;
+    padding-top: 230px;
+
+    @include md {
+      background-size: 217px 297px;
+      min-height: 297px;
+    }
+  }
+
+  &.mod-videos {
+    --color: #{color('red3')};
+
+    background-image: image-url('videos.svg');
+    background-size: 123px 179px;
+    padding-top: 211px;
+
+    @include md {
+      background-size: 184px 268px;
+      min-height: 268px;
+    }
+  }
+
+  &.mod-jobs,
+  &.mod-talks {
+    @include md {
+      background-position: top right;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 40%;
+      padding-top: map-get($spacers, double);
+      text-align: right;
+    }
+
+    @include lg {
+      padding-right: 30%;
+    }
+  }
+
+  &.mod-slack,
+  &.mod-videos {
+    @include md {
+      background-position: top left;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 40%;
+      padding-top: map-get($spacers, double);
+    }
+
+    @include lg {
+      padding-left: 30%;
+    }
+  }
+}
+
+.pageSection-link {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &, &:hover {
+    color: var(--color, #{theme-color('primary')});
+  }
+}
+
+.pageSection-subtitle {
+  @include flexFont(xl);
+
+  margin-top: map-get($spacers, double);
+  text-transform: uppercase;
+}
+
+.pageSection-text {
+  margin-bottom: map-get($spacers, 4);
+}
+
+.pageSection-title {
+  @include flexFont(xxl);
+
+  margin-bottom: map-get($spacers, 4);
+  text-transform: uppercase;
+
+  @include md {
+    margin-bottom: map-get($spacers, double);
+  }
+}

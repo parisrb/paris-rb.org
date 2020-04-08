@@ -1,0 +1,145 @@
+// Color system
+
+$white:    #fff;
+$gray-400: #ced4da;
+$gray-700: #333;
+$gray-800: #2f303c;
+$gray-900: #23242c;
+$black:    #010101;
+
+$pink:    #ebaaa8;
+$pink2:   #ffcecd;
+$red:     #e86f69;
+$red2:    #e48b89;
+$red3:    #d26461;
+$red4:    #e86f69;
+
+$colors: (
+  "pink2": $pink2,
+  "red2": $red2,
+  "red3": $red3,
+  "red4": $red4,
+);
+
+$primary:       $red;
+$light:         $white;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+
+// Options
+
+$enable-rounded: false;
+$enable-validation-icons: false;
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: (
+  double: ($spacer * 2),
+  triple: ($spacer * 3),
+  four:   ($spacer * 4),
+  five:   ($spacer * 5),
+  ten:    ($spacer * 10)
+);
+
+// Body
+
+$body-color: $gray-700;
+
+// Grid columns
+
+$grid-columns: 24;
+// $grid-gutter-width: 30px !default;
+
+// Components
+
+$border-color: $gray-400;
+
+// Fonts
+
+$font-family-sans-serif: $font-main;
+$font-size-base: 1rem;
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * .875);
+
+$h1-font-size: $font-size-base * 4.375;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 2;
+
+$headings-margin-bottom: $spacer * 1.5;
+$headings-font-family: $font-second;
+$headings-font-weight: 700;
+$headings-line-height: 1.354;
+
+$small-font-size: 87.5%;
+
+// Buttons + Forms
+
+$input-btn-padding-x: 1rem;
+$input-btn-font-size: $font-size-sm;
+
+$input-btn-padding-x-lg: 1.25rem;
+$input-btn-padding-y-lg: .5rem;
+
+$form-feedback-margin-top: 0;
+
+// $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+// Forms
+
+$label-margin-bottom:                   .25rem;
+
+// $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
+
+// Navbar
+
+$navbar-light-color: $gray-900;
+$navbar-light-hover-color: $gray-900;
+$navbar-light-toggler-border-color: transparent;
+$navbar-nav-link-padding-x: $spacer;
+
+@import 'bootstrap';
+
+.btn {
+  @include flexFont(m);
+
+  text-transform: uppercase;
+}
+
+.form-control-label {
+  @include flexFont(s);
+
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.invalid-feedback,
+.valid-feedback {
+  @include flexFont(s);
+}
+
+.navbar {
+  .navbar-brand {
+    margin-right: map-get($spacers, triple);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@mixin xxs { @media (max-width: map-get($grid-breakpoints, sm)) { @content; } }
+@mixin xs { @media (min-width: map-get($grid-breakpoints, xs)) { @content; } }
+@mixin sm { @media (min-width: map-get($grid-breakpoints, sm)) { @content; } }
+@mixin md { @media (min-width: map-get($grid-breakpoints, md)) { @content; } }
+@mixin lg { @media (min-width: map-get($grid-breakpoints, lg)) { @content; } }
+@mixin xl { @media (min-width: map-get($grid-breakpoints, xl)) { @content; } }

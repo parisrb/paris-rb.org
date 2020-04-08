@@ -7,13 +7,14 @@ html lang="fr"
     - if ENV["GOOGLE_WEB_TOOLS_ID"]
       meta name="google-site-verification" content="#{ENV["GOOGLE_WEB_TOOLS_ID"]}"
 
-    = display_meta_tags reverse: true, site: t('site_name'), separator: '·'
+    = display_meta_tags reverse: true, site: t('ui.site_name'), separator: '·'
 
-    = stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'
     = stylesheet_link_tag 'application'
     = csrf_meta_tags
+    = csp_meta_tag
   body
     = render 'shared/navbar'
+
     .main-content
       - if notice
         p.notice = notice
@@ -22,12 +23,6 @@ html lang="fr"
 
       = yield
 
-    footer
-      p
-        = link_to t('project_on_github'), 'https://github.com/parisrb/rubyparis.org'
-        = link_to t('contact_maintainer'), 'https://twitter.com/happynoff'
-        = link_to t('sponsoring_the_meetup'), sponsoring_path
+    = render 'shared/footer'
 
-    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
-    = javascript_include_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js'
     = javascript_include_tag 'application'

@@ -1,5 +1,7 @@
 fr:
   admin:
+    toggle_navigation: Navigation
+
     js:
       true: Vrai
       false: Faux
@@ -50,6 +52,7 @@ fr:
       object_not_found: "%{model} avec id '%{id}' n'a pas été trouvé"
     table_headers:
       model_name: "Nom du modèle"
+      last_created: "Last created"
       last_used: "Utilisé"
       records: "Enregistrements"
       username: "Utilisateur"

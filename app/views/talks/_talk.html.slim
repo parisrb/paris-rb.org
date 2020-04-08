@@ -1,0 +1,12 @@
+.col-sm-12
+  .talk
+    p.talk-speaker = talk.speaker_name
+    p.talk-title = talk.title
+    p.talk-details #{talk.duration_text} — #{talk.level_text}
+    p.talk-linksList
+      - if talk.slides?
+        => link_to t('.slides'), talk.slides, class: 'talk-link'
+      - if talk.video_url?
+        => link_to t('.video'), talk.video_url, class: 'talk-link'
+      - if talk.speaker_twitter?
+        = link_to t('.twitter'), talk.speaker_twitter, class: 'talk-link'

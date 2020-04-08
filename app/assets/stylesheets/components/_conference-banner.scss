@@ -1,0 +1,114 @@
+.conferenceBanner {
+  background-image: linear-gradient(-180deg, $black 0%, $gray-800 77%);
+  color: $white;
+  margin-bottom: map-get($spacers, five);
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 48px 15px;
+  text-align: center;
+
+  @include lg {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacer * 7 48px;
+  }
+
+  @include xl {
+    justify-content: space-around;
+  }
+}
+
+.conferenceBanner-title {
+  @include flexFont(xxxxl);
+
+  color: color('pink2');
+  font-family: $font-main;
+  line-height: 1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include lg {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.conferenceBanner-name {
+  margin-bottom: 2.5px;
+
+  @include xs {
+    white-space: nowrap;
+  }
+}
+
+.conferenceBanner-ruby {
+  vertical-align: -2px;
+  width: 85px;
+
+  @include sm {
+    width: 100px;
+  }
+
+  @include md {
+    width: 120px;
+  }
+}
+
+.conferenceBanner-year {
+  font-weight: 300;
+  display: block;
+}
+
+
+.conferenceBanner-dates {
+  @include flexFont(xxl);
+
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: map-get($spacers, 4);
+  text-transform: uppercase;
+
+  @include lg {
+    margin-bottom: map-get($spacers, double);
+  }
+}
+
+.conferenceBanner-details {
+  @include sm {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  @include lg {
+    display: block;
+    margin-left: map-get($spacers, double);
+    margin-top: map-get($spacers, double);
+  }
+
+  @include xl {
+    margin-left: 0;
+  }
+}
+
+.conferenceBanner-linksList {}
+
+.conferenceBanner-link {
+  @include flexFont(l);
+
+  color: $white;
+  display: block;
+  font-weight: bold;
+  margin-bottom: map-get($spacers, 2);
+  position: relative;
+  text-transform: uppercase;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}

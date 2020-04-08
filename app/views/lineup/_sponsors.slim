@@ -1,7 +1,11 @@
 section
-  h2 Sponsors <3
+  h2.slide-title Sponsors
 
-  - sponsors.each do |sponsor|
-    => image_tag sponsor.logo_url(:thumb), alt: sponsor.name
-
-  p ... et vous ?
+  .slide-sponsorsList
+    = image_tag 'http://placehold.it/288x160', class: 'slide-sponsor', height: 160, width: 288
+    = image_tag 'http://placehold.it/288x160', class: 'slide-sponsor', height: 160, width: 288
+    = image_tag 'http://placehold.it/288x160', class: 'slide-sponsor', height: 160, width: 288
+    = image_tag 'http://placehold.it/288x160', class: 'slide-sponsor', height: 160, width: 288
+    = image_tag 'http://placehold.it/288x160', class: 'slide-sponsor', height: 160, width: 288
+    / - sponsors.each do |sponsor|
+      / => image_tag sponsor.logo_url(:thumb), alt: sponsor.name

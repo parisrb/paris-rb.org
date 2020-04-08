@@ -1,0 +1,7 @@
+.job-company {
+  @include flexFont(m);
+
+  font-weight: bold;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}

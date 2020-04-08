@@ -1,0 +1,220 @@
+$black:    #010101;
+$gray-900: #23242c;
+$white:    #fff;
+
+$red: #e86f69;
+
+$primary: $red;
+
+.reveal {
+  &::after {
+    background-image: image-url('exploded-ruby.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 844px 524px;
+    bottom: calc((100% - 524px) / 2);
+    content: '';
+    display: block;
+    height: 524px;
+    opacity: .3;
+    position: absolute;
+    right: calc(((100vw - 960px) / 2) - 610px);
+    width: 844px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  .slide-answer {
+    @include flexFont(xxl);
+
+    color: $primary;
+    font-weight: bold;
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .slide-highlight {
+    color: $primary;
+  }
+
+  .slide-question {
+    @include flexFont(xxl);
+
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .slide-paragraph {
+    @include flexFont(xxl);
+
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+
+  .slide-sponsorsList {
+    text-align: center;
+  }
+
+  .slide-sponsor {
+    display: inline-block;
+    margin: 0 16px 32px;
+  }
+
+  .slide-title {
+    @include flexFont(xxxxl);
+
+    font-family: $font-second;
+    font-weight: bold;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+
+  .talk {
+    flex: 1;
+    margin-bottom: 32px;
+    max-width: 50%;
+    text-align: left;
+
+    &:nth-child(even) {
+      text-align: right;
+    }
+
+    &-details {
+      @include flexFont(s);
+
+      margin-bottom: 4px;
+    }
+
+    &-speaker {
+      @include flexFont(m);
+
+      font-family: $font-second;
+      font-weight: bold;
+      line-height: 1.35;
+      margin: 0;
+    }
+
+    &-title {
+      @include flexFont(xl);
+
+      color: $primary;
+      font-family: $font-second;
+      font-weight: bold;
+      line-height: 1.35;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// $mainColor: #000;
+// $imgColor: #EEE;
+// $backgroundColor: #FFF;
+// $mainFont: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+// $mainFontSize: 36px;
+// $headingFont: $mainFont;
+// $headingColor: #B31D0F;
+// $linkColor: #B31D0F;
+// $linkColorHover: lighten( $linkColor, 20% );
+
+// $headingMargin: 0 0 20px 0;
+// $headingLineHeight: 0.9em;
+// $headingLetterSpacing: 0.02em;
+// $headingTextTransform: uppercase;
+// $headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+// $heading1TextShadow: $headingTextShadow;
+
+// $selectionBackgroundColor: #FF5E99;
+// $selectionColor: #fff;
+
+body {
+  background-image: linear-gradient(212deg, $black 13%, $gray-900 72%);
+  color: $white;
+  font-family: $font-main;
+}
+
+// ::selection {
+//   color: $selectionColor;
+//   background: $selectionBackgroundColor;
+// }
+
+// .reveal {
+//   color: $mainColor;
+//   font-family: $mainFont;
+//   font-size: $mainFontSize;
+//   font-weight: normal;
+//   letter-spacing: -0.02em;
+
+//   h1, h2, h3, h4, h5, h6 {
+//     color: $headingColor;
+//     font-family: $headingFont;
+//     font-weight: 200;
+//     letter-spacing: $headingLetterSpacing;
+//     line-height: $headingLineHeight;
+//     margin: $headingMargin;
+//     text-transform: $headingTextTransform;
+//   }
+
+//   h3 {
+//     margin-top: 1em;
+//   }
+
+//   a:not(.image) {
+//     color: $linkColor;
+//     text-decoration: none;
+
+//     &:hover {
+//       border: none;
+//       color: $linkColorHover;
+//       text-shadow: none;
+//     }
+//   }
+
+//   section img {
+//     margin: 15px 0px;
+//     background: #FEFEFE;
+//     border: 2px solid #DDD;
+//     padding: .2em;
+//   }
+
+//   a:hover img {
+//     background: rgba(255,255,255,0.2);
+//     border-color: $linkColor;
+//   }
+
+//   table {
+//     font-size: .6em;
+//     margin: auto;
+//     width: 90%;
+//     margin-bottom: 2em;
+
+//     td, th {
+//       border-bottom: 1px solid #EEE;
+//     }
+//   }
+
+//   .header {
+//     height: 60px;
+//     line-height: 60px;
+
+//     padding: 10px 30px;
+//     pointer-events: none;
+
+//     .date {
+//       float: right;
+//       font-size: 20px;
+//     }
+
+//     .logo {
+//       float: left;
+//       height: 100%;
+//     }
+//   }
+// }
