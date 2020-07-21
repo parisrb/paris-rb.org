@@ -8,45 +8,45 @@ Des fichiers de définition Docker docker-compose sont présents pour faciliter 
 
 Build des images Docker :
 
-```
+```sh
 docker-compose build
 ```
 
 Installation des gems :
 
-```
+```sh
 docker-compose run web bundle install
+```
 
 Cette commande doit être lancée dès qu'une nouvelle gem apparait.
-```
 
 Installation des packages Javascript :
 
-```
+```sh
 docker-compose run web yarn install
 ```
 
-Un fichier .env à la racine du projet local au développeur derait contenir les valeurs suivantes :
+Un fichier `.env` à la racine du projet local au développeur derait contenir les valeurs suivantes :
 
-```
+```sh
 CLOUDINARY_URL=cloudinary://blablah
 ```
 
 Créer la base de données :
 
-```
+```sh
 docker-compose run web rails db:drop db:create db:schema:load db:seed
 ```
 
 Lancement d'une migration de base :
 
-```
+```sh
 docker-compose run web rails db:migrate
 ```
 
 Démarrage des images :
 
-```
+```sh
 docker-compose down && docker-compose up
 ```
 
