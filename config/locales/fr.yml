@@ -144,7 +144,7 @@ fr:
       show-off:
         active_members: Plus de 100 membres présents chaque mois.
         members_count: >-
-          {{members}} membres sur [Meetup.org](http://www.meetup.com/parisrb/)
+          %{members} membres sur 
 
         title: Le plus grand meetup Ruby d'Europe !
       sponsors:
