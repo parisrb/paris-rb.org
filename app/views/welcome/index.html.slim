@@ -76,4 +76,4 @@
               p = tweet.text
               footer
                 cite
-                  = mustdown t('.tweet_infos'), tweet
+                  p == tweet.author + " (#{link_to "@#{tweet.twitter_handle}", "https://twitter.com/#{tweet.twitter_handle}"}) " + tweet.cool_projects
