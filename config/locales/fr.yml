@@ -144,7 +144,7 @@ fr:
       show-off:
         active_members: Plus de 100 membres présents chaque mois.
         members_count: >-
-          {{members}} membres sur [Meetup.org](http://www.meetup.com/parisrb/)
+          %{members} membres sur 
 
         title: Le plus grand meetup Ruby d'Europe !
       sponsors:
@@ -155,10 +155,6 @@ fr:
         subtitle: Toutes les présentations sont filmées
         title: Des talks de qualité
         videos: Voir les vidéos
-      tweet_infos: >-
-        {{author}}
-        ([@{{twitter_handle}}](https://twitter.com/{{twitter_handle}}))
-        {{cool_projects}}
       you:
         give_a_talk: Proposer un talk !
         title: Mais Paris.rb c'est avant tout... VOUS!
