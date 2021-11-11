@@ -122,10 +122,6 @@ GEM
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
-    handlebars (0.8.0)
-      handlebars-source (~> 4.0.5)
-      therubyracer (~> 0.12.1)
-    handlebars-source (4.0.14)
     hirb (0.7.3)
     http-accept (1.7.0)
     http-cookie (1.0.3)
@@ -176,7 +172,6 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    libv8 (3.16.14.19)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -200,9 +195,6 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.13.0)
-    mustdown (2.0.0)
-      handlebars (~> 0.7)
-      redcarpet (~> 3.2)
     nested_form (0.3.2)
     netrc (0.11.0)
     newrelic_rpm (6.5.0.357)
@@ -280,9 +272,7 @@ GEM
       ffi (~> 1.0)
     record_tag_helper (1.0.0)
       actionview (~> 5.x)
-    redcarpet (3.5.0)
     redis (4.1.2)
-    ref (2.0.0)
     remotipart (1.4.3)
     responders (3.0.0)
       actionpack (>= 5.0)
@@ -341,9 +331,6 @@ GEM
     sucker_punch (2.1.2)
       concurrent-ruby (~> 1.0)
     temple (0.8.1)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
@@ -392,7 +379,6 @@ DEPENDENCIES
   kaminari
   listen (>= 3.0.5, < 3.2)
   meta-tags
-  mustdown
   newrelic_rpm
   pg
   puma
