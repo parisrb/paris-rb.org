@@ -8,15 +8,10 @@ nav.navbar.navbar-default.navbar-static-top role="navigation"
       = link_to root_path, class: 'navbar-brand' do
         = image_tag 'logo.png', width: '100'
 
-    #menu.collapse.navbar-collapse.navbar-right
+    #menu.collapse.navbar-collapse
       ul.nav.navbar-nav
-        li = link_to 'Conférence', 'https://2020.rubyparis.org', class: "navbar-highlight"
         li = link_to 'Accueil', root_path
         li = link_to 'Vidéos', videos_path
         li = link_to 'Proposer un talk', talks_path
-        li = link_to 'Job board', 'https://jobs.rubyparis.org'
-        li = link_to 'Forum', 'https://forum.rubyparis.org'
         li = link_to 'Meetup', 'https://www.meetup.com/parisrb/'
         li = link_to 'Slack', 'https://parisrb-slack-invite.herokuapp.com/'
-
-        li = link_to 'Sponsoriser', sponsoring_path
