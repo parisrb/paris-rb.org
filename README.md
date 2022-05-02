@@ -1,4 +1,5 @@
 # Rubyparis.org
+Read this in [English](README.en.md)
 
 ## Environnement de développement
 
