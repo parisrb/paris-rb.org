@@ -53,6 +53,8 @@ class Talk < ApplicationRecord
   validates :title,
     presence: true
 
+  after_create_commit :send_slack_notification
+
   def self.months_iterator(range)
     range.map { |m| Date::MONTHNAMES[((m - 1) % 12) + 1].downcase }.inject({}) { |hash, month|
       path_to_months = 'activerecord.attributes.talk.proposed_months'
@@ -96,5 +98,16 @@ class Talk < ApplicationRecord
 
   def happened?
     happened_at && happened_at < Date.today
+  end
+
+  private
+
+  def send_slack_notification
+    conn = Faraday.new(headers: {'Content-Type' => 'application/json'}) do |conn|
+      conn.options.timeout = 5
+    end
+    conn.post(ENV['SLACK_WEBHOOK_URL'], {text: "Nouveau talk: #{title} par #{speaker_name}" }.to_json)
+  rescue => e
+    Rails.logger.error "Couldn't send slack notification because of error: #{e.class} #{e.message}"
   end
 end
