@@ -53,7 +53,7 @@ class Talk < ApplicationRecord
   validates :title,
     presence: true
 
-  after_create :send_slack_notification
+  after_create_commit :send_slack_notification
 
   def self.months_iterator(range)
     range.map { |m| Date::MONTHNAMES[((m - 1) % 12) + 1].downcase }.inject({}) { |hash, month|
