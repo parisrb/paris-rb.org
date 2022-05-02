@@ -1,6 +1,6 @@
 .reveal
   .header
-    .date = l(Date.today, format: :long)
+    .date = l(Date.today, format: '%A %d %B %Y')
     .logo = image_tag 'logo.png', alt: 'Rubyparis'
   .slides
     = render 'lineup/welcome'
