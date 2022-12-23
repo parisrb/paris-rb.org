@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.4'
+ruby '2.7.7'
 
 gem 'rails', '~> 5.0.0'
 
@@ -23,7 +23,7 @@ gem 'ransack'
 gem 'record_tag_helper'
 gem 'redis'
 gem 'sass-rails', '~> 5.0'
-gem 'sassc', '2.1.0'
+gem 'sassc', '~> 2.4.0'
 gem 'simple_form', '~> 3.5.1'
 gem 'sitemap_generator', require: false
 gem 'slim'
