@@ -4,18 +4,18 @@
 
 Application Ruby on Rails avec base de données PostgreSQL, assets compilés avec asset pipeline **et** webpack.
 
-Des fichiers de définition Docker docker-compose sont présents pour faciliter la mise en place de l'environnements de développement.
+Des fichiers de définition Docker Compose sont présents pour faciliter la mise en place de l'environnements de développement.
 
 Build des images Docker :
 
 ```sh
-docker-compose build
+docker compose build
 ```
 
 Installation des gems :
 
 ```sh
-docker-compose run web bundle install
+docker compose run web bundle install
 ```
 
 Cette commande doit être lancée dès qu'une nouvelle gem apparait.
@@ -23,7 +23,7 @@ Cette commande doit être lancée dès qu'une nouvelle gem apparait.
 Installation des packages Javascript :
 
 ```sh
-docker-compose run web yarn install
+docker compose run web yarn install
 ```
 
 Un fichier `.env` à la racine du projet local au développeur derait contenir les valeurs suivantes :
@@ -35,19 +35,19 @@ CLOUDINARY_URL=cloudinary://blablah
 Créer la base de données :
 
 ```sh
-docker-compose run web rails db:drop db:create db:schema:load db:seed
+docker compose run web rails db:drop db:create db:schema:load db:seed
 ```
 
 Lancement d'une migration de base :
 
 ```sh
-docker-compose run web rails db:migrate
+docker compose run web rails db:migrate
 ```
 
 Démarrage des images :
 
 ```sh
-docker-compose down && docker-compose up
+docker compose down && docker compose up
 ```
 
 ## Workflow de développement
