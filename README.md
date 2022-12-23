@@ -4,7 +4,7 @@
 
 Application Ruby on Rails avec base de données PostgreSQL, assets compilés avec asset pipeline **et** webpack.
 
-Des fichiers de définition Docker docker compose sont présents pour faciliter la mise en place de l'environnements de développement.
+Des fichiers de définition Docker Compose sont présents pour faciliter la mise en place de l'environnements de développement.
 
 Build des images Docker :
 
