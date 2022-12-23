@@ -24,7 +24,7 @@ gem 'record_tag_helper'
 gem 'redis'
 gem 'sass-rails', '~> 5.0'
 gem 'sassc', '~> 2.4.0'
-gem 'simple_form', '~> 3.5.1'
+gem 'simple_form', '~> 5.0.0'
 gem 'sitemap_generator', require: false
 gem 'slim'
 gem 'sucker_punch'
