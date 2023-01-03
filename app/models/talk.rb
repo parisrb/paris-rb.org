@@ -103,6 +103,8 @@ class Talk < ApplicationRecord
   private
 
   def send_slack_notification
+    return if ENV['SLACK_WEBHOOK_URL'].blank?
+
     conn = Faraday.new(headers: {'Content-Type' => 'application/json'}) do |conn|
       conn.options.timeout = 5
     end
