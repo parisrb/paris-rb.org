@@ -25,6 +25,10 @@ class Video < ApplicationRecord
     vimeo_url[/vimeo.com\/(\d+)/, 1]
   end
 
+  def short_description
+    description&.truncate(170, separator: ' ')
+  end
+
   private
 
   def refresh_sitemap
