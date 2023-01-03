@@ -113,16 +113,12 @@ fr:
         Liste des talks des prochains meetups.
       ellipsis:
         title: Paris.rb c'est aussi...
-      jobs:
-        add: Poster un job…
-        subtitle: vous tendent les bras ^^
-        title: Les jobs du moment
       guests:
         title: Ce que nos invités en disent
       show-off:
         active_members: Plus de 100 membres présents chaque mois.
         members_count: >-
-          %{members} membres sur 
+          %{members} membres sur
 
         title: Le plus grand meetup Ruby d'Europe !
       sponsors:
