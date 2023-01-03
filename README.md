@@ -2,7 +2,7 @@
 
 ## Environnement de développement
 
-Application Ruby on Rails avec base de données PostgreSQL, assets compilés avec asset pipeline **et** webpack.
+Application Ruby on Rails avec base de données PostgreSQL, assets compilés avec asset pipeline.
 
 Des fichiers de définition Docker Compose sont présents pour faciliter la mise en place de l'environnements de développement.
 

@@ -30,17 +30,8 @@ services:
       RACK_ENV: "development"
       RAILS_ENV: "development"
       REDIS_URL: "redis://:pipo@redis:6379"
-      WEBPACKER_DEV_SERVER_HOST: 172.17.0.1
     links:
       - postgresql
-      - webpack
     ports:
       - 3000:3000
     command: rails server -b 0.0.0.0 -p 3000
-  webpack:
-    build: .
-    ports:
-      - 3035:3035
-    volumes:
-      - ./:/usr/src/app
-    command: ./bin/webpack-dev-server

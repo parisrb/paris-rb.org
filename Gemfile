@@ -29,7 +29,6 @@ gem 'sitemap_generator', require: false
 gem 'slim'
 gem 'sucker_punch'
 gem 'uglifier', '>= 1.3.0'
-gem 'webpacker', '~> 3.0'
 
 group :development do
   gem 'annotate', '>= 2.6.0'
