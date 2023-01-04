@@ -27,7 +27,10 @@ class Video < ApplicationRecord
   end
 
   def provider_id
-    send("#{provider}_id") if provider
+    { 
+      youtube: youtube_id,
+      viemo: vimeo_id
+    }[provider]
   end
   
   def short_description
