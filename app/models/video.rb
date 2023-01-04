@@ -21,11 +21,40 @@ class Video < ApplicationRecord
   before_save :set_slug
   after_save :refresh_sitemap
 
+  def provider
+    return :vimeo if vimeo?  
+    return :youtube if youtube?
+  end
+
+  def provider_id
+    { 
+      youtube: youtube_id,
+      viemo: vimeo_id
+    }[provider]
+  end
+  
+  def short_description
+    description&.truncate(170, separator: ' ')
+  end
+  
+  private 
+
   def vimeo_id
     vimeo_url[/vimeo.com\/(\d+)/, 1]
   end
 
-  private
+
+  def vimeo?
+    vimeo_id.present?
+  end
+
+  def youtube_id
+    vimeo_url[/youtube.com\/watch\?v=(.*)/, 1]
+  end
+
+  def youtube?
+    youtube_id.present?
+  end
 
   def refresh_sitemap
     SitemapJob.perform_later
