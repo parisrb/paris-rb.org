@@ -43,10 +43,6 @@ class Talk < ApplicationRecord
     format: { with: /\A[^@]+@[^@]+\z/ },
     presence: true
 
-  validates :speaker_twitter,
-    format: { with: /\A@.+\z/ },
-    allow_blank: true
-
   validates :speaker_name,
     presence: true
 
