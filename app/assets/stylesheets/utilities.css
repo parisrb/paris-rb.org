@@ -1,0 +1,26 @@
+/* This file is temporary before we transition to Tailwind */
+/* We define the same utilities as Tailwind, once we install Tailwind we can delete this file */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
