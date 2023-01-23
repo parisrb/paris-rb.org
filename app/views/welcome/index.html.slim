@@ -32,7 +32,7 @@
       h1 = t('.sponsors.title')
       p = t('.sponsors.subtitle')
 
-    .flex.items-center.justify-between.flex-wrap
+    .flex.items-center.justify-center.sm:justify-between.flex-wrap.gap-12
       - sponsors.each do |sponsor|
         - cache sponsor do
             = link_to sponsor.website, title: sponsor.name, target: "_blank" do
