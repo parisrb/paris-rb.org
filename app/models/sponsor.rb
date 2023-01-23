@@ -15,5 +15,6 @@
 class Sponsor < ApplicationRecord
   mount_uploader :logo, PictureUploader
 
-  scope :visible, ->{ where('until >= ? OR until IS NULL', Time.current) }
+  scope :current, ->{ where('until >= ? OR until IS NULL', Time.current) }
+  scope :latest,  -> (count) { order('until DESC').limit(count) }
 end

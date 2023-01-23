@@ -35,7 +35,7 @@
     .flex.items-center.justify-center.flex-wrap.gap-12
       - sponsors.each do |sponsor|
         - cache sponsor do
-            = link_to sponsor.website, title: sponsor.name, rel: 'nofollow', target: "_blank" do
+            = link_to sponsor.website, title: sponsor.name, target: "_blank" do
               - if sponsor.logo.present?
                 = cl_image_tag sponsor.logo, width: 200, height: 160, crop: :fit, alt: sponsor.name, srcset: "#{cl_image_path sponsor.logo, width: 400, height: 320, crop: :fit} 2x", style: "width: 200px"
               - else
