@@ -15,15 +15,17 @@ body > footer p {
   text-align: center;
 
   a {
-    color: #5D2026;
+    color: #5d2026;
     padding: 0 2em;
 
-    &:hover, &:active, &:focus {
-      color: #5D2026;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #5d2026;
     }
 
     &:visited {
-      color: lighten(#5D2026, 20%);
+      color: lighten(#5d2026, 20%);
     }
   }
 }
@@ -32,7 +34,7 @@ body > footer p {
   padding: 2em 0 3em;
 
   header {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 }
 
@@ -40,7 +42,7 @@ body > footer p {
 .section-page,
 .section-sponsors,
 .section-talks {
-  color: #FFF;
+  color: #fff;
 }
 
 .section-guests,
@@ -56,12 +58,9 @@ body > footer p {
 }
 
 .section-ellipsis,
-.section-you {
-  color: rgb(93, 32, 38);
-}
-
+.section-you,
 .section-sponsors {
-  background-color: rgb(116, 39, 47);
+  color: rgb(93, 32, 38);
 }
 
 .section-talks {
@@ -70,19 +69,21 @@ body > footer p {
 
 .section-guests {
   cite p {
-    font-size: .9em;
+    font-size: 0.9em;
     font-weight: normal;
   }
 }
 
 .container {
-  h1, p {
+  h1,
+  p {
     text-align: center;
   }
 }
 
 .elm-container {
-  h1, p {
+  h1,
+  p {
     text-align: unset;
   }
 }
@@ -100,7 +101,7 @@ body > footer p {
   padding: 1em 15px 1em;
 
   small {
-    font-size: .7em;
+    font-size: 0.7em;
   }
 }
 
@@ -111,9 +112,9 @@ body > footer p {
 
   p {
     text-align: left;
-    color: #CCC;
+    color: #ccc;
     font-weight: normal;
-    margin: .2em 0 1em;
+    margin: 0.2em 0 1em;
   }
 
   dl {
@@ -121,9 +122,9 @@ body > footer p {
   }
 
   dd {
-    color: #CCC;
+    color: #ccc;
     font-weight: normal;
-    margin: .2em 0 1em;
+    margin: 0.2em 0 1em;
   }
 }
 

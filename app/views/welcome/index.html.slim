@@ -32,16 +32,14 @@
       h1 = t('.sponsors.title')
       p = t('.sponsors.subtitle')
 
-    - sponsors.each_slice(4) do |sponsor_group|
-      .row
-        - sponsor_group.each do |sponsor|
-          - cache sponsor do
-            .sponsor.col-sm-3
-              = link_to sponsor.website, title: sponsor.name, rel: 'nofollow' do
-                - if sponsor.logo.present?
-                  = image_tag sponsor.logo.thumb.url(secure: true), alt: sponsor.name, class: 'img-thumbnail'
-                - else
-                  = sponsor.name
+    .flex.items-center.justify-center.sm:justify-between.flex-wrap.gap-12
+      - sponsors.each do |sponsor|
+        - cache sponsor do
+            = link_to sponsor.website, title: sponsor.name, target: "_blank" do
+              - if sponsor.logo.present?
+                = cl_image_tag sponsor.logo, width: 200, height: 160, crop: :fit, alt: sponsor.name, srcset: "#{cl_image_path sponsor.logo, width: 400, height: 320, crop: :fit} 2x"
+              - else
+                = sponsor.name
 
 .section.section-you
   .container

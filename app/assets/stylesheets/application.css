@@ -2,4 +2,5 @@
  *= require bootstrap_override
  *= require base
  *= require vimeo
+ *= require utilities
  */
