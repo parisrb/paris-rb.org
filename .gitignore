@@ -27,4 +27,5 @@
 
 docker
 vendor/.bundle/
+.byebug_history
 

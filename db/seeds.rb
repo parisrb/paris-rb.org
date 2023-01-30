@@ -6,35 +6,38 @@ Sponsor.all.delete_all
 sponsors = YAML.load(File.read("#{Rails.root}/test/fixtures/sponsors.yml")).values
 
 puts "create 2 current sponsors"
-sponsors.first(2).each do |sponsor|
-  Sponsor.find_or_create_by!(name: sponsor['name']) do |s|
-    s.website = sponsor['website']
-    s.logo = sponsor['logo']
+sponsors.first(2).each do |sponsor_attributes|
+  sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
+    s.website = sponsor_attributes['website']
     s.from = Time.current
     s.until = Time.current + 2.months
   end
+  # we need to update the column directly because the uploader is not triggered
+  sponsor.update_column(:logo, sponsor_attributes['logo'])
 end
 
 puts "create a permanent sponsor"
-sponsor = sponsors[2]
+sponsor_attributes = sponsors[2]
 
-Sponsor.find_or_create_by!(name: sponsor['name']) do |s|
-  s.website = sponsor['website']
-  s.logo = sponsor['logo']
+sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
+  s.website = sponsor_attributes['website']
   s.from = nil
   s.until = nil
 end
+# we need to update the column directly because the uploader is not triggered
+sponsor.update_column(:logo, sponsor_attributes['logo'])
 
 puts "create a past sponsors"
 
-sponsors[3..].each do |sponsor|
-  Sponsor.find_or_create_by!(name: sponsor['name']) do |s|
+sponsors[3..].each do |sponsor_attributes|
+  sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
     months = rand(1..12)
-    s.website = sponsor['website']
-    s.logo = sponsor['logo']
+    s.website = sponsor_attributes['website']
     s.from = Time.current - (months + 1).months
     s.until = Time.current - months.month
   end
+  # we need to update the column directly because the uploader is not triggered
+  sponsor.update_column(:logo, sponsor_attributes['logo'])
 end
 
 
