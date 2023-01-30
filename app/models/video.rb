@@ -18,26 +18,28 @@
 #
 
 class Video < ApplicationRecord
+  attr_accessor :skip_sitemap
+
   before_save :set_slug
-  after_save :refresh_sitemap
+  after_save :refresh_sitemap, unless: :skip_sitemap
 
   def provider
-    return :vimeo if vimeo?  
+    return :vimeo if vimeo?
     return :youtube if youtube?
   end
 
   def provider_id
-    { 
+    {
       youtube: youtube_id,
       viemo: vimeo_id
     }[provider]
   end
-  
+
   def short_description
     description&.truncate(170, separator: ' ')
   end
-  
-  private 
+
+  private
 
   def vimeo_id
     vimeo_url[/vimeo.com\/(\d+)/, 1]
