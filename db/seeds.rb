@@ -70,6 +70,10 @@ talks.each do |talk|
   end
 end
 
+Talk.last(3).each do |talk|
+  talk.update_column(:happened_at, Time.current.to_date)
+end
+
 puts "created #{Talk.count} talks"
 
 
