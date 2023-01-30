@@ -1,0 +1,11 @@
+---
+one:
+  text: Very welcoming, with great people and well organized
+  author: Marc-André Cournoyer
+  twitter_handle: macournoyer
+  cool_projects: Thin
+two:
+  text: Paris.rb was insanely great !
+  author: Laurent Sansonetti
+  twitter_handle: lrz
+  cool_projects: RubyMotion

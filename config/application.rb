@@ -11,7 +11,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 # require "action_cable/engine"
 require "sprockets/railtie"
-# require "rails/test_unit/railtie"
+require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -33,5 +33,12 @@ module RubyparisOrg
 
     # User sucker_punch as Active Job adapter
     config.active_job.queue_adapter = :sucker_punch
+
+    config.generators do |g|
+      g.test_framework  :test_unit, fixture: true
+      g.assets  false
+      g.helper false
+      g.stylesheets false
+    end
   end
 end
