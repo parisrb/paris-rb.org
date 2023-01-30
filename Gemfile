@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.7.7'
 
-gem 'rails', '~> 5.2.0'
+gem 'rails', '>= 6.0.0', '< 6.1.0'
 
 gem 'activeresource'
 gem 'carrierwave'

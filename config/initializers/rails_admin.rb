@@ -1,6 +1,7 @@
 require 'rails_admin/config/actions/lineup'
 
 RailsAdmin.config do |config|
+  config.asset_source = :sprockets
   config.actions do
     dashboard
     lineup
