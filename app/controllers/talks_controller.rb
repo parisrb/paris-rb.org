@@ -10,6 +10,7 @@ class TalksController < ApplicationController
   def create
     if talk.save
       TalkMailer.new_talk(talk.id).deliver_later
+      talk.send_slack_notification!
       redirect_to talks_path(anchor: :talks)
     else
       render action: :index
