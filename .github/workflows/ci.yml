@@ -52,8 +52,7 @@ jobs:
 
       - name: Run tests
         run: |
-          bin/rails test --fail-fast
-          bin/rails test:system
+          bin/rails test:all
 
       - name: Smoke test database seeds
         run: bin/rails db:reset
