@@ -34,7 +34,6 @@ group :development do
   gem 'annotate', '>= 2.6.0'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'dotenv-rails'
   gem 'irbtools', require: 'irbtools/configure'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -54,6 +53,7 @@ end
 
 group :development, :test do
   gem "faker"
+  gem 'dotenv-rails'
 end
 
 gem "bootsnap", "~> 1.16"
