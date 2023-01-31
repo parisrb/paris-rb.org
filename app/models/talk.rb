@@ -94,8 +94,6 @@ class Talk < ApplicationRecord
     happened_at && happened_at < Date.today
   end
 
-  private
-
   def send_slack_notification!
     return if ENV['SLACK_WEBHOOK_URL'].blank?
 

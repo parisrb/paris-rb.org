@@ -17,10 +17,4 @@ class Sponsor < ApplicationRecord
 
   scope :current, ->{ where('until >= ? OR until IS NULL', Time.current) }
   scope :latest,  -> (count) { order(until: :desc).limit(count) }
-
-  def active?
-    # This is ugly, we will need to rename the column to starts_at, ends_at as
-    # `until` is a reserved word.
-    self[:until].nil? || self[:until] >= Time.current && from <= Time.current
-  end
 end

@@ -48,8 +48,7 @@ jobs:
           PGPASSWORD: postgres
         run: |
           cp config/database.ci.yml config/database.yml
-          bin/rails db:create
-          bin/rails db:schema:load
+          bin/rails db:create db:schema:load
 
       - name: Run tests
         run: |

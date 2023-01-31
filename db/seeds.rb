@@ -71,7 +71,7 @@ talks.each do |talk|
 end
 
 Talk.last(3).each do |talk|
-  talk.update_column(:happened_at, Time.current.to_date)
+  talk.update_column(:happened_at, 2.weeks.from_now)
 end
 
 puts "created #{Talk.count} talks"
