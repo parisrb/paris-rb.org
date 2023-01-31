@@ -19,7 +19,8 @@ class Sponsor < ApplicationRecord
   scope :latest,  -> (count) { order(until: :desc).limit(count) }
 
   def active?
-    # this is ugly, we will need to rename the column to starts_at, ends_at as unitl is a reserved word
+    # This is ugly, we will need to rename the column to starts_at, ends_at as
+    # `until` is a reserved word.
     self[:until].nil? || self[:until] >= Time.current && from <= Time.current
   end
 end
