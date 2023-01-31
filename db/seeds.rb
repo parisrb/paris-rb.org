@@ -2,8 +2,8 @@ User.create_with(password: 'password').find_or_create_by!(email: 'admin@example.
 
 puts "Creating sponsors"
 
-Sponsor.all.delete_all
-sponsors = YAML.load(File.read("#{Rails.root}/test/fixtures/sponsors.yml")).values
+Sponsor.all.destroy_all
+sponsors = YAML.load(Rails.root.join("test/fixtures/sponsors.yml").read).values
 
 puts "create 2 current sponsors"
 sponsors.first(2).each do |sponsor_attributes|
@@ -45,9 +45,9 @@ puts "created #{Sponsor.count} sponsors"
 
 puts "create videos"
 
-Video.all.delete_all
+Video.all.destroy_all
 
-videos = YAML.load(File.read("#{Rails.root}/test/fixtures/videos.yml")).values
+videos = YAML.load(Rails.root.join("test/fixtures/videos.yml").read).values
 
 videos.each do |video|
   Video.find_or_create_by!(title: video['title']) do |v|
@@ -60,8 +60,8 @@ puts "created #{Video.count} videos"
 
 puts "Creating talks"
 
-Talk.all.delete_all
-talks = YAML.load(File.read("#{Rails.root}/test/fixtures/talks.yml")).values
+Talk.all.destroy_all
+talks = YAML.load(Rails.root.join("test/fixtures/talks.yml").read).values
 
 talks.each do |talk|
   Talk.find_or_create_by!(title: talk['title']) do |t|

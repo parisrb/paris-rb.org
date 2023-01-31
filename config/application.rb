@@ -35,8 +35,8 @@ module RubyparisOrg
     config.active_job.queue_adapter = :sucker_punch
 
     config.generators do |g|
-      g.test_framework  :test_unit, fixture: true
-      g.assets  false
+      g.test_framework :test_unit, fixture: true
+      g.assets false
       g.helper false
       g.stylesheets false
     end
