@@ -202,10 +202,9 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
-    listen (3.1.5)
+    listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-      ruby_dep (~> 1.2)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -320,7 +319,6 @@ GEM
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
-    ruby_dep (1.5.0)
     ruby_engine (1.0.1)
     ruby_info (1.0.1)
     ruby_version (1.0.2)
@@ -445,7 +443,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 2.7.7p221
+   ruby 3.0.5p211
 
 BUNDLED WITH
    2.4.2
