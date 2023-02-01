@@ -5,14 +5,12 @@
     header
       h1 = t('.show-off.title')
 
-    .row
-      .col-sm-3.col-sm-offset-2
-        .block
-          p == t('.show-off.members_count', members: members_count) + link_to('Meetup.com/paris_rb', 'https://www.meetup.com/paris_rb/', target: "_blank")
+    .flex.justify-evenly.gap-8.flex-wrap
+      .block
+        p == t('.show-off.members_count', link: link_to('Meetup.com/paris_rb', 'https://www.meetup.com/paris_rb/', target: "_blank"))
 
-      .col-sm-3.col-sm-offset-2
-        .block
-          p = t('.show-off.active_members')
+      .block
+        p = t('.show-off.active_members')
 
 .section.section-ellipsis
   .container
