@@ -20,7 +20,9 @@ module Meetup
       count = text.split(' ').first.gsub(',', '').to_i
       REDIS.set('meetup_members', count)
       REDIS.expire('meetup_members', 24.hours)
-      members_count
+      count
+    rescue
+      3200
     end
 
     def get_meetup_members_old
