@@ -1,6 +1,6 @@
 fr:
-  'yes': 'Oui'
-  'no': 'Non'
+  "yes": "Oui"
+  "no": "Non"
 
   contact_maintainer: Contacter le mainteneur (@happynoff)
   project_on_github: Retrouver ce projet sur Github
@@ -53,7 +53,7 @@ fr:
         title: Connexion
     shared:
       links:
-        forgot_password: 'Mot de passe oublié ?'
+        forgot_password: "Mot de passe oublié ?"
         sign_in: Connexion
 
   enumerize:
@@ -118,7 +118,7 @@ fr:
       show-off:
         active_members: Plus de 100 membres présents chaque mois.
         members_count: >-
-          %{members} membres sur
+          Plus de 3000 membres sur %{link}
 
         title: Le plus grand meetup Ruby d'Europe !
       sponsors:

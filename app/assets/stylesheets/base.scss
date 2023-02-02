@@ -94,11 +94,11 @@ body > footer p {
 }
 
 .block {
+  max-width: 35rem;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 0.5rem;
   font-size: 1.5em;
-  margin-bottom: 1em;
-  padding: 1em 15px 1em;
+  padding: 2em;
 
   small {
     font-size: 0.7em;
