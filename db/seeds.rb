@@ -1,84 +1,79 @@
 User.create_with(password: 'password').find_or_create_by!(email: 'admin@example.org')
 
-Sponsor.create_with(website: "https://scalingo.com").find_or_create_by!(name: 'Scalingo')
+puts "Creating sponsors"
 
-Tweet.create_with(
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna duis convallis convallis tellus id interdum velit.",
-  author: "Lorem ipsum",
-  cool_projects: "example",
-).find_or_create_by!(
-  twitter_handle: 'lorem_ipsum'
-)
+Sponsor.all.destroy_all
+sponsors = YAML.load(Rails.root.join("test/fixtures/sponsors.yml").read).values
 
-Video.create_with(
-  vimeo_url: "https://www.youtube.com/watch?v=Yf09FVj_hG4",
-  vimeo_thumbnail: "https://img.youtube.com/vi/Yf09FVj_hG4/maxresdefault.jpg",
-  title: "Level up your Capybara acceptance tests using Siteprism",
-  description: "Level up your Capybara acceptance tests using Siteprism",
-  event_date: "2022-11-08"
-).find_or_create_by!(
-  slug: "level-up-your-capybara-acceptance-tests-using-siteprism"
-)
+puts "create 2 current sponsors"
+sponsors.first(2).each do |sponsor_attributes|
+  sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
+    s.website = sponsor_attributes['website']
+    s.from = Time.current
+    s.until = Time.current + 2.months
+  end
+  # we need to update the column directly because the uploader is not triggered
+  sponsor.update_column(:logo, sponsor_attributes['logo'])
+end
 
-Video.create_with(
-  vimeo_url: "https://www.youtube.com/watch?v=JFPaJnahtH8",
-  vimeo_thumbnail: "https://img.youtube.com/vi/JFPaJnahtH8/maxresdefault.jpg",
-  title: "Business Logic and data integrity",
-  description: "Business Logic and data integrity",
-  event_date: "2022-11-08"
-).find_or_create_by!(
-  slug: "business-logic-and-data-integrity"
-)
+puts "create a permanent sponsor"
+sponsor_attributes = sponsors[2]
 
-Video.create_with(
-  vimeo_url: "https://www.youtube.com/watch?v=DRrIDPzirzE",
-  vimeo_thumbnail: "https://img.youtube.com/vi/DRrIDPzirzE/maxresdefault.jpg",
-  title: "Sorbet in practice",
-  description: "Sorbet in practice",
-  event_date: "2022-11-08"
-).find_or_create_by!(
-  slug: "sorbet-in-practice"
-)
+sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
+  s.website = sponsor_attributes['website']
+  s.from = nil
+  s.until = nil
+end
+# we need to update the column directly because the uploader is not triggered
+sponsor.update_column(:logo, sponsor_attributes['logo'])
 
-Talk.create_with(
-  speaker_name: "Lorem Ipsum",
-  speaker_email: "lorem.ipsum@example.org",
-  level: "intermediate",
-  duration: "long",
-  happened_at: "2022-12-06",
-  slides: nil,
-  video_url: nil,
-  speaker_twitter: nil,
-  preferred_month_talk: "december",
-  time_position: "2022-12-06 19:30:00"
-).find_or_create_by!(
-  title: "💬 Urna duis convallis convallis tellus",
-)
-Talk.create_with(
-  speaker_name: "Tempor Incididunt",
-  speaker_email: "tempor.incididunt@example.org",
-  level: "easy",
-  duration: "lightning",
-  happened_at: "2022-12-06",
-  slides: nil,
-  video_url: nil,
-  speaker_twitter: "@example",
-  preferred_month_talk: "december",
-  time_position: "2022-12-06 19:00:00"
-).find_or_create_by!(
-  title: "💬 Sed do eiusmod tempor incididunt",
-)
-Talk.create_with(
-  speaker_name: "Dolore Magna",
-  speaker_email: "dolore.magna@example.org",
-  level: "intermediate",
-  duration: "long",
-  happened_at: nil,
-  slides: nil,
-  video_url: nil,
-  speaker_twitter: "",
-  preferred_month_talk: "january",
-  time_position: nil
-).find_or_create_by!(
-  title: "Dolore Magna Aliqua",
-)
+puts "create a past sponsors"
+
+sponsors[3..].each do |sponsor_attributes|
+  sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
+    months = rand(1..12)
+    s.website = sponsor_attributes['website']
+    s.from = Time.current - (months + 1).months
+    s.until = Time.current - months.month
+  end
+  # we need to update the column directly because the uploader is not triggered
+  sponsor.update_column(:logo, sponsor_attributes['logo'])
+end
+
+
+puts "created #{Sponsor.count} sponsors"
+
+puts "create videos"
+
+Video.all.destroy_all
+
+videos = YAML.load(Rails.root.join("test/fixtures/videos.yml").read).values
+
+videos.each do |video|
+  Video.find_or_create_by!(title: video['title']) do |v|
+    v.attributes = video.except('id', 'created_at', 'updated_at')
+    v.skip_sitemap = true
+  end
+end
+
+puts "created #{Video.count} videos"
+
+puts "Creating talks"
+
+Talk.all.destroy_all
+talks = YAML.load(Rails.root.join("test/fixtures/talks.yml").read).values
+
+talks.each do |talk|
+  Talk.find_or_create_by!(title: talk['title']) do |t|
+    t.attributes = talk.except('id', 'created_at', 'updated_at')
+    t.preferred_month_talk = talk['preferred_month_talk'].presence || Talk::ALL_MONTHS.keys.sample
+  end
+end
+
+Talk.last(3).each do |talk|
+  talk.update_column(:happened_at, 2.weeks.from_now)
+end
+
+puts "created #{Talk.count} talks"
+
+

@@ -1,0 +1,1226 @@
+---
+one:
+  vimeo_url: https://vimeo.com/36298413
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/248/893/248893500_640.jpg
+  title: RubyLive - Matthieu Segret
+  description: |-
+    Présentation du site Rubyive, agrégation d'actualité autour du langage Ruby
+
+    IESA
+  event_date: 2011-11-08
+  slug: rubylive-matthieu-segret
+two:
+  vimeo_url: https://vimeo.com/36236409
+  vimeo_thumbnail: https://secure-b.vimeocdn.com/ts/248/431/248431058_295.jpg
+  title: Commander - Simon Courtois
+  description: IEAS - Novembre 2011
+  event_date: 2011-11-08
+  slug: commander-simon-courtois
+vimeo:
+  vimeo_url: https://vimeo.com/36303599
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/248/919/248919407_640.jpg
+  title: Contest Dimelo 2011 et Présentation de JobTeaser
+  description: |-
+    L'équipe de Dimelo présente son coding contest pour 2011.
+    Nicolas Lombard nous parle de JobTeaser.
+
+    IESA
+  event_date: 2011-12-06
+  slug: contest-dimelo-2011-et-presentation-de-jobteaser
+youtube:
+  vimeo_url: https://www.youtube.com/watch?v=OS7lsnN6j8U
+  vimeo_thumbnail: https://img.youtube.com/vi/OS7lsnN6j8U/maxresdefault.jpg
+  title: Lesson Learned from DB issues
+  description:
+  event_date: 2022-06-07
+  slug: lesson-learned-from-db-issues
+get-slim-simon-courtois:
+  vimeo_url: https://vimeo.com/99737189
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481018567_640.jpg
+  title: Get Slim! - Simon Courtois
+  description: "Pourquoi utiliser Slim plutôt que ERB ou Haml ?\r\n\r\nÉcole 42"
+  event_date: 2014-06-03
+  slug: get-slim-simon-courtois
+manage-open-source-project-mike-burns:
+  vimeo_url: https://vimeo.com/45214727
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/314/364/314364670_640.jpg
+  title: Manage Open Source Project - Mike Burns
+  description: |-
+    Comment trouver un nom, construire une communauté, gérer votre dépôt, accepter (ou refuser) les Pull Requests, etc.
+
+    AF83
+  event_date: 2012-07-03
+  slug: manage-open-source-project-mike-burns
+vos-regexps-sont-fausses-lightning-talk-simon-courtois:
+  vimeo_url: https://vimeo.com/45315036
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/315/062/315062682_640.jpg
+  title: Vos RegExps sont fausses - Lightning Talk - Simon Courtois
+  description: |-
+    Petite astuce pour corriger une erreur fréquente dans les expressions régulières
+
+    AF83
+  event_date: 2012-07-03
+  slug: vos-regexps-sont-fausses-lightning-talk-simon-courtois
+exceptions-in-ruby-tips-and-tricks-vlad-zloteanu:
+  vimeo_url: https://vimeo.com/45458405
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/316/135/316135767_640.jpg
+  title: Exceptions in Ruby Tips and tricks - Vlad Zloteanu
+  description: |-
+    Quelques astuces relatives au fonctionnement des exceptions en Ruby
+
+    AF83
+  event_date: 2012-07-03
+  slug: exceptions-in-ruby-tips-and-tricks-vlad-zloteanu
+soa-on-rails-nicolas-blanco:
+  vimeo_url: https://vimeo.com/56921997
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/394/450/394450817_640.jpg
+  title: SOA on Rails - Nicolas Blanco
+  description: |-
+    Nicolas Blanco nous parle de Service Oriented Architecture avec Rails.
+
+    Epita
+  event_date: 2012-12-10
+  slug: soa-on-rails-nicolas-blanco
+responsive-web-design-lightning-talk-nima-izadi:
+  vimeo_url: https://vimeo.com/56921998
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/394/305/394305860_640.jpg
+  title: Responsive Web Design - Lightning Talk - Nima Izadi
+  description: |-
+    Nima Izadi nous explique ce qu'est le Responsive Web Design.
+
+    Epita
+  event_date: 2012-12-10
+  slug: responsive-web-design-lightning-talk-nima-izadi
+how-not-to-design-a-modern-api-legacy-systems-ori-pekelman:
+  vimeo_url: https://vimeo.com/56922001
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/394/497/394497171_640.jpg
+  title: How (not) to design a modern API legacy systems - Ori Pekelman
+  description: |-
+    Ori Pekelman nous donne son point de vue sur la conception d'un API en Ruby.
+
+    Epita
+  event_date: 2012-12-10
+  slug: how-not-to-design-a-modern-api-legacy-systems-ori-pekelman
+axlsx-vos-fichiers-excel-tout-simplement-en-ruby-pierre-merlin:
+  vimeo_url: https://vimeo.com/58171698
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/403/640/403640476_640.jpg
+  title: AXLSX Vos fichiers Excel tout simplement en Ruby - Pierre Merlin
+  description: |-
+    Pierre Merlin montre comment interagir facilement avec des fichiers Excel depuis Ruby grâce à AXLSX.
+
+    Epita
+  event_date: 2013-01-07
+  slug: axlsx-vos-fichiers-excel-tout-simplement-en-ruby-pierre-merlin
+blocks-procs-et-lambdas-matthieu-segret:
+  vimeo_url: https://vimeo.com/56921996
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/043/460043889_640.jpg
+  title: Blocks, Procs et Lambdas - Matthieu Segret
+  description:
+    "Matthieu Segret nous apprend les différences entre les Blocks, Procs
+    et Lambda en Ruby.\r\n\r\nEpita"
+  event_date: 2012-12-10
+  slug: blocks-procs-et-lambdas-matthieu-segret
+sante-des-geeks-sylvain-abelard:
+  vimeo_url: https://vimeo.com/56858278
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/393/815/393815515_640.jpg
+  title: Santé des Geeks - Sylvain Abélard
+  description:
+    "Sylvain Abélard nous donne quelques conseils pour rester en bonne
+    santé malgré notre passion du code.\r\n\r\nEpita"
+  event_date: 2012-12-10
+  slug: sante-des-geeks-sylvain-abelard
+ce-que-j-aurais-voulu-savoir-sylvain-abelard:
+  vimeo_url: https://vimeo.com/54960209
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/042/460042314_640.jpg
+  title: Ce que j'aurais voulu savoir - Sylvain Abélard
+  description:
+    "Sylvain donnes quelques pistes bien utiles pour faciliter notre développement
+    et éviter l'erreur fréquente de réinventer la roue.\r\n\r\nOn parle ici, de state-machines,
+    d'ETL, d'outils UNIX et de bases SQL/NoSQL.\r\n\r\nEpita"
+  event_date: 2012-11-12
+  slug: ce-que-j-aurais-voulu-savoir-sylvain-abelard
+mustdown-simon-courtois:
+  vimeo_url: https://vimeo.com/55277791
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/043/460043492_640.jpg
+  title: Mustdown - Simon Courtois
+  description: "Mustdown est une gem Ruby qui fusionne Markdown et Mustache.\r\n\r\nEpita"
+  event_date: 2012-11-12
+  slug: mustdown-simon-courtois
+objectid-in-mongodb-lightning-talk-vlad-zloteanu:
+  vimeo_url: https://vimeo.com/55054339
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/043/460043300_640.jpg
+  title: ObjectID in MongoDB - Lightning Talk - Vlad Zloteanu
+  description: "Vlad nous explique le fonctionnement des ObjectID dans MongoDB.\r\n\r\nEpita"
+  event_date: 2012-11-12
+  slug: objectid-in-mongodb-lightning-talk-vlad-zloteanu
+photograph-screenshots-as-a-service-jean-hadrien-chabran:
+  vimeo_url: https://vimeo.com/58171701
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/403/621/403621399_640.jpg
+  title: "Photograph: Screenshots as a Service - Jean-Hadrien Chabran"
+  description: |-
+    Jean-Hadrien Chabran nous présente sa gem, Photograph, qui permet d'automatiser la création de screenshots de site web.
+
+    Epita
+  event_date: 2013-01-07
+  slug: photograph-screenshots-as-a-service-jean-hadrien-chabran
+ruby-et-dci-lightning-talk-simon-courtois:
+  vimeo_url: https://vimeo.com/58171704
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/403/576/403576380_640.jpg
+  title: Ruby et DCI - Lightning Talk - Simon courtois
+  description: |-
+    Simon Courtois montre ici le problème posé par l'implémentation de DCI en Ruby et propose un méthode alternative.
+
+    Epita
+  event_date: 2013-01-07
+  slug: ruby-et-dci-lightning-talk-simon-courtois
+rails-devise-cancan:
+  vimeo_url: https://vimeo.com/36240543
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/248/510/248510012_640.jpg
+  title: Rails Devise Cancan - Lan Sun Luk
+  description:
+    "Initiation Devise et Cancan qui permettent l'authentification et la
+    gestion de droit dans une application Rails\r\n\r\nIESA"
+  event_date: 2011-11-08
+  slug: rails-devise-cancan
+lightning-talk-suck-lightning-talk-christopher-dell:
+  vimeo_url: https://vimeo.com/58171700
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/403/585/403585940_640.jpg
+  title: Lightning Talks Suck! - Lightning Talk - Christopher Dell
+  description:
+    "Christopher Dell nous explique pourquoi, dans les conférences, les
+    Lightning Talks sont mal agencés et comment ils pourraient être mis en valeur.\r\n\r\nEpita"
+  event_date: 2013-01-07
+  slug: lightning-talk-suck-lightning-talk-christopher-dell
+html-css-nima-izadi:
+  vimeo_url: https://vimeo.com/54960207
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/041/460041757_640.jpg
+  title: It's time to learn the basics! - Nima Izadi
+  description: "Nima nous parle des bonnes pratiques du développement front-end.\r\n\r\nEpita"
+  event_date: 2012-11-12
+  slug: html-css-nima-izadi
+appsdeck-yann-klis:
+  vimeo_url: https://vimeo.com/107329734
+  vimeo_thumbnail: http://i.vimeocdn.com/video/490707773_640.jpg
+  title: Appsdeck - Yann Klis
+  description: "Présentation des services fournis par Appsdeck.\r\n\r\nNuma"
+  event_date: 2014-05-06
+  slug: appsdeck-yann-klis
+chef-solo-capistrano-lightning-talk-stephane-toth:
+  vimeo_url: https://vimeo.com/58182463
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/403/664/403664266_640.jpg
+  title: Chef Solo & Capistrano - Lightning Talk - Stéphane Toth
+  description: |-
+    Stéphane Toth nous offre un retour d'expérience sur deux outils très utiles que sont Chef Solo et Capistrano.
+
+    Epita
+  event_date: 2013-01-07
+  slug: chef-solo-capistrano-lightning-talk-stephane-toth
+ruby-press-pack-lightning-talk-sylvain-abelard:
+  vimeo_url: https://vimeo.com/58183187
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/412/360/412360514_640.jpg
+  title: Ruby Press Pack - Lightning Talk - Sylvain Abélard
+  description: |-
+    Sylvain Abélard présente le Ruby Press Pack dont le but est de faire connaitre Ruby et de lui donner plus de crédibilité auprès des grands comptes afin d'augmenter sa présence en France.
+
+    Epita
+  event_date: 2013-01-07
+  slug: ruby-press-pack-lightning-talk-sylvain-abelard
+gerer-son-auto-entreprise-et-creer-une-sas-avant-de-se-lancer-philippe-nenert:
+  vimeo_url: https://vimeo.com/58217501
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/403/977/403977864_640.jpg
+  title:
+    Gérer son auto-entreprise et créer une SAS avant de se lancer - Philippe
+    Nenert
+  description: |-
+    Philippe Nenert présente ici les deux types d'entreprises qui, selon lui, sont valables aujourd'hui en France. Quelques conseils, astuces et alertes sur la création d'entreprise et son contexte.
+
+    Epita
+  event_date: 2013-01-07
+  slug: gerer-son-auto-entreprise-et-creer-une-sas-avant-de-se-lancer-philippe-nenert
+annonce-de-la-conference-dotrb-lightning-talk-sylvain-zimmer:
+  vimeo_url: https://vimeo.com/61575141
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/428/045/428045012_640.jpg
+  title: Annonce de la conférence dotRB - Lightning Talk - Sylvain Zimmer
+  description: |-
+    Sylvain Zimmer nous en dit un peut plus sur la conférence dotRB qui aura lieu en octobre 2013 à Paris.
+    Pour en savoir plus, rendez-vous sur http://www.dotrb.eu/.
+
+    Epita
+  event_date: 2013-02-04
+  slug: annonce-de-la-conference-dotrb-lightning-talk-sylvain-zimmer
+apprendre-rails-en-partant-de-zero-lightning-talk-thomas-bancel:
+  vimeo_url: https://vimeo.com/61575142
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/428/039/428039655_640.jpg
+  title: Apprendre Rails en partant de zéro - Lightning Talk - Thomas Bancel
+  description: |-
+    Thomas Bancel nous propose un retour d'expérience sur l'apprentissage de Rails pour une personne non technique. Il donne quelques astuces et sources d'information pour faciliter son auto-formation.
+
+    Epita
+  event_date: 2013-02-04
+  slug: apprendre-rails-en-partant-de-zero-lightning-talk-thomas-bancel
+mooc-lightning-talk-jeremie-sicsic-et-yannick-petit:
+  vimeo_url: https://vimeo.com/64456135
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/435/561/435561189_640.jpg
+  title: MOOC - Lightning Talk - Jérémie Sicsic et Yannick Petit
+  description: |-
+    Nous faisons partie du 1er MOOC Français organisé par l'école centrale de Lille = ABC Gestion de Projet. Nous sommes dans l'équipe d'organisation. Tous les deux, on s'occupe du parcours pédagogique et de son suivi (analytics) et l'intégration sur la plateforme Canvas.
+
+    Epita
+  event_date: 2013-04-02
+  slug: mooc-lightning-talk-jeremie-sicsic-et-yannick-petit
+hack-your-brain-sylvain-abelard:
+  vimeo_url: https://vimeo.com/64483242
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/435/187/435187265_640.jpg
+  title: Hack your brain! - Sylvain Abélard
+  description: |-
+    Nous sommes curieux, hackers et bricoleurs. Nous aimons affiner nos outils.
+    Mais le plus important et remarquable outil est notre cerveau.
+    Comment pouvons nous le comprendre et le hacker ?
+
+    Epita
+  event_date: 2013-04-02
+  slug: hack-your-brain-sylvain-abelard
+build-a-real-time-application-with-rails-ori-pekelman:
+  vimeo_url: https://vimeo.com/64592407
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/046/460046630_640.jpg
+  title: Build a real time application with rails - Ori Pekelman
+  description: |-
+    Ori nous montre comment développer une application "real-time" avec Ruby on Rails.
+
+    Epita
+  event_date: 2013-03-06
+  slug: build-a-real-time-application-with-rails-ori-pekelman
+unveilling-helios-mattt-thompson-mattt:
+  vimeo_url: https://vimeo.com/64902686
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/089/460089792_640.jpg
+  title: Unveilling Helios - Mattt Thompson (@mattt)
+  description: |-
+    Helios.io est un framework open-source de développement de backend pour applications mobiles.
+
+    Epita
+  event_date: 2013-04-02
+  slug: unveilling-helios-mattt-thompson-mattt
+comment-j-ai-trouve-une-copine-avec-node-js-etienne-folio:
+  vimeo_url: https://vimeo.com/64902709
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/436/265/436265563_640.jpg
+  title: Comment j’ai trouvé une copine avec Node.js - Etienne Folio
+  description: |-
+    Étienne nous montre comment utiliser Node.js pour automatiser des tâches d’agrégation sur le net.
+
+    Epita
+  event_date: 2013-04-02
+  slug: comment-j-ai-trouve-une-copine-avec-node-js-etienne-folio
+technicolor-lightning-talk-lucas-di-cioccio:
+  vimeo_url: https://vimeo.com/64902750
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/436/264/436264688_640.jpg
+  title: Technicolor - Lightning Talk - Lucas di Cioccio
+  description: |-
+    Lucas nous parle de l'utilisation de Ruby chez Technicolor
+
+    Epita
+  event_date: 2013-04-02
+  slug: technicolor-lightning-talk-lucas-di-cioccio
+simplon-co-partenaire-parisrb-2:
+  vimeo_url: https://vimeo.com/88438664
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/908/466908782_640.jpg
+  title: SIMPLON.CO partenaire ParisRB
+  description: "Fabrique de codeurs entrepreneurs à Montreuil #frenchtech\r\n\r\nEpita"
+  event_date: 2014-03-04
+  slug: simplon-co-partenaire-parisrb-2
+personal-mba-and-other-inspirations-julien-lta-ballet:
+  vimeo_url: https://vimeo.com/65370121
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/436/383/436383683_640.jpg
+  title: Personal MBA and other inspirations - Julien 'Lta' Ballet
+  description: Epita
+  event_date: 2013-04-02
+  slug: personal-mba-and-other-inspirations-julien-lta-ballet
+multiplayer-game-marc-gauthier:
+  vimeo_url: https://vimeo.com/65453897
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/436/504/436504332_640.jpg
+  title: Multiplayer Game - Marc Gauthier
+  description: Epita
+  event_date: 2013-04-02
+  slug: multiplayer-game-marc-gauthier
+vim-kevin-sztern:
+  vimeo_url: https://vimeo.com/65650889
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/436/800/436800333_640.jpg
+  title: Vim - Kévin Sztern
+  description: Epita
+  event_date: 2013-04-02
+  slug: vim-kevin-sztern
+recreer-eventmachine-a-partir-de-zero-en-ruby-marc-andre-cournoyer:
+  vimeo_url: https://vimeo.com/67712693
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/439/743/439743967_640.jpg
+  title: Recréer EventMachine à partir de zéro, en Ruby - Marc-Andre Cournoyer
+  description: |-
+    Marc-André, créateur de serveur web Thin, explique le fonctionnement interne de la librairie EventMachine servant à créer des programmes réseaux de haute performance.
+
+    Epita
+  event_date: 2013-05-06
+  slug: recreer-eventmachine-a-partir-de-zero-en-ruby-marc-andre-cournoyer
+make-hypermedia-apis-in-ruby-nicolas-merouze:
+  vimeo_url: https://vimeo.com/67791339
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/439/855/439855950_640.jpg
+  title: Make Hypermedia APIs in Ruby - Nicolas Mérouze
+  description: |-
+    Nicolas nous parle des différentes manières et outils dont nous disposons pour mettre en place une API Hypermedia.
+
+    Epita
+  event_date: 2013-05-06
+  slug: make-hypermedia-apis-in-ruby-nicolas-merouze
+rulu-2013-lightning-talk-fabien-catteau-et-ferdinand-boas:
+  vimeo_url: https://vimeo.com/68203781
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/440/494/440494612_640.jpg
+  title: RuLu 2013 - Lightning Talk - Fabien Catteau et Ferdinand Boas
+  description:
+    "La conférence RUBY LUGDUNUM, alias RULU 2013, se tiendra les 20 et
+    21 juin prochains à Lyon.\nLe jeudi 20 juin, 9 présentations seront données à
+    la Manufacture des Tabacs, en anglais. \nNous nous retrouverons ensuite pour dîner
+    convivial sur la terrasse du Koodeta. \nLe lendemain matin, nous vous proposons
+    3 ateliers, au choix : Rails 4, Coding Dojo, et RubyMotion par Laurent Sansonetti
+    lui-même. \nLe 21 juin est également la Fête de la Musique, alors nous allons
+    profiter de l'ambiance !\n\nEpita"
+  event_date: 2013-05-06
+  slug: rulu-2013-lightning-talk-fabien-catteau-et-ferdinand-boas
+form-objects-nicolas-mondollot:
+  vimeo_url: https://vimeo.com/85181640
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/862/462862265_640.jpg
+  title: Form Objects - Nicolas Mondollot
+  description:
+    "Nicolas nous explique comment éviter l'enfer des validations conditionnelles
+    et autre Rails-acrobaties grâce aux Form Objects.\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: form-objects-nicolas-mondollot
+linters-thomas-darde:
+  vimeo_url: https://vimeo.com/99752765
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481241699_640.jpg
+  title: Linters - Thomas Darde
+  description:
+    "Quelques outils pour vérifier la qualité de votre code.\r\n\r\nÉcole
+    42"
+  event_date: 2014-06-03
+  slug: linters-thomas-darde
+les-brownbaglunch-bbl-francois-sarradin:
+  vimeo_url: https://vimeo.com/68253734
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/105/460105787_640.jpg
+  title: Les BrownBagLunch (BBL) - François Sarradin
+  description:
+    "Les BrownBagLunch (BBL) permettent de recevoir dans votre entreprise
+    entre midi et deux des professionnels de l'IT passionnés, en échange d'un déjeuner.
+    \n\nCette vidéo explique comment mettre en place des BBL dans votre entreprise,
+    qui sont ces professionnels passionnés et aussi comment en devenir un.\n\nEpita"
+  event_date: 2013-05-06
+  slug: les-brownbaglunch-bbl-francois-sarradin
+must-have-gems-de-debug-visuel-thomas-romera:
+  vimeo_url: https://vimeo.com/68399514
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/440/725/440725037_640.jpg
+  title: Must-Have Gems de debug visuel - Thomas Romera
+  description: |-
+    Thomas nous donne une liste de gems bien utiles pour debugger une application Ruby on Rails.
+    RailsPanel vos logs Rails dans les DevTools de Chrome.
+    BetterErrors pour mieux appréhender les erreurs d'une application Rails.
+
+    Epita
+  event_date: 2013-05-06
+  slug: must-have-gems-de-debug-visuel-thomas-romera
+une-api-rapide-et-de-qualite-avec-weasel-diesel-lightning-talk-julien-bordellier:
+  vimeo_url: https://vimeo.com/68558102
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/440/939/440939169_640.jpg
+  title:
+    Une API rapide et de qualité avec Weasel-Diesel - Lightning Talk - Julien
+    Bordellier
+  description: |-
+    Weasel-Diesel permet de créer facilement une API organisée, rapide et documentée.
+
+    Epita
+  event_date: 2013-05-06
+  slug: une-api-rapide-et-de-qualite-avec-weasel-diesel-lightning-talk-julien-bordellier
+dotrb-lightning-talk-ferdinand-boas:
+  vimeo_url: https://vimeo.com/72134111
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/445/900/445900780_640.jpg
+  title: dotRB - Lightning Talk - Ferdinand Boas
+  description: |-
+    dotRB  The largest  Ruby conference in France 18 oct, 2013 Paris
+
+    Epita
+  event_date: 2013-06-04
+  slug: dotrb-lightning-talk-ferdinand-boas
+securiser-son-application-ruby-on-rails-vlad-zloteanu:
+  vimeo_url: https://vimeo.com/72338240
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/163/446163972_640.jpg
+  title: Sécuriser son application Ruby on Rails - Vlad Zloteanu
+  description: |-
+    Quelles sont les astuces à connaitre pour sécuriser un application Ruby on Rails ?
+
+    Epita
+  event_date: 2013-07-02
+  slug: securiser-son-application-ruby-on-rails-vlad-zloteanu
+errbit-cyril-mougel-shingara:
+  vimeo_url: https://vimeo.com/72349017
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/177/446177446_640.jpg
+  title: ErrBit - Cyril Mougel (@shingara)
+  description: |-
+    ErrBit est un outil open-source de centralisation des erreurs, compatible avec Airbrake
+
+    Epita
+  event_date: 2013-07-02
+  slug: errbit-cyril-mougel-shingara
+state-machine-nicolas-mondollot:
+  vimeo_url: https://vimeo.com/72470160
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/335/446335753_640.jpg
+  title: State Machine - Nicolas Mondollot
+  description: |-
+    Qu'est-ce qu'une state machine ? À quoi cela sert et dans quels cas l'utiliser ?
+
+    Epita
+  event_date: 2013-07-02
+  slug: state-machine-nicolas-mondollot
+discourse-la-plateforme-de-discussion-nouvelle-generation-nicolas-blanco:
+  vimeo_url: https://vimeo.com/72492921
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/391/446391277_640.jpg
+  title: "Discourse : la plateforme de discussion nouvelle génération - Nicolas Blanco"
+  description: |-
+    Discourse est une application Rails/EmberJS qui donne un nouveau souffle aux forums en ligne.
+
+    Epita
+  event_date: 2013-07-02
+  slug: discourse-la-plateforme-de-discussion-nouvelle-generation-nicolas-blanco
+job-teaser-nicolas-lombard:
+  vimeo_url: https://vimeo.com/72520219
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/408/446408829_640.jpg
+  title: Job Teaser - Nicolas Lombard
+  description: |-
+    Nicolas nous présente JobTeaser un système de recrutement en ligne
+
+    Epita
+  event_date: 2013-07-02
+  slug: job-teaser-nicolas-lombard
+rest-with-her-simon-courtois:
+  vimeo_url: https://vimeo.com/72674323
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/460/108/460108429_640.jpg
+  title: REST with Her - Simon Courtois
+  description: |-
+    Her est une gem qui se base sur Faraday et permet d'interagir avec une API REST comme le permet ActiveRecord avec une base de données
+
+    Epita
+  event_date: 2013-07-02
+  slug: rest-with-her-simon-courtois
+meteor-101-a-better-way-to-build-web-apps-100-in-javascript-vianney-lecroart:
+  vimeo_url: https://vimeo.com/72825182
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/778/446778795_640.jpg
+  title:
+    "Meteor 101 : A better way to build web apps 100% in Javascript - Vianney
+    Lecroart"
+  description: |-
+    Meteor est un framework JS qui permet de construire une application complexe très rapidement.
+
+    Epita
+  event_date: 2013-06-07
+  slug: meteor-101-a-better-way-to-build-web-apps-100-in-javascript-vianney-lecroart
+docker-the-linux-container-engine-solomon-hykes-solomonstre:
+  vimeo_url: https://vimeo.com/72964003
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/973/446973769_640.jpg
+  title: "Docker : The Linux Container Engine - Solomon Hykes (@solomonstre)"
+  description: |-
+    Docker est un projet open-source permettant de packager, deployer and lancer n'importe quelle application comme un conteneur léger
+
+    Epita
+  event_date: 2013-06-04
+  slug: docker-the-linux-container-engine-solomon-hykes-solomonstre
+http-cache-en-rails-4-christopher-cocchi-perrier:
+  vimeo_url: https://vimeo.com/79670042
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/455/801/455801511_640.jpg
+  title: HTTP Cache en Rails 4 - Christopher Cocchi-Perrier
+  description: |-
+    Slides: https://speakerdeck.com/ccocchi/http-cache-in-rails-4
+
+    Epita
+  event_date: 2013-11-05
+  slug: http-cache-en-rails-4-christopher-cocchi-perrier
+websockets-rails-julien-lta-ballet:
+  vimeo_url: https://vimeo.com/79670120
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/455/449/455449424_640.jpg
+  title: Websockets Rails - Julien 'Lta' Ballet
+  description: |-
+    Comment utiliser les websockets dans une application Rails ?
+
+    Epita
+  event_date: 2013-11-05
+  slug: websockets-rails-julien-lta-ballet
+heimanu-laurent-de-saignes:
+  vimeo_url: https://vimeo.com/79696713
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/455/801/455801768_640.jpg
+  title: Heimanu - Laurent de Saignes
+  description: |-
+    Heimanu est une plateforme de rencontre amicale par affinités. Laurent nous raconte comment ils ont intégré des partie de Discourse dans le fonctionnement de Heimanu.
+
+    Epita
+  event_date: 2013-11-05
+  slug: heimanu-laurent-de-saignes
+manuel-de-survie-en-entreprise-simon-guimezanes:
+  vimeo_url: https://vimeo.com/72344243
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/446/179/446179072_640.jpg
+  title: Manuel de survie en entreprise - Simon Guimezanes
+  description:
+    Comment promouvoir l'innovation dans l'entreprise en tenant compte
+    de la politique interne ?
+  event_date: 2013-07-02
+  slug: manuel-de-survie-en-entreprise-simon-guimezanes
+railsgirls-a-lille-martin-catty:
+  vimeo_url: https://vimeo.com/84706497
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/461/685/461685308_640.jpg
+  title: RailsGirls à Lille - Martin Catty
+  description: "Un RailsGirls aura lieu à Lille le dernier week-end de janvier 2014\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: railsgirls-a-lille-martin-catty
+simplon-co-partenaire-parisrb:
+  vimeo_url: https://vimeo.com/84706501
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/461/746/461746536_640.jpg
+  title: SIMPLON.CO - Partenaire ParisRB
+  description:
+    "Simplon.co est un tiers-lieu d'innovation technique et solidaire qui
+    propose une formation intensive gratuite au développement web / mobile, et des
+    formats d'accompagnement vers l'entrepreneuriat numérique.\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: simplon-co-partenaire-parisrb
+le-code-est-un-jeu-de-piste-martin-van-aken:
+  vimeo_url: https://vimeo.com/88448166
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/928/466928111_640.jpg
+  title: Le Code est un jeu de Piste - Martin Van Aken
+  description:
+    "Codez pour des humains, pas pour des machines. Martin nous explique
+    en quoi il est important que notre code soit clair pour nous-même et les autres
+    développeurs.\r\n\r\nEpita"
+  event_date: 2013-03-04
+  slug: le-code-est-un-jeu-de-piste-martin-van-aken
+la-bibliotheque-gosu-matthieu-segret:
+  vimeo_url: https://vimeo.com/79670121
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/461/181/461181616_640.jpg
+  title: La bibliothèque Gosu - Matthieu Segret
+  description: "Gosu est une gem Ruby qui permet le développement rapide de jeux vidéos\r\n\r\nEpita"
+  event_date: 2013-11-05
+  slug: la-bibliotheque-gosu-matthieu-segret
+activerecord-serialization-jean-boussier:
+  vimeo_url: https://vimeo.com/85194448
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/412/462412927_640.jpg
+  title: ActiveRecord Serialization - Jean Boussier
+  description:
+    "Comment sérialiser des données pour les stocker en base de données
+    avec ActiveRecord ? Les stores, du JSON ? Comment maintenir tout ça ?\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: activerecord-serialization-jean-boussier
+server-sent-events-etienne-barrie:
+  vimeo_url: https://vimeo.com/85198150
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/862/462862712_640.jpg
+  title: Server-sent Events - Etienne Barrié
+  description:
+    "Etienne nous parle d'une nouveauté étudiée en ce moment par le W3C
+    pour permettre de créer des applications \"real-time\" très facilement.\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: server-sent-events-etienne-barrie
+gmaps4rails-benjamin-roth:
+  vimeo_url: https://vimeo.com/85249154
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/480/462480622_640.jpg
+  title: gmaps4rails - Benjamin Roth
+  description:
+    "Benjamin nous parle de son projet gmaps4rails qui permet de s'interfacer
+    avec Google Maps en quelques lignes de Javascript.\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: gmaps4rails-benjamin-roth
+bootstrapping-d-un-saas-thibaut-barrere:
+  vimeo_url: https://vimeo.com/85490636
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/834/462834680_640.jpg
+  title: Bootstrapping d'un SaaS - Thibaut Barrere
+  description:
+    "Quels sont les pièges à éviter lorsque l'on se lance dans la création
+    d'un SaaS ? Quels astuces peut-on utiliser pour améliorer le lancement, la conception,
+    la vie du produit tout en gardant de la place pour sa vie personnelle ?\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: bootstrapping-d-un-saas-thibaut-barrere
+simplib:
+  vimeo_url: https://vimeo.com/84799018
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/879/462879001_640.jpg
+  title: Simplib
+  description: "Présentation de notre sponsor Simplib\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: simplib
+presentation-de-mongodb-mongoid:
+  vimeo_url: https://vimeo.com/36438541
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/249/972/249972400_640.jpg
+  title: Présentation de MongoDB / Mongoid - Lan Sun Luk
+  description:
+    "Présentation de la base de données NoSQL MongoDB et de son ORM Ruby
+    nommé Mongoid.\r\n\r\nLa Cantine"
+  event_date: 2012-02-06
+  slug: presentation-de-mongodb-mongoid
+applications-mobiles-natives-marc-gauthier:
+  vimeo_url: https://vimeo.com/85596386
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/971/462971592_640.jpg
+  title: Applications Mobiles Natives - Marc Gauthier
+  description: "Marc nous parle du développement d'applications mobiles avec Steroids.js.\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: applications-mobiles-natives-marc-gauthier
+palette-de-couleur-web-igor-cheloudiakoff:
+  vimeo_url: https://vimeo.com/85557375
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/463/401/463401334_640.jpg
+  title: Palette de couleur Web - Igor Cheloudiakoff
+  description:
+    "Igor nous donne quelques conseils sur la création d'un thème couleur
+    pour une application web.\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: palette-de-couleur-web-igor-cheloudiakoff
+discours-d-ouverture-alexis-moussine-pouchkine:
+  vimeo_url: https://vimeo.com/85562939
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/462/927/462927705_640.jpg
+  title: Discours d'ouverture - Alexis Moussine-Pouchkine
+  description:
+    "Alexis Moussine-Pouchkine partage avec nous le plaisir qu'il a à recevoir
+    Paris.rb dans les locaux de Google France.\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: discours-d-ouverture-alexis-moussine-pouchkine
+actioncontroller-live-guillaume-troppee:
+  vimeo_url: https://vimeo.com/85594903
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/463/401/463401795_640.jpg
+  title: ActionController::Live - Guillaume Troppée
+  description: "Présentation, implémentation et bilan de l'utilisation d'ActionController::Live\r\n\r\nGoogle"
+  event_date: 2014-01-07
+  slug: actioncontroller-live-guillaume-troppee
+tizen-romuald-rozan:
+  vimeo_url: https://vimeo.com/85603373
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/463/007/463007034_640.jpg
+  title: Tizen - Romuald Rozan
+  description:
+    "Romuald nous présente Tizen, système d'exploitation open-source et
+    multi-constructeurs.\r\n\r\nEpita"
+  event_date: 2013-07-02
+  slug: tizen-romuald-rozan
+recent-technical-advances-in-passenger-hongli-lai:
+  vimeo_url: https://vimeo.com/85642483
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/463/105/463105099_640.jpg
+  title: Recent technical advances in Passenger - Hongli Lai
+  description:
+    "Quelles sont les évolutions de Passenger ces dernières années ? Que
+    pouvons-nous faire aujourd'hui ? Comment s'organise le développement de Passenger
+    et comment est-il financé ?\r\n\r\nEpita"
+  event_date: 2013-12-03
+  slug: recent-technical-advances-in-passenger-hongli-lai
+zeus-zeus-parallel-tests-dimitri-jorge:
+  vimeo_url: https://vimeo.com/85728484
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/463/403/463403600_640.jpg
+  title: Zeus & Zeus Parallel tests - Dimitri Jorge
+  description:
+    "Dimitri comment accélérer notre process de développement Rails grâce
+    à Zeus et Zeus Parallel\r\n\r\nEpita"
+  event_date: 2013-12-03
+  slug: zeus-zeus-parallel-tests-dimitri-jorge
+comment-apprehender-ror-quand-on-vient-du-developpement-web-traditionnel-alexandre-centar:
+  vimeo_url: https://vimeo.com/64902777
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/436/264/436264382_640.jpg
+  title:
+    Comment appréhender RoR quand on vient du développement web traditionnel
+    ? - Alexandre Centar
+  description:
+    "Comment se familiariser avec l'écosystème et le fonctionnement de
+    Ruby on Rails quand on est issu d'autres milieux du développement web ?\r\n\r\nEpita"
+  event_date: 2013-04-02
+  slug: comment-apprehender-ror-quand-on-vient-du-developpement-web-traditionnel-alexandre-centar
+safety-nets-for-ruby-tests-review-and-automation-christophe-philemotte:
+  vimeo_url: https://vimeo.com/86134344
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/463/731/463731497_640.jpg
+  title: "Safety Nets for Ruby: Tests, Review, and Automation - Christophe Philemotte"
+  description:
+    "Christophe nous donne quelques conseils sur le travail en équipe,
+    l'importance des tests, de la revue de code et de l'automatisation du process.\r\n\r\nEpita"
+  event_date: 2014-02-04
+  slug: safety-nets-for-ruby-tests-review-and-automation-christophe-philemotte
+choose-your-boss-benoit-guillou-et-etienne-curati:
+  vimeo_url: https://vimeo.com/87675631
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/465/838/465838916_640.jpg
+  title: Choose Your Boss - Benoit Guillou et Etienne Curati
+  description:
+    "ChooseYourBoss est une plateforme de recrutement d'un nouveau genre.
+    Pas d'annonces inappropriés ou de recruteurs acharnés. L'employé est roi.\r\n\r\nEpita"
+  event_date: 2014-02-04
+  slug: choose-your-boss-benoit-guillou-et-etienne-curati
+fake-your-files-simon-courtois:
+  vimeo_url: https://vimeo.com/87682586
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/207/466207987_640.jpg
+  title: Fake your files - Simon Courtois
+  description:
+    "Comment tester son code quand il modifie des fichiers/dossiers ? Est-il
+    possible d'avoir un système de fichiers en mémoire pour lancer nos tests ? Oui
+    avec la gem MemFs !\r\n\r\nEpita"
+  event_date: 2014-02-04
+  slug: fake-your-files-simon-courtois
+pry-as-replacement-for-irb-kevin-soltysiak:
+  vimeo_url: https://vimeo.com/87710671
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/208/466208223_640.jpg
+  title: Pry as replacement for IRB - Kevin Soltysiak
+  description:
+    "Qu'est-ce que Pry ? En quoi est-il meilleur que IRB et comment vous
+    pouvez l'utiliser pour faciliter votre développement ?\r\n\r\nEpita"
+  event_date: 2014-02-04
+  slug: pry-as-replacement-for-irb-kevin-soltysiak
+relecture-de-poodr-single-responsibility-principle-thomas-petrachi:
+  vimeo_url: https://vimeo.com/87724136
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/208/466208399_640.jpg
+  title: "Relecture de POODR:  Single Responsibility Principle - Thomas Petrachi"
+  description:
+    "Dans POODR, Sandi Metz parle du S de SOLID, le Single Responsability
+    Principle. Thomas met l'accent sur ce principe et nous explique en quoi il consiste
+    et comment le respecter dans son code.\r\n\r\nEpita"
+  event_date: 2014-02-04
+  slug: relecture-de-poodr-single-responsibility-principle-thomas-petrachi
+pragmatic-web-components-nicolas-merouze:
+  vimeo_url: https://vimeo.com/87869625
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/208/466208601_640.jpg
+  title: Pragmatic Web Components - Nicolas Mérouze
+  description:
+    "Que sont les Web Components ? À quoi servent-ils et comment les utiliser
+    avec Rails ?\r\n\r\nEpita"
+  event_date: 2014-02-04
+  slug: pragmatic-web-components-nicolas-merouze
+faire-de-l-analyse-predictive-en-temps-reel-avec-ruby-et-r-benjamin-lan-sun-luk:
+  vimeo_url: https://vimeo.com/87902643
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/208/466208814_640.jpg
+  title:
+    Faire de l’analyse prédictive en temps réel avec Ruby et R - Benjamin Lan
+    Sun Luk
+  description:
+    "Comment faire communiquer Ruby et R pour utiliser chaque langage pour
+    le travail qui lui convient le mieux.\r\n\r\nEpita"
+  event_date: 2014-02-04
+  slug: faire-de-l-analyse-predictive-en-temps-reel-avec-ruby-et-r-benjamin-lan-sun-luk
+multi-tenant-lang-application-with-ruby-on-rails-simon-courtois:
+  vimeo_url: https://vimeo.com/88585278
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/467/110/467110928_640.jpg
+  title: Multi tenant/lang application with Ruby on Rails - Simon Courtois
+  description:
+    "Comment créer une application multi-domaines sans surcharger son ApplicationController
+    ? Un middleware est peut-être la solution.\r\n\r\nEpita"
+  event_date: 2014-03-04
+  slug: multi-tenant-lang-application-with-ruby-on-rails-simon-courtois
+la-chabadabada-week-avec-simplon-co-vendredi-7-mars-de-18h-a-23h-samedi-8-mars-de-10h-a-17h:
+  vimeo_url: https://vimeo.com/88364325
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/466/802/466802161_640.jpg
+  title:
+    La Chabadabada Week avec SIMPLON.CO - Vendredi 7 mars de 18h à 23h - Samedi
+    8 mars de 10h à 17h
+  description:
+    "http://simplon.co/evenements/2014/2/25/la-chabadabada-week-notre-semaine-de-la-mixit\r\n\r\nVendredi
+    7 mars de 18h à 23h : Soirée pitch (des projets hackathonés et d’autres projets
+    de l’écosystème Simplon) ; en présence des mentors et des partenaires.\r\n\r\n+
+    Cocktail dinatoire de clôture. Inscription par ici:http://simplon.co/evenements/2014/2/25/la-chabadabada-week-notre-semaine-de-la-mixit\r\n\r\nSamedi
+    8 mars de 10h à 17h : Journée BYOK (Bring Your Own Kid) ateliers de programmation
+    pour les enfants \r\n\r\nAvec 40% de femmes dans sa première promotion, Simplon.co
+    souhaite promouvoir les femmes dans le code et accompagner toujours plus haut
+    les femmes de la French tech qui entreprennent et qui agissent dans le numérique.\r\n\r\nEpita"
+  event_date: 2014-03-04
+  slug: la-chabadabada-week-avec-simplon-co-vendredi-7-mars-de-18h-a-23h-samedi-8-mars-de-10h-a-17h
+mon-site-perso-en-20-minutes-live-coding-benjamin-crouzier:
+  vimeo_url: https://vimeo.com/99744932
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481456734_640.jpg
+  title: Mon site perso en 20 minutes - Live Coding - Benjamin Crouzier
+  description:
+    "Benjamin crée son site perso en live avec Rails, ThemeForest et olala\r\n\r\nÉcole
+    42"
+  event_date: 2014-06-03
+  slug: mon-site-perso-en-20-minutes-live-coding-benjamin-crouzier
+managing-domains-constraints-in-rails-guillaume-montard:
+  vimeo_url: https://vimeo.com/99747432
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481456917_640.jpg
+  title: Managing domains constraints in Rails - Guillaume Montard
+  description:
+    "Comment éviter une requête SQL à chaque vérification de domaine sans
+    avoir à redémarrer son application quand un nouveau domaine est ajouté ?\r\n\r\nÉcole
+    42"
+  event_date: 2014-06-03
+  slug: managing-domains-constraints-in-rails-guillaume-montard
+chef-infrastructure-as-code-nicolas-ledez:
+  vimeo_url: https://vimeo.com/99750274
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481072075_640.jpg
+  title: Chef infrastructure as code - Nicolas Ledez
+  description:
+    "Comment gérer son infrastructure comme une base de code ?\r\n\r\nÉcole
+    42"
+  event_date: 2014-06-03
+  slug: chef-infrastructure-as-code-nicolas-ledez
+table-driven-testing-nicolas-merouze:
+  vimeo_url: https://vimeo.com/99752707
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481053894_640.jpg
+  title: Table Driven Testing - Nicolas Mérouze
+  description:
+    "Simplifier et organiser ses tests fonctionnels grâce à des données
+    tabulaires\r\n\r\nÉcole 42"
+  event_date: 2014-06-03
+  slug: table-driven-testing-nicolas-merouze
+un-sitemap-generator-alex-centar:
+  vimeo_url: https://vimeo.com/99783251
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481457309_640.jpg
+  title: Un sitemap generator - Alex Centar
+  description:
+    "Générer facilement le sitemap de son site avec sitemap_generator\r\n\r\nÉcole
+    42"
+  event_date: 2014-06-03
+  slug: un-sitemap-generator-alex-centar
+reverse-engineering-du-qlobe-loic-boutet:
+  vimeo_url: https://vimeo.com/99784775
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481100139_640.jpg
+  title: Reverse engineering du QLobe - Loïc Boutet
+  description:
+    "Analyse du fonctionnement des QLobe et petite démonstration\r\n\r\nÉcole
+    42"
+  event_date: 2014-06-03
+  slug: reverse-engineering-du-qlobe-loic-boutet
+followanalytics-nicolas-boron-et-alexis-woo:
+  vimeo_url: https://vimeo.com/99981519
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481333692_640.jpg
+  title: FollowAnalytics - Nicolas Boron et Alexis Woo
+  description: "Présentation de notre sponsor FollowAnalytics\r\n\r\nÉcole 42"
+  event_date: 2014-06-03
+  slug: followanalytics-nicolas-boron-et-alexis-woo
+from-a-development-workflow-to-a-flow-that-works-martin-van-aken:
+  vimeo_url: https://vimeo.com/99983596
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481343149_640.jpg
+  title: From a development workflow to a flow that works - Martin Van Aken
+  description:
+    "Quels sont les meilleures pratiques du développement en équipe et
+    comment optimiser son processus de développement ?\r\n\r\nÉcole 42"
+  event_date: 2014-06-03
+  slug: from-a-development-workflow-to-a-flow-that-works-martin-van-aken
+12-mois-dans-la-peau-d-une-application-d-entreprise-en-mode-lean-startup-christopher-parola:
+  vimeo_url: https://vimeo.com/99997031
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481385575_640.jpg
+  title:
+    12 mois dans la peau d'une application d'entreprise en mode LEAN STARTUP
+    - Christopher Parola
+  description:
+    "Retour d'expérience sur le développement d'un produit et mode Lean
+    Startup\r\n\r\nÉcole 42"
+  event_date: 2014-06-03
+  slug: 12-mois-dans-la-peau-d-une-application-d-entreprise-en-mode-lean-startup-christopher-parola
+fitnext-ca-et-clients-sans-marketing-celine-ruffet:
+  vimeo_url: https://vimeo.com/100064492
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481451316_640.jpg
+  title: FitNext CA et clients sans marketing - Céline Ruffet
+  description:
+    "Notre sponsor FitNext nous explique comment son équipe réussi à créer
+    sa base client sans budget marketing\r\n\r\nEpita"
+  event_date: 2014-07-01
+  slug: fitnext-ca-et-clients-sans-marketing-celine-ruffet
+pub-sub-in-ruby-adrien-siami:
+  vimeo_url: https://vimeo.com/100991708
+  vimeo_thumbnail: http://i.vimeocdn.com/video/482658589_640.jpg
+  title: Pub/Sub in Ruby - Adrien Siami
+  description:
+    "Comment mettre en place une architecture pub/sub (publish/subscribe)
+    en Ruby ? Quelles sont les solutions à disposition ?\r\nEpita"
+  event_date: 2014-07-01
+  slug: pub-sub-in-ruby-adrien-siami
+rails-on-rio-stephan-toth:
+  vimeo_url: https://vimeo.com/104846925
+  vimeo_thumbnail: http://i.vimeocdn.com/video/487498350_640.jpg
+  title: Rails on Rio - Stephan Toth
+  description:
+    "Comment Rails s'intègre-t-il dans une infrastructure de remontée d'informations
+    en temps réel ?\r\n\r\nEpita"
+  event_date: 2014-08-05
+  slug: rails-on-rio-stephan-toth
+it-management-pierre-urban:
+  vimeo_url: https://vimeo.com/104857542
+  vimeo_thumbnail: http://i.vimeocdn.com/video/487507709_640.jpg
+  title: IT Management - Pierre Urban
+  description: "Comment gérer efficacement une équipe de développement ?\r\n\r\nEpita"
+  event_date: 2014-08-05
+  slug: it-management-pierre-urban
+j-ai-une-idee-webapp-ou-pas-martin-van-aken:
+  vimeo_url: https://vimeo.com/104899368
+  vimeo_thumbnail: http://i.vimeocdn.com/video/487559223_640.jpg
+  title: "J’ai une idée : WebApp ou Pas ? - Martin van Aken"
+  description:
+    "Un site aujourd'hui, ce n'est plus seulement une application web,
+    API, mobile, emails, ... Qu'est-ce que cela implique de mettre son idée en ligne
+    ?\r\n\r\nEpita"
+  event_date: 2014-08-05
+  slug: j-ai-une-idee-webapp-ou-pas-martin-van-aken
+build-realtime-search-with-algolia-sylvain-utard:
+  vimeo_url: https://vimeo.com/107332133
+  vimeo_thumbnail: http://i.vimeocdn.com/video/490710525_640.jpg
+  title: Build Realtime Search with Algolia - Sylvain Utard
+  description: "Comment utiliser le service Algolia pour créer un système de recherche\r\n\r\nNuma"
+  event_date: 2014-05-06
+  slug: build-realtime-search-with-algolia-sylvain-utard
+crawling-the-web-with-import-io-and-sidekiq-cassio-melo:
+  vimeo_url: https://vimeo.com/107399289
+  vimeo_thumbnail: http://i.vimeocdn.com/video/490787390_640.jpg
+  title: Crawling the web with Import.io and sidekiq - Cassio Melo
+  description:
+    "Besoin d'extraire des données depuis un site web ? Voici comment avec
+    le service Import.io et Sidekiq.\r\n\r\nNuma"
+  event_date: 2014-05-06
+  slug: crawling-the-web-with-import-io-and-sidekiq-cassio-melo
+rails-as-a-build-tool-or-why-rails-is-awesome-or-fu-grunt-michael-bensoussan:
+  vimeo_url: https://vimeo.com/107405455
+  vimeo_thumbnail: http://i.vimeocdn.com/video/490795552_640.jpg
+  title:
+    Rails as a build tool or  why Rails is awesome  (or FU** Grunt) - Michael
+    Bensoussan
+  description:
+    "Comment créer son propre générateur de site statique (style middleman
+    ou jekyll) en utilisant Rails\r\n\r\nNuma"
+  event_date: 2014-05-06
+  slug: rails-as-a-build-tool-or-why-rails-is-awesome-or-fu-grunt-michael-bensoussan
+dev-ruby-au-japon-julien-feltesse:
+  vimeo_url: https://vimeo.com/107454680
+  vimeo_thumbnail: http://i.vimeocdn.com/video/491151160_640.jpg
+  title: Dev Ruby au Japon - Julien Feltesse
+  description: "Comment c'est d'être développeur Ruby au Japon ?\r\n\r\nAltavia, AgenceCosmic"
+  event_date: 2014-09-02
+  slug: dev-ruby-au-japon-julien-feltesse
+rails-et-emails-sunny-ripert:
+  vimeo_url: https://vimeo.com/107695541
+  vimeo_thumbnail: http://i.vimeocdn.com/video/491567124_640.jpg
+  title: Rails et Emails - Sunny Ripert
+  description:
+    "Astuces et bonnes pratiques lorsque l'on envoie des emails depuis
+    une application Rails\r\n\r\nAltavia, AgenceCosmic"
+  event_date: 2014-09-02
+  slug: rails-et-emails-sunny-ripert
+known-unknowns-sylvain-abelard:
+  vimeo_url: https://vimeo.com/88568962
+  vimeo_thumbnail: http://b.vimeocdn.com/ts/467/111/467111059_640.jpg
+  title: Known unknowns - Sylvain Abélard
+  description:
+    "Quels sont les pièges à éviter lorsque l'on crée des applications
+    ? À quoi faut-il penser lorsque l'on doit importer un fichier CSV ? Ou quand on
+    ajoute une \"simple\" checkbox ?\r\n\r\nEpita"
+  event_date: 2014-03-04
+  slug: known-unknowns-sylvain-abelard
+cherche-coachs-pour-initier-des-collegiennes-a-la-programmation-salwa-toko:
+  vimeo_url: https://vimeo.com/93593495
+  vimeo_thumbnail: http://i.vimeocdn.com/video/473688727_640.jpg
+  title: Cherche coachs pour initier des collégiennes à la programmation - Salwa Toko
+  description:
+    "Wi-Filles est une initiative lancée pour créer un plan de formation
+    à la programmation pour des collégiennes.\r\n\r\nEpita"
+  event_date: 2014-04-01
+  slug: cherche-coachs-pour-initier-des-collegiennes-a-la-programmation-salwa-toko
+alzheimer-s-shell-benjamin-crouzier:
+  vimeo_url: https://vimeo.com/94982649
+  vimeo_thumbnail: http://i.vimeocdn.com/video/474929074_640.jpg
+  title: lzheimer's Shell - Benjamin Crouzier
+  description: "Benjamin crée un shell Ruby en Live !\r\n\r\nEpita"
+  event_date: 2014-04-01
+  slug: alzheimer-s-shell-benjamin-crouzier
+cassandra-ori-pekelmam:
+  vimeo_url: https://vimeo.com/93620288
+  vimeo_thumbnail: http://i.vimeocdn.com/video/473733187_640.jpg
+  title:
+    Et si quelqu'un venait de la part de Cassandre, Ouvre-lui tôt la porte et
+    ne le fais pas attendre - Ori Pekelmam
+  description:
+    "Ori nous montre avec quelle facilité on peut installer Cassandra aujourd'hui,
+    dans quel cas cela peut être utile et comment jouer avec.\r\n\r\nEpita"
+  event_date: 2014-04-01
+  slug: cassandra-ori-pekelmam
+trouvez-vous-un-partenaire-de-jeu-martin-van-aken:
+  vimeo_url: https://vimeo.com/93622900
+  vimeo_thumbnail: http://i.vimeocdn.com/video/473733508_640.jpg
+  title: Trouvez vous un partenaire de jeu - Martin Van Aken
+  description:
+    "Le pair programming est une très bonne façon d'évoluer et de s'améliorer,
+    le tout est de trouver quelqu'un avec qui le faire\r\n\r\nEpita"
+  event_date: 2014-04-01
+  slug: trouvez-vous-un-partenaire-de-jeu-martin-van-aken
+ruby-par-la-pratique-sylvain-abelard:
+  vimeo_url: https://vimeo.com/93662159
+  vimeo_thumbnail: http://i.vimeocdn.com/video/473789547_640.jpg
+  title: Ruby par la pratique - Sylvain Abélard
+  description: "Qu'est-ce que Ruby ? Comment ça marche ?\r\n\r\nEpita"
+  event_date: 2014-04-01
+  slug: ruby-par-la-pratique-sylvain-abelard
+bye-google-maps-welcome-mapbox-cassio-melo:
+  vimeo_url: https://vimeo.com/94982777
+  vimeo_thumbnail: http://i.vimeocdn.com/video/475036374_640.jpg
+  title: Bye Google Maps, welcome Mapbox - Cassio Melo
+  description: "10 raisons pour migrer tout de suite vers Mapbox\r\n\r\nEpita"
+  event_date: 2014-04-01
+  slug: bye-google-maps-welcome-mapbox-cassio-melo
+text-tools-sylvain-abelard:
+  vimeo_url: https://vimeo.com/100161522
+  vimeo_thumbnail: http://i.vimeocdn.com/video/481640336_640.jpg
+  title: Text Tools - Sylvain Abélard
+  description:
+    "Outils textes bien pratiques et à connaitre pour s'éviter du développement
+    inutile. UNIX est votre ami.\r\n\r\nEpita"
+  event_date: 2014-07-01
+  slug: text-tools-sylvain-abelard
+aircall-thibaud-elziere:
+  vimeo_url: https://vimeo.com/104855887
+  vimeo_thumbnail: http://i.vimeocdn.com/video/487507699_640.jpg
+  title: AirCall - Thibaud Elziere
+  description: "Présentation de AirCall, un des sponsors du mois de septembre.\r\n\r\nEpita"
+  event_date: 2014-08-05
+  slug: aircall-thibaud-elziere
+mon-premier-mois-dans-une-start-up-alexandre-tadrosh:
+  vimeo_url: https://vimeo.com/104900592
+  vimeo_thumbnail: http://i.vimeocdn.com/video/487560024_640.jpg
+  title: Mon premier mois dans une start-up - Alexandre Tadrosh
+  description: "Retour d'expérience d'un étudiant qui a passé un mois dans une start-up\r\n\r\nEpita"
+  event_date: 2014-08-05
+  slug: mon-premier-mois-dans-une-start-up-alexandre-tadrosh
+ruby-and-rails-pro-tips-michel-pigassou:
+  vimeo_url: https://vimeo.com/104901603
+  vimeo_thumbnail: http://i.vimeocdn.com/video/487561174_640.jpg
+  title: Ruby and Rails Pro Tips - Michel Pigassou
+  description: "Quelques trucs et astuces pour se faciliter la vie avec Ruby et Rails\r\n\r\nEpita"
+  event_date: 2014-08-05
+  slug: ruby-and-rails-pro-tips-michel-pigassou
+the-treasures-of-ruby-one-for-each-day-christophe-philemotte:
+  vimeo_url: https://vimeo.com/107396377
+  vimeo_thumbnail: http://i.vimeocdn.com/video/490783954_640.jpg
+  title: The Treasures of Ruby, one for each day - Christophe Philemotte
+  description:
+    "Christophe nous parle de quelques fonctionnalités de Ruby peu connues
+    des développeurs et qui peuvent pourtant s'avérer bien utiles.\r\n\r\nNuma"
+  event_date: 2014-05-06
+  slug: the-treasures-of-ruby-one-for-each-day-christophe-philemotte
+a-b-testing-on-rails-hassen-taidirt:
+  vimeo_url: https://vimeo.com/107402887
+  vimeo_thumbnail: http://i.vimeocdn.com/video/490792647_640.jpg
+  title: A/B Testing on Rails - Hassen Taidirt
+  description:
+    "Quels outils peut-on utiliser pour faire de l'A/B testing avec Rails
+    et quels sont leurs capacités ?\r\n\r\nNuma"
+  event_date: 2014-05-06
+  slug: a-b-testing-on-rails-hassen-taidirt
+side-project-lessons-learned-philippe-bourgau:
+  vimeo_url: https://vimeo.com/107630266
+  vimeo_thumbnail: http://i.vimeocdn.com/video/491151028_640.jpg
+  title: "Side project: lessons learned - Philippe Bourgau"
+  description:
+    "Quelques leçons tirées du développement d'un side project\r\n\r\nAltavia,
+    AgenceCosmic"
+  event_date: 2014-09-02
+  slug: side-project-lessons-learned-philippe-bourgau
+ruby-not-only-for-servers-loic-boutet:
+  vimeo_url: https://vimeo.com/107637676
+  vimeo_thumbnail: http://i.vimeocdn.com/video/491150978_640.jpg
+  title: "Ruby: not only for servers - Loïc Boutet"
+  description:
+    "Loïc nous présente OpalRB ou comment faire du Ruby côté client\r\n\r\nAltavia,
+    AgenceCosmic"
+  event_date: 2014-09-02
+  slug: ruby-not-only-for-servers-loic-boutet
+comment-on-a-ameliore-le-lien-back-front-en-utilisant-des-fichiers-openapi:
+  vimeo_url: https://www.youtube.com/watch?v=2Vno981d2IU
+  vimeo_thumbnail: https://img.youtube.com/vi/2Vno981d2IU/maxresdefault.jpg
+  title: Comment on a amélioré le lien back-front en utilisant des fichiers openAPI
+  description:
+  event_date: 2022-06-07
+  slug: comment-on-a-ameliore-le-lien-back-front-en-utilisant-des-fichiers-openapi
+build-a-web-app-with-dry-system:
+  vimeo_url: https://www.youtube.com/watch?v=74Wd_HueAJM
+  vimeo_thumbnail: https://img.youtube.com/vi/74Wd_HueAJM/maxresdefault.jpg
+  title: Build a web app with Dry-System
+  description:
+  event_date: 2022-06-07
+  slug: build-a-web-app-with-dry-system
+les-10-erreurs-les-plus-courantes-en-entretien-technique:
+  vimeo_url: https://www.youtube.com/watch?v=i1MXyoJSRDc
+  vimeo_thumbnail: https://img.youtube.com/vi/i1MXyoJSRDc/maxresdefault.jpg
+  title: Les 10 erreurs les plus courantes en entretien technique
+  description:
+  event_date: 2022-06-07
+  slug: les-10-erreurs-les-plus-courantes-en-entretien-technique
+redis-avec-heroku-pourquoi-et-comment-separer-son-cache:
+  vimeo_url: https://www.youtube.com/watch?v=lnfc61qjxME
+  vimeo_thumbnail: https://img.youtube.com/vi/lnfc61qjxME/maxresdefault.jpg
+  title: Redis avec Heroku - Pourquoi et comment séparer son cache
+  description:
+  event_date: 2022-06-07
+  slug: redis-avec-heroku-pourquoi-et-comment-separer-son-cache
+react-on-rails-le-meilleur-des-deux-mondes:
+  vimeo_url: https://www.youtube.com/watch?v=4aCYr7d-Fok
+  vimeo_thumbnail: https://img.youtube.com/vi/4aCYr7d-Fok/maxresdefault.jpg
+  title: React on Rails, le meilleur des deux mondes
+  description:
+  event_date: 2022-06-07
+  slug: react-on-rails-le-meilleur-des-deux-mondes
+comment-ecrire-son-code-sur-un-ticket-de-metro:
+  vimeo_url: https://www.youtube.com/watch?v=pWxNtCa2atw
+  vimeo_thumbnail: https://img.youtube.com/vi/pWxNtCa2atw/maxresdefault.jpg
+  title: Comment écrire son code sur un ticket de métro?
+  description:
+  event_date: 2022-06-07
+  slug: comment-ecrire-son-code-sur-un-ticket-de-metro
+service-objects-la-brique-manquante-de-rails:
+  vimeo_url: https://www.youtube.com/watch?v=xVdDBpcvEYM
+  vimeo_thumbnail: https://img.youtube.com/vi/xVdDBpcvEYM/maxresdefault.jpg
+  title: Service Objects, la brique manquante de Rails
+  description:
+  event_date: 2022-06-07
+  slug: service-objects-la-brique-manquante-de-rails
+better-safe-than-sorry:
+  vimeo_url: https://www.youtube.com/watch?v=ioxG8mKR1zw
+  vimeo_thumbnail: https://img.youtube.com/vi/ioxG8mKR1zw/maxresdefault.jpg
+  title: Better safe than sorry
+  description:
+  event_date: 2022-06-07
+  slug: better-safe-than-sorry
+implementing-blackout-period-on-puma-workers:
+  vimeo_url: https://www.youtube.com/watch?v=l9ie8M3RhdE
+  vimeo_thumbnail: https://img.youtube.com/vi/l9ie8M3RhdE/maxresdefault.jpg
+  title: Implementing blackout period on Puma workers
+  description:
+  event_date: 2022-06-07
+  slug: implementing-blackout-period-on-puma-workers
+on-a-recrute-un-e-dev-junior-ama:
+  vimeo_url: https://www.youtube.com/watch?v=pAmY8GJvqK0
+  vimeo_thumbnail: https://img.youtube.com/vi/pAmY8GJvqK0/maxresdefault.jpg
+  title: On a recruté un.e dev junior ! AMA
+  description:
+  event_date: 2022-06-07
+  slug: on-a-recrute-un-e-dev-junior-ama
+industrialiser-une-api:
+  vimeo_url: https://www.youtube.com/watch?v=sX8ELUVHV0U
+  vimeo_thumbnail: https://img.youtube.com/vi/sX8ELUVHV0U/maxresdefault.jpg
+  title: Industrialiser une API
+  description:
+  event_date: 2022-06-07
+  slug: industrialiser-une-api
+commit-comme-un-hipster-avec-gitmoji:
+  vimeo_url: https://www.youtube.com/watch?v=1Lvr0Hr_ot0
+  vimeo_thumbnail: https://img.youtube.com/vi/1Lvr0Hr_ot0/maxresdefault.jpg
+  title: Commit comme un hipster avec Gitmoji !
+  description:
+  event_date: 2022-06-07
+  slug: commit-comme-un-hipster-avec-gitmoji
+rails-xss-protection:
+  vimeo_url: https://www.youtube.com/watch?v=SFuGfTqSFvU
+  vimeo_thumbnail: https://img.youtube.com/vi/SFuGfTqSFvU/maxresdefault.jpg
+  title: "Rails : XSS protection"
+  description:
+  event_date: 2022-09-11
+  slug: rails-xss-protection
+produire-du-logiciel-dans-une-cooperative-ouvriere:
+  vimeo_url: https://www.youtube.com/watch?v=lNbCLgJvuFA
+  vimeo_thumbnail: https://img.youtube.com/vi/lNbCLgJvuFA/maxresdefault.jpg
+  title: Produire du logiciel dans une coopérative ouvrière
+  description:
+  event_date: 2022-10-08
+  slug: produire-du-logiciel-dans-une-cooperative-ouvriere
+how-music-works-using-ruby-english:
+  vimeo_url: https://www.youtube.com/watch?v=j5o9HbSaL8w
+  vimeo_thumbnail: https://img.youtube.com/vi/j5o9HbSaL8w/maxresdefault.jpg
+  title: How music works, using Ruby [English]
+  description:
+  event_date: 2022-09-06
+  slug: how-music-works-using-ruby-english
+level-up-your-capybara-acceptance-tests-using-siteprism:
+  vimeo_url: https://www.youtube.com/watch?v=Yf09FVj_hG4
+  vimeo_thumbnail: https://img.youtube.com/vi/Yf09FVj_hG4/maxresdefault.jpg
+  title: Level up your Capybara acceptance tests using SitePrism
+  description: Level up your Capybara acceptance tests using SitePrism
+  event_date: 2022-11-08
+  slug: level-up-your-capybara-acceptance-tests-using-siteprism

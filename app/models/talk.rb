@@ -49,8 +49,6 @@ class Talk < ApplicationRecord
   validates :title,
     presence: true
 
-  after_create_commit :send_slack_notification
-
   def self.months_iterator(range)
     range.map { |m| Date::MONTHNAMES[((m - 1) % 12) + 1].downcase }.inject({}) { |hash, month|
       path_to_months = 'activerecord.attributes.talk.proposed_months'
@@ -96,9 +94,7 @@ class Talk < ApplicationRecord
     happened_at && happened_at < Date.today
   end
 
-  private
-
-  def send_slack_notification
+  def send_slack_notification!
     return if ENV['SLACK_WEBHOOK_URL'].blank?
 
     conn = Faraday.new(headers: {'Content-Type' => 'application/json'}) do |conn|
