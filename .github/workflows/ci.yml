@@ -51,8 +51,7 @@ jobs:
           bin/rails db:create db:schema:load
 
       - name: Run tests
-        run: |
-          bin/rails test:all
+        run: bin/rails test:all
 
       - name: Smoke test database seeds
         run: bin/rails db:reset
