@@ -47,7 +47,7 @@ puts "create videos"
 
 Video.all.destroy_all
 
-videos = YAML.load(Rails.root.join("test/fixtures/videos.yml", permitted_classes: [Date]).read).values
+videos = YAML.load(Rails.root.join("test/fixtures/videos.yml").read, permitted_classes: [Date]).values
 
 videos.each do |video|
   Video.find_or_create_by!(title: video['title']) do |v|
