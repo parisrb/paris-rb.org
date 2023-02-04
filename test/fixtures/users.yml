@@ -1,0 +1,4 @@
+---
+admin:
+  email: admin@parisrb.fr
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
