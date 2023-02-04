@@ -19,7 +19,7 @@ fr:
     loading: "Chargement..."
     home:
       name: "Accueil"
-    toggle_navigation: Toggle Navigation
+    toggle_navigation: Activer la Navigation
     pagination:
       previous: "&laquo; Préc."
       next: "Suiv. &raquo;"
