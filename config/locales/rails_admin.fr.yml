@@ -142,7 +142,7 @@ fr:
       fields_from_associated: "Champ du (de la) %{name} associé"
       display: "Affichage %{name}: %{type}"
       options_for: "Options pour %{name}"
-      empty_value_for_associated_objects: "<empty>"
+      empty_value_for_associated_objects: "<vide>"
       click_to_reverse_selection: "Cliquer pour inverser la sélection"
       csv:
         header_for_root_methods: "%{name}" # 'model' is available
