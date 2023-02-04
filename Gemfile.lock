@@ -167,6 +167,9 @@ GEM
     image_processing (1.12.2)
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
+    importmap-rails (1.1.5)
+      actionpack (>= 6.0.0)
+      railties (>= 6.0.0)
     interactive_editor (0.0.12)
       spoon (~> 0.0.6)
     io-console (0.6.0)
@@ -410,6 +413,7 @@ DEPENDENCIES
   enumerize
   faker
   faraday
+  importmap-rails
   irbtools
   jquery-rails
   kaminari
@@ -429,6 +433,7 @@ DEPENDENCIES
   slim
   sprockets-rails
   sucker_punch
+  turbo-rails
   tzinfo-data
   web-console
   webdrivers
