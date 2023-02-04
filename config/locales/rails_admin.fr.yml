@@ -28,7 +28,7 @@ fr:
       filter_date_format: "dd/mm/yy" # a combination of 'dd', 'mm' and 'yy' with any delimiter. No other interpolation will be done!
       search: "Recherche"
       filter: "Filtre"
-      reset_filters: "Reset filters"
+      reset_filters: "Réinitialiser les filtres"
       refresh: "Rafraîchir"
       show_all: "Montrer tout"
       add_filter: "Ajouter un filtre"
