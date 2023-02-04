@@ -356,6 +356,8 @@ GEM
     ssrf_filter (1.1.1)
     sucker_punch (3.1.0)
       concurrent-ruby (~> 1.0)
+    tailwindcss-rails (2.0.21-arm64-darwin)
+      railties (>= 6.0.0)
     temple (0.10.0)
     thor (1.2.1)
     tilt (2.0.11)
@@ -433,6 +435,7 @@ DEPENDENCIES
   slim
   sprockets-rails
   sucker_punch
+  tailwindcss-rails
   turbo-rails
   tzinfo-data
   web-console
