@@ -73,7 +73,7 @@ fr:
         title: "Liste des %{model_label_plural}"
         menu: "Liste"
         breadcrumb: "%{model_label_plural}"
-        no_records: "No records"
+        no_records: "Pas d’enregistrements"
       show:
         title: "Détails pour %{model_label} '%{object_label}'"
         menu: "Voir"
