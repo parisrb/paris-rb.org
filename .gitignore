@@ -29,3 +29,5 @@ docker
 vendor/.bundle/
 .byebug_history
 
+/app/assets/builds/*
+!/app/assets/builds/.keep
