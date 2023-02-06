@@ -32,7 +32,7 @@ fr:
       refresh: "Rafraîchir"
       show_all: "Montrer tout"
       add_filter: "Ajouter un filtre"
-      bulk_menu_title: "Élements sélectionnés"
+      bulk_menu_title: "Éléments sélectionnés"
       remove: "Supprimer"
       add_new: "Ajouter"
       chosen: "Choisi %{name}"
