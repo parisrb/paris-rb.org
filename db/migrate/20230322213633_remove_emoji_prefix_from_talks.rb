@@ -7,6 +7,8 @@ class RemoveEmojiPrefixFromTalks < ActiveRecord::Migration[7.0]
   end
 
   def down
-    Talk.all.each { _1.update!(title: _1.title_with_emoji) }
+    Talk.all.each do |talk|
+      talk.update!(title: talk.title_with_emoji)
+    end
   end
 end
