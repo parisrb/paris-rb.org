@@ -1,6 +1,9 @@
 class RemoveEmojiPrefixFromTalks < ActiveRecord::Migration[7.0]
   def up
-    Talk.all.each { _1.update!(title: _1.title.delete_prefix('💬').delete_prefix('⚡'.strip)) }
+    Talk.all.each do |talk|
+      title = talk.title.delete_prefix('💬').delete_prefix('⚡').strip
+      talk.update!(title: title)
+    end
   end
 
   def down
