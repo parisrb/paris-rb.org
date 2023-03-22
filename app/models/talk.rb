@@ -94,6 +94,14 @@ class Talk < ApplicationRecord
     happened_at && happened_at < Date.today
   end
 
+  def emoji
+    duration.long? ? '💬' : '⚡'
+  end
+
+  def title_with_emoji
+    "#{emoji} #{title}"
+  end
+
   def send_slack_notification!
     return if ENV['SLACK_WEBHOOK_URL'].blank?
 
