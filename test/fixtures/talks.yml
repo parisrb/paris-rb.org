@@ -5,11 +5,11 @@
   speaker_email: napoleon@reynolds-ryan.co
   level: easy
   duration: lightning
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: angelo
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 7:
   title: GetText, une alternative à i18n standard
@@ -19,9 +19,9 @@
   duration: lightning
   happened_at: 2011-01-01
   slides: http://fr.slideshare.net/abelar_s/gettext-rails-fr
-  video_url: 
+  video_url:
   speaker_twitter: isa_schmeler
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 8:
   title: Rails Devise Cancan
@@ -30,10 +30,10 @@
   level: easy
   duration: lightning
   happened_at: 2011-11-08
-  slides: 
+  slides:
   video_url: "/videos/rails-devise-cancan"
   speaker_twitter: alonzo
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 9:
   title: RubyLive
@@ -42,10 +42,10 @@
   level: easy
   duration: lightning
   happened_at: 2011-11-08
-  slides: 
+  slides:
   video_url: "/videos/rubylive-matthieu-segret"
   speaker_twitter: esteban_littel
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 10:
   title: Commander
@@ -54,10 +54,10 @@
   level: intermediate
   duration: lightning
   happened_at: 2011-11-08
-  slides: 
+  slides:
   video_url: "/videos/commander-simon-courtois"
   speaker_twitter: demetrice_douglas
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 12:
   title: Présentation de MongoDB / Mongoid
@@ -66,10 +66,10 @@
   level: easy
   duration: lightning
   happened_at: 2011-12-06
-  slides: 
+  slides:
   video_url: "/videos/presentation-de-mongodb-mongoid"
   speaker_twitter: bruno
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 14:
   title: Retour d'expérience sur Liquid, et présentation de Solid
@@ -78,10 +78,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-01-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: marilou_gerlach
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 15:
   title: Pourquoi Ruby on Rails ?
@@ -91,9 +91,9 @@
   duration: lightning
   happened_at: 2012-01-10
   slides: http://www.slideshare.net/happynoff/pourquoi-ruby-on-rails-a-dchire
-  video_url: 
+  video_url:
   speaker_twitter: kathryne
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 16:
   title: Le projet de Geekli.st
@@ -102,10 +102,10 @@
   level: easy
   duration: lightning
   happened_at: 2012-02-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: alvaro
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 17:
   title: Manage Open Source Project
@@ -114,10 +114,10 @@
   level: easy
   duration: lightning
   happened_at: 2012-02-06
-  slides: 
+  slides:
   video_url: http://lacantine.ubicast.eu/videos/paris-rb-12/
   speaker_twitter: keith_emard
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 18:
   title: OAuth2 en bref
@@ -126,10 +126,10 @@
   level: intermediate
   duration: lightning
   happened_at: 2012-02-06
-  slides: 
+  slides:
   video_url: http://lacantine.ubicast.eu/videos/paris-rb-12/
   speaker_twitter: carlton
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 19:
   title: Reprendre un (gros) projet Ruby on Rails
@@ -138,10 +138,10 @@
   level: expert
   duration: lightning
   happened_at: 2012-02-06
-  slides: 
+  slides:
   video_url: http://lacantine.ubicast.eu/videos/paris-rb-12/
   speaker_twitter: keli
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 20:
   title: MongoDB 2
@@ -150,10 +150,10 @@
   level: easy
   duration: lightning
   happened_at: 2012-02-06
-  slides: 
+  slides:
   video_url: http://lacantine.ubicast.eu/videos/paris-rb-12/
   speaker_twitter: sandra
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 21:
   title: Vendez Ruby on Rails à votre patron
@@ -162,10 +162,10 @@
   level: easy
   duration: long
   happened_at: 2012-02-28
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: danita
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 23:
   title: Enlarge your Apdex Naturally! (Proven methods to enhance your Rails performance
@@ -176,9 +176,9 @@
   duration: long
   happened_at: 2012-02-28
   slides: http://www.slideshare.net/dimelo_RD/enhance-you-apdex-naturally
-  video_url: 
+  video_url:
   speaker_twitter: keely
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 24:
   title: 'PJAX : HTML5 pushState & Ajax dans Rails en 5 minutes'
@@ -188,9 +188,9 @@
   duration: long
   happened_at: 2012-04-11
   slides: http://www.slideshare.net/florianlamache/html5-pushstate
-  video_url: 
+  video_url:
   speaker_twitter: lance_jacobson
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 26:
   title: La concurrence en Ruby - (Boldr) – Asynchronie avec Ruby
@@ -199,10 +199,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-04-11
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: robbyn_mills
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 27:
   title: Quelques patterns asynchrones, d'EM à Celluloid
@@ -212,9 +212,9 @@
   duration: long
   happened_at: 2012-04-11
   slides: http://www.slideshare.net/LeTesteur/eventmachine-12572664
-  video_url: 
+  video_url:
   speaker_twitter: anya_barrows
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 28:
   title: Ariane
@@ -224,9 +224,9 @@
   duration: lightning
   happened_at: 2012-04-11
   slides: http://www.slideshare.net/happynoff/ariane
-  video_url: 
+  video_url:
   speaker_twitter: erika_bauch
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 29:
   title: Salesforce/Heroku/Rails WTF ?
@@ -235,10 +235,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-04-11
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: daniel_hettinger
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 30:
   title: Réaliser une application web avec Sinatra, knockout.js et CoffeeScript
@@ -247,10 +247,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-05-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: quintin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 31:
   title: Lean Startup - développement en flux tendu grâce au cycle Build / Measure
@@ -260,10 +260,10 @@
   level: easy
   duration: long
   happened_at: 2012-05-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: alton_lakin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 32:
   title: La Prévoyance et la retraite des indépendants
@@ -272,10 +272,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-06-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: herman_buckridge
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 33:
   title: Founder & CEO Verseau
@@ -284,10 +284,10 @@
   level: easy
   duration: long
   happened_at: 2012-06-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: cristobal_friesen
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 34:
   title: Responsive Design
@@ -296,10 +296,10 @@
   level: easy
   duration: lightning
   happened_at: 2012-06-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: dorthey
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 35:
   title: Exceptions in Ruby Tips and tricks
@@ -311,7 +311,7 @@
   slides: http://www.slideshare.net/dimelo_RD/exceptions-in-ruby-tips-and-tricks
   video_url: "/videos/exceptions-in-ruby-tips-and-tricks-vlad-zloteanu"
   speaker_twitter: randee_flatley
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 36:
   title: Présentation de la gem rails-canhaz et introduction à la création d'une gem
@@ -320,10 +320,10 @@
   level: easy
   duration: long
   happened_at: 2012-07-03
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: bettina
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 37:
   title: Vos RegExps sont fausses
@@ -332,10 +332,10 @@
   level: intermediate
   duration: lightning
   happened_at: 2012-07-03
-  slides: 
+  slides:
   video_url: "/videos/vos-regexps-sont-fausses-lightning-talk-simon-courtois"
   speaker_twitter: andrea
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 38:
   title: Validate-website - Web crawler for checking the validity of your documents
@@ -344,10 +344,10 @@
   level: easy
   duration: lightning
   happened_at: 2012-07-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: rodney_rohan
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 40:
   title: Pas clair mais super cool (owf? wlw?).
@@ -356,10 +356,10 @@
   level: easy
   duration: lightning
   happened_at: 2012-10-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: sherrie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 41:
   title: tent.io
@@ -368,10 +368,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-10-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: derek
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 43:
   title: ActiveModelSerializers
@@ -380,10 +380,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-10-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: curtis_jerde
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 39:
   title: Draper
@@ -395,7 +395,7 @@
   slides: http://skateinmars.github.io/presentation-draper/
   video_url: ''
   speaker_twitter: lindsay
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 25:
   title: 'Measure anything, measure everything : suivre son application Rails en temps
@@ -408,7 +408,7 @@
   slides: https://speakerdeck.com/jdguyot/measure-your-rails-app
   video_url: ''
   speaker_twitter: april
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 42:
   title: Présentation de AngularJS et comment l'intégrer à Rails
@@ -420,7 +420,7 @@
   slides: http://pub.ricodigo.com/patcito/angularjs-slides/
   video_url: ''
   speaker_twitter: chadwick
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 6:
   title: Predictive analysis in real time with Ruby and R
@@ -432,7 +432,7 @@
   slides: http://cl.ly/0B0a1g262C0h
   video_url: "/videos/faire-de-l-analyse-predictive-en-temps-reel-avec-ruby-et-r-benjamin-lan-sun-luk"
   speaker_twitter: clyde
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 1:
   title: Pry as replacement for irb and debugger
@@ -444,7 +444,7 @@
   slides: https://speakerdeck.com/ksol/lightning-talk-pry
   video_url: "/videos/pry-as-replacement-for-irb-kevin-soltysiak"
   speaker_twitter: lee
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 3:
   title: Fake your files
@@ -456,7 +456,7 @@
   slides: http://www.slideshare.net/happynoff/memfs
   video_url: "/videos/fake-your-files-simon-courtois"
   speaker_twitter: daisey_kertzmann
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 4:
   title: Relecture POODR - Single Responsibility
@@ -468,7 +468,7 @@
   slides: http://slid.es/thomaspetrachi/srp
   video_url: "/videos/relecture-de-poodr-single-responsibility-principle-thomas-petrachi"
   speaker_twitter: pansy_rath
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 127:
   title: Localize your files in Mongoid | A mongoid Paperclip fork
@@ -480,7 +480,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: floyd
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 111:
   title: Un sitemap generator
@@ -492,7 +492,7 @@
   slides: ''
   video_url: "/videos/un-sitemap-generator-alex-centar "
   speaker_twitter: rayford
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 160:
   title: Speed dating ruby - Retours d'expérience
@@ -504,7 +504,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: tommie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 2:
   title: Pragmatic Web Components
@@ -516,7 +516,7 @@
   slides: ''
   video_url: "/videos/pragmatic-web-components-nicolas-merouze"
   speaker_twitter: chong_pollich
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 46:
   title: Mustdown
@@ -528,7 +528,7 @@
   slides: http://www.slideshare.net/happynoff/mustdown
   video_url: "/videos/mustdown-simon-courtois"
   speaker_twitter: jasper
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 47:
   title: Ce que j'aurais voulu savoir
@@ -540,7 +540,7 @@
   slides: http://fr.slideshare.net/abelar_s/ce-que-jaurais-voulu-savoir-15177456
   video_url: "/videos/ce-que-j-aurais-voulu-savoir-sylvain-abelard"
   speaker_twitter: candie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 48:
   title: LAB - architectural kata
@@ -549,10 +549,10 @@
   level: expert
   duration: long
   happened_at: 2012-11-12
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: horacio_swift
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 50:
   title: ObjectID in MongoDB
@@ -564,7 +564,7 @@
   slides: http://www.slideshare.net/dimelo_RD/objectid-in-mongodb
   video_url: "/videos/objectid-in-mongodb-lightning-talk-vlad-zloteanu"
   speaker_twitter: federico
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 51:
   title: Block, Proc et Lambda
@@ -576,7 +576,7 @@
   slides: http://www.slideshare.net/MatthieuSegret/ruby-block-proc-and-lambda
   video_url: "/videos/blocks-procs-et-lambdas-matthieu-segret"
   speaker_twitter: earline_klein
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 52:
   title: SOA on Rails
@@ -585,13 +585,13 @@
   level: intermediate
   duration: long
   happened_at: 2012-12-10
-  slides: 
+  slides:
   video_url: "/videos/soa-on-rails-nicolas-blanco"
   speaker_twitter: loreta_marvin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 213:
-  title: "⚡ Materialize"
+  title: "Materialize"
   speaker_name: Quentin Rémy
   speaker_email: mitch_hansen@adams-bogisich.net
   level: easy
@@ -600,7 +600,7 @@
   slides: http://fr.slideshare.net/goldenson_/materializecss
   video_url: ''
   speaker_twitter: aleida
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 54:
   title: 'EventMachine et websocket '
@@ -609,10 +609,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-12-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: leia_glover
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 55:
   title: Santé des Geeks
@@ -621,10 +621,10 @@
   level: easy
   duration: long
   happened_at: 2012-12-10
-  slides: 
+  slides:
   video_url: "/videos/sante-des-geeks-sylvain-abelard"
   speaker_twitter: irving
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 56:
   title: De Rails 2.0 A Rails 4.0
@@ -633,10 +633,10 @@
   level: intermediate
   duration: long
   happened_at: 2012-12-10
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: travis_frami
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 57:
   title: Lightning Talks Suck!
@@ -645,10 +645,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-01-07
-  slides: 
+  slides:
   video_url: "/videos/lightning-talk-suck-lightning-talk-christopher-dell"
   speaker_twitter: brant
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 58:
   title: Coconut Freelancing
@@ -657,10 +657,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-01-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: miranda
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 59:
   title: Websockets Rails
@@ -669,10 +669,10 @@
   level: intermediate
   duration: lightning
   happened_at: 2013-01-07
-  slides: 
+  slides:
   video_url: "/videos/websockets-rails-julien-lta-ballet"
   speaker_twitter: lindsay
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 60:
   title: Gérer son auto-entreprise et créer une SAS avant de se lancer
@@ -681,10 +681,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-01-07
-  slides: 
+  slides:
   video_url: "/videos/gerer-son-auto-entreprise-et-creer-une-sas-avant-de-se-lancer-philippe-nenert"
   speaker_twitter: danyel
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 61:
   title: AXLSX Vos fichiers Excel tout simplement en Ruby
@@ -693,10 +693,10 @@
   level: intermediate
   duration: long
   happened_at: 2013-01-07
-  slides: 
+  slides:
   video_url: "/videos/axlsx-vos-fichiers-excel-tout-simplement-en-ruby-pierre-merlin"
   speaker_twitter: alonzo_pacocha
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 62:
   title: Ruby et DCI
@@ -708,7 +708,7 @@
   slides: http://www.slideshare.net/happynoff/ruby-and-dci
   video_url: "/videos/ruby-et-dci-lightning-talk-simon-courtois"
   speaker_twitter: mohammad
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 63:
   title: Chef Solo & Capistrano
@@ -717,10 +717,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-01-07
-  slides: 
+  slides:
   video_url: "/videos/chef-solo-capistrano-lightning-talk-stephane-toth"
   speaker_twitter: berry
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 64:
   title: Ruby Press Pack
@@ -729,10 +729,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-01-07
-  slides: 
+  slides:
   video_url: "/videos/ruby-press-pack-lightning-talk-sylvain-abelard"
   speaker_twitter: carmine_mertz
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 65:
   title: 'Vagrant : Faire du dev dans une VM'
@@ -741,10 +741,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-02-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: morgan
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 66:
   title: Rubymotion
@@ -753,10 +753,10 @@
   level: expert
   duration: long
   happened_at: 2013-02-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: cary
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 67:
   title: Créer une API avec Netty et JRuby
@@ -765,10 +765,10 @@
   level: expert
   duration: long
   happened_at: 2013-02-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: sharie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 68:
   title: Réseautez ! (qui est freelance, qui cherche un job?)
@@ -777,10 +777,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-02-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: mike_rutherford
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 69:
   title: Annonce de la conférence dotRB
@@ -789,10 +789,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-02-04
-  slides: 
+  slides:
   video_url: "/videos/annonce-de-la-conference-dotrb-lightning-talk-sylvain-zimmer"
   speaker_twitter: barney
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 70:
   title: Apprendre Rails en partant de zéro
@@ -801,10 +801,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-02-04
-  slides: 
+  slides:
   video_url: "/videos/apprendre-rails-en-partant-de-zero-lightning-talk-thomas-bancel"
   speaker_twitter: clarence_harber
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 71:
   title: Comment appréhender RoR quand on vient du développement web traditionnel
@@ -814,10 +814,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-03-06
-  slides: 
+  slides:
   video_url: "/videos/comment-apprehender-ror-quand-on-vient-du-developpement-web-traditionnel-alexandre-centar "
   speaker_twitter: king
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 72:
   title: Multiplayer Game
@@ -826,10 +826,10 @@
   level: easy
   duration: long
   happened_at: 2013-03-06
-  slides: 
+  slides:
   video_url: "/videos/multiplayer-game-marc-gauthier"
   speaker_twitter: rhett
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 74:
   title: Do we deserve the Wooden Spoon?
@@ -838,10 +838,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-04-02
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: darline
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 75:
   title: Comment j’ai trouvé une copine avec Node.js
@@ -853,7 +853,7 @@
   slides: http://partage.ornthalas.net/public/Documents/Slides/Comment%20j%27ai%20trouv%C3%A9%20une%20copine%20avec%20Node%20v3.pdf
   video_url: "/videos/comment-j-ai-trouve-une-copine-avec-node-js-etienne-folio"
   speaker_twitter: randell_howell
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 76:
   title: How (not) to design a modern API legacy systems
@@ -862,10 +862,10 @@
   level: intermediate
   duration: long
   happened_at: 2013-04-02
-  slides: 
+  slides:
   video_url: "/videos/how-not-to-design-a-modern-api-legacy-systems-ori-pekelman"
   speaker_twitter: jimmie_macejkovic
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 77:
   title: Hack your brain!
@@ -877,7 +877,7 @@
   slides: https://speakerdeck.com/abelar_s/hack-your-brain
   video_url: "/videos/hack-your-brain-sylvain-abelard"
   speaker_twitter: jessia
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 78:
   title: Une API rapide et de qualité avec Weasel-Diesel
@@ -886,10 +886,10 @@
   level: intermediate
   duration: lightning
   happened_at: 2013-04-06
-  slides: 
+  slides:
   video_url: "/videos/une-api-rapide-et-de-qualite-avec-weasel-diesel-lightning-talk-julien-bordellier"
   speaker_twitter: kortney_wiza
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 79:
   title: RuLu 2013
@@ -898,10 +898,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-05-07
-  slides: 
+  slides:
   video_url: "/videos/rulu-2013-lightning-talk-fabien-catteau-et-ferdinand-boas"
   speaker_twitter: donita_schuppe
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 80:
   title: Les BrownBagLunch (BBL)
@@ -910,10 +910,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-05-07
-  slides: 
+  slides:
   video_url: "/videos/les-brownbaglunch-bbl-francois-sarradin"
   speaker_twitter: miguel
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 81:
   title: Recréer EventMachine à partir de zéro, en Ruby
@@ -922,10 +922,10 @@
   level: expert
   duration: long
   happened_at: 2013-05-07
-  slides: 
+  slides:
   video_url: "/videos/recreer-eventmachine-a-partir-de-zero-en-ruby-marc-andre-cournoyer"
   speaker_twitter: olga
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 82:
   title: Make Hypermedia APIs in Ruby
@@ -934,10 +934,10 @@
   level: intermediate
   duration: long
   happened_at: 2013-05-07
-  slides: 
+  slides:
   video_url: "/videos/make-hypermedia-apis-in-ruby-nicolas-merouze"
   speaker_twitter: luetta_dare
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 83:
   title: Must Have des gems de débug visuel pour Rails
@@ -946,10 +946,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-05-07
-  slides: 
+  slides:
   video_url: "/videos/must-have-gems-de-debug-visuel-thomas-romera"
   speaker_twitter: isaiah
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 84:
   title: 'Meteor 101 : A better way to build web apps 100% in Javascript'
@@ -958,10 +958,10 @@
   level: easy
   duration: long
   happened_at: 2013-06-07
-  slides: 
+  slides:
   video_url: "/videos/meteor-101-a-better-way-to-build-web-apps-100-in-javascript-vianney-lecroart"
   speaker_twitter: tien_hermann
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 85:
   title: 'Discourse : la plateforme de discussion nouvelle génération'
@@ -970,10 +970,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-07-02
-  slides: 
+  slides:
   video_url: "/videos/discourse-la-plateforme-de-discussion-nouvelle-generation-nicolas-blanco"
   speaker_twitter: adriene
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 45:
   title: It's time to learn the basics!
@@ -985,7 +985,7 @@
   slides: https://speakerdeck.com/nima/its-time-to-learn-the-basics
   video_url: "/videos/html-css-nima-izadi"
   speaker_twitter: izola_strosin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 86:
   title: State Machine
@@ -994,10 +994,10 @@
   level: intermediate
   duration: lightning
   happened_at: 2013-07-02
-  slides: 
+  slides:
   video_url: "/videos/state-machine-nicolas-mondollot"
   speaker_twitter: titus
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 87:
   title: REST with Her
@@ -1009,7 +1009,7 @@
   slides: http://www.slideshare.net/happynoff/her-23784246
   video_url: "/videos/rest-with-her-simon-courtois"
   speaker_twitter: donnie_kohler
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 90:
   title: Sécuriser son application Ruby on Rails
@@ -1018,10 +1018,10 @@
   level: intermediate
   duration: long
   happened_at: 2013-07-02
-  slides: 
+  slides:
   video_url: "/videos/securiser-son-application-ruby-on-rails-vlad-zloteanu"
   speaker_twitter: myung
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 91:
   title: HTTP Cache en Rails 4
@@ -1030,10 +1030,10 @@
   level: intermediate
   duration: long
   happened_at: 2013-11-05
-  slides: 
+  slides:
   video_url: "/videos/http-cache-en-rails-4-christopher-cocchi-perrier"
   speaker_twitter: norah
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 92:
   title: La bibliothèque Gosu
@@ -1042,10 +1042,10 @@
   level: easy
   duration: lightning
   happened_at: 2013-11-05
-  slides: 
+  slides:
   video_url: "/videos/la-bibliotheque-gosu-matthieu-segret"
   speaker_twitter: camille_toy
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 93:
   title: Zeus & Zeus Parallel tests
@@ -1054,10 +1054,10 @@
   level: intermediate
   duration: lightning
   happened_at: 2013-12-03
-  slides: 
+  slides:
   video_url: "/videos/zeus-zeus-parallel-tests-dimitri-jorge"
   speaker_twitter: wilburn
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 94:
   title: Recent technical advances in Passenger
@@ -1066,10 +1066,10 @@
   level: intermediate
   duration: long
   happened_at: 2013-12-03
-  slides: 
+  slides:
   video_url: "/videos/recent-technical-advances-in-passenger-hongli-lai"
   speaker_twitter: david
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 95:
   title: gmaps4rails
@@ -1078,10 +1078,10 @@
   level: intermediate
   duration: long
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/gmaps4rails-benjamin-roth"
   speaker_twitter: arla_schamberger
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 96:
   title: ActionController::Live
@@ -1090,10 +1090,10 @@
   level: intermediate
   duration: long
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/actioncontroller-live-guillaume-troppee"
   speaker_twitter: roselyn
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 97:
   title: Palette de couleur Web
@@ -1102,10 +1102,10 @@
   level: easy
   duration: long
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/palette-de-couleur-web-igor-cheloudiakoff"
   speaker_twitter: zoraida_auer
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 98:
   title: ActiveRecord Serialization
@@ -1114,10 +1114,10 @@
   level: intermediate
   duration: long
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/activerecord-serialization-jean-boussier"
   speaker_twitter: emery
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 99:
   title: Applications Mobiles Natives
@@ -1126,10 +1126,10 @@
   level: intermediate
   duration: long
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/applications-mobiles-natives-marc-gauthier"
   speaker_twitter: mariano
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 100:
   title: Form Objects
@@ -1138,10 +1138,10 @@
   level: expert
   duration: lightning
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/form-objects-nicolas-mondollot"
   speaker_twitter: eve
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 101:
   title: Bootstrapping d'un SaaS
@@ -1150,10 +1150,10 @@
   level: easy
   duration: long
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/bootstrapping-d-un-saas-thibaut-barrere"
   speaker_twitter: teresa_kihn
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 102:
   title: Server-Sent Events
@@ -1162,10 +1162,10 @@
   level: easy
   duration: lightning
   happened_at: 2014-01-07
-  slides: 
+  slides:
   video_url: "/videos/server-sent-events-etienne-barrie"
   speaker_twitter: johna
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 53:
   title: Responsive Web Design
@@ -1177,7 +1177,7 @@
   slides: https://speakerdeck.com/nima/responsive-web-design-is-not-a-buzz-word
   video_url: "/videos/responsive-web-design-lightning-talk-nima-izadi"
   speaker_twitter: chad
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 103:
   title: 'Le Code est un jeu de Piste: Codez pour des humains, pas pour des machines'
@@ -1189,7 +1189,7 @@
   slides: https://speakerdeck.com/vanakenm/code-trails
   video_url: "/videos/le-code-est-un-jeu-de-piste-martin-van-aken "
   speaker_twitter: almeta_kunze
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 104:
   title: Known unknowns
@@ -1201,7 +1201,7 @@
   slides: https://speakerdeck.com/abelar_s/known-unknowns
   video_url: "/videos/known-unknowns-sylvain-abelard "
   speaker_twitter: jean_ryan
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 105:
   title: Multi-tenant/lang application
@@ -1213,7 +1213,7 @@
   slides: http://www.slideshare.net/happynoff/multi-tenant
   video_url: "/videos/multi-tenant-lang-application-with-ruby-on-rails-simon-courtois"
   speaker_twitter: diamond_dooley
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 112:
   title: Ruby par la pratique
@@ -1225,7 +1225,7 @@
   slides: https://github.com/abelards/Ruby-par-l-exemple/blob/master/ruby_practice.rb
   video_url: "/videos/ruby-par-la-pratique-sylvain-abelard"
   speaker_twitter: ermelinda
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 5:
   title: Cherche coachs pour initier des collégiennes à la programmation
@@ -1237,7 +1237,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: calvin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 108:
   title: Trouvez vous un partenaire de jeu
@@ -1249,7 +1249,7 @@
   slides: ''
   video_url: "/videos/trouvez-vous-un-partenaire-de-jeu-martin-van-aken "
   speaker_twitter: maryjo_okon
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 175:
   title: ActiveAdmin
@@ -1261,7 +1261,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: norbert
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 157:
   title: Construisons une pyramide !
@@ -1273,7 +1273,7 @@
   slides: https://speakerdeck.com/abelar_s/lets-build-pyramids
   video_url: ''
   speaker_twitter: hunter_labadie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 123:
   title: Get Slim!
@@ -1285,7 +1285,7 @@
   slides: http://www.slideshare.net/happynoff/get-slim-35443888
   video_url: "/videos/get-slim-simon-courtois"
   speaker_twitter: lexie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 107:
   title: Et si quelqu'un venait de la part de Cassandre, Ouvre-lui tôt la porte et
@@ -1298,7 +1298,7 @@
   slides: ''
   video_url: "/videos/cassandra-ori-pekelmam "
   speaker_twitter: chrystal_purdy
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 109:
   title: 'Bye Google Maps, welcome Mapbox: 10 raisons pour migrer tout de suite'
@@ -1310,7 +1310,7 @@
   slides: ''
   video_url: "/videos/bye-google-maps-welcome-mapbox-cassio-melo"
   speaker_twitter: maude_gottlieb
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 114:
   title: Alzheimer's Shell
@@ -1322,7 +1322,7 @@
   slides: ''
   video_url: "/videos/alzheimer-s-shell-benjamin-crouzier"
   speaker_twitter: jonas
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 161:
   title: Effets de la sociologie sur les devs
@@ -1334,7 +1334,7 @@
   slides: https://speakerdeck.com/abelar_s/effects-of-sociology-on-devs
   video_url: ''
   speaker_twitter: rufina_steuber
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 116:
   title: Linters
@@ -1346,7 +1346,7 @@
   slides: ''
   video_url: "/videos/linters-thomas-darde "
   speaker_twitter: collin_rosenbaum
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 106:
   title: A/B Testing on Rails
@@ -1358,7 +1358,7 @@
   slides: ''
   video_url: "/videos/a-b-testing-on-rails-hassen-taidirt "
   speaker_twitter: anton_stokes
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 129:
   title: '"Infrastructure as code" avec Chef'
@@ -1370,7 +1370,7 @@
   slides: http://www.slideshare.net/nledez/chef-infrastructure-as-code-parisrb
   video_url: "/videos/chef-infrastructure-as-code-nicolas-ledez"
   speaker_twitter: shelton
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 126:
   title: Table Driven Testing
@@ -1382,7 +1382,7 @@
   slides: ''
   video_url: "/videos/table-driven-testing-nicolas-merouze"
   speaker_twitter: zachary
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 115:
   title: Reverse engineering du QLobe
@@ -1394,7 +1394,7 @@
   slides: ''
   video_url: "/videos/reverse-engineering-du-qlobe-loic-boutet "
   speaker_twitter: leida_crooks
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 119:
   title: Crawling the web using Import.io & Sidekiq
@@ -1406,7 +1406,7 @@
   slides: ''
   video_url: "/videos/crawling-the-web-with-import-io-and-sidekiq-cassio-melo "
   speaker_twitter: veda
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 118:
   title: Rails as a build tool or why Rails is awesome ( or FU** Grunt)
@@ -1418,7 +1418,7 @@
   slides: ''
   video_url: "/videos/rails-as-a-build-tool-or-why-rails-is-awesome-or-fu-grunt-michael-bensoussan"
   speaker_twitter: candie_kunze
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 156:
   title: PullReview
@@ -1430,7 +1430,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: eusebio
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 120:
   title: Build Realtime Search with Algolia
@@ -1442,7 +1442,7 @@
   slides: http://www.slideshare.net/SylvainUtard/paris-rb-34357814
   video_url: "/videos/build-realtime-search-with-algolia-sylvain-utard "
   speaker_twitter: toney
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 117:
   title: The treasures of Ruby core, one for each day
@@ -1454,7 +1454,7 @@
   slides: https://cdn.rawgit.com/8thcolor/parisrb-140506/master/presentation.html#/
   video_url: "/videos/the-treasures-of-ruby-one-for-each-day-christophe-philemotte "
   speaker_twitter: gail
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 165:
   title: Zombie, Braaaaaaaaain, and Ruby
@@ -1466,7 +1466,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: natalie_mitchell
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 148:
   title: Être développeur ruby au Japon
@@ -1478,7 +1478,7 @@
   slides: ''
   video_url: "/videos/dev-ruby-au-japon-julien-feltesse"
   speaker_twitter: eugene_borer
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 122:
   title: Zapper
@@ -1490,7 +1490,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: jerald_skiles
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 131:
   title: SSH pour un dévelopeur Ruby
@@ -1502,7 +1502,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: kelle
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 146:
   title: Ce que j'ai appris en ratant mon side project
@@ -1514,7 +1514,7 @@
   slides: ''
   video_url: "/videos/side-project-lessons-learned-philippe-bourgau"
   speaker_twitter: modesto
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 145:
   title: Ruby is not only for your servers anymore
@@ -1526,7 +1526,7 @@
   slides: ''
   video_url: "/videos/ruby-not-only-for-servers-loic-boutet"
   speaker_twitter: leena
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 134:
   title: Text Tools
@@ -1538,7 +1538,7 @@
   slides: 'sylvain.abelard+rails@gmail.com '
   video_url: "/videos/text-tools-sylvain-abelard"
   speaker_twitter: christopher_cronin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 124:
   title: From a development work flow to a flow that works
@@ -1550,7 +1550,7 @@
   slides: https://speakerdeck.com/vanakenm/from-a-workflow-to-a-flow-that-works
   video_url: "/videos/from-a-development-workflow-to-a-flow-that-works-martin-van-aken"
   speaker_twitter: danilo
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 132:
   title: Pub / Sub in Ruby
@@ -1562,7 +1562,7 @@
   slides: http://www.slideshare.net/AdrienSiami/pub-sub-in-ruby
   video_url: "/videos/pub-sub-in-ruby-adrien-siami"
   speaker_twitter: garret_aufderhar
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 130:
   title: Live Coding - Mon site perso en 20 minutes avec Rails+Olala
@@ -1574,7 +1574,7 @@
   slides: ''
   video_url: "/videos/mon-site-perso-en-20-minutes-live-coding-benjamin-crouzier"
   speaker_twitter: kizzie_hartmann
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 141:
   title: Un peu de contrôle
@@ -1586,7 +1586,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: latashia
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 154:
   title: Présentation Prelang
@@ -1598,7 +1598,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: joan
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 153:
   title: Différences/liens entre Cucumber, Capybara/Webrat, Selenium, RSpec, FactoryGirl
@@ -1610,7 +1610,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: robbi
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 128:
   title: Managing dynamic domains with Rails
@@ -1622,7 +1622,7 @@
   slides: https://docs.google.com/presentation/d/1OdgbbIhGj3Q4SmxgVZ8_49W2_t4XiiPt7i9DxYZf2g0/edit
   video_url: "/videos/managing-domains-constraints-in-rails-guillaume-montard"
   speaker_twitter: bart
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 147:
   title: 'Time & Money: The Startup Equation'
@@ -1630,11 +1630,11 @@
   speaker_email: nida@pacocha-towne.com
   level: intermediate
   duration: lightning
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: ned_wilderman
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 139:
   title: Rails on Rio (Rails fait tourner la coupe du monde de foot)
@@ -1646,7 +1646,7 @@
   slides: ''
   video_url: "/videos/rails-on-rio-stephan-toth"
   speaker_twitter: hortense_larkin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 138:
   title: J'ai une idée - je vais en faire une webapp... Ou pas.
@@ -1658,7 +1658,7 @@
   slides: https://speakerdeck.com/vanakenm/ive-an-idea-lets-do-a-webapp-or-not
   video_url: "/videos/j-ai-une-idee-webapp-ou-pas-martin-van-aken "
   speaker_twitter: cory
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 143:
   title: Mon premier mois dans une start-up
@@ -1670,7 +1670,7 @@
   slides: ''
   video_url: "/videos/mon-premier-mois-dans-une-start-up-alexandre-tadrosh "
   speaker_twitter: chung
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 140:
   title: 10 Rails Pro tips
@@ -1682,7 +1682,7 @@
   slides: http://www.slideshare.net/michelpigassou/10-ruby-and-rails-pro-tips
   video_url: "/videos/ruby-and-rails-pro-tips-michel-pigassou"
   speaker_twitter: refugia_gorczany
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 136:
   title: IT Management
@@ -1694,7 +1694,7 @@
   slides: ''
   video_url: "/videos/it-management-pierre-urban"
   speaker_twitter: loren
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 133:
   title: Comment générer du CA et des clients sans budget marketing ?
@@ -1706,7 +1706,7 @@
   slides: ''
   video_url: "/videos/fitnext-ca-et-clients-sans-marketing-celine-ruffet"
   speaker_twitter: bernardo
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 110:
   title: 12 mois dans la peau d'une application d'entreprise en mode LEAN STARTUP
@@ -1718,7 +1718,7 @@
   slides: http://fr.slideshare.net/christopherparola/paris-rb-un-an-dans-la-peau-dune-equipe-lean-startup-elcurator
   video_url: "/videos/12-mois-dans-la-peau-d-une-application-d-entreprise-en-mode-lean-startup-christopher-parola "
   speaker_twitter: kyra_koch
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 152:
   title: 'rspec-preloader : Démarrer rspec instantanément'
@@ -1730,7 +1730,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: shani_borer
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 151:
   title: Gérer les heures ouvrées avec working_hours
@@ -1742,7 +1742,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: horacio
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 149:
   title: 'RailsGirls Paris #4'
@@ -1754,7 +1754,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: thi_goodwin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 137:
   title: Stresser son app pour moins stresser (avec JMeter)
@@ -1766,7 +1766,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: kum_connelly
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 162:
   title: CareerBuilder / lesjeudis
@@ -1778,7 +1778,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: rudy
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 159:
   title: Top gems to start a new project
@@ -1790,7 +1790,7 @@
   slides: http://www.slideshare.net/michelpigassou/top-ruby-gems-to-start-a-project
   video_url: ''
   speaker_twitter: romelia_rosenbaum
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 158:
   title: Unidecoder
@@ -1802,7 +1802,7 @@
   slides: http://bit.ly/unidecoder
   video_url: ''
   speaker_twitter: weldon_schimmel
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 142:
   title: Ten commandments of egoless programming
@@ -1814,7 +1814,7 @@
   slides: philippetring.fr/egoless-presentation/
   video_url: ''
   speaker_twitter: lily_wiegand
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 168:
   title: Entendre avec les yeux, voir avec les oreilles
@@ -1826,7 +1826,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: jayne_streich
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 166:
   title: 'Moteurs d''optimisation avec Ruby On Rails : Retour d''expérience'
@@ -1838,7 +1838,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: sanda_parisian
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 150:
   title: Instrumenting your ruby infrastructure with the ELK stack
@@ -1850,7 +1850,7 @@
   slides: ''
   video_url: http://www.youtube.com/watch?v=ZeCeFmeM3vI&feature=youtu.be
   speaker_twitter: silvana
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 155:
   title: Booster son CV
@@ -1862,7 +1862,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: gerard
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 144:
   title: 'Paris.rb : MVC avec Erlang et Ruby'
@@ -1874,7 +1874,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: earnestine_brakus
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 216:
   title: Le fonctionnement interne de Rails
@@ -1886,7 +1886,7 @@
   slides: http://slides.com/guireccorbel/parisrb2015/
   video_url: ''
   speaker_twitter: hallie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 172:
   title: '42Grounds.io: Share code behavior'
@@ -1898,7 +1898,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: jayna
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 170:
   title: Les extensions de browser
@@ -1910,7 +1910,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: almeda_hills
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 164:
   title: 6 mois pour rendre un-e débutant-e employable
@@ -1922,10 +1922,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: wiley_botsford
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 194:
-  title: "⚡ Speed your app creation with templates"
+  title: "Speed your app creation with templates"
   speaker_name: Pichon Mathurin
   speaker_email: angel_jacobs@bauch.name
   level: intermediate
@@ -1934,7 +1934,7 @@
   slides: http://www.slideshare.net/happynoff/templates-46763953
   video_url: ''
   speaker_twitter: vania
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 176:
   title: Aller au-delà de ce que vous croyez pouvoir aller (ou faire)
@@ -1946,7 +1946,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: cesar
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 171:
   title: 20 ans de programmation ou pourquoi j'aime Ruby
@@ -1958,7 +1958,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: alvin_feil
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 188:
   title: Angular ou Backbone, choisir en 2015
@@ -1970,10 +1970,10 @@
   slides: http://slides.com/davidborow/angular-vs-backbone
   video_url: ''
   speaker_twitter: dodie_altenwerth
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 195:
-  title: "⚡ On a jeté le café avec l'eau du bain"
+  title: "On a jeté le café avec l'eau du bain"
   speaker_name: Charpentier Lorrain
   speaker_email: tatiana@witting.com
   level: easy
@@ -1982,7 +1982,7 @@
   slides: http://maitre-du-monde.fr/talks/TMNR.html
   video_url: ''
   speaker_twitter: margareta_fisher
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 178:
   title: Pourquoi je passe au business model open source
@@ -1994,7 +1994,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: viki_champlin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 190:
   title: Il est temps d'utiliser les Flexbox en CSS
@@ -2006,7 +2006,7 @@
   slides: http://freddy03h.github.io/flexbox-presentation
   video_url: ''
   speaker_twitter: minh_hyatt
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 177:
   title: Dependency Sorting with TSort
@@ -2018,7 +2018,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: dorian
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 173:
   title: Ruby Benchmark - Ne faites pas confiance à votre instinct
@@ -2030,10 +2030,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: tamie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 208:
-  title: "\U0001F4AC service objects, light service, interactor and waterfall"
+  title: "service objects, light service, interactor and waterfall"
   speaker_name: Lefèvre Adalbaude
   speaker_email: aja@mayert.org
   level: intermediate
@@ -2042,7 +2042,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: wilbert
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 182:
   title: Unix shortcuts
@@ -2054,7 +2054,7 @@
   slides: http://maitre-du-monde.fr/talks/unix_shortcuts.html
   video_url: ''
   speaker_twitter: cameron
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 181:
   title: Grace Murray Hopper, la créatrice du premier compilateur
@@ -2066,7 +2066,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: tona_jones
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 183:
   title: Pourquoi vous allez contribuer à un projet open source
@@ -2078,7 +2078,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: floyd_wehner
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 184:
   title: Achieving full-stack reactivity to create modern apps with MeteorJS
@@ -2090,7 +2090,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: phylicia
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 174:
   title: Make your business SPOF-less
@@ -2102,7 +2102,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: zelma_bogisich
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 179:
   title: Hexagonal Architecture
@@ -2114,7 +2114,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: reba_prohaska
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 189:
   title: 'GitHub Awards : Analyse des data GitHub'
@@ -2126,10 +2126,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: elicia_dach
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 193:
-  title: "⚡ Fun with docker in Ruby "
+  title: "Fun with docker in Ruby "
   speaker_name: Gillet Sauveur
   speaker_email: robt_grant@reilly.com
   level: easy
@@ -2138,10 +2138,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: mario_schultz
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 191:
-  title: "⚡ Comment négocier son salaire avec tact et efficacité"
+  title: "Comment négocier son salaire avec tact et efficacité"
   speaker_name: Mrs. Jocelyne Masson
   speaker_email: nicholas@rogahn-mitchell.org
   level: easy
@@ -2150,10 +2150,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: beth
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 186:
-  title: "⚡ PostgreSQL Dashboard : A real-time monitoring screen based on Dashing
+  title: "PostgreSQL Dashboard : A real-time monitoring screen based on Dashing
     and Sinatra"
   speaker_name: Sen. Jérôme Le Goff
   speaker_email: riley_swaniawski@halvorson-lueilwitz.org
@@ -2163,10 +2163,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: russell_schuster
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 196:
-  title: "⚡ Remote Freelancer, pourquoi pas moi ?"
+  title: "Remote Freelancer, pourquoi pas moi ?"
   speaker_name: Priscille Monnier
   speaker_email: mohammad_kemmer@sawayn.com
   level: easy
@@ -2175,7 +2175,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: zoraida
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 198:
   title: Avox - free calls over the world
@@ -2183,14 +2183,14 @@
   speaker_email: shawanda.mclaughlin@walter.info
   level: expert
   duration: long
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: haywood_corkery
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 204:
-  title: "⚡ Développeurs, faites votre place dans la santé"
+  title: "Développeurs, faites votre place dans la santé"
   speaker_name: Rev. Clarisse Olivier
   speaker_email: regine@zemlak.info
   level: easy
@@ -2199,7 +2199,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: sook_hansen
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 207:
   title: "\U0001F508 dotScale 2015"
@@ -2211,10 +2211,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: catalina_champlin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 201:
-  title: "\U0001F4AC Concevoir des logiciels : structurer son code au-delà de l'algorithme"
+  title: "Concevoir des logiciels : structurer son code au-delà de l'algorithme"
   speaker_name: Amb. Alaine Robin
   speaker_email: vicente@mckenzie-gibson.io
   level: intermediate
@@ -2223,10 +2223,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: jolie_ward
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 200:
-  title: "\U0001F4AC De Ruby & Rails aux microservices en Elixir & Phoenix"
+  title: "De Ruby & Rails aux microservices en Elixir & Phoenix"
   speaker_name: Vivien Carlier
   speaker_email: mina.kris@koepp.co
   level: intermediate
@@ -2235,7 +2235,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: brice_ortiz
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 205:
   title: "\U0001F4BB Science et magie"
@@ -2247,7 +2247,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: lucy_brekke
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 206:
   title: "\U0001F4BB RubyMotion : live coding Android + iOS"
@@ -2259,7 +2259,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: santa
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 209:
   title: "\U0001F508 atelier stratégie des Apps - Paris, 21 mai, 16h"
@@ -2271,10 +2271,10 @@
   slides: http://bit.ly/ParisASW
   video_url: ''
   speaker_twitter: lavone_abshire
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 212:
-  title: "⚡ Il faut bien bosser dans le web alors autant que ça se passe bien"
+  title: "Il faut bien bosser dans le web alors autant que ça se passe bien"
   speaker_name: Michèle Guerin
   speaker_email: nelson_bednar@willms.name
   level: easy
@@ -2283,7 +2283,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: natalya_wilkinson
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 211:
   title: "\U0001F508 Concours de PR / Paris 5 juin"
@@ -2295,7 +2295,7 @@
   slides: http://bestofweb.paris/
   video_url: ''
   speaker_twitter: melony_larkin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 210:
   title: "\U0001F508 RailsGirls Paris 2015 - juillet"
@@ -2307,7 +2307,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: maurice_wisoky
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 197:
   title: Développer une API Rest avec Ruby On Rails
@@ -2315,11 +2315,11 @@
   speaker_email: berry@kshlerin-carroll.info
   level: intermediate
   duration: long
-  happened_at: 
+  happened_at:
   slides: ''
   video_url: ''
   speaker_twitter: arlie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 187:
   title: 'Développer avec PostgreSQL '
@@ -2327,14 +2327,14 @@
   speaker_email: marc@hand.info
   level: easy
   duration: long
-  happened_at: 
+  happened_at:
   slides: ''
   video_url: ''
   speaker_twitter: allen
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 203:
-  title: "\U0001F4AC Building and Testing Resilient Applications"
+  title: "Building and Testing Resilient Applications"
   speaker_name: Miss Amarande Simon
   speaker_email: tristan.ullrich@kihn.co
   level: expert
@@ -2343,10 +2343,10 @@
   slides: http://byroot.github.io/presentations/resiliency/#1
   video_url: ''
   speaker_twitter: leland
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 192:
-  title: "\U0001F4AC Organize your assets with Rails"
+  title: "Organize your assets with Rails"
   speaker_name: Le Gall Hilaire
   speaker_email: julia_rippin@goyette-bartoletti.org
   level: intermediate
@@ -2355,10 +2355,10 @@
   slides: http://www.slideshare.net/happynoff/assets-49024541
   video_url: ''
   speaker_twitter: zackary
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 217:
-  title: "⚡ Evil Gems"
+  title: "Evil Gems"
   speaker_name: Longin Deschamps
   speaker_email: rosendo@heidenreich.co
   level: intermediate
@@ -2367,10 +2367,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: michale
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 199:
-  title: "\U0001F4AC CSS Grid : découvrez le futur de la mise en page des sites web"
+  title: "CSS Grid : découvrez le futur de la mise en page des sites web"
   speaker_name: Fr. Agilberte Benoit
   speaker_email: faustino@mante.name
   level: easy
@@ -2379,7 +2379,7 @@
   slides: http://fr.slideshare.net/matparisot/css-grid-layout-le-futur-de-vos-mises-en-page
   video_url: ''
   speaker_twitter: jan_mraz
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 220:
   title: Less Code
@@ -2391,10 +2391,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: camie_hermiston
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 274:
-  title: "⚡ First app with action-cable"
+  title: "First app with action-cable"
   speaker_name: Schneider Timothée
   speaker_email: billie@gleichner.io
   level: easy
@@ -2403,7 +2403,7 @@
   slides: https://www.daskit.com/
   video_url: ''
   speaker_twitter: hannah
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 235:
   title: 5 Workplace Hacks
@@ -2415,7 +2415,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: albert
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 223:
   title: Hiérarchie des classes et modules principaux de Ruby
@@ -2427,7 +2427,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: rachal_ziemann
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 243:
   title: Ruby keyword args from the parser to the VM
@@ -2439,7 +2439,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: julius_little
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 226:
   title: http://tinyurl.com/candidature-railsgirlsparis-6
@@ -2451,7 +2451,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: kristyn
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 228:
   title: http://tinyurl.com/ruby-paris-feedback
@@ -2463,7 +2463,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: garrett_muller
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 225:
   title: Clean up your specs with Page Objects
@@ -2475,7 +2475,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: mireille
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 219:
   title: Comment recruter et comprendre un CTO quand on ne connait rien à la technique
@@ -2487,7 +2487,7 @@
   slides: https://www.dropbox.com/s/3lzt04pwkjpemgj/20150901-ParisRB-RecruterEtComprendreUnCTO-20min.pptx?dl=0
   video_url: ''
   speaker_twitter: lashandra
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 221:
   title: Mon premier mini machine learning en Ruby
@@ -2499,7 +2499,7 @@
   slides: http://dl.free.fr/my1wO2yb9
   video_url: https://www.youtube.com/watch?v=UQ1q6aTdjfg
   speaker_twitter: maryln_rutherford
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 224:
   title: The C in Ruby - `%`
@@ -2511,7 +2511,7 @@
   slides: http://maitre-du-monde.fr/talks/C_in_Ruby.html
   video_url: ''
   speaker_twitter: seth_lynch
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 240:
   title: Web Animation Performance
@@ -2523,7 +2523,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: janyce_kling
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 222:
   title: Le CTO à 2€ [1/2]
@@ -2535,7 +2535,7 @@
   slides: http://maitre-du-monde.fr/talks/2e_tech_lead.html#1
   video_url: ''
   speaker_twitter: walker_lehner
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 230:
   title: JobTeaser
@@ -2547,7 +2547,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: kacie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 232:
   title: De quoi voulez-vous parler ?
@@ -2559,7 +2559,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: shante
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 244:
   title: "\U0001F381 Surprise ;)"
@@ -2571,7 +2571,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: kiesha_luettgen
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 229:
   title: Add Rails security to your Continuous Development
@@ -2583,7 +2583,7 @@
   slides: http://fr.slideshare.net/Sqreen/ruby-on-rails-security-in-your-continuous-integration
   video_url: ''
   speaker_twitter: adrian_prosacco
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 247:
   title: My first ActionCable app
@@ -2595,10 +2595,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: matilda_walsh
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 275:
-  title: "\U0001F4AC Having fun with ruby (Sonic Pi & Dare)"
+  title: "Having fun with ruby (Sonic Pi & Dare)"
   speaker_name: Elsa Brun
   speaker_email: neil_osinski@schowalter.name
   level: easy
@@ -2607,7 +2607,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: wayne
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 234:
   title: Présentation de la gem synvert
@@ -2619,7 +2619,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: norris_schneider
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 233:
   title: Moving data with Kiba ETL
@@ -2631,10 +2631,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: steven_volkman
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 272:
-  title: "\U0001F4AC The Crystal Programming Language"
+  title: "The Crystal Programming Language"
   speaker_name: Dr. Azalée Boulanger
   speaker_email: sofia@brakus.name
   level: intermediate
@@ -2643,7 +2643,7 @@
   slides: http://files.soveran.com/crystal
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-June-7
   speaker_twitter: sherwood_hackett
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 237:
   title: some Pry features
@@ -2655,7 +2655,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: marchelle_runolfsdot
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 231:
   title: "❄️ Inuit, c'est inouï"
@@ -2667,7 +2667,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: kevin_hammes
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 236:
   title: "\U0001F3B6 How we refactored our logging system"
@@ -2679,7 +2679,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: tonya
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 242:
   title: "\U0001F385 Storexplore transforme les boutiques en ligne en API"
@@ -2691,7 +2691,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: raul_roob
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 239:
   title: Instrument Rack to visualize requests processing
@@ -2703,7 +2703,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: yong_barton
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 238:
   title: React.rb, React... en ruby :)
@@ -2715,7 +2715,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: jane_marks
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 246:
   title: "\U0001F49D 24pullrequests.com / thecodelesscode.com"
@@ -2727,7 +2727,7 @@
   slides: http://24pullrequests.com
   video_url: http://thecodelesscode.com
   speaker_twitter: rafael
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 245:
   title: Trailblazer
@@ -2739,7 +2739,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: robbie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 289:
   title: How not to design a state machine
@@ -2751,10 +2751,10 @@
   slides: https://adipasquale.github.io/state-machines-lightning-talk/#1
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-July-5-2016
   speaker_twitter: tona_howe
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 254:
-  title: "⚡ Heroku workflow"
+  title: "Heroku workflow"
   speaker_name: Prof. Georgette Charles
   speaker_email: trent@emard.org
   level: easy
@@ -2763,10 +2763,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: lauran_schuppe
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 265:
-  title: "\U0001F4AC Futur, Technologie, et Magie"
+  title: "Futur, Technologie, et Magie"
   speaker_name: Aymardine Bertin
   speaker_email: brett@durgan-gleichner.info
   level: easy
@@ -2775,10 +2775,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: clarine
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 248:
-  title: "\U0001F4AC What is Rack?"
+  title: "What is Rack?"
   speaker_name: Rep. Grégoire Langlois
   speaker_email: otelia@lakin.org
   level: easy
@@ -2787,10 +2787,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: ethan_ledner
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 256:
-  title: "⚡ Reprise des CodeLabs !"
+  title: "Reprise des CodeLabs !"
   speaker_name: Lucas Virginie
   speaker_email: yolonda.hayes@kessler.net
   level: easy
@@ -2799,10 +2799,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: taylor
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 253:
-  title: "⚡ Waste less time on bugs with exploratory testing"
+  title: "Waste less time on bugs with exploratory testing"
   speaker_name: Mrs. Sylvie Lucas
   speaker_email: damian@rutherford.org
   level: easy
@@ -2811,10 +2811,10 @@
   slides: https://docs.google.com/presentation/d/1m6S70jyDJQNCXlWYwq6LbZMIq5BzoAfJ3Jhuoms0AN0/pub?start=false&loop=false&delayms=3000#slide=id.p4
   video_url: ''
   speaker_twitter: melia
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 251:
-  title: "⚡ What's new in Ruby 2.3?"
+  title: "What's new in Ruby 2.3?"
   speaker_name: Breton Andoche
   speaker_email: rene@casper-green.org
   level: intermediate
@@ -2823,10 +2823,10 @@
   slides: http://www.tinci.fr/blog/quoi-de-neuf-dans-ruby-2-3/
   video_url: ''
   speaker_twitter: gayle
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 250:
-  title: "⚡ Using UUID in ActiveRecord with PostgreSQL"
+  title: "Using UUID in ActiveRecord with PostgreSQL"
   speaker_name: Alix Paul
   speaker_email: fermin_kuvalis@hermann.io
   level: intermediate
@@ -2835,10 +2835,10 @@
   slides: http://slides.com/dorianlupu/using-uuid-in-active-record-with-postgresql#/
   video_url: ''
   speaker_twitter: lean
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 255:
-  title: "⚡ Prenez le contrôle de votre réseau avec Ownlan"
+  title: "Prenez le contrôle de votre réseau avec Ownlan"
   speaker_name: Agapet Leclercq
   speaker_email: beau@zieme.info
   level: intermediate
@@ -2847,10 +2847,10 @@
   slides: https://docs.google.com/presentation/d/1H4CmYzxtmdn6cV-PDohPyU7Iki-97TZ3hEe8quUSem8/edit#slide=id.p
   video_url: ''
   speaker_twitter: joeann_abshire
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 270:
-  title: "\U0001F4AC Ember.JS"
+  title: "Ember.JS"
   speaker_name: Ancelin Picard
   speaker_email: florrie.waters@crona.net
   level: intermediate
@@ -2859,10 +2859,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: shakira
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 269:
-  title: "\U0001F4AC Resource Fool"
+  title: "Resource Fool"
   speaker_name: Gov. Ludolphe Guérin
   speaker_email: asha@mayert-pouros.net
   level: intermediate
@@ -2871,10 +2871,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: sandi_cremin
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 257:
-  title: "\U0001F4AC Fix - Simple, stupid testing framework for Ruby"
+  title: "Fix - Simple, stupid testing framework for Ruby"
   speaker_name: Gov. Astride Le Roux
   speaker_email: earlean@mckenzie.com
   level: easy
@@ -2883,10 +2883,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: mindi_sipes
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 259:
-  title: "⚡ scalingo_databases_rake_tasks & other tricks"
+  title: "scalingo_databases_rake_tasks & other tricks"
   speaker_name: Reynaud Aleaume
   speaker_email: gertrud_rippin@beahan-goldner.co
   level: intermediate
@@ -2895,10 +2895,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: wyatt_grady
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 266:
-  title: "⚡ Why I don't network on LinkedIn"
+  title: "Why I don't network on LinkedIn"
   speaker_name: Élzéar Renard
   speaker_email: cary_ullrich@schinner.biz
   level: easy
@@ -2907,10 +2907,10 @@
   slides: http://speakerdeck.com/abelar_s/why-i-dont-network-on-linkedin
   video_url: ''
   speaker_twitter: reggie_grady
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 260:
-  title: "\U0001F4AC CSS Flags - compagnonnage & vexillologie"
+  title: "CSS Flags - compagnonnage & vexillologie"
   speaker_name: The Hon. Arabelle Boucher
   speaker_email: vern@mills.net
   level: easy
@@ -2919,10 +2919,10 @@
   slides: http://talks.pixelastic.com/css-flags-paris/#/
   video_url: ''
   speaker_twitter: nydia
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 261:
-  title: "\U0001F4AC Hacked via OWASP Top 10? Not “advanced” nor “sophisticated”"
+  title: "Hacked via OWASP Top 10? Not “advanced” nor “sophisticated”"
   speaker_name: Chauvin Tim
   speaker_email: ernest@walsh.biz
   level: intermediate
@@ -2931,10 +2931,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: kristel
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 241:
-  title: "\U0001F4AC Working with Rails Engines"
+  title: "Working with Rails Engines"
   speaker_name: Rémy Éleuthère
   speaker_email: carol.stanton@kozey.biz
   level: intermediate
@@ -2943,10 +2943,10 @@
   slides: https://drive.google.com/file/d/0BxADU4e80SSRM0xGNl8yUTBTME0/view
   video_url: ''
   speaker_twitter: zachariah
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 379:
-  title: "\U0001F4AC Utilisez Mutant pour améliorer votre code"
+  title: "Utilisez Mutant pour améliorer votre code"
   speaker_name: Lecomte Christodule
   speaker_email: evon@steuber-kuphal.io
   level: intermediate
@@ -2955,10 +2955,10 @@
   slides: http://sigilium.com/static/mutant-sigilium-parisrb.pdf
   video_url: ''
   speaker_twitter: mickey
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 262:
-  title: "\U0001F4AC Tune your app perf (and get fit for summer)"
+  title: "Tune your app perf (and get fit for summer)"
   speaker_name: Sen. Gédéon Dumas
   speaker_email: willow@swift.io
   level: expert
@@ -2967,7 +2967,7 @@
   slides: http://fr.slideshare.net/Sqreen/tune-your-app-perf-and-get-fit-for-summer-60563672
   video_url: ''
   speaker_twitter: fredrick_kassulke
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 88:
   title: Manuel de survie de l'innovateur en entreprise
@@ -2979,10 +2979,10 @@
   slides: ''
   video_url: "/videos/manuel-de-survie-en-entreprise-simon-guimezanes"
   speaker_twitter: felton
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 252:
-  title: "\U0001F4AC Commencer avec React.rb"
+  title: "Commencer avec React.rb"
   speaker_name: Adam Anne
   speaker_email: nicholas@von.net
   level: intermediate
@@ -2991,10 +2991,10 @@
   slides: https://github.com/loicboutet/reactrb_tutorial
   video_url: ''
   speaker_twitter: jasper_tromp
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 384:
-  title: "\U0001F4AC /Expressions rationnelles/"
+  title: "/Expressions rationnelles/"
   speaker_name: Guyot Angeline
   speaker_email: marty@adams.co
   level: easy
@@ -3003,10 +3003,10 @@
   slides: http://maitre-du-monde.fr/talks/regexen.html#2
   video_url: ''
   speaker_twitter: sol
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 258:
-  title: "\U0001F4AC Working with Simple Tools"
+  title: "Working with Simple Tools"
   speaker_name: César André
   speaker_email: eunice_jaskolski@johns.biz
   level: easy
@@ -3015,10 +3015,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: alvaro_reichert
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 278:
-  title: "⚡ Graph Theory behind Immutable.js"
+  title: "Graph Theory behind Immutable.js"
   speaker_name: Fantin Faure
   speaker_email: karoline.dickens@nicolas-howe.io
   level: intermediate
@@ -3027,10 +3027,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: monte_boehm
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 267:
-  title: "⚡ Remote Work Tools"
+  title: "Remote Work Tools"
   speaker_name: Rousseau Francisque
   speaker_email: russ_botsford@jacobi-jacobi.org
   level: easy
@@ -3039,10 +3039,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: sommer_lesch
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 286:
-  title: "⚡ Security Tip #2 - Content Security Policy"
+  title: "Security Tip #2 - Content Security Policy"
   speaker_name: Alberte Bonnet
   speaker_email: enid@goyette-mclaughlin.org
   level: easy
@@ -3051,10 +3051,10 @@
   slides: http://slides.com/kundigo/security-tip-02-content-security-policy/fullscreen#/
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-July-5-2016
   speaker_twitter: daron
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 263:
-  title: "⚡ Getting Things Done"
+  title: "Getting Things Done"
   speaker_name: The Hon. Iris Perrot
   speaker_email: shanon.bosco@heller.name
   level: easy
@@ -3063,10 +3063,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: sabina
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 264:
-  title: "⚡ Practices of a remote extreme programmer"
+  title: "Practices of a remote extreme programmer"
   speaker_name: Fr. Albéric Gillet
   speaker_email: jennine.vonrueden@leannon-bogisich.name
   level: easy
@@ -3075,10 +3075,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: cyril_renner
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 281:
-  title: "⚡ Singa - aide aux réfugiés"
+  title: "Singa - aide aux réfugiés"
   speaker_name: Amb. Arolde Méunier
   speaker_email: brunilda@schinner-fritsch.co
   level: easy
@@ -3087,10 +3087,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: carmen_hand
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 273:
-  title: "\U0001F4AC The Kemal framework - Crystal's Sinatra"
+  title: "The Kemal framework - Crystal's Sinatra"
   speaker_name: Amb. Amos Mallet
   speaker_email: tom.kihn@ratke.com
   level: easy
@@ -3099,10 +3099,10 @@
   slides: http://slides.com/sdogruyol/building-web-apps-with-kemal-parisrb#/
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-June-7
   speaker_twitter: kenny
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 287:
-  title: "⚡ CSP: from zero to production in 30 seconds"
+  title: "CSP: from zero to production in 30 seconds"
   speaker_name: Lemaire Aloyse
   speaker_email: dion_breitenberg@becker.com
   level: intermediate
@@ -3111,7 +3111,7 @@
   slides: https://speakerdeck.com/aviat/content-security-policy-in-your-rails-apps-in-30s
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-July-5-2016
   speaker_twitter: edwina
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 288:
   title: Bugmastery
@@ -3123,10 +3123,10 @@
   slides: http://cl.ly/2w053f3A040o
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-July-5-2016
   speaker_twitter: leif_frami
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 271:
-  title: "⚡ Parlons rapidement d'optimisation de performance en Ruby"
+  title: "Parlons rapidement d'optimisation de performance en Ruby"
   speaker_name: Humbert Conception
   speaker_email: kerri@zieme.io
   level: intermediate
@@ -3135,7 +3135,7 @@
   slides: ''
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-June-7
   speaker_twitter: joycelyn
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 276:
   title: 'Security Tip #1'
@@ -3147,10 +3147,10 @@
   slides: https://slides.com/kundigo/security-tip-01-security-headers
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-June-7
   speaker_twitter: tommy
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 282:
-  title: "⚡ Daskit - attendees feedback with ActionCable"
+  title: "Daskit - attendees feedback with ActionCable"
   speaker_name: Julien Hincmar
   speaker_email: milford@crist.co
   level: easy
@@ -3159,10 +3159,10 @@
   slides: http://daskit.com/
   video_url: ''
   speaker_twitter: cathrine_jacobs
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 295:
-  title: "3. \U0001F4AC ReactRB la suite ;-)"
+  title: "3. ReactRB la suite ;-)"
   speaker_name: Guichard Jocelyne
   speaker_email: soo_kuphal@dubuque.org
   level: intermediate
@@ -3171,10 +3171,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: lucien_cummings
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 293:
-  title: "⚡ How we switched from a monolithic app to isolated services - 3 takeaways"
+  title: "How we switched from a monolithic app to isolated services - 3 takeaways"
   speaker_name: Gwenaëlle Jacob
   speaker_email: jeanna@hudson.net
   level: intermediate
@@ -3183,10 +3183,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: erika
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 279:
-  title: "\U0001F4AC No Downtime Deployment"
+  title: "No Downtime Deployment"
   speaker_name: Méunier Savin
   speaker_email: danita@upton.io
   level: intermediate
@@ -3195,10 +3195,10 @@
   slides: https://docs.google.com/a/augment.com/presentation/d/1uvjlBAXla69nSVcAO_0jhQl_XEpMN-ZwVoEA-2__47Q/edit?usp=sharing
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-July-5-2016
   speaker_twitter: curt_labadie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 283:
-  title: "⚡ Plugin Algolia pour Jekyll"
+  title: "Plugin Algolia pour Jekyll"
   speaker_name: Agathe Renault
   speaker_email: katrina.reilly@veum-baumbach.net
   level: easy
@@ -3207,10 +3207,10 @@
   slides: http://talks.pixelastic.com/jekyll-algolia-parisrb/#/
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-July-5-2016
   speaker_twitter: kerry
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 285:
-  title: "⚡ How to start blogging"
+  title: "How to start blogging"
   speaker_name: Aurélie Hubert
   speaker_email: cletus@bashirian.info
   level: easy
@@ -3219,10 +3219,10 @@
   slides: https://docs.google.com/presentation/d/147tzS4pGtLSSRaSZruwGVpuGML8_TPWqpHT56qDW7iQ/edit?usp=sharing
   video_url: https://www.bigmarker.com/remote-meetup/ParisRb-July-5-2016
   speaker_twitter: loise_glover
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 292:
-  title: "⚡ Ruby & le travel & les bots, compatible ?"
+  title: "Ruby & le travel & les bots, compatible ?"
   speaker_name: Fleury Abigaïl
   speaker_email: leonel@brekke-turcotte.biz
   level: intermediate
@@ -3231,10 +3231,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: melania_quitzon
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 291:
-  title: "1. \U0001F4AC Parser des CSV avec ruby"
+  title: "1. Parser des CSV avec ruby"
   speaker_name: Lejeune Mégane
   speaker_email: roxie@gutkowski.co
   level: intermediate
@@ -3243,10 +3243,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: mitchell_grimes
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 284:
-  title: "2. \U0001F4AC How (not) to use mocks"
+  title: "2. How (not) to use mocks"
   speaker_name: Francine Guillaume
   speaker_email: colette@watsica.info
   level: intermediate
@@ -3255,10 +3255,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: jame
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 298:
-  title: "⚡ Qu'est-ce qui nous motive vraiment ?"
+  title: "Qu'est-ce qui nous motive vraiment ?"
   speaker_name: Rémy Rose
   speaker_email: titus@runte.info
   level: easy
@@ -3267,10 +3267,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: domingo_sauer
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 297:
-  title: "\U0001F4AC Sous le capot de la Locomotive"
+  title: "Sous le capot de la Locomotive"
   speaker_name: Collet Chrétien
   speaker_email: anibal@swaniawski-reichel.com
   level: intermediate
@@ -3279,10 +3279,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: exie
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 299:
-  title: " ⚡ Repenser son workflow avec un piano USB 32 touches et du Ruby"
+  title: " Repenser son workflow avec un piano USB 32 touches et du Ruby"
   speaker_name: Simone Chevalier
   speaker_email: milford@kerluke-mckenzie.io
   level: intermediate
@@ -3291,10 +3291,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: junita_upton
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 301:
-  title: " ⚡ Comment recruter un(e) développeur(se) junior"
+  title: " Comment recruter un(e) développeur(se) junior"
   speaker_name: Edgard Legrand
   speaker_email: rich.lynch@glover.net
   level: easy
@@ -3303,10 +3303,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: bo
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 302:
-  title: "\U0001F4AC Être cyberpunk en entreprise"
+  title: "Être cyberpunk en entreprise"
   speaker_name: Fr. Théodose Duval
   speaker_email: trent.weber@herzog.org
   level: easy
@@ -3315,10 +3315,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: steven
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 290:
-  title: "\U0001F4AC Continous Security"
+  title: "Continous Security"
   speaker_name: Pichon Valéry
   speaker_email: peggy@dicki-schmidt.net
   level: easy
@@ -3327,7 +3327,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: waylon
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 294:
   title: 'Local SaaS: Comment développer une admin SaaS qui s''intègre directement
@@ -3340,10 +3340,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: tamisha_sporer
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 300:
-  title: " ⚡ Refactoring grâce aux Concerns et Presenters"
+  title: " Refactoring grâce aux Concerns et Presenters"
   speaker_name: Miss Clara Huet
   speaker_email: adrian.grant@borer.org
   level: intermediate
@@ -3352,7 +3352,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: monte
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 380:
   title: How are we testing a "Voice" service at Aircall?
@@ -3364,7 +3364,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: jospeh_padberg
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 381:
   title: 'News : PolyConf'
@@ -3376,10 +3376,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: joan
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 305:
-  title: "\U0001F4AC De Maître à Élève"
+  title: "De Maître à Élève"
   speaker_name: Dr. Tiphaine Gautier
   speaker_email: richelle_braun@lueilwitz.org
   level: easy
@@ -3388,10 +3388,10 @@
   slides: http://maitre-du-monde.fr/talks/master2student.html
   video_url: ''
   speaker_twitter: sanjuanita_goldner
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 387:
-  title: " ⚡ Le Semantic Versioning dans une app web - pourquoi?"
+  title: " Le Semantic Versioning dans une app web - pourquoi?"
   speaker_name: Léopold Lamy
   speaker_email: samuel@pouros-tromp.io
   level: easy
@@ -3400,10 +3400,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: roland
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 388:
-  title: " ⚡ Un Gemfile lisible"
+  title: " Un Gemfile lisible"
   speaker_name: Dupont Aurian
   speaker_email: jaqueline_nitzsche@gorczany.com
   level: easy
@@ -3412,10 +3412,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: john
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 303:
-  title: "6⃣  \U0001F4AC Dix choses que j'ai apprises sur le dev web grâce à Megadeth"
+  title: "6⃣  Dix choses que j'ai apprises sur le dev web grâce à Megadeth"
   speaker_name: Lebrun Acace
   speaker_email: cecelia_dibbert@schmeler.com
   level: easy
@@ -3424,10 +3424,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: deshawn_fadel
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 304:
-  title: "\U0001F4AC Dix ans de lecture"
+  title: "Dix ans de lecture"
   speaker_name: Rep. Ève Hubert
   speaker_email: terrilyn@bosco-oberbrunner.net
   level: easy
@@ -3436,10 +3436,10 @@
   slides: http://maitre-du-monde.fr/talks/10years_reads.html#24
   video_url: ''
   speaker_twitter: angelika_blick
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 392:
-  title: "\U0001F4AC def <3"
+  title: "def <3"
   speaker_name: Caron Baptiste
   speaker_email: herbert@murphy-smitham.net
   level: easy
@@ -3448,10 +3448,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: shella_hickle
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 393:
-  title: "\U0001F4AC Enseigner est apprendre : devenez un·e meilleur·e dev en partageant
+  title: "Enseigner est apprendre : devenez un·e meilleur·e dev en partageant
     vos connaissances"
   speaker_name: Cassandre Guerin
   speaker_email: valorie.rutherford@bruen-schmitt.io
@@ -3461,10 +3461,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: manuela
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 389:
-  title: "\U0001F4AC Configuration de l'environnement de déploiement avec Gitlab -
+  title: "Configuration de l'environnement de déploiement avec Gitlab -
     Hexappsetup"
   speaker_name: Brigitte Leroux
   speaker_email: angel@macejkovic.biz
@@ -3474,10 +3474,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: mohammed
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 377:
-  title: "\U0001F4AC Internationalize your rails app (the stuff they don't tell you)"
+  title: "Internationalize your rails app (the stuff they don't tell you)"
   speaker_name: Acacie Bonnet
   speaker_email: rosalind.conn@stoltenberg-jones.org
   level: easy
@@ -3486,10 +3486,10 @@
   slides: https://speakerdeck.com/unflores/austin-flores
   video_url: ''
   speaker_twitter: kirk
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 347:
-  title: '6⃣     ⚡   Ce que j''aurais aimé entendre il y a 1 an : faites un petit
+  title: '6⃣       Ce que j''aurais aimé entendre il y a 1 an : faites un petit
     projet OS ;)'
   speaker_name: Pichon Job
   speaker_email: carol.klein@mosciski.biz
@@ -3499,10 +3499,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: carter_gleason
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 353:
-  title: " 8⃣    \U0001F4AC   Lessons learned from a week blind: from tech to human
+  title: " 8⃣      Lessons learned from a week blind: from tech to human
     experience"
   speaker_name: Lambert Conception
   speaker_email: nohemi.lebsack@schultz.name
@@ -3512,10 +3512,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: laurice_bashirian
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 307:
-  title: "\U0001F4AC Everyone's Lying to You: how to take the guesswork customer interviews"
+  title: "Everyone's Lying to You: how to take the guesswork customer interviews"
   speaker_name: Mrs. Adeline Marechal
   speaker_email: brandee.torphy@bode.info
   level: easy
@@ -3524,10 +3524,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: ola_upton
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 308:
-  title: "⚡ Simplify your Ruby setup with Docker"
+  title: "Simplify your Ruby setup with Docker"
   speaker_name: Mrs. Colin Humbert
   speaker_email: brent_wilkinson@hettinger.com
   level: easy
@@ -3536,10 +3536,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: rosaline_muller
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 386:
-  title: " ⚡  Des « user stories » aux « job stories » (avec exemples)"
+  title: "  Des « user stories » aux « job stories » (avec exemples)"
   speaker_name: Ms. Roseline Garnier
   speaker_email: stewart.dare@carter.info
   level: easy
@@ -3548,7 +3548,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: loris_bashirian
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 357:
   title: FlameGraph
@@ -3560,10 +3560,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: melony_stoltenberg
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 310:
-  title: "\U0001F4AC Macros, Rules and Roleplay"
+  title: "Macros, Rules and Roleplay"
   speaker_name: Wandrille Chevallier
   speaker_email: sacha@morissette.io
   level: intermediate
@@ -3572,10 +3572,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: lorenzo
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 383:
-  title: "\U0001F4AC VCR - testez vos call http"
+  title: "VCR - testez vos call http"
   speaker_name: Lazare Reynaud
   speaker_email: elda@bruen.info
   level: intermediate
@@ -3584,10 +3584,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: sydney
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 312:
-  title: "\U0001F4AC From darkness to light"
+  title: "From darkness to light"
   speaker_name: Ms. Antide Daniel
   speaker_email: juan.fahey@davis.com
   level: easy
@@ -3596,10 +3596,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: mickey_lind
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 390:
-  title: "\U0001F4AC Utiliser API.ai pour mettre en place un bot rapidement"
+  title: "Utiliser API.ai pour mettre en place un bot rapidement"
   speaker_name: Dubois Ulysse
   speaker_email: rashad.bayer@von.net
   level: intermediate
@@ -3608,7 +3608,7 @@
   slides: ''
   video_url: ''
   speaker_twitter: ciera
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 349:
   title: "Paris Ruby Workshop \U0001F48E Rails Thematic Workshops"
@@ -3620,7 +3620,7 @@
   slides: https://www.meetup.com/fr-FR/Paris-Ruby-Workshop/
   video_url: http://www.meetup.com/fr-FR/rails-thematic-workshops/
   speaker_twitter: kesha
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 348:
   title: " RailsGirls #8 25/26 nov \U0001F496 NUMA 6 dec \U0001F49D Exceptional 8
@@ -3633,10 +3633,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: elida
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 309:
-  title: " ⚡ The benefits of personal projects"
+  title: " The benefits of personal projects"
   speaker_name: Berger Élisabeth
   speaker_email: richard@stehr-crooks.org
   level: easy
@@ -3645,10 +3645,10 @@
   slides: https://speakerdeck.com/vlatkapavisic/benefits-of-personal-projects-1
   video_url: ''
   speaker_twitter: wilma_wisoky
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 306:
-  title: "⚡ Mise en place d'une architecture Web en Crystal"
+  title: "Mise en place d'une architecture Web en Crystal"
   speaker_name: Bérard Marty
   speaker_email: becki@wolf-schiller.io
   level: easy
@@ -3657,10 +3657,10 @@
   slides: https://prezi.com/nomkymnx96wr/mise-en-place-d039une-architecture-web-en-crystal/
   video_url: ''
   speaker_twitter: yuonne
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 346:
-  title: "⚡ Just-a-Website Manifesto"
+  title: "Just-a-Website Manifesto"
   speaker_name: Mrs. Guillemette Collet
   speaker_email: santo@abbott.net
   level: easy
@@ -3669,10 +3669,10 @@
   slides: http://maitre-du-monde.fr/talks/I_just_want_a_website.html#1
   video_url: ''
   speaker_twitter: shelby_treutel
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 311:
-  title: "6⃣  \U0001F4AC Comment construire un newsfeed de plusieurs modèles"
+  title: "6⃣  Comment construire un newsfeed de plusieurs modèles"
   speaker_name: Fr. Géraud Breton
   speaker_email: earline@bashirian-larkin.net
   level: intermediate
@@ -3681,10 +3681,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: evia_kuvalis
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 358:
-  title: "\U0001F4AC Simulation du 'Manchester Baby'"
+  title: "Simulation du 'Manchester Baby'"
   speaker_name: Thérèse Leroy
   speaker_email: pauline@bauch.net
   level: intermediate
@@ -3693,10 +3693,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: jarrett_trantow
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 354:
-  title: "\U0001F4AC Réalité Virtuelle et Ruby"
+  title: "Réalité Virtuelle et Ruby"
   speaker_name: The Hon. Nadine Ménard
   speaker_email: delores@koss.co
   level: expert
@@ -3705,10 +3705,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: juliann
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 359:
-  title: "\U0001F4AC Tribes, Guilds and Squads chez JobTeaser"
+  title: "Tribes, Guilds and Squads chez JobTeaser"
   speaker_name: Gov. Asceline Mathieu
   speaker_email: thersa_kassulke@ryan.net
   level: easy
@@ -3717,10 +3717,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: eloy
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 350:
-  title: "\U0001F4AC Mastering Arel (2013 @danschultz)"
+  title: "Mastering Arel (2013 @danschultz)"
   speaker_name: Clarence Paris
   speaker_email: laveta@lindgren.net
   level: intermediate
@@ -3729,10 +3729,10 @@
   slides: https://danshultz.github.io/talks/mastering_activerecord_arel/#/
   video_url: ''
   speaker_twitter: carlo_stokes
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 351:
-  title: " 8⃣    ⚡   Learned Helplessness -> Learned Optimism"
+  title: " 8⃣      Learned Helplessness -> Learned Optimism"
   speaker_name: Abigaelle Ménard
   speaker_email: christina@kovacek.net
   level: easy
@@ -3741,7 +3741,7 @@
   slides: https://www.youtube.com/watch?v=2hHNq45rEnU
   video_url: ''
   speaker_twitter: troy
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 352:
   title: " 8⃣    Ruby Together"
@@ -3753,10 +3753,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: rudy
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 356:
-  title: "6⃣   \U0001F4AC   RubyTogether & CallbackWomen"
+  title: "6⃣     RubyTogether & CallbackWomen"
   speaker_name: Leclercq Léandre
   speaker_email: elena@dare.net
   level: easy
@@ -3765,10 +3765,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: eleanora
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 362:
-  title: "\U0001F4AC Ruby et ses blocs"
+  title: "Ruby et ses blocs"
   speaker_name: Normand Robin
   speaker_email: cary@waters-raynor.info
   level: easy
@@ -3777,10 +3777,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: gaynelle
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 361:
-  title: "\U0001F4AC Donjons & Dragons & Modules"
+  title: "Donjons & Dragons & Modules"
   speaker_name: Fr. Constantin Lemaire
   speaker_email: harris.harber@bradtke.name
   level: intermediate
@@ -3789,10 +3789,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: marybelle
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 360:
-  title: "\U0001F4AC Design patterns for Rails Engines"
+  title: "Design patterns for Rails Engines"
   speaker_name: Joly Philothée
   speaker_email: ben@yundt-bruen.info
   level: expert
@@ -3801,10 +3801,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: irma
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 363:
-  title: " ⚡ dev.learn(stuff)"
+  title: " dev.learn(stuff)"
   speaker_name: Adjutor Julien
   speaker_email: blanca.bednar@jast.co
   level: easy
@@ -3813,10 +3813,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: wan
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 364:
-  title: "⚡ DotScale & concours"
+  title: "DotScale & concours"
   speaker_name: Nestor Legrand
   speaker_email: von_harvey@senger-oconnell.info
   level: easy
@@ -3825,10 +3825,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: brice
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 366:
-  title: "⚡ Qu'est ce que j'ai appris en 10 ans de rails"
+  title: "Qu'est ce que j'ai appris en 10 ans de rails"
   speaker_name: Rolande Perrot
   speaker_email: claude@bode-beatty.com
   level: easy
@@ -3837,10 +3837,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: flora
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 368:
-  title: "\U0001F4AC Rack"
+  title: "Rack"
   speaker_name: Adolphie Humbert
   speaker_email: kim.terry@windler.biz
   level: easy
@@ -3849,10 +3849,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: jeffery_kuvalis
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 369:
-  title: "⚡ Reducing a gem from size from 147MB to 2.4MB"
+  title: "Reducing a gem from size from 147MB to 2.4MB"
   speaker_name: Huet Hélie
   speaker_email: lajuana.wehner@maggio-spencer.org
   level: intermediate
@@ -3861,10 +3861,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: andree
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 367:
-  title: "\U0001F4AC Death to the Staging Env"
+  title: "Death to the Staging Env"
   speaker_name: Leu Roger
   speaker_email: alphonse@streich.info
   level: intermediate
@@ -3873,22 +3873,22 @@
   slides: ''
   video_url: ''
   speaker_twitter: whitney_rohan
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 355:
-  title: "\U0001F4AC   Chanson du monolithe"
+  title: "  Chanson du monolithe"
   speaker_name: Msgr. Léonie Muller
   speaker_email: peg@waelchi.io
   level: easy
   duration: lightning
-  happened_at: 
+  happened_at:
   slides: http://maitre-du-monde.fr/talks/chanson_monolithe.html
   video_url: ''
   speaker_twitter: mariano_boehm
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 374:
-  title: "⚡ reads for the next 10 years"
+  title: "reads for the next 10 years"
   speaker_name: Ms. Valentin Remy
   speaker_email: abby@schultz-buckridge.biz
   level: easy
@@ -3897,10 +3897,10 @@
   slides: http://maitre-du-monde.fr/talks/10years_reads.html
   video_url: ''
   speaker_twitter: shawna
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 365:
-  title: "\U0001F4AC Faire un bot en 20 minutes - live coding"
+  title: "Faire un bot en 20 minutes - live coding"
   speaker_name: Gov. Anaëlle Jacquet
   speaker_email: darcy@altenwerth.com
   level: intermediate
@@ -3909,10 +3909,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: loreta_davis
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 371:
-  title: "⚡ La différence entre to_s et to_str"
+  title: "La différence entre to_s et to_str"
   speaker_name: Juste Gérard
   speaker_email: demarcus_breitenberg@barton.com
   level: intermediate
@@ -3921,10 +3921,10 @@
   slides: http://marcgg.com/blog/2017/01/23/ruby-to-s-to-str/
   video_url: ''
   speaker_twitter: lucio_jacobson
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 373:
-  title: "\U0001F4AC MySQL 5.6, 5.7 and what's coming in 8.0"
+  title: "MySQL 5.6, 5.7 and what's coming in 8.0"
   speaker_name: Herve Vivien
   speaker_email: andre.bergnaum@jones-legros.org
   level: intermediate
@@ -3933,10 +3933,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: jolyn_oberbrunner
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 375:
-  title: "\U0001F4AC Simulating Deliveries at Stuart"
+  title: "Simulating Deliveries at Stuart"
   speaker_name: Msgr. Benoît Lejeune
   speaker_email: katie_pacocha@jast.name
   level: intermediate
@@ -3945,10 +3945,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: wei
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 378:
-  title: " ⚡ Forgotten HTML "
+  title: " Forgotten HTML "
   speaker_name: Jeannot Antoine
   speaker_email: latonia.rolfson@mante.net
   level: easy
@@ -3957,10 +3957,10 @@
   slides: https://maitre-du-monde.fr/talks/forgotten_html.html
   video_url: ''
   speaker_twitter: sherlene_wolff
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 394:
-  title: "⚡ Git - Quel workflow utiliser ?"
+  title: "Git - Quel workflow utiliser ?"
   speaker_name: The Hon. Tonnin Gauthier
   speaker_email: gregory.abshire@welch.com
   level: intermediate
@@ -3969,10 +3969,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: leeanne_jacobs
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 395:
-  title: "⚡ Tepee, un outil de gestion de configuration pour les braves"
+  title: "Tepee, un outil de gestion de configuration pour les braves"
   speaker_name: Richard Séverine
   speaker_email: carly.douglas@kiehn.io
   level: easy
@@ -3981,10 +3981,10 @@
   slides: ''
   video_url: ''
   speaker_twitter: yong
-  preferred_month_talk: 
+  preferred_month_talk:
   time_position: ''
 398:
-  title: "⚡ Snapchat Takeover Women in Tech"
+  title: "Snapchat Takeover Women in Tech"
   speaker_name: Roussel Gaël
   speaker_email: rubie.murazik@huels-heaney.info
   level: easy
@@ -3996,7 +3996,7 @@
   preferred_month_talk: september
   time_position: ''
 399:
-  title: "⚡ Accélérez vos tests"
+  title: "Accélérez vos tests"
   speaker_name: Romane Rémy
   speaker_email: mao_douglas@braun.info
   level: easy
@@ -4008,7 +4008,7 @@
   preferred_month_talk: october
   time_position: ''
 400:
-  title: "\U0001F4AC The DevOps culture & Ruby"
+  title: "The DevOps culture & Ruby"
   speaker_name: Simone Menard
   speaker_email: clarine_simonis@quitzon-jacobi.com
   level: easy
@@ -4020,7 +4020,7 @@
   preferred_month_talk: november
   time_position: ''
 397:
-  title: "\U0001F4AC MRuby sur Raspberry"
+  title: "MRuby sur Raspberry"
   speaker_name: Briac Le Gall
   speaker_email: florence_langworth@quigley-blick.name
   level: easy
@@ -4032,7 +4032,7 @@
   preferred_month_talk: december
   time_position: ''
 401:
-  title: "⚡ Rubocop"
+  title: "Rubocop"
   speaker_name: Cousin Nestor
   speaker_email: dalila@bernhard.com
   level: easy
@@ -4044,7 +4044,7 @@
   preferred_month_talk: november
   time_position: ''
 402:
-  title: "\U0001F4AC Zero Downtime Deploys"
+  title: "Zero Downtime Deploys"
   speaker_name: Hugues Henry
   speaker_email: isaac@hilpert.io
   level: intermediate
@@ -4056,7 +4056,7 @@
   preferred_month_talk: november
   time_position: ''
 403:
-  title: "⚡ Science up your ruby with scientist !"
+  title: "Science up your ruby with scientist !"
   speaker_name: Amb. Thérèse Perrier
   speaker_email: emile.kuhlman@mohr.io
   level: intermediate
@@ -4068,7 +4068,7 @@
   preferred_month_talk: november
   time_position: ''
 416:
-  title: "⚡ Lancement de Ruby mentors"
+  title: "Lancement de Ruby mentors"
   speaker_name: Ms. Timothée Dupuis
   speaker_email: adolph.kshlerin@schinner.com
   level: easy
@@ -4080,7 +4080,7 @@
   preferred_month_talk: february
   time_position: ''
 405:
-  title: "\U0001F4AC How can automation help with development practices"
+  title: "How can automation help with development practices"
   speaker_name: Daphné Vincent
   speaker_email: yasmine@bins-schmitt.io
   level: easy
@@ -4092,7 +4092,7 @@
   preferred_month_talk: december
   time_position: ''
 406:
-  title: "\U0001F4AC json:api with jsonapi_suite - sideloading & sideposting : one
+  title: "json:api with jsonapi_suite - sideloading & sideposting : one
     endpoint to rule-them-all"
   speaker_name: Leclerc Ludovic
   speaker_email: joshua.rau@runolfsson-funk.org
@@ -4105,7 +4105,7 @@
   preferred_month_talk: december
   time_position: ''
 404:
-  title: "\U0001F4AC La Méthode du Capitaine"
+  title: "La Méthode du Capitaine"
   speaker_name: Meunier Médéric
   speaker_email: rhiannon_kihn@reinger.name
   level: easy
@@ -4129,7 +4129,7 @@
   preferred_month_talk: january
   time_position: ''
 391:
-  title: "\U0001F4AC Comment accueillir, accompagner et faire grandir un développeur
+  title: "Comment accueillir, accompagner et faire grandir un développeur
     junior "
   speaker_name: Barbier Agnan
   speaker_email: darren@kilback.io
@@ -4154,7 +4154,7 @@
   preferred_month_talk: january
   time_position: ''
 413:
-  title: " \U0001F4AC Extracts from \"Clean code\""
+  title: " Extracts from \"Clean code\""
   speaker_name: Gaspar Vidal
   speaker_email: marietta.cremin@douglas-paucek.net
   level: intermediate
@@ -4166,7 +4166,7 @@
   preferred_month_talk: february
   time_position: ''
 410:
-  title: "\U0001F4AC Présentation des services Rails et cas d'utilisation Kudoz"
+  title: "Présentation des services Rails et cas d'utilisation Kudoz"
   speaker_name: Armeline Riviere
   speaker_email: edgar_emmerich@leffler.info
   level: easy
@@ -4178,7 +4178,7 @@
   preferred_month_talk: february
   time_position: ''
 409:
-  title: "\U0001F4AC Trailblazer"
+  title: "Trailblazer"
   speaker_name: Dr. Quentin Laurent
   speaker_email: genevie_mckenzie@willms-daniel.com
   level: intermediate
@@ -4190,7 +4190,7 @@
   preferred_month_talk: february
   time_position: ''
 412:
-  title: " ⚡ Oubliez Foreman, voici Overmind"
+  title: " Oubliez Foreman, voici Overmind"
   speaker_name: Huet Fantin
   speaker_email: lavone_jast@cartwright-rutherford.org
   level: easy
@@ -4202,7 +4202,7 @@
   preferred_month_talk: february
   time_position: ''
 408:
-  title: "⚡ Gem gon pour récupérer ses données d'un controller en ruby à ses fichiers
+  title: "Gem gon pour récupérer ses données d'un controller en ruby à ses fichiers
     javascript"
   speaker_name: Leblanc Cyprien
   speaker_email: zetta.bednar@tromp.name
@@ -4215,7 +4215,7 @@
   preferred_month_talk: february
   time_position: ''
 415:
-  title: "\U0001F4AC Introduction à GraphQL avec graphql-ruby "
+  title: "Introduction à GraphQL avec graphql-ruby "
   speaker_name: Adrienne Dubois
   speaker_email: royal_douglas@rogahn.com
   level: intermediate
@@ -4227,7 +4227,7 @@
   preferred_month_talk: march
   time_position: ''
 426:
-  title: "\U0001F4AC The Life and Death of a Rails App"
+  title: "The Life and Death of a Rails App"
   speaker_name: Rev. Hincmar Humbert
   speaker_email: moises_pollich@kohler.biz
   level: intermediate
@@ -4239,7 +4239,7 @@
   preferred_month_talk: april
   time_position: ''
 418:
-  title: "\U0001F4AC Le cadeau piégé, ou comment j'ai rétroengineeré un tracker GPS
+  title: "Le cadeau piégé, ou comment j'ai rétroengineeré un tracker GPS
     et l'API Strava"
   speaker_name: Bérangère Lamy
   speaker_email: destiny.stokes@marks.co
@@ -4252,7 +4252,7 @@
   preferred_month_talk: march
   time_position: ''
 419:
-  title: "\U0001F4AC Hunting flaky tests"
+  title: "Hunting flaky tests"
   speaker_name: Lamy Raymonde
   speaker_email: janice_davis@mante-weissnat.info
   level: intermediate
@@ -4264,7 +4264,7 @@
   preferred_month_talk: march
   time_position: ''
 427:
-  title: "⚡ Regexp Implementation in Ruby"
+  title: "Regexp Implementation in Ruby"
   speaker_name: Quentin Remy
   speaker_email: spring.davis@stracke-hills.com
   level: intermediate
@@ -4276,7 +4276,7 @@
   preferred_month_talk: may
   time_position: ''
 421:
-  title: "\U0001F4AC Demystifying blocks"
+  title: "Demystifying blocks"
   speaker_name: Da Silva Edgard
   speaker_email: dallas.cassin@frami.net
   level: intermediate
@@ -4288,7 +4288,7 @@
   preferred_month_talk: april
   time_position: ''
 417:
-  title: "⚡ Heroku Scheduler : faire des tasks régulières"
+  title: "Heroku Scheduler : faire des tasks régulières"
   speaker_name: The Hon. Landry Paul
   speaker_email: preston@spinka.biz
   level: easy
@@ -4300,7 +4300,7 @@
   preferred_month_talk: march
   time_position: ''
 423:
-  title: "\U0001F4AC Présentation d'Hanami"
+  title: "Présentation d'Hanami"
   speaker_name: The Hon. Adenet Roy
   speaker_email: lauri@okuneva-rice.org
   level: easy
@@ -4312,7 +4312,7 @@
   preferred_month_talk: april
   time_position: ''
 425:
-  title: "⚡ SMS with Twilio & Rails"
+  title: "SMS with Twilio & Rails"
   speaker_name: Paul Lydie
   speaker_email: denisha@grady.info
   level: expert
@@ -4324,19 +4324,19 @@
   preferred_month_talk: april
   time_position: ''
 428:
-  title: "⚡Ne plus confondre ses environnements avec Firefox"
+  title: "Ne plus confondre ses environnements avec Firefox"
   speaker_name: Fr. Agrippine Dupuis
   speaker_email: rosella@carroll-rice.info
   level: easy
   duration: lightning
-  happened_at: 
+  happened_at:
   slides: ''
   video_url: ''
   speaker_twitter: william
   preferred_month_talk: may
   time_position: ''
 429:
-  title: "\U0001F4AC Comment utiliser flamegraph pour améliorer ses perfs"
+  title: "Comment utiliser flamegraph pour améliorer ses perfs"
   speaker_name: Remy Rosalie
   speaker_email: arnoldo.weimann@altenwerth-steuber.co
   level: intermediate
@@ -4348,7 +4348,7 @@
   preferred_month_talk: march
   time_position: ''
 430:
-  title: "\U0001F4AC Boostez votre travail d'équipe avec les Randoris"
+  title: "Boostez votre travail d'équipe avec les Randoris"
   speaker_name: Fournier Anthelmette
   speaker_email: maxie.beahan@crist.co
   level: easy
@@ -4360,7 +4360,7 @@
   preferred_month_talk: july
   time_position: ''
 431:
-  title: "\U0001F4AC Un truc avec ruby et raspberry"
+  title: "Un truc avec ruby et raspberry"
   speaker_name: Gov. Réjean Berger
   speaker_email: hyman.braun@robel.biz
   level: expert
@@ -4372,7 +4372,7 @@
   preferred_month_talk: june
   time_position: ''
 432:
-  title: "\U0001F4AC Envufy: une extension pratique en 5 minutes"
+  title: "Envufy: une extension pratique en 5 minutes"
   speaker_name: Séraphin Laine
   speaker_email: brett_morissette@ryan.org
   level: intermediate
@@ -4384,7 +4384,7 @@
   preferred_month_talk: june
   time_position: ''
 435:
-  title: "⚡Decorators"
+  title: "Decorators"
   speaker_name: Schmitt Joëlle
   speaker_email: merle@kuhlman.info
   level: easy
@@ -4396,7 +4396,7 @@
   preferred_month_talk: july
   time_position: ''
 434:
-  title: "⚡Bien tester des ActiveJobs et ne pas se faire avoir par la désérialisation"
+  title: "Bien tester des ActiveJobs et ne pas se faire avoir par la désérialisation"
   speaker_name: Chevallier Camillien
   speaker_email: jorge_wilderman@rice.info
   level: easy
@@ -4408,7 +4408,7 @@
   preferred_month_talk: july
   time_position: ''
 433:
-  title: "⚡Le debugging n'a jamais été aussi cool \U0001F60E"
+  title: "Le debugging n'a jamais été aussi cool \U0001F60E"
   speaker_name: Rev. Gérard Lambert
   speaker_email: kindra.hackett@dicki.info
   level: easy
@@ -4420,7 +4420,7 @@
   preferred_month_talk: july
   time_position: ''
 436:
-  title: "⚡L'anti-pattern ActiveRecord"
+  title: "L'anti-pattern ActiveRecord"
   speaker_name: Mr. Marius Garnier
   speaker_email: hans.spinka@mann.name
   level: intermediate
@@ -4432,7 +4432,7 @@
   preferred_month_talk: july
   time_position: ''
 437:
-  title: "\U0001F4AC How an engineer learns japanese"
+  title: "How an engineer learns japanese"
   speaker_name: Boulanger Athanasie
   speaker_email: erwin_muller@veum.co
   level: easy
@@ -4444,7 +4444,7 @@
   preferred_month_talk: august
   time_position: ''
 438:
-  title: "\U0001F4AC Tests aquatiques \U0001F4A7"
+  title: "Tests aquatiques \U0001F4A7"
   speaker_name: Astarté Dupuis
   speaker_email: walton.lemke@treutel-mills.org
   level: intermediate
@@ -4456,7 +4456,7 @@
   preferred_month_talk: september
   time_position: ''
 440:
-  title: "\U0001F4AC Polymorphic associations and Single-table inheritance in rails"
+  title: "Polymorphic associations and Single-table inheritance in rails"
   speaker_name: Marchand Toussaint
   speaker_email: jon_dooley@weissnat.org
   level: intermediate
@@ -4468,7 +4468,7 @@
   preferred_month_talk: august
   time_position: ''
 442:
-  title: "\U0001F4AC Maintenance et refactoring d'une application Rails - 3 tips"
+  title: "Maintenance et refactoring d'une application Rails - 3 tips"
   speaker_name: Audrey Benard
   speaker_email: danika@hills-schuster.info
   level: intermediate
@@ -4480,7 +4480,7 @@
   preferred_month_talk: august
   time_position: ''
 443:
-  title: "\U0001F4AC Quitter le \"papa/maman\" en 18 min 42 sec"
+  title: "Quitter le \"papa/maman\" en 18 min 42 sec"
   speaker_name: Abelin Marty
   speaker_email: errol@padberg.io
   level: easy
@@ -4492,7 +4492,7 @@
   preferred_month_talk: september
   time_position: ''
 444:
-  title: "\U0001F4AC Continuous Delivery for Rails App with Docker and Gitlab"
+  title: "Continuous Delivery for Rails App with Docker and Gitlab"
   speaker_name: Leroux Céleste
   speaker_email: melita@beier.org
   level: intermediate
@@ -4504,7 +4504,7 @@
   preferred_month_talk: october
   time_position: ''
 446:
-  title: "⚡Organiser vos idee avec Dry-Transaction"
+  title: "Organiser vos idee avec Dry-Transaction"
   speaker_name: Riviere Anne
   speaker_email: patricia@osinski.com
   level: easy
@@ -4528,7 +4528,7 @@
   preferred_month_talk: september
   time_position: ''
 447:
-  title: "\U0001F4AC Récupérer la devise en cours sous Rails"
+  title: "Récupérer la devise en cours sous Rails"
   speaker_name: Mahaut Robin
   speaker_email: teodoro@jones.co
   level: intermediate
@@ -4540,7 +4540,7 @@
   preferred_month_talk: october
   time_position: ''
 448:
-  title: "⚡Les syntaxes avec { } peuvent être \U0001F608"
+  title: "Les syntaxes avec { } peuvent être \U0001F608"
   speaker_name: Renard Aphélie
   speaker_email: ossie@upton.biz
   level: easy
@@ -4552,7 +4552,7 @@
   preferred_month_talk: september
   time_position: ''
 449:
-  title: "⚡Déployer un blog Jekyll sur OVH"
+  title: "Déployer un blog Jekyll sur OVH"
   speaker_name: Mrs. Flore Tessier
   speaker_email: rosanne.trantow@fahey-leffler.io
   level: easy
@@ -4564,7 +4564,7 @@
   preferred_month_talk: october
   time_position: ''
 450:
-  title: "\U0001F4AC Créer un nouveau Cop (Rubocop)"
+  title: "Créer un nouveau Cop (Rubocop)"
   speaker_name: Baron Margot
   speaker_email: trenton_miller@barton.info
   level: intermediate
@@ -4576,7 +4576,7 @@
   preferred_month_talk: november
   time_position: ''
 451:
-  title: "\U0001F4AC Comment faire évoluer une app Rails de + de 6 ans"
+  title: "Comment faire évoluer une app Rails de + de 6 ans"
   speaker_name: Renard Athalie
   speaker_email: marlana_corwin@upton.biz
   level: intermediate
@@ -4588,7 +4588,7 @@
   preferred_month_talk: december
   time_position: ''
 484:
-  title: "\U0001F4AC Machine Learning - théorie"
+  title: "Machine Learning - théorie"
   speaker_name: Moïsette Grondin
   speaker_email: oralee.wolff@kessler-feeney.com
   level: expert
@@ -4600,7 +4600,7 @@
   preferred_month_talk: november
   time_position: ''
 485:
-  title: "\U0001F4AC Comparaison d'algorithmes d'apprentissage"
+  title: "Comparaison d'algorithmes d'apprentissage"
   speaker_name: Fr. Gervais Martinez
   speaker_email: numbers_johns@cummings.com
   level: expert
@@ -4612,7 +4612,7 @@
   preferred_month_talk: november
   time_position: ''
 439:
-  title: "\U0001F4AC Tom Hirschfield's 10 rules of thumb"
+  title: "Tom Hirschfield's 10 rules of thumb"
   speaker_name: Josselin Sanchez
   speaker_email: whitney.jaskolski@hand.io
   level: easy
@@ -4624,7 +4624,7 @@
   preferred_month_talk: december
   time_position: ''
 486:
-  title: "⚡Benchmarker avec micro_bench"
+  title: "Benchmarker avec micro_bench"
   speaker_name: Prof. Amaury Perrot
   speaker_email: joan.ernser@watsica.org
   level: easy
@@ -4636,7 +4636,7 @@
   preferred_month_talk: november
   time_position: ''
 488:
-  title: "\U0001F4AC idempotency with rack"
+  title: "idempotency with rack"
   speaker_name: Séraphin Collin
   speaker_email: max@crooks.info
   level: intermediate
@@ -4648,7 +4648,7 @@
   preferred_month_talk: november
   time_position: ''
 489:
-  title: '⚡4 "Code smells" : un guide de simplification'
+  title: '4 "Code smells" : un guide de simplification'
   speaker_name: Amb. Arthurine Leclerc
   speaker_email: ozzie.maggio@ryan.co
   level: expert
@@ -4660,7 +4660,7 @@
   preferred_month_talk: december
   time_position: ''
 491:
-  title: "\U0001F4AC Restructurer ses équipes en squads"
+  title: "Restructurer ses équipes en squads"
   speaker_name: Astérie Renault
   speaker_email: robby@dibbert.co
   level: easy
@@ -4672,7 +4672,7 @@
   preferred_month_talk: january
   time_position: ''
 490:
-  title: "\U0001F4AC Ruby memory, ActiveRecord et Draper, une histoire de performance"
+  title: "Ruby memory, ActiveRecord et Draper, une histoire de performance"
   speaker_name: Clara Laine
   speaker_email: troy.cronin@durgan.org
   level: expert
@@ -4684,7 +4684,7 @@
   preferred_month_talk: january
   time_position: ''
 493:
-  title: "\U0001F4AC Make your microservices converge!"
+  title: "Make your microservices converge!"
   speaker_name: Merlin Rivière
   speaker_email: lakeesha.von@hyatt.name
   level: intermediate
@@ -4696,7 +4696,7 @@
   preferred_month_talk: january
   time_position: ''
 494:
-  title: "\U0001F4AC Structure de données et Complexité"
+  title: "Structure de données et Complexité"
   speaker_name: Clement Alexandre
   speaker_email: ryann_veum@considine.io
   level: intermediate
@@ -4708,19 +4708,19 @@
   preferred_month_talk: february
   time_position: ''
 528:
-  title: "\U0001F4AC  Tests techniques Ruby : Création / Réalisation / Évaluation"
+  title: " Tests techniques Ruby : Création / Réalisation / Évaluation"
   speaker_name: Dr. David Bonnet
   speaker_email: malcolm_hickle@bosco.net
   level: intermediate
   duration: long
-  happened_at: 
+  happened_at:
   slides: ''
   video_url: ''
   speaker_twitter: brad
   preferred_month_talk: january
   time_position: ''
 535:
-  title: " \U0001F4AC String Similarity Algorithms Compared"
+  title: " String Similarity Algorithms Compared"
   speaker_name: Arsène Guillot
   speaker_email: vivienne@upton.io
   level: intermediate
@@ -4732,7 +4732,7 @@
   preferred_month_talk: april
   time_position: ''
 530:
-  title: "1h \U0001F4AC \U0001F4AC \U0001F4AC Foncteurs Applicatifs et Monades"
+  title: "1h Foncteurs Applicatifs et Monades"
   speaker_name: Boulanger Diane
   speaker_email: eboni_collier@harris.com
   level: intermediate
@@ -4744,7 +4744,7 @@
   preferred_month_talk: march
   time_position: ''
 529:
-  title: "⚡Astuces pour le debugging"
+  title: "Astuces pour le debugging"
   speaker_name: Gov. Pascale Boucher
   speaker_email: burma@mckenzie-price.io
   level: intermediate
@@ -4756,7 +4756,7 @@
   preferred_month_talk: february
   time_position: ''
 492:
-  title: "\U0001F4AC Mise en conformité post RGPD, le REX Fidzup"
+  title: "Mise en conformité post RGPD, le REX Fidzup"
   speaker_name: Prof. César Bertin
   speaker_email: ronni_cassin@schroeder-lubowitz.info
   level: intermediate
@@ -4768,7 +4768,7 @@
   preferred_month_talk: february
   time_position: ''
 531:
-  title: "⚡From tribal knowledge to glorious automation"
+  title: "From tribal knowledge to glorious automation"
   speaker_name: Brunehaut Vasseur
   speaker_email: maira@windler-heaney.io
   level: intermediate
@@ -4780,7 +4780,7 @@
   preferred_month_talk: february
   time_position: ''
 532:
-  title: "\U0001F4AC Black Magic to Build Resilient API Dependencies (story of integrations
+  title: "Black Magic to Build Resilient API Dependencies (story of integrations
     with enterprise APIs like eBay, UPS, DHL, Russian Post and so on)"
   speaker_name: Gay Philothée
   speaker_email: belen.langosh@conn-considine.name
@@ -4793,7 +4793,7 @@
   preferred_month_talk: may
   time_position: ''
 534:
-  title: "\U0001F4AC A la rencontre de Minimax"
+  title: "A la rencontre de Minimax"
   speaker_name: Daphné Lefèvre
   speaker_email: kiana@sporer.info
   level: intermediate
@@ -4805,7 +4805,7 @@
   preferred_month_talk: april
   time_position: ''
 537:
-  title: "\U0001F4AC Limiting code execution time in Ruby"
+  title: "Limiting code execution time in Ruby"
   speaker_name: Coraline Huet
   speaker_email: tien@berge.name
   level: expert
@@ -4822,14 +4822,14 @@
   speaker_email: donn@douglas.org
   level: intermediate
   duration: long
-  happened_at: 
+  happened_at:
   slides: ''
   video_url: ''
   speaker_twitter: lesli_mueller
   preferred_month_talk: june
   time_position: ''
 539:
-  title: "\U0001F4AC Acceptance Testing in Ruby"
+  title: "Acceptance Testing in Ruby"
   speaker_name: Pres. Anastase Pierre
   speaker_email: merlin@ziemann-mante.co
   level: intermediate
@@ -4841,7 +4841,7 @@
   preferred_month_talk: may
   time_position: ''
 541:
-  title: "\U0001F4AC ROM.rb retour d'expérience"
+  title: "ROM.rb retour d'expérience"
   speaker_name: Abel Philippe
   speaker_email: madalene@graham-renner.net
   level: intermediate
@@ -4853,7 +4853,7 @@
   preferred_month_talk: july
   time_position: ''
 538:
-  title: "\U0001F4AC Sidekiq scaling: Workers vs Processes"
+  title: "Sidekiq scaling: Workers vs Processes"
   speaker_name: Remy Aymon
   speaker_email: margart@rogahn.biz
   level: intermediate
@@ -4870,14 +4870,14 @@
   speaker_email: stevie@rath.org
   level: intermediate
   duration: long
-  happened_at: 
+  happened_at:
   slides: ''
   video_url: ''
   speaker_twitter: judson
   preferred_month_talk: june
   time_position: ''
 543:
-  title: "\U0001F4AC From 0 to 1 (business)"
+  title: "From 0 to 1 (business)"
   speaker_name: Clodion Michaud
   speaker_email: basil@mayert.biz
   level: easy
@@ -4895,14 +4895,14 @@
   speaker_email: mark.blanda@funk-crona.name
   level: intermediate
   duration: long
-  happened_at: 
+  happened_at:
   slides: ''
   video_url: ''
   speaker_twitter: sarita
   preferred_month_talk: march
   time_position: ''
 544:
-  title: "⚡Circuit Breaker pattern"
+  title: "Circuit Breaker pattern"
   speaker_name: David Gustavine
   speaker_email: trudi@yost.info
   level: intermediate
@@ -4914,7 +4914,7 @@
   preferred_month_talk: july
   time_position: ''
 546:
-  title: "\U0001F4AC gRPC Kesako?"
+  title: "gRPC Kesako?"
   speaker_name: Léandre Guerin
   speaker_email: elouise_mraz@christiansen.com
   level: intermediate
@@ -4926,7 +4926,7 @@
   preferred_month_talk: july
   time_position: ''
 547:
-  title: "\U0001F4AC Voyages dans les réseaux de neurones"
+  title: "Voyages dans les réseaux de neurones"
   speaker_name: Fantine Pons
   speaker_email: marlin@ziemann.net
   level: intermediate
@@ -4938,7 +4938,7 @@
   preferred_month_talk: august
   time_position: ''
 548:
-  title: "\U0001F4AC Devenez CTO en 20mn"
+  title: "Devenez CTO en 20mn"
   speaker_name: Prof. Charlotte Chevalier
   speaker_email: lyndon@ortiz-mccullough.name
   level: easy
@@ -4950,7 +4950,7 @@
   preferred_month_talk: august
   time_position: ''
 549:
-  title: "\U0001F4AC Je fais du ruby pourtant je commit du C \U0001F914"
+  title: "Je fais du ruby pourtant je commit du C \U0001F914"
   speaker_name: Euphrasie Prevost
   speaker_email: renato_parker@hamill.org
   level: intermediate
@@ -4962,195 +4962,195 @@
   preferred_month_talk: september
   time_position: ''
 556:
-  title: "\U0001F4AC Petit tour des serveurs Web Ruby"
+  title: "Petit tour des serveurs Web Ruby"
   speaker_name: Alcidie Arnaud
   speaker_email: bulah@mayer-crooks.io
   level: easy
   duration: long
   happened_at: 2019-09-03
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: ernesto_koelpin
   preferred_month_talk: september
   time_position: ''
 590:
-  title: "\U0001F4AC De maître à élève"
+  title: "De maître à élève"
   speaker_name: Msgr. Adrastée Legrand
   speaker_email: lucio@wuckert-pagac.name
   level: easy
   duration: long
   happened_at: 2019-10-01
   slides: http://maitre-du-monde.fr/talks/master2student.html
-  video_url: 
+  video_url:
   speaker_twitter: antonio_gusikowski
   preferred_month_talk: october
   time_position: ''
 589:
-  title: "\U0001F4AC Zog-Zog : trucs idiots avec Ruby et Git"
+  title: "Zog-Zog : trucs idiots avec Ruby et Git"
   speaker_name: Ms. Pacôme Deschamps
   speaker_email: efren@waelchi.name
   level: intermediate
   duration: long
   happened_at: 2019-10-01
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: berry
   preferred_month_talk: october
   time_position: ''
 733:
-  title: "⚡Mise à jour automatisée de Gems avec Dependabot"
+  title: "Mise à jour automatisée de Gems avec Dependabot"
   speaker_name: Fr. Christodule Bouchet
   speaker_email: leeanne.dare@emard-monahan.co
   level: easy
   duration: lightning
   happened_at: 2020-04-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: rosalyn_osinski
   preferred_month_talk: april
   time_position: ''
 591:
-  title: "\U0001F4AC Importer des fichiers Excel"
+  title: "Importer des fichiers Excel"
   speaker_name: Mégane Durand
   speaker_email: clay@kohler-gutmann.biz
   level: intermediate
   duration: long
   happened_at: 2019-11-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: minh_hoeger
   preferred_month_talk: november
   time_position: ''
 624:
-  title: "\U0001F4AC Comment se plaindre efficacement"
+  title: "Comment se plaindre efficacement"
   speaker_name: Mr. Élzéar Michaud
   speaker_email: ressie_ferry@welch.net
   level: easy
   duration: long
   happened_at: 2019-11-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: breanna_leffler
   preferred_month_talk: november
   time_position: ''
 625:
-  title: "⚡Travailler avec de l'IoT en production sous Rails"
+  title: "Travailler avec de l'IoT en production sous Rails"
   speaker_name: Carlier Normand
   speaker_email: cathleen@purdy-williamson.name
   level: intermediate
   duration: lightning
   happened_at: 2019-11-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: janita_balistreri
   preferred_month_talk: november
   time_position: ''
 626:
-  title: "\U0001F4AC MongoDB in production"
+  title: "MongoDB in production"
   speaker_name: Laporte Yolande
   speaker_email: phung@medhurst-ebert.com
   level: expert
   duration: long
   happened_at: 2019-12-03
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: clifton
   preferred_month_talk: december
   time_position: ''
 627:
-  title: "\U0001F4AC Atteindre 100% de génération de code sur Rails"
+  title: "Atteindre 100% de génération de code sur Rails"
   speaker_name: Maillard Andrée
   speaker_email: mike.considine@schamberger-labadie.io
   level: expert
   duration: long
   happened_at: 2019-12-03
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: guadalupe
   preferred_month_talk: december
   time_position: ''
 663:
-  title: "\U0001F4AC L'autogestion dans une équipe dev"
+  title: "L'autogestion dans une équipe dev"
   speaker_name: Gov. Noëlle Gautier
   speaker_email: shaina@steuber.name
   level: easy
   duration: long
   happened_at: 2020-02-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jamaal_stamm
   preferred_month_talk: february
   time_position: ''
 661:
-  title: "\U0001F4AC Javascript dans Rails 6 | Webpacker, Yarn et Sprockets"
+  title: "Javascript dans Rails 6 | Webpacker, Yarn et Sprockets"
   speaker_name: Aldonce Andre
   speaker_email: sandi@friesen.co
   level: easy
   duration: long
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: royal_armstrong
   preferred_month_talk: april
   time_position: ''
 664:
-  title: "\U0001F4AC Le guide RGPD du développeur"
+  title: "Le guide RGPD du développeur"
   speaker_name: Amb. Armance Remy
   speaker_email: noriko@yost-stanton.info
   level: easy
   duration: long
   happened_at: 2020-03-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: ricardo
   preferred_month_talk: march
   time_position: ''
 665:
-  title: "\U0001F4AC Improve your app reliability using Circuit Breaker"
+  title: "Improve your app reliability using Circuit Breaker"
   speaker_name: Rev. Véronique Brunet
   speaker_email: neil@trantow.net
   level: intermediate
   duration: lightning
   happened_at: 2020-03-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: orlando
   preferred_month_talk: march
   time_position: ''
 700:
-  title: "\U0001F4AC PostgreSQL in production"
+  title: "PostgreSQL in production"
   speaker_name: Miss Aminte Breton
   speaker_email: lucila_pfannerstill@ratke-swift.io
   level: intermediate
   duration: long
   happened_at: 2020-04-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jerri
   preferred_month_talk: april
   time_position: ''
 734:
-  title: "\U0001F4AC Une méthode pour tester les race conditions et problèmes de thread
+  title: "Une méthode pour tester les race conditions et problèmes de thread
     safety"
   speaker_name: Laurence Denis
   speaker_email: elbert_auer@mcglynn-gleichner.io
   level: expert
   duration: long
   happened_at: 2020-05-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: logan
   preferred_month_talk: may
   time_position: ''
 735:
-  title: "⚡ Exception Matchers"
+  title: "Exception Matchers"
   speaker_name: Roger Annette
   speaker_email: chung.wiza@harris.net
   level: intermediate
   duration: lightning
   happened_at: 2020-05-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: cliff_swaniawski
   preferred_month_talk: may
   time_position: ''
@@ -5160,21 +5160,21 @@
   speaker_email: ellis.bernier@hackett.net
   level: easy
   duration: lightning
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: florencio
   preferred_month_talk: august
   time_position: ''
 698:
-  title: "\U0001F4AC Graphiti"
+  title: "Graphiti"
   speaker_name: Cousin Gilberte
   speaker_email: yee@tremblay.biz
   level: intermediate
   duration: long
   happened_at: 2020-09-01
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: oliver
   preferred_month_talk: june
   time_position: ''
@@ -5184,9 +5184,9 @@
   speaker_email: gilbert_morissette@altenwerth.biz
   level: intermediate
   duration: long
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: ling
   preferred_month_talk: october
   time_position: ''
@@ -5196,9 +5196,9 @@
   speaker_email: lilliam_marvin@terry.biz
   level: expert
   duration: long
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: roscoe
   preferred_month_talk: october
   time_position: ''
@@ -5209,8 +5209,8 @@
   level: expert
   duration: long
   happened_at: 2021-02-02
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: keith_bayer
   preferred_month_talk: february
   time_position: ''
@@ -5221,8 +5221,8 @@
   level: easy
   duration: lightning
   happened_at: 2021-02-02
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: shan
   preferred_month_talk: february
   time_position: ''
@@ -5233,8 +5233,8 @@
   level: intermediate
   duration: long
   happened_at: 2021-04-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: nikita_heidenreich
   preferred_month_talk: april
   time_position: ''
@@ -5245,8 +5245,8 @@
   level: expert
   duration: long
   happened_at: 2021-04-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: norris_murray
   preferred_month_talk: april
   time_position: ''
@@ -5257,8 +5257,8 @@
   level: intermediate
   duration: long
   happened_at: 2021-10-20
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: reuben
   preferred_month_talk: october
   time_position: ''
@@ -5269,8 +5269,8 @@
   level: intermediate
   duration: long
   happened_at: 2021-10-20
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: wan_russel
   preferred_month_talk: october
   time_position: ''
@@ -5281,8 +5281,8 @@
   level: intermediate
   duration: long
   happened_at: 2021-11-16
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: machelle
   preferred_month_talk: november
   time_position: ''
@@ -5293,8 +5293,8 @@
   level: intermediate
   duration: long
   happened_at: 2021-11-16
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jeremiah
   preferred_month_talk: november
   time_position: ''
@@ -5305,8 +5305,8 @@
   level: intermediate
   duration: long
   happened_at: 2022-01-11
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: carolann_tromp
   preferred_month_talk: january
   time_position: ''
@@ -5317,8 +5317,8 @@
   level: intermediate
   duration: long
   happened_at: 2021-12-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: gladis
   preferred_month_talk: december
   time_position: ''
@@ -5328,9 +5328,9 @@
   speaker_email: darcel@deckow.com
   level: easy
   duration: long
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: josefa
   preferred_month_talk: december
   time_position: ''
@@ -5341,8 +5341,8 @@
   level: easy
   duration: long
   happened_at: 2021-12-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: rene
   preferred_month_talk: december
   time_position: ''
@@ -5353,8 +5353,8 @@
   level: easy
   duration: long
   happened_at: 2022-01-11
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: kathryn_deckow
   preferred_month_talk: january
   time_position: ''
@@ -5365,8 +5365,8 @@
   level: easy
   duration: lightning
   happened_at: 2022-01-11
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: elizabeth_oberbrunne
   preferred_month_talk: january
   time_position: ''
@@ -5377,8 +5377,8 @@
   level: intermediate
   duration: lightning
   happened_at: 2022-02-02
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: dalene
   preferred_month_talk: february
   time_position: ''
@@ -5389,8 +5389,8 @@
   level: expert
   duration: lightning
   happened_at: 2022-05-03
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jolie_leuschke
   preferred_month_talk: may
   time_position: ''
@@ -5401,81 +5401,81 @@
   level: intermediate
   duration: long
   happened_at: 2022-05-03
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: emilee
   preferred_month_talk: may
   time_position: ''
 854:
-  title: "⚡ On a recruté un.e dev junior ! AMA"
+  title: "On a recruté un.e dev junior ! AMA"
   speaker_name: Rep. Clémentine Guillaume
   speaker_email: jolie@howe-pfeffer.biz
   level: easy
   duration: lightning
   happened_at: 2022-06-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jarvis_walker
   preferred_month_talk: june
   time_position: ''
 852:
-  title: "\U0001F4AC Commit comme un hipster avec Gitmoji !"
+  title: "Commit comme un hipster avec Gitmoji !"
   speaker_name: Andre Aline
   speaker_email: noemi_lindgren@aufderhar.net
   level: easy
   duration: long
   happened_at: 2022-06-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jules
   preferred_month_talk: june
   time_position: ''
 853:
-  title: "\U0001F4AC Comment on a industrialisé le développement et le testing de
+  title: "Comment on a industrialisé le développement et le testing de
     notre API"
   speaker_name: Amb. Mauricette Meyer
   speaker_email: alpha@lehner.name
   level: easy
   duration: long
   happened_at: 2022-06-07
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: josie
   preferred_month_talk: june
   time_position: ''
 855:
-  title: "\U0001F4AC Modéliser des process métier en combinant state machine et STI"
+  title: "Modéliser des process métier en combinant state machine et STI"
   speaker_name: Gov. Philothée Gautier
   speaker_email: chet_braun@auer.co
   level: intermediate
   duration: long
   happened_at: 2022-07-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: vito_bailey
   preferred_month_talk: july
   time_position: ''
 861:
-  title: "\U0001F4AC Rails : XSS protection"
+  title: "Rails : XSS protection"
   speaker_name: Prof. Auriane Dvnis
   speaker_email: malia@barrows-price.info
   level: expert
   duration: long
   happened_at: 2022-09-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: kermit
   preferred_month_talk: september
   time_position: ''
 856:
-  title: "⚡ No Risk, No Fun : dédramatiser sans déresponsabiliser"
+  title: "No Risk, No Fun : dédramatiser sans déresponsabiliser"
   speaker_name: Aliénor Perez
   speaker_email: reginald@schmitt.net
   level: easy
   duration: lightning
   happened_at: 2022-07-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: lonny_gerlach
   preferred_month_talk: july
   time_position: ''
@@ -5485,9 +5485,9 @@
   speaker_email: ulysses@legros-dietrich.org
   level: intermediate
   duration: long
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: franklin_volkman
   preferred_month_talk: august
   time_position: ''
@@ -5498,8 +5498,8 @@
   level: easy
   duration: long
   happened_at: 2022-09-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: lean_dickens
   preferred_month_talk: september
   time_position: ''
@@ -5510,153 +5510,153 @@
   level: intermediate
   duration: long
   happened_at: 2022-07-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jaquelyn
   preferred_month_talk: july
   time_position: ''
 903:
-  title: "\U0001F4AC Ajouter la visibilité des CVEs dans rubygems.org"
+  title: "Ajouter la visibilité des CVEs dans rubygems.org"
   speaker_name: Rep. Claudine Lemaitre
   speaker_email: irwin.hamill@kling.org
   level: intermediate
   duration: long
   happened_at: 2022-12-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: diego
   preferred_month_talk: december
   time_position: '2022-12-06 20:45:00 +0100'
 862:
-  title: "⚡ Securing Software Supply Chain"
+  title: "Securing Software Supply Chain"
   speaker_name: Adelin Jacquet
   speaker_email: angel_erdman@rodriguez.biz
   level: easy
   duration: lightning
   happened_at: 2022-07-05
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: jade_collins
   preferred_month_talk: july
   time_position: ''
 905:
-  title: "\U0001F4AC L'archi d'un backoffice"
+  title: "L'archi d'un backoffice"
   speaker_name: Marceau Rey
   speaker_email: my.mraz@sawayn.org
   level: easy
   duration: lightning
   happened_at: 2022-12-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: milton_mante
   preferred_month_talk: december
   time_position: '2022-12-06 20:00:00 +0100'
 896:
-  title: "\U0001F4AC Produire du logiciel en coopérative ouvrière - Pourquoi Rails
+  title: "Produire du logiciel en coopérative ouvrière - Pourquoi Rails
     a été l'outil parfait pour concevoir Cyke"
   speaker_name: Rev. Arnould Bouchet
   speaker_email: johnathan.bergstrom@ortiz.info
   level: easy
   duration: long
   happened_at: 2022-10-04
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: blanca_kreiger
   preferred_month_talk: october
   time_position: ''
 904:
-  title: "\U0001F4AC Comment nous avons divisé les bugs par 3.5 en un an"
+  title: "Comment nous avons divisé les bugs par 3.5 en un an"
   speaker_name: Philippe Odon
   speaker_email: harland@gerlach.biz
   level: intermediate
   duration: long
   happened_at: 2022-12-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: tatiana
   preferred_month_talk: december
   time_position: '2022-12-06 20:30:00 +0100'
 906:
-  title: " Éliminer définitivement vos bugs grâce à la méthode PISCARE"
+  title: "Éliminer définitivement vos bugs grâce à la méthode PISCARE"
   speaker_name: Émeline Carpentier
   speaker_email: jamie.dach@okuneva.io
   level: intermediate
   duration: long
-  happened_at: 
-  slides: 
-  video_url: 
+  happened_at:
+  slides:
+  video_url:
   speaker_twitter: heike_walsh
   preferred_month_talk: january
   time_position: ''
 897:
-  title: "⚡ Level up your Capybara acceptance tests using SitePrism"
+  title: "Level up your Capybara acceptance tests using SitePrism"
   speaker_name: Huet Morgane
   speaker_email: daniell@durgan.co
   level: intermediate
   duration: lightning
   happened_at: 2022-11-08
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: shirleen
   preferred_month_talk: november
   time_position: '2022-11-08 19:40:00 +0100'
 898:
-  title: "\U0001F4AC Business logic & Data integrity"
+  title: "Business logic & Data integrity"
   speaker_name: Garnier Lucie
   speaker_email: lisandra_kunze@bogan.name
   level: easy
   duration: long
   happened_at: 2022-11-08
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: ileana
   preferred_month_talk: november
   time_position: '2022-11-08 19:40:00 +0100'
 901:
-  title: "⚡News ParisRB / RubyBaguette"
+  title: "News ParisRB / RubyBaguette"
   speaker_name: Thomas Aurèle
   speaker_email: pete@towne-hermiston.org
   level: easy
   duration: lightning
   happened_at: 2022-11-08
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: shon_davis
   preferred_month_talk: november
   time_position: '2022-11-08 19:08:00 +0100'
 900:
-  title: "\U0001F4AC  Sorbet in practice"
+  title: "Sorbet in practice"
   speaker_name: Clio Lejeune
   speaker_email: lewis.christiansen@schiller-mills.biz
   level: easy
   duration: long
   happened_at: 2022-11-08
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: delila
   preferred_month_talk: november
   time_position: '2022-11-08 19:06:00 +0100'
 899:
-  title: "⚡ Nagle algorithm et delayed ack"
+  title: "Nagle algorithm et delayed ack"
   speaker_name: Lemaitre Marion
   speaker_email: soledad@towne.info
   level: easy
   duration: lightning
   happened_at: 2022-11-08
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: mac
   preferred_month_talk: november
   time_position: '2022-11-08 19:30:00 +0100'
 902:
-  title: "⚡ Le chaînage des scopes dans Active Record"
+  title: "Le chaînage des scopes dans Active Record"
   speaker_name: Grondin Frédéric
   speaker_email: arlean@beatty-wehner.info
   level: intermediate
   duration: lightning
   happened_at: 2022-12-06
-  slides: 
-  video_url: 
+  slides:
+  video_url:
   speaker_twitter: chelsea
   preferred_month_talk: december
   time_position: '2022-12-06 19:45:00 +0100'
