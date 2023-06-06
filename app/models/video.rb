@@ -39,6 +39,10 @@ class Video < ApplicationRecord
     description&.truncate(170, separator: ' ')
   end
 
+  def self.ransackable_attributes(auth_object = nil)
+    %w[vimeo_url title description slug]
+  end
+
   private
 
   def vimeo_id
