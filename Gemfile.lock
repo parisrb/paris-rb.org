@@ -259,6 +259,8 @@ GEM
     os (1.1.4)
     paint (2.3.0)
     pg (1.5.4)
+    psych (5.1.1.1)
+      stringio
     public_suffix (5.0.3)
     puma (6.4.0)
       nio4r (~> 2.0)
@@ -308,7 +310,8 @@ GEM
       activerecord (>= 6.1.5)
       activesupport (>= 6.1.5)
       i18n
-    rdoc (2.5.11)
+    rdoc (6.5.0)
+      psych (>= 4.0.0)
     record_tag_helper (1.0.1)
       actionview (>= 5)
     redis (5.0.8)
@@ -363,6 +366,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     ssrf_filter (1.1.2)
+    stringio (3.0.8)
     sucker_punch (3.1.0)
       concurrent-ruby (~> 1.0)
     tailwindcss-rails (2.0.32-arm64-darwin)
