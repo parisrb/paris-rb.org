@@ -16,6 +16,7 @@
 #  speaker_twitter      :string
 #  preferred_month_talk :string
 #  time_position        :datetime
+#  priority             :string
 #
 # Indexes
 #
@@ -65,6 +66,9 @@ class Talk < ApplicationRecord
   end
 
   ALL_MONTHS = months_iterator(1..12)
+  
+  enumerize :priority,
+    in: [:low, :normal, :high], default: :normal
 
   enumerize :preferred_month_talk,
     in: ALL_MONTHS.keys.map(&:to_sym)

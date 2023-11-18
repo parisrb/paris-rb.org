@@ -20,6 +20,7 @@ fr:
         happened_at: Date
         level: Difficulté
         lineup: Ajouter au lineup
+        priority: Priorité
         slides: Slides
         speaker_email: Email
         speaker_name: Speaker
@@ -65,6 +66,10 @@ fr:
         easy: Débutant
         intermediate: Moyen
         expert: Expert
+      priority:
+        low: Basse
+        normal: Normale
+        high: Haute
 
   helpers:
     submit:
