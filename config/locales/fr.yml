@@ -8,6 +8,11 @@ fr:
 
   site_name: Paris.rb
 
+  admin:
+    help:
+      talk:
+        priority: Optionnel. Une priorité 'basse' peut servir à mettre de côté un talk pour combler un programme, une priorité 'haute' pour les invités spéciaux.
+
   activerecord:
     attributes:
       user:
