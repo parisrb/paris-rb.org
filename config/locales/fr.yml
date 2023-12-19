@@ -8,6 +8,11 @@ fr:
 
   site_name: Paris.rb
 
+  admin:
+    help:
+      talk:
+        priority: Optionnel. Une priorité 'basse' peut servir à mettre de côté un talk pour combler un programme, une priorité 'haute' pour les invités spéciaux.
+
   activerecord:
     attributes:
       user:
@@ -20,6 +25,7 @@ fr:
         happened_at: Date
         level: Difficulté
         lineup: Ajouter au lineup
+        priority: Priorité
         slides: Slides
         speaker_email: Email
         speaker_name: Speaker
@@ -65,6 +71,10 @@ fr:
         easy: Débutant
         intermediate: Moyen
         expert: Expert
+      priority:
+        low: Basse
+        normal: Normale
+        high: Haute
 
   helpers:
     submit:

@@ -35,6 +35,7 @@ RailsAdmin.config do |config|
       end
       field :title
       field :speaker_name
+      field :priority
       field :speaker_twitter
       field :preferred_month_talk
       field :time_position
