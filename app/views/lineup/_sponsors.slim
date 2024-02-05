@@ -3,7 +3,8 @@ section
 
   - sponsors.each do |sponsor|
     - if sponsor.logo.present?
-      => image_tag sponsor.logo_url(:thumb), alt: sponsor.name
+      => image_tag 'https://www.datocms-assets.com/36416/1640774309-transparent-scalingo-logo.png?fm=jpg&max-w=680', alt: 'scalingo', style: "max-width: 180px; max-height: 100px"
+      => image_tag 'https://f.hubspotusercontent30.net/hubfs/8867336/logo_captive.png', alt: 'captive', style: "max-width: 180px; max-height: 100px"
     - else
       = sponsor.name
 
