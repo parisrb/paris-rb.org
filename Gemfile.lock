@@ -408,7 +408,7 @@ GEM
       paint (>= 0.9, < 3.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    yard (0.9.34)
+    yard (0.9.36)
     zeitwerk (2.6.12)
 
 PLATFORMS
