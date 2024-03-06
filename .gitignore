@@ -27,6 +27,7 @@
 
 docker
 vendor/.bundle/
+vendor/bundle/
 .byebug_history
 
 /app/assets/builds/*
