@@ -1,4 +1,4 @@
-class RemoveLineupFromTalks < ActiveRecord::Migration
+class RemoveLineupFromTalks < ActiveRecord::Migration[7.0]
   def up
     remove_column :talks, :lineup
   end
