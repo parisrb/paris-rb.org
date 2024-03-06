@@ -21,8 +21,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_18_111323) do
     t.string "table"
     t.integer "month", limit: 2
     t.bigint "year"
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["item", "table", "month", "year"], name: "index_rails_admin_histories"
   end
 
@@ -30,10 +30,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_18_111323) do
     t.string "name"
     t.string "website"
     t.string "logo"
-    t.datetime "from", precision: nil
-    t.datetime "until", precision: nil
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
+    t.datetime "from"
+    t.datetime "until"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "talks", force: :cascade do |t|
@@ -42,14 +42,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_18_111323) do
     t.string "speaker_email"
     t.string "level"
     t.string "duration"
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.date "happened_at"
     t.string "slides"
     t.string "video_url"
     t.string "speaker_twitter"
     t.string "preferred_month_talk"
-    t.datetime "time_position", precision: nil
+    t.datetime "time_position"
     t.string "priority"
     t.index ["happened_at"], name: "index_talks_on_happened_at"
   end
@@ -59,18 +59,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_18_111323) do
     t.string "author"
     t.string "twitter_handle"
     t.string "cool_projects"
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
-    t.datetime "reset_password_sent_at", precision: nil
-    t.datetime "remember_created_at", precision: nil
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -82,8 +82,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_18_111323) do
     t.text "description"
     t.date "event_date"
     t.string "slug"
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["slug"], name: "index_videos_on_slug", unique: true
   end
 
