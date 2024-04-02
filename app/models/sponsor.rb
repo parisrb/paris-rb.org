@@ -18,6 +18,16 @@ class Sponsor < ApplicationRecord
   scope :current, ->{ where('until >= ? OR until IS NULL', Time.current) }
   scope :latest,  -> (count) { order(until: :desc).limit(count) }
 
+  def domain
+    return if website.blank?
+
+    website.gsub("https://", "").gsub("http://", "").gsub("www.", "")
+  end
+
+  def clearbit_logo_url
+    "https://logo.clearbit.com/#{domain}"
+  end
+
   rails_admin do
     list do
       field :name
