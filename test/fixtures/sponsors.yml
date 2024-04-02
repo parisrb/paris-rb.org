@@ -2,272 +2,224 @@
 one:
   name: Kard
   website: https://www.kard.eu/
-  logo: image/upload/v1669747221/pstvu0fjwx0txbkdy0tw.jpg
   from: <%= Time.current %>
   until: <%= Time.current + 1.month %>
 
 two:
   name: Numa
   website: https://paris-en.numa.co/
-  logo: v1465226571/dkajpqx60qirjmlhgit4.png
   from: <%= Time.current %>
   until: <%= Time.current + 1.month %>
 
 permanent:
   name: Scalingo
   website: http://scalingo.com
-  logo: image/upload/v1669753550/ixoxmmhpxfsvshnmmlyr.jpg
 
 19:
   name: Marcel.cab
   website: http://marcel.cab/
-  logo: v1417436734/adajhmgyr4twyzo9hxng.png
   from: "2014-12-01 00:00:00 +0100"
   until: "2014-12-31 00:00:00 +0100"
 10:
   name: Simplon
   website: http://simplon.co/
-  logo: v1391204349/ptfi68hqnduiaycr9khp.png
   from: "2013-01-30 00:00:00 +0100"
   until: "2014-01-30 00:00:00 +0100"
 11:
   name: Freelance Booking
   website: http://freelancebooking.pro
-  logo: v1391204333/qydnd1xyx1uqdohhhelh.jpg
   from: "2013-01-30 00:00:00 +0100"
   until: "2016-01-30 00:00:00 +0100"
 21:
   name: Breaz.io
   website: breaz.io
-  logo: v1417546253/mxewwl3bx4zxyevafopf.png
   from: "2015-10-06 00:00:00 +0200"
   until: "2015-11-02 00:00:00 +0100"
 16:
   name: Les Jeudis
   website: http://www.lesjeudis.com/
-  logo: v1401805761/ktsrb34eqqpcipyczeme.png
   from: "2014-06-03 00:00:00 +0200"
   until: "2015-06-01 00:00:00 +0200"
 9:
   name: Shopify
   website: http://www.shopify.com/
-  logo: v1391204362/thp1dfpwd6vtmecab4xw.png
   until: "2014-02-28 00:00:00 +0100"
 8:
   name: Google
   website: http://google.fr
-  logo: v1391204383/szqrpstuin4j2glxpaw5.jpg
   until: "2014-02-28 00:00:00 +0100"
 6:
   name: Human Coders
   website: http://humancoders.com/
-  logo: v1391204417/tqwgyeiof6bfspucndk7.png
   until: "2014-02-28 00:00:00 +0100"
 5:
   name: Jumboweb
   website: http://www.jumboweb.fr/
-  logo: v1391204433/esw3ihmiyjfkvz1e6fls.jpg
   until: "2014-02-28 00:00:00 +0100"
 4:
   name: Simplib
   website: http://simplib.com/
-  logo: v1391204446/m2e3zfhghxin4kc6r1tx.jpg
   until: "2014-02-28 00:00:00 +0100"
 14:
   name: Followanalytics
   website: http://follow-apps.com/
-  logo: v1401806153/rnvyzyijxnj2abqxezhl.png
   from: "2014-06-03 00:00:00 +0200"
   until: "2014-08-04 00:00:00 +0200"
 7:
   name: Mipise
   website: http://www.mipise.com/
-  logo: v1391204399/sriqrtn6uiylxoe4tuqu.png
   from: "2014-10-02 00:00:00 +0200"
   until: "2014-11-13 00:00:00 +0100"
 13:
   name: Appsdeck
   website: https://appsdeck.eu/
-  logo: v1399400070/iswlftjhkcztty0z3h0f.jpg
   until: "2014-06-02 00:00:00 +0200"
 15:
   name: Vodeclic
   website: http://www.vodeclic.com/fr
-  logo: v1401806411/xmyrl4ga2k8xkna2a2xk.png
   from: "2014-06-03 00:00:00 +0200"
   until: "2014-07-01 00:00:00 +0200"
 23:
   name: Vodeclic
   website: http://www.vodeclic.com/
-  logo: v1446212403/ws3hdjgnl2r8mc1gbi8t.png
   from: "2015-10-30 00:00:00 +0100"
   until: "2016-11-30 00:00:00 +0100"
 17:
   name: Fitnext
   website: http://www.fitnext.com/
-  logo: v1404129148/sccibzenhbux2x2wnacr.jpg
   from: "2014-07-01 00:00:00 +0200"
   until: "2014-08-05 00:00:00 +0200"
 20:
   name: "42"
   website: 42.fr
-  logo: v1417436824/hmj5puyypy2xplm2f3ch.png
   from: "2015-01-01 00:00:00 +0100"
   until: "2015-11-30 00:00:00 +0100"
 3:
   name: Epita
   website: http://epita.fr
-  logo: v1391204465/audlcyaxeqzrexxjypfe.jpg
   from: "2015-01-01 00:00:00 +0100"
   until: "2015-11-30 00:00:00 +0100"
 2:
   name: Epitech
   website: http://epitech.eu/
-  logo: v1391204477/awg3irvbyk6scb5hgl6p.png
   from: "2015-01-01 00:00:00 +0100"
   until: "2015-11-30 00:00:00 +0100"
 27:
   name: TopFive
   website: http://www.top-five.fr/
-  logo: v1459766143/fbrywuvbfcni4z43siev.png
   from: "2016-04-04 00:00:00 +0200"
   until: "2016-04-04 00:00:00 +0200"
 24:
   name: NUMA
   website: numa.paris
-  logo: v1448974934/dvxnlk4agrhrsjd9riz6.png
   from: "2015-12-01 00:00:00 +0100"
   until: "2015-12-31 00:00:00 +0100"
 28:
   name: Talent.io
   website: http://www.talent.io
-  logo: v1480585720/mdsxjottz54h4w0o6kcp.png
   from: "2016-12-01 00:00:00 +0100"
   until: "2016-12-31 00:00:00 +0100"
 30:
   name: Logmatic.io
   website: http://logmatic.io/
-  logo: v1469092690/cm1l8ccvsyc3mtsrkqri.png
   from: "2017-01-01 00:00:00 +0100"
   until: "2017-02-01 00:00:00 +0100"
 36:
   name: Hired
   website: https://hired.com
-  logo: v1493723823/jcqgwbl9wa3pz1u19pwa.png
   from: "2017-05-02 00:00:00 +0200"
   until: "2017-06-05 00:00:00 +0200"
 26:
   name: Le Wagon
   website: lewagon.org
-  logo: v1453219415/a8byeq0daj7cqjeaiyew.png
   from: "2016-10-03 00:00:00 +0200"
   until: "2016-10-31 00:00:00 +0100"
 31:
   name: Drivy
   website: drivy.com
-  logo: v1499171913/pd2wa7wseh7cabwn7scw.png
   from: "2017-06-27 00:00:00 +0200"
   until: "2017-07-28 00:00:00 +0200"
 33:
   name: KeyCoopt
   website: https://www.keycoopt.com/
-  logo: v1486409098/es4evknso7fp4bd5nrgs.png
   from: "2017-02-01 00:00:00 +0100"
   until: "2017-07-31 00:00:00 +0200"
 37:
   name: Kosmogo
   website: https://www.kosmogo.com/
-  logo: v1499172075/aq9rzykrxfkgs8gh4wmh.png
   from: "2017-07-03 00:00:00 +0200"
   until: "2018-07-04 00:00:00 +0200"
 38:
   name: Appaloosa
   website: https://www.appaloosa-store.com/
-  logo: v1504260280/onvqg6gtoznpi9hylwnx.png
   from: "2017-09-01 00:00:00 +0200"
   until: "2017-11-30 00:00:00 +0100"
 12:
   name: ChooseYourBoss
   website: http://chooseyourboss.com/?utm_source=MeetUp-Ruby-fevrier&utm_medium=link&utm_campaign=Meetup-ruby-fevrier
-  logo: image/upload/v1516631190/ezgcnxbxroddrqautujn.png
   from: "2018-01-22 00:00:00 +0100"
   until: "2019-01-23 00:00:00 +0100"
 32:
   name: Hexagonal Consulting
   website: http://hexagonalconsulting.com/
-  logo: v1483452876/wo1v9thtfx3dxf9d4ftv.png
   until: "2018-02-07 00:00:00 +0100"
 25:
   name: ESGI
   website: esgi.fr
-  logo: v1448974827/v1ad4nt4onljwoz5qvaz.jpg
   until: "2018-01-21 00:00:00 +0100"
 39:
   name: Freelance Academy
   website: https://freelance.academy/
-  logo: image/upload/v1512486078/lruei3fd2sntanspyxj1.png
   from: "2017-12-04 00:00:00 +0100"
   until: "2018-01-10 00:00:00 +0100"
 40:
   name: Microsoft
   website: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x3095443abcd&ls=Website&lsd=AzureWebsite
-  logo: image/upload/v1516201956/xlufj0bkhgk8krkbvdfu.png
   until: "2019-02-01 01:00:00 +0100"
 22:
   name: JobTeaser
   website: http://www.jobteaser.com/
-  logo: v1442851530/c3l8qdrgy8vho6fabjkn.png
   until: "2021-10-20 13:13:52 +0200"
 180:
   name: Matera
   website: https://www.matera.eu/fr
-  logo: image/upload/v1638468814/foh3mbiibonpgywiqobg.png
   from: "2022-05-30 23:21:00 +0200"
   until: "2022-06-21 21:39:00 +0200"
 147:
   name: Getaround
   website: https://www.getaround.com/
-  logo: image/upload/v1634728978/un6z1tjbcmnag1xj5lmb.jpg
   until: "2021-11-15 14:51:05 +0100"
 81:
   name: Captain Contrat
   website: https://www.captaincontrat.com/
-  logo: image/upload/v1572537659/ggcgjzdigax54vwjsihb.png
   until: "2021-12-02 18:49:40 +0100"
 114:
   name: Ada Tech School
   website: https://adatechschool.fr/
-  logo: image/upload/v1579868553/w1ihdjkeiyt6hf631moo.png
   until: "2021-10-20 13:12:54 +0200"
 50:
   name: Lifen
   website: https://www.lifen.fr
-  logo: image/upload/v1570176753/cbefnzmnwzvvn7ydyrei.png
   until: "2022-05-01 16:47:00 +0200"
 214:
   name: Squadracer
   website:
-  logo: image/upload/v1662485015/e5lqnrz3b3nppesa43t9.jpg
   from: "2022-09-05 19:20:00 +0200"
   until: "2022-09-14 19:21:00 +0200"
 49:
   name: Cheerz
   website: https://www.cheerz.com/
-  logo: image/upload/v1570176918/m5crjyklwtloyrduxv9h.png
   until: "2021-10-20 13:13:33 +0200"
 48:
   name: Stuart
   website: https://stuart.com/
-  logo: image/upload/v1570176968/nrj1ie4pzmb6uplk6cp2.png
   until: "2021-10-20 13:13:36 +0200"
 18:
   name: Aircall
   website: https://aircall.io/
-  logo: image/upload/v1512486499/l1utrpg3fisrwghhuduk.png
   until: "2022-05-29 23:21:00 +0200"
 181:
   name: Swile
   website: https://www.swile.co/en
-  logo: image/upload/v1655926954/tuhivmi6seagquugwen5.png
   from: "2022-06-21 21:40:00 +0200"
   until: "2022-07-14 21:40:00 +0200"
