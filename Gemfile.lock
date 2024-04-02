@@ -251,7 +251,7 @@ GEM
     os (1.1.4)
     paint (2.3.0)
     pg (1.5.4)
-    psych (5.1.1.1)
+    psych (5.1.2)
       stringio
     public_suffix (5.0.4)
     puma (6.4.2)
@@ -302,7 +302,7 @@ GEM
       activerecord (>= 6.1.5)
       activesupport (>= 6.1.5)
       i18n
-    rdoc (6.5.0)
+    rdoc (6.6.3.1)
       psych (>= 4.0.0)
     record_tag_helper (1.0.1)
       actionview (>= 5)
@@ -357,7 +357,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stringio (3.0.8)
+    stringio (3.1.0)
     sucker_punch (3.1.0)
       concurrent-ruby (~> 1.0)
     tailwindcss-rails (2.0.32-arm64-darwin)
