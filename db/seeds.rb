@@ -30,7 +30,7 @@ sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
 end
 # use Clearbit api to get the logo
 
-image = URI.open("https://logo.clearbit.com/#{sponsor.clearbit_logo_url}")
+image = URI.open(sponsor.clearbit_logo_url)
 sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
 sponsor.save!
 
@@ -48,14 +48,13 @@ sponsors[3..].each do |sponsor_attributes|
 
   puts sponsor.clearbit_logo_url
   begin
-    image = URI.open("https://logo.clearbit.com/#{sponsor.clearbit_logo_url}")
+    image = URI.open(sponsor.clearbit_logo_url)
     sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
     sponsor.save!
   rescue => e
     puts "logo not found for #{sponsor.name}"
   end
 end
-
 
 puts "created #{Sponsor.count} sponsors"
 
