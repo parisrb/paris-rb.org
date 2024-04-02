@@ -92,16 +92,9 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    carrierwave (3.0.5)
-      activemodel (>= 6.0.0)
-      activesupport (>= 6.0.0)
-      addressable (~> 2.6)
-      image_processing (~> 1.1)
-      marcel (~> 1.0.0)
-      ssrf_filter (~> 1.0)
     cd (1.0.1)
     clipboard (1.3.6)
-    cloudinary (1.27.0)
+    cloudinary (1.29.0)
       aws_cf_signer
       rest-client (>= 2.0.0)
     code (0.9.4)
@@ -134,8 +127,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    domain_name (0.5.20190701)
-      unf (>= 0.0.5, < 1.0.0)
+    domain_name (0.6.20240107)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -229,9 +221,9 @@ GEM
       actionpack (>= 3.2.0, < 7.2)
     method_source (1.0.0)
     methodfinder (2.2.5)
-    mime-types (3.5.1)
+    mime-types (3.5.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2023.1003)
+    mime-types-data (3.2024.0305)
     mini_magick (4.12.0)
     mini_mime (1.1.5)
     minitest (5.22.2)
@@ -330,7 +322,7 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.6)
-    ruby-vips (2.2.0)
+    ruby-vips (2.2.1)
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
     ruby_engine (2.0.0)
@@ -365,7 +357,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    ssrf_filter (1.1.2)
     stringio (3.0.8)
     sucker_punch (3.1.0)
       concurrent-ruby (~> 1.0)
@@ -385,9 +376,6 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.8.2)
     unicode-display_width (2.5.0)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -421,7 +409,6 @@ DEPENDENCIES
   bootsnap
   byebug (~> 11.1)
   capybara
-  carrierwave
   cloudinary
   coffee-rails
   debug
@@ -431,6 +418,7 @@ DEPENDENCIES
   enumerize
   faker
   faraday
+  image_processing (~> 1.2)
   importmap-rails
   irbtools
   jquery-rails
@@ -458,7 +446,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.2.0p0
 
 BUNDLED WITH
    2.4.5

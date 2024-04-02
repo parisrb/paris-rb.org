@@ -12,8 +12,12 @@ sponsors.first(2).each do |sponsor_attributes|
     s.from = Time.current
     s.until = Time.current + 2.months
   end
-  # we need to update the column directly because the uploader is not triggered
-  sponsor.update_column(:logo, sponsor_attributes['logo'])
+
+  # use Clearbit api to get the logo
+
+  image = URI.open("https://logo.clearbit.com/#{sponsor.clearbit_logo_url}")
+  sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
+  sponsor.save!
 end
 
 puts "create a permanent sponsor"
@@ -24,8 +28,11 @@ sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
   s.from = nil
   s.until = nil
 end
-# we need to update the column directly because the uploader is not triggered
-sponsor.update_column(:logo, sponsor_attributes['logo'])
+# use Clearbit api to get the logo
+
+image = URI.open("https://logo.clearbit.com/#{sponsor.clearbit_logo_url}")
+sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
+sponsor.save!
 
 puts "create a past sponsors"
 
@@ -36,8 +43,17 @@ sponsors[3..].each do |sponsor_attributes|
     s.from = Time.current - (months + 1).months
     s.until = Time.current - months.month
   end
-  # we need to update the column directly because the uploader is not triggered
-  sponsor.update_column(:logo, sponsor_attributes['logo'])
+
+  # use Clearbit api to get the logo
+
+  puts sponsor.clearbit_logo_url
+  begin
+    image = URI.open("https://logo.clearbit.com/#{sponsor.clearbit_logo_url}")
+    sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
+    sponsor.save!
+  rescue => e
+    puts "logo not found for #{sponsor.name}"
+  end
 end
 
 
