@@ -34,7 +34,7 @@
       - sponsors.each do |sponsor|
         - cache sponsor do
             = link_to sponsor.website, title: sponsor.name, target: "_blank" do
-              - if sponsor.logo.present?
+              - if sponsor.logo.attached?
                 = cl_image_tag sponsor.logo.key, width: 200, height: 160, crop: :fit, alt: sponsor.name, srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x"
               - else
                 = sponsor.name
