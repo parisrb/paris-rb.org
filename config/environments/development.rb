@@ -34,7 +34,10 @@ Rails.application.configure do
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
-  config.active_storage.service = :local
+  # In development we use local storage unless teh developer has set secret keys for cloudinary
+  # this ensure that everyone can simply clone the repo and start working without having to setup cloudinary
+  # but also allows the developer to test cloudinary locally if they have the keys
+  config.active_storage.service = ENV["CLOUDINARY_API_SECRET"].present? ? :cloudinary : :local
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
