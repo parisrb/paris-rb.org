@@ -1,4 +1,4 @@
 Cloudinary.config do |config|
-  config.cloud_name = "hcdr9ti7y"
+  config.cloud_name = "dhj1cqakd"
   config.secure = true
 end
