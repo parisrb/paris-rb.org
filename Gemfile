@@ -81,7 +81,6 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'carrierwave'
 gem 'cloudinary'
 gem 'coffee-rails'
 gem 'decent_exposure'
