@@ -1,4 +1,4 @@
-require 'simple_form/inputs/boolean_filter_input'
+require "simple_form/inputs/boolean_filter_input"
 
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
@@ -59,7 +59,7 @@ SimpleForm.setup do |config|
   config.boolean_style = :nested
 
   # Default class for buttons
-  config.button_class = 'btn'
+  config.button_class = "btn"
 
   # Method used to tidy up errors. Specify any Rails Array method.
   # :first lists the first message for each field.
@@ -70,7 +70,7 @@ SimpleForm.setup do |config|
   config.error_notification_tag = :div
 
   # CSS class to add for error notification helper.
-  config.error_notification_class = 'alert alert-error'
+  config.error_notification_class = "alert alert-error"
 
   # ID to add for error notification helper.
   # config.error_notification_id = nil
@@ -99,7 +99,7 @@ SimpleForm.setup do |config|
   # config.label_text = lambda { |label, required| "#{required} #{label}" }
 
   # You can define the class to use on all labels. Default is nil.
-  config.label_class = 'control-label'
+  config.label_class = "control-label"
 
   # You can define the class to use on all forms. Default is simple_form.
   # config.form_class = :simple_form
@@ -145,5 +145,5 @@ SimpleForm.setup do |config|
   # config.cache_discovery = !Rails.env.development?
 
   # Default class for inputs
-  config.input_class = 'form-control'
+  config.input_class = "form-control"
 end

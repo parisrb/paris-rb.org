@@ -3,8 +3,8 @@ module SimpleForm
     class BooleanFilterInput < CollectionSelectInput
       def input
         label_method, value_method = detect_collection_methods
-        collection = [[I18n.t('yes', scope: 'simple_form'), true],
-                      [I18n.t('no',  scope: 'simple_form'), false]]
+        collection = [ [ I18n.t("yes", scope: "simple_form"), true ],
+                      [ I18n.t("no",  scope: "simple_form"), false ] ]
 
         @builder.collection_select(attribute_name,
                                    collection,

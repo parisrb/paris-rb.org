@@ -6,9 +6,9 @@ class ApplicationController < ActionController::Base
     # during the transition period we can visit any page and add ?new=true to
     # see the new design (if it exists)
 
-    if params[:new] == 'true'
+    if params[:new] == "true"
       session[:site_design] = :new
-    elsif params[:new] == 'false'
+    elsif params[:new] == "false"
       session[:site_design] = nil
     end
 

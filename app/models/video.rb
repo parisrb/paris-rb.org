@@ -25,7 +25,7 @@ class Video < ApplicationRecord
 
   def provider
     return :vimeo if vimeo?
-    return :youtube if youtube?
+    :youtube if youtube?
   end
 
   def provider_id
@@ -36,7 +36,7 @@ class Video < ApplicationRecord
   end
 
   def short_description
-    description&.truncate(170, separator: ' ')
+    description&.truncate(170, separator: " ")
   end
 
   def self.ransackable_attributes(auth_object = nil)

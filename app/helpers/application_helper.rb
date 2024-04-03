@@ -1,9 +1,9 @@
 module ApplicationHelper
   def page_rel(page)
     if page.prev?
-      'next'
+      "next"
     elsif page.prev?
-      'prev'
+      "prev"
     end
   end
 end

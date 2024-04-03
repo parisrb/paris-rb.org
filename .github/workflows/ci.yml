@@ -9,6 +9,37 @@ on:
 concurrency: ci-${{ github.ref }}
 
 jobs:
+  scan_ruby:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Scan for security vulnerabilities in Ruby dependencies
+        run: bin/brakeman --no-pager
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Lint code for consistent style
+        run: bin/rubocop -f github
+
   test:
     name: Test
 
@@ -34,11 +65,12 @@ jobs:
 
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install Ruby
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: .ruby-version
           bundler-cache: true
 
       - name: Prepare database
