@@ -8,6 +8,7 @@ html lang="fr"
       meta name="google-site-verification" content="#{ENV["GOOGLE_WEB_TOOLS_ID"]}"
 
     = display_meta_tags reverse: true, site: t('site_name'), separator: '·'
+    = render 'application/favicon'
 
     = stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'
     = stylesheet_link_tag 'application'
