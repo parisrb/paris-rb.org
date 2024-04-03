@@ -17,5 +17,5 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
   end
 
-  ENV['DEBUG'] ? driven_by(:chrome) : driven_by(:headless_chrome)
+  ENV["DEBUG"] ? driven_by(:chrome) : driven_by(:headless_chrome)
 end

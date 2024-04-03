@@ -1,5 +1,5 @@
 class LineupController < ApplicationController
-  layout 'reveal'
+  layout "reveal"
 
   expose(:sponsors) { Sponsor.current }
   expose(:talks) { Talk.lineup }

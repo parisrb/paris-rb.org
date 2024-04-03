@@ -15,8 +15,8 @@
 class Sponsor < ApplicationRecord
   has_one_attached :logo
 
-  scope :current, ->{ where('until >= ? OR until IS NULL', Time.current) }
-  scope :latest,  -> (count) { order(until: :desc).limit(count) }
+  scope :current, -> { where("until >= ? OR until IS NULL", Time.current) }
+  scope :latest,  ->(count) { order(until: :desc).limit(count) }
 
   def domain
     return if website.blank?
@@ -40,9 +40,9 @@ class Sponsor < ApplicationRecord
             # this is a hack to display the Cloudinary image in the Rails Admin as we don't have a direct access
             # to the Cloudinary helper methods
             image_url = Rails.application.routes.url_helpers.rails_blob_url(bindings[:object].logo, only_path: true)
-            bindings[:view].tag(:img, src: image_url, width: 100, height: 80, style: 'object-fit: contain;')
+            bindings[:view].tag(:img, src: image_url, width: 100, height: 80, style: "object-fit: contain;")
           else
-            'No logo'
+            "No logo"
           end
         end
       end

@@ -69,9 +69,11 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
-  gem 'annotate'
-  gem 'dotenv-rails'
-  gem 'irbtools', require: 'irbtools/configure'
+  gem "annotate"
+  gem "dotenv-rails"
+  gem "irbtools", require: "irbtools/configure"
+  gem "brakeman", require: false
+  gem "rubocop-rails-omakase", require: false
 end
 
 group :test do
@@ -80,20 +82,20 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'cloudinary'
-gem 'coffee-rails'
-gem 'decent_exposure'
-gem 'devise'
-gem 'enumerize'
-gem 'jquery-rails'
-gem 'kaminari'
-gem 'meta-tags'
-gem 'rails-i18n'
-gem 'rails_admin'
-gem 'ransack'
-gem 'record_tag_helper'
-gem 'simple_form', '~> 5.0.0'
-gem 'sitemap_generator', require: false
-gem 'slim'
-gem 'sucker_punch'
-gem 'faraday'
+gem "cloudinary"
+gem "coffee-rails"
+gem "decent_exposure"
+gem "devise"
+gem "enumerize"
+gem "jquery-rails"
+gem "kaminari"
+gem "meta-tags"
+gem "rails-i18n"
+gem "rails_admin"
+gem "ransack"
+gem "record_tag_helper"
+gem "simple_form", "~> 5.0.0"
+gem "sitemap_generator", require: false
+gem "slim"
+gem "sucker_punch"
+gem "faraday"
