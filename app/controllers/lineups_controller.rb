@@ -1,4 +1,4 @@
-class LineupController < ApplicationController
+class LineupsController < ApplicationController
   layout "reveal"
 
   expose(:sponsors) { Sponsor.current }
