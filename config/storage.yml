@@ -8,6 +8,7 @@ local:
 
 cloudinary:
   service: Cloudinary
+  folder: <%= (ENV["IS_REVIEW_APP"] == "true") ? "review" : Rails.env %> # each environment will have its own folder in Cloudinary
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
 #   service: S3
