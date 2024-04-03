@@ -2,21 +2,21 @@
 #
 # Table name: talks
 #
-#  id                   :integer          not null, primary key
-#  title                :string
-#  speaker_name         :string
-#  speaker_email        :string
-#  level                :string
+#  id                   :bigint           not null, primary key
 #  duration             :string
+#  happened_at          :date
+#  level                :string
+#  preferred_month_talk :string
+#  priority             :string
+#  slides               :string
+#  speaker_email        :string
+#  speaker_name         :string
+#  speaker_twitter      :string
+#  time_position        :datetime
+#  title                :string
+#  video_url            :string
 #  created_at           :datetime
 #  updated_at           :datetime
-#  happened_at          :date
-#  slides               :string
-#  video_url            :string
-#  speaker_twitter      :string
-#  preferred_month_talk :string
-#  time_position        :datetime
-#  priority             :string
 #
 # Indexes
 #

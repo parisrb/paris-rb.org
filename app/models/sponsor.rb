@@ -2,12 +2,11 @@
 #
 # Table name: sponsors
 #
-#  id         :integer          not null, primary key
-#  name       :string
-#  website    :string
-#  logo       :string
+#  id         :bigint           not null, primary key
 #  from       :datetime
+#  name       :string
 #  until      :datetime
+#  website    :string
 #  created_at :datetime
 #  updated_at :datetime
 #

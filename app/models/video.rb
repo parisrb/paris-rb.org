@@ -2,13 +2,13 @@
 #
 # Table name: videos
 #
-#  id              :integer          not null, primary key
-#  vimeo_url       :string
-#  vimeo_thumbnail :string
-#  title           :string
+#  id              :bigint           not null, primary key
 #  description     :text
 #  event_date      :date
 #  slug            :string
+#  title           :string
+#  vimeo_thumbnail :string
+#  vimeo_url       :string
 #  created_at      :datetime
 #  updated_at      :datetime
 #
