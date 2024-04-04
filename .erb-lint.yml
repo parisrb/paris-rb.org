@@ -1,0 +1,13 @@
+---
+EnableDefaultLinters: true
+glob: "**/*.{html}{+*,}.erb"
+exclude:
+  - vendor/bundle/**/*
+  - node_modules/**/*
+  - tmp/**/*
+  - log/**/*
+
+EnableDefaultLinters: true
+linters:
+  ErbSafety:
+    enabled: true

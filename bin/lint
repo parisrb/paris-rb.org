@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Exit when any command fails
+set -e
+
+# Check erb file formatting autofix
+echo "Checking erb files..."
+bundle exec erblint --lint-all --autocorrect
+
+# Rubocop checks
+echo "Running rubocop..."
+bundle exec rubocop -A
+

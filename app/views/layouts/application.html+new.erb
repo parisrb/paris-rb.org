@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <% if ENV["GOOGLE_WEB_TOOLS_ID"] %>
-      <meta content="<%= ENV["GOOGLE_WEB_TOOLS_ID"] %>" name="google-site-verification" />
+      <meta content="<%= ENV["GOOGLE_WEB_TOOLS_ID"] %>" name="google-site-verification">
     <% end %>
 
     <%= display_meta_tags reverse: true, site: t('site_name'), separator: '·' %>
@@ -22,4 +22,3 @@
     </main>
   </body>
 </html>
-
