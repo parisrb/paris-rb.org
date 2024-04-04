@@ -1,0 +1,20 @@
+<%= simple_form_for talk, html: { class: 'form-horizontal', role: 'form' } do |f| %>
+  <%= f.input :title %>
+  <%= f.input :speaker_name %>
+  <%= f.input :speaker_email %>
+  <%= f.input :speaker_twitter %>
+  <%= f.input :preferred_month_talk, as: :select, collection: Talk.propose_upcoming_months.invert %>
+  <%= f.input :level, as: :radio_buttons %>
+  <%= f.input :duration, as: :radio_buttons %>
+
+  <div class="form-group">
+    <div class="col-sm-9 col-sm-offset-3">
+      <p class="text-left">
+        <a href="https://www.contributor-covenant.org/fr/version/2/0/code_of_conduct/" target="_blank">
+          <%= t('.accept_coc') %>
+        </a>
+      </p>
+      <%= f.button :submit, class: 'btn-default' %>
+    </div>
+  </div>
+<% end %>

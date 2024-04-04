@@ -1,0 +1,25 @@
+<section class="container">
+  <header>
+    <h1><%= t('.title') %></h1>
+  </header>
+
+  <div class="row">
+    <div class="col-sx-12 col-sm-6 col-sm-offset-3">
+      <%= simple_form_for resource, as: resource_name, url: session_path(resource_name), html: { class: 'form-horizontal', role: 'form' } do |f| %>
+        <%= f.input :email, required: false, autofocus: true %>
+        <%= f.input :password, required: false %>
+        <%= f.input :remember_me, as: :boolean, wrapper: :checkbox %>
+
+        <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+            <%= f.button :submit, t('.sign_in'), class: 'btn-default' %>
+          </div>
+        </div>
+
+        <div class="col-sm-offset-3">
+          <%= render 'devise/shared/links' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

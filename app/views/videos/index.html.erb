@@ -1,0 +1,40 @@
+<%# - title t('.title')
+- description t('.description') %>
+
+<div class="section section-page videos">
+  <div class="container">
+    <header>
+      <h1><%= t('.title') %></h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+          <%= render 'search_form' %>
+        </div>
+      </div>
+    </header>
+
+    <% videos.each_slice(2) do |videos_group| %>
+      <div class="row">
+        <% videos_group.each do |video| %>
+          <div class="col-xs-12 col-sm-5 <%= cycle('col-sm-offset-1', '') %>">
+            <%# - cache video do %> <!-- Caching is commented out in ERB -->
+              <%= content_tag_for :div, video do %>
+                <p class="thumb">
+                  <%= link_to video_path(video.slug) do %>
+                    <%= image_tag video.vimeo_thumbnail, width: 310, class: 'img-thumbnail' %>
+                  <% end %>
+                </p>
+                <p class="title">
+                  <%= link_to video.title, video_path(video.slug), class: 'link' %>
+                </p>
+                <p class="date">
+                  <%= time_ago_in_words video.event_date %>
+                </p>
+              <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+    <%= paginate videos, renderer: 'BootstrapRenderer' %>
+  </div>
+</div>
