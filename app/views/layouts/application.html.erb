@@ -9,32 +9,19 @@
 
   <%= display_meta_tags reverse: true, site: t('site_name'), separator: '·' %>
   <%= render 'application/favicon' %>
-
-  <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css' %>
-  <%= stylesheet_link_tag 'application' %>
   <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+  <%= yield :head %>
 </head>
 <body>
-  <%= render 'shared/navbar' %>
-  <div class="main-content">
-    <% if notice %>
-      <p class="notice"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert"><%= alert %></p>
-    <% end %>
+  <%= render 'navbar' %>
 
-    <%= yield %>
-  </div>
+  <%= yield %>
 
-  <footer>
-    <p>
-      <%= link_to t('project_on_github'), 'https://github.com/parisrb/rubyparis.org' %>
-      <%= link_to t('contact_maintainer'), 'https://twitter.com/happynoff' %>
-    </p>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  <%= render 'footer' %>
 </body>
 </html>
