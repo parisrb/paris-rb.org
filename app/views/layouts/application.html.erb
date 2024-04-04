@@ -11,6 +11,7 @@
   <%= render 'application/favicon' %>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <%= hotwire_livereload_tags if Rails.env.development? %>
 
   <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>

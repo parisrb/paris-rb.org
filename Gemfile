@@ -100,3 +100,5 @@ gem "simple_form", "~> 5.0.0"
 gem "sitemap_generator", require: false
 gem "sucker_punch"
 gem "faraday"
+
+gem "hotwire-livereload", "~> 1.3", :group => :development
