@@ -40,6 +40,9 @@ jobs:
       - name: Lint code for consistent style
         run: bin/rubocop -f github
 
+      - name: erb-lint
+        run: bundle exec erblint --lint-all
+
   test:
     name: Test
 
