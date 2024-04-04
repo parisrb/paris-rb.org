@@ -1,0 +1,20 @@
+<section>
+  <h2>Talks &lt;3</h2>
+
+  <table>
+    <tbody>
+      <tr>
+        <th>ParisRB</th>
+        <td>Welcome</td>
+      </tr>
+      <% talks.each do |talk| %>
+        <tr>
+          <th><%= talk.speaker_name %></th>
+          <td><%= talk.title_with_emoji %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <p>[Food, Drinks, Networking] at some point ;)</p>
+</section>

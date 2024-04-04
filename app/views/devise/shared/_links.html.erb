@@ -1,0 +1,8 @@
+<ul class="devise-links list-unstyled">
+  <% unless controller_name == 'sessions' %>
+    <li><%= link_to t('.sign_in'), new_session_path(resource_name) %></li>
+  <% end %>
+  <% if devise_mapping.recoverable? && !controller_name.in?(['passwords', 'registrations']) %>
+    <li><%= link_to t('.forgot_password'), new_password_path(resource_name) %></li>
+  <% end %>
+</ul>

@@ -127,7 +127,7 @@ fr:
         title: Ce que nos invités en disent
       show-off:
         active_members: Plus de 100 membres présents chaque mois.
-        members_count: >-
+        members_count_html: >-
           Plus de 3000 membres sur %{link}
 
         title: Le plus grand meetup Ruby d'Europe !

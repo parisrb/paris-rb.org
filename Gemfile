@@ -97,6 +97,5 @@ gem "ransack"
 gem "record_tag_helper"
 gem "simple_form", "~> 5.0.0"
 gem "sitemap_generator", require: false
-gem "slim"
 gem "sucker_punch"
 gem "faraday"
