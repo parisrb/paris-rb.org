@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   resources :videos, only: [ :index, :show ]
   resources :talks, only: [ :index, :create ]
+  resource :lineup, only: [ :show ]
 
-  get "/lineup" => "lineup#show"
   get "/communique_2022" => "welcome#communique"
 
   root to: "welcome#index"
