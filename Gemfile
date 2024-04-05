@@ -103,3 +103,5 @@ gem "sucker_punch"
 gem "faraday"
 
 gem "ahoy_matey", "~> 5.1"
+
+gem "lucide-rails", "~> 0.4.0"
