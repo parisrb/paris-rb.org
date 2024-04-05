@@ -76,6 +76,7 @@ group :development do
   gem "annotate"
   gem "dotenv-rails"
   gem "irbtools", require: "irbtools/configure"
+  gem "hotwire-livereload", "~> 1.3"
 end
 
 group :test do
