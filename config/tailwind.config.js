@@ -14,5 +14,24 @@ module.exports = {
       },
     },
   },
+  daisyui: {
+    themes: [
+      {
+        parisrb: {
+          primary: "#D62828",
+          "primary-content": "#FFFFFF",
+          secondary: "#F4A261",
+          accent: "#10B981",
+          neutral: "#EFE7E9",
+          "base-100": "#FFFFFF",
+          "base-200": "#EFE7E9",
+          info: "#2A9D8F",
+          success: "#22C55E",
+          warning: "#F4A261",
+          error: "#E76F51",
+        },
+      },
+    ],
+  },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };
