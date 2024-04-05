@@ -236,6 +236,8 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     looksee (5.0.0)
+    lucide-rails (0.4.0)
+      railties (>= 4.1.0)
     mail (2.8.1)
       mini_mime (>= 0.1.1)
       net-imap
@@ -481,6 +483,7 @@ DEPENDENCIES
   jquery-rails
   jsbundling-rails
   kaminari
+  lucide-rails (~> 0.4.0)
   meta-tags
   pg (~> 1.1)
   puma
