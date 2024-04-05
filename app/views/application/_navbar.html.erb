@@ -1,0 +1,48 @@
+<div class="navbar bg-base-100 lg:px-8 justify-between flex items-center h-20 border-b border-base-200 sticky top-0 z-50">
+  <div class="flex justify-start w-fit shrink-0">
+    <%= link_to root_path, class: "" do %>
+      <%= image_tag 'parisrb-logo-horizontal.png', class: "h-8 md:h-12" %>
+    <% end %>
+    <!--<a class="btn btn-ghost text-xl">daisyUI</a>-->
+  </div>
+  <div class="flex justify-end gap-2 lg:gap-4 w-full">
+    <ul class="menu menu-horizontal px-1 hidden md:flex">
+      <li>
+        <%= link_to t("navbar.videos"), videos_path %>
+      </li>
+      <li>
+        <%= link_to t("navbar.coc"), "#" %>
+      </li>
+      <li>
+        <%= link_to t("navbar.sponsors"), "/#sponsors" %>
+      </li>
+    </ul>
+    <a class="btn btn-primary hidden md:flex"><%= t("navbar.suggest_talk") %></a>
+
+    <div class="items-center hidden md:flex gap-1">
+      <%= link_to "FR", "#", class: "" %>
+      /
+      <%= link_to "EN", "#", class: "link-neutral" %>
+    </div>
+  </div>
+  <div class="dropdown dropdown-end">
+    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+      <%= lucide_icon('menu', class: "h-6 w-6") %>
+    </div>
+    <ul tabindex="0" class="menu menu-lg md:menu-md dropdown-content mt-5 z-[1] p-4 shadow-xl bg-base-100 md:rounded-box w-screen !-right-2 sm:w-72">
+      <li>
+      <%= link_to t("navbar.videos"), videos_path %>
+      </li>
+      <li>
+        <%= link_to t("navbar.coc"), "#" %>
+      </li>
+      <li>
+        <%= link_to t("navbar.sponsors"), "/#sponsors" %>
+      </li>
+      <div class="divider"></div>
+      <li>
+        <%= link_to t("navbar.suggest_talk"), talks_path, class: "link-primary" %>
+      </li>
+    </ul>
+  </div>
+</div>
