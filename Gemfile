@@ -76,6 +76,7 @@ group :development do
   gem "annotate"
   gem "dotenv-rails"
   gem "irbtools", require: "irbtools/configure"
+  gem "hotwire-livereload", "~> 1.3"
 end
 
 group :test do
@@ -101,4 +102,5 @@ gem "sitemap_generator", require: false
 gem "sucker_punch"
 gem "faraday"
 
-gem "hotwire-livereload", "~> 1.3", :group => :development
+
+gem "lucide-rails", "~> 0.4.0"
