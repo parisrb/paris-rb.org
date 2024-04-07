@@ -100,3 +100,4 @@ gem "faraday"
 
 
 gem "lucide-rails", "~> 0.4.0"
+gem "avo", ">= 3.2"
