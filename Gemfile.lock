@@ -51,10 +51,6 @@ GEM
       globalid (>= 0.3.6)
     activemodel (7.0.8.1)
       activesupport (= 7.0.8.1)
-    activemodel-serializers-xml (1.0.2)
-      activemodel (> 5.x)
-      activesupport (> 5.x)
-      builder (~> 3.1)
     activerecord (7.0.8.1)
       activemodel (= 7.0.8.1)
       activesupport (= 7.0.8.1)
@@ -256,7 +252,6 @@ GEM
     mini_mime (1.1.5)
     minitest (5.22.2)
     msgpack (1.7.2)
-    nested_form (0.3.2)
     net-imap (0.4.10)
       date
       net-protocol
@@ -316,12 +311,6 @@ GEM
     rails-i18n (7.0.8)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
-    rails_admin (3.1.2)
-      activemodel-serializers-xml (>= 1.0)
-      kaminari (>= 0.14, < 2.0)
-      nested_form (~> 0.3)
-      rails (>= 6.0, < 8)
-      turbo-rails (~> 1.0)
     railties (7.0.8.1)
       actionpack (= 7.0.8.1)
       activesupport (= 7.0.8.1)
@@ -394,14 +383,6 @@ GEM
     ruby_engine (2.0.0)
     ruby_version (1.0.3)
     rubyzip (2.3.2)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     selenium-webdriver (4.16.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -427,7 +408,6 @@ GEM
     sucker_punch (3.1.0)
       concurrent-ruby (~> 1.0)
     thor (1.3.1)
-    tilt (2.3.0)
     timeout (0.4.1)
     turbo-rails (1.5.0)
       actionpack (>= 6.0.0)
@@ -489,12 +469,10 @@ DEPENDENCIES
   puma
   rails (~> 7.0.8)
   rails-i18n
-  rails_admin
   ransack
   record_tag_helper
   redis (~> 5.0)
   rubocop-rails-omakase
-  sassc-rails
   selenium-webdriver
   simple_form (~> 5.0.0)
   sitemap_generator
