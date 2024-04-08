@@ -98,11 +98,6 @@ fr:
       title: Proposer un talk
       video: vidéo
 
-  videos:
-    index:
-      description: Toutes les vidéos des talks du meetup Paris.rb
-      title: Vidéos des talks
-
   sponsoring:
     show:
       description: Sponsoriser le Meetup Paris.rb

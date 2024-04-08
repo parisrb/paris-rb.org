@@ -1,8 +1,18 @@
-<%= search_form_for search, url: videos_path, builder: SimpleForm::FormBuilder, html: { role: 'form' } do |f| %>
-  <%= f.input :title_cont, wrapper: :input_group do %>
-    <%= f.input_field :title_cont %>
-    <%= content_tag :span, class: 'input-group-btn' do %>
-      <%= f.button :button, class: 'btn-default' %>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <%= search_form_for @search, url: videos_path,
+            html: {
+              data: {
+                turbo_frame: "videos",
+                controller: "form"
+              },
+              role: 'form',
+              class: "sm:col-start-2 lg:col-start-3 flex items-center gap-4 w-full justify-end" } do |f| %>
+    <%= f.label :title_or_description_cont, class: "input input-bordered flex items-center gap-2 sm:max-w-sm w-full" do %>
+      <%= f.search_field :title_or_description_cont,
+              class: "grow",
+              placeholder: t('.search_placeholder'),
+              data: {action: "debounced:keyup->form#submit"} %>
+      <%= lucide_icon "search", class: "w-5 h-5 opacity-70" %>
     <% end %>
   <% end %>
-<% end %>
+</div>
