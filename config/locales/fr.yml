@@ -1,10 +1,12 @@
 fr:
   welcome:
     index:
-      title: Paris.rb <3
-      subtitle: Du Ruby, des développeurs et des développeuses
-      subtitle_2: tous les premiers mardi du mois
-      hero_cta: Participer
+      title_html: Paris<span class="text-primary">.rb</span>
+      subtitle_html: "Regroupe la communauté des <highlighed>développeurs et développeuses Ruby</highlighed> francophones autour des valeurs du partage, de l'entraide et des rencontres."
+      subtitle_2_html: "Le meetup Paris.rb c'est <highlighed>le premier mardi de chaque mois</highlighed>, une occasion unique de se rencontrer IRL et d'échanger."
+      hero_cta: Participer au prochain meetup
+      join_us_on: Rejoingnez la communauté sur
+      twitch_html: "Rejoignez-nous sur <a href='https://www.twitch.tv/parisrb'>Twitch</a> pour suivre les talks en direct !"
   navbar:
     coc: Code de conduite
     videos: Vidéos

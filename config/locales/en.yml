@@ -2,8 +2,8 @@ en:
   welcome:
     index:
       title: Paris.rb <3
-      subtitle: Ruby, developers and developers
-      subtitle_2: every first Tuesday of the month
+      subtitle_html: brings together the French-speaking Ruby developers community around the values of sharing, mutual aid and meetings.
+      subtitle_2_html: "Paris.rb is <highlighed>the first Tuesday of each month</highlighed>, a unique opportunity to meet IRL and exchange."
       hero_cta: Participate
   navbar:
     coc: Code of conduct
