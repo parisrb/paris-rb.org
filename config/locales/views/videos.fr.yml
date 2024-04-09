@@ -1,0 +1,8 @@
+fr:
+  videos:
+    index:
+      description: Toutes les vidéos des talks du meetup Paris.rb
+      title: Vidéos des talks
+    search_form:
+      search_placeholder: Titre, description, speaker...
+      aria_search: Recherche de vidéos par titre, description, speaker...

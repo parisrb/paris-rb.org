@@ -12,6 +12,17 @@ module.exports = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "1rem",
+          md: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
     },
   },
   daisyui: {
@@ -25,6 +36,7 @@ module.exports = {
           neutral: "#EFE7E9",
           "base-100": "#FFFFFF",
           "base-200": "#EFE7E9",
+          "base-300": "#D1CDD1",
           info: "#2A9D8F",
           success: "#22C55E",
           warning: "#F4A261",
