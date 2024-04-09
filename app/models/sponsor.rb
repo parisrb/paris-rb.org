@@ -24,6 +24,8 @@ class Sponsor < ApplicationRecord
   end
 
   def clearbit_logo_url
+    return "test/fixtures/files/logo.png" if Rails.env.test? # avoids making requests to Clearbit in tests during the database smoke tests
+
     "https://logo.clearbit.com/#{domain}"
   end
 end
