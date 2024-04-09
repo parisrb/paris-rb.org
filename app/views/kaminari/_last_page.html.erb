@@ -2,7 +2,8 @@
 <%# current_page: a page object for the currently displayed page %>
 <%# total_pages: total number of pages %>
 <%# per_page: number of items to fetch per page %>
-<%# remote: data-remote %>
-<li class="<%= 'disabled' if current_page.last? %>">
-  <%= link_to t('views.pagination.last'), url, remote: remote %>
-</li>
+
+<%= link_to url, class: class_names("relative inline-flex items-center rounded-r-md px-2 py-2 text-base-300 ring-1 ring-inset ring-base-300 hover:bg-base-200 focus:z-20 focus:outline-offset-0") do %>
+  <span class="sr-only"><%= t('components.pagination.last.aria_label') %></span>
+  <%= lucide_icon "chevrons-right", class: "w-4 h-4", "aria-hidden": true %>
+<% end %>
