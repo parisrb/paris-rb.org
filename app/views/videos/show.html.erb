@@ -3,29 +3,9 @@
   description @video.short_description
 %>
 
-<div class="section section-page video">
-  <div class="container">
-    <header>
-      <h1><%= @video.title %></h1>
-    </header>
+<div class="container pt-12 pb-20">
+  <%= back_to t(".back"), :back, class: "mb-8" %>
+  <h1 class="text-center mb-8"><%= @video.title %></h1>
 
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="embed-container">
-          <%= render "videos/#{@video.provider}", video: @video if @video.provider %>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="video-description col-md-6 col-md-offset-3">
-        <%= simple_format @video.description %>
-      </div>
-    </div>
-    <div class="row">
-      <div class="video-event-date col-md-6 col-md-offset-3 text-center text-muted">
-        <%= time_ago_in_words @video.event_date %>
-      </div>
-    </div>
-  </div>
+  <%= render "videos/#{@video.provider}", video: @video if @video.provider %>
 </div>

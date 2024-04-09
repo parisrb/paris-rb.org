@@ -6,3 +6,9 @@ fr:
     search_form:
       search_placeholder: Titre, description, speaker...
       aria_search: Recherche de vidéos par titre, description, speaker...
+    show:
+      back: Retour à la liste des vidéos
+    youtube:
+      play_video_aria: "Voir la vidéo : %{title}"
+      button_label: "Voir la vidéo"
+      link: "Voir la vidéo sur YouTube"
