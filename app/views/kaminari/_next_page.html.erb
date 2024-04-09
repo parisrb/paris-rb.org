@@ -4,5 +4,5 @@
 <%# per_page: number of items to fetch per page %>
 <%# remote: data-remote %>
 <li class="<%= class_names("join-item btn", 'btn-disabled': current_page.last?) %>">
-  <%= link_to t('views.pagination.next'), url, rel: 'next', remote: remote %>
+  <%= link_to t('components.pagination.next'), url, rel: 'next', remote: remote %>
 </li>

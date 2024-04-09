@@ -3,7 +3,7 @@ import "./controllers";
 
 // add the ability to debounce events in the html attributes debounced:keyup->form#submit
 import debounced from "debounced";
-debounced.initialize();
+debounced.initialize(debounced.defaultEventNames, { wait: 100 });
 
 // apply view transition on turbo frame
 addEventListener("turbo:before-frame-render", (event) => {
