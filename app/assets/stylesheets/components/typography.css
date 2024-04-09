@@ -6,4 +6,8 @@
   h2 {
     @apply text-2xl font-semibold;
   }
+
+  highlighed {
+    @apply font-semibold;
+  }
 }
