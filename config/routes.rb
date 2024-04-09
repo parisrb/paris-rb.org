@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  mount RailsAdmin::Engine => "/admin", as: "rails_admin"
+  # authenticate :user, ->(u) { u.admin } do
+  authenticate :user do
+    mount Avo::Engine, at: Avo.configuration.root_path
+  end
 
   resources :videos, only: [ :index, :show ]
   resources :talks, only: [ :index, :create ]

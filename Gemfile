@@ -43,9 +43,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-# Use Sass to process CSS
-gem "sassc-rails"
-
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
 
@@ -94,7 +91,6 @@ gem "jquery-rails"
 gem "kaminari"
 gem "meta-tags"
 gem "rails-i18n"
-gem "rails_admin"
 gem "ransack"
 gem "record_tag_helper"
 gem "simple_form", "~> 5.0.0"
@@ -105,3 +101,4 @@ gem "faraday"
 gem "ahoy_matey", "~> 5.1"
 
 gem "lucide-rails", "~> 0.4.0"
+gem "avo", ">= 3.2"

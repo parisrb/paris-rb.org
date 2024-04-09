@@ -42,18 +42,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_07_192602) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "rails_admin_histories", force: :cascade do |t|
-    t.text "message"
-    t.string "username"
-    t.integer "item"
-    t.string "table"
-    t.integer "month", limit: 2
-    t.bigint "year"
-    t.datetime "created_at", precision: nil
-    t.datetime "updated_at", precision: nil
-    t.index ["item", "table", "month", "year"], name: "index_rails_admin_histories"
-  end
-
   create_table "ahoy_events", force: :cascade do |t|
     t.bigint "visit_id"
     t.bigint "user_id"
