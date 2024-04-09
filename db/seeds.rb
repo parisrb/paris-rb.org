@@ -15,7 +15,7 @@ sponsors.first(2).each do |sponsor_attributes|
 
   # use Clearbit api to get the logo
 
-  image = URI.open("https://logo.clearbit.com/#{sponsor.clearbit_logo_url}")
+  image = URI.open(sponsor.clearbit_logo_url)
   sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
   sponsor.save!
 end
