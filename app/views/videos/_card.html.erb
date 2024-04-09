@@ -2,7 +2,7 @@
 
 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
   <%= link_to video_path(video.slug), target: "_top" do %>
-    <%= image_tag video.vimeo_thumbnail, class: 'w-full h-48 object-cover' %>
+    <%= image_tag video.vimeo_thumbnail, class: 'w-full h-48 object-cover', style: "view-transition-name: #{dom_id(video, :preview)}" %>
   <% end %>
   <div class="p-4">
     <h2 class="font-semibold"><%= video.title %></h2>
