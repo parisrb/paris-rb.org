@@ -5,12 +5,9 @@ class AdminTest < ApplicationSystemTestCase
     @admin = users(:admin)
   end
 
-  test "sign in admin and visit the admin" do
-    visit rails_admin.dashboard_path
-    fill_in "user[email]", with: @admin.email
-    fill_in "user[password]", with: "password"
-    click_on "Me connecter"
-    assert_selector "h1", text: "Administration"
+  test "only authenticated admin can access" do
+    visit avo.resources_users_path
+    assert_current_path new_user_session_path
   end
 
   class AuthenticatedAdminTest < ApplicationSystemTestCase
@@ -19,18 +16,18 @@ class AdminTest < ApplicationSystemTestCase
     end
 
     test "visit the sponsors" do
-      visit rails_admin.index_path("sponsor")
-      assert_selector "h1", text: "Liste des Sponsor"
+      visit avo.resources_sponsors_path
+      assert_selector "[data-target='title'] span", text: "Sponsors"
     end
 
     test "visit the videos" do
-      visit rails_admin.index_path("video")
-      assert_selector "h1", text: "Liste des Video"
+      visit avo.resources_videos_path
+      assert_selector "[data-target='title'] span", text: "Videos"
     end
 
     test "visit the talks" do
-      visit rails_admin.index_path("talk")
-      assert_selector "h1", text: "Liste des Talk"
+      visit avo.resources_talks_path
+      assert_selector "[data-target='title'] span", text: "Talks"
     end
   end
 end
