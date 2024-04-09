@@ -122,4 +122,8 @@ class Talk < ApplicationRecord
   rescue => e
     Rails.logger.error "Couldn't send slack notification because of error: #{e.class} #{e.message}"
   end
+
+  def self.ransackable_associations(auth_object = nil)
+    []
+  end
 end

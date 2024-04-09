@@ -122,6 +122,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.20.2.tgz#9c907b21e30a52db959ba4f80bb01a0cc403d5cc"
   integrity sha512-N49X4lJX27+l9jbLKSqZ6bKNjzQvHaT8IIFUy+YIqmXQdjYCToGWwOItDrfby14c78aDd5NHQl29xingXfCdLQ==
 
+"@hotwired/stimulus@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@hotwired/stimulus/-/stimulus-3.2.2.tgz#071aab59c600fed95b97939e605ff261a4251608"
+  integrity sha512-eGeIqNOQpXoPAIP7tC1+1Yc1yl1xnwYqg+3mzqxyrbE5pg5YFBZcA6YoTiByJB6DKAEsiWtl6tjTJS4IYtbB7A==
+
 "@hotwired/turbo-rails@^8.0.4":
   version "8.0.4"
   resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-8.0.4.tgz#d224f524a9e33fe687cec5d706054eb6fe13fa5b"
@@ -384,6 +389,11 @@ daisyui@^4.10.0:
     culori "^3"
     picocolors "^1"
     postcss-js "^4"
+
+debounced@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/debounced/-/debounced-1.0.0.tgz#f27b755b072a1579843a6a02eaaf8e165d24ff48"
+  integrity sha512-oPEzLE+9mys3GSFWwfstDsDfTuKq8Sqtywulu+ROhqa9ovJQ7/fG3qb0ZBZMXqEitxwvcrjkfQgg77VmjDxNUw==
 
 didyoumean@^1.2.2:
   version "1.2.2"

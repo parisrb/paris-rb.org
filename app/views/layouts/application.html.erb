@@ -11,6 +11,8 @@
   <%= render 'application/favicon' %>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <meta name="view-transition" content="same-origin">
+  <meta name="turbo-cache-control" content="no-cache">
   <%= hotwire_livereload_tags if Rails.env.development? %>
 
   <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>

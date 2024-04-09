@@ -1,0 +1,5 @@
+@layer components {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+}

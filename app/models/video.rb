@@ -71,6 +71,6 @@ class Video < ApplicationRecord
   end
 
   def self.ransackable_associations(auth_object = nil)
-    [ :id, :title, :description, :slug ]
+    []
   end
 end
