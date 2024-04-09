@@ -4,7 +4,8 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.4",
-    "debounced": "^1.0.0"
+    "debounced": "^1.0.0",
+    "lite-youtube-embed": "^0.3.2"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",

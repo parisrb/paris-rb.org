@@ -624,6 +624,11 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
+lite-youtube-embed@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/lite-youtube-embed/-/lite-youtube-embed-0.3.2.tgz#d43490743d93dd977fe18814c45d20f76ff2580a"
+  integrity sha512-b1dgKyF4PHhinonmr3PB172Nj0qQgA/7DE9EmeIXHR1ksnFEC2olWjNJyJGdsN2cleKHRjjsmrziKlwXtPlmLQ==
+
 lodash.castarray@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.castarray/-/lodash.castarray-4.4.0.tgz#c02513515e309daddd4c24c60cfddcf5976d9115"

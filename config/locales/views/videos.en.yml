@@ -1,0 +1,14 @@
+en:
+  videos:
+    index:
+      description: All the videos of the Paris.rb meetup talks
+      title: Videos of the talks
+    search_form:
+      search_placeholder: Title, description, speaker...
+      aria_search: Search videos by title, description, speaker...
+    show:
+      back: Back to the list of videos
+    youtube:
+      play_video_aria: "Watch the video: %{title}"
+      button_label: "Watch the video"
+      link: "Watch the video on YouTube"

@@ -1,8 +1,23 @@
-<iframe src="https://www.youtube.com/embed/<%= video.provider_id %>?modestbranding=1&rel=0&hl=fr-FR"
-        width="560"
-        height="315"
-        title="<%= video.title %>"
-        frameborder="0"
-        controls="1"
-        allowfullscreen>
-</iframe>
+<div class="flex flex-col gap-8">
+  <lite-youtube class="mx-auto w-full" videoid="<%= video.provider_id %>" style="<%= "background-image: url('https://i.ytimg.com/vi/#{video.provider_id}/hqdefault.jpg'); view-transition-name: #{dom_id(video, :preview)};" %>">
+    <a href="https://youtube.com/watch?v=<%= video.provider_id %>" target="_blank" class="lty-playbtn" title="<%= t(".button_label") %>">
+      <span class="lyt-visually-hidden"><%= t(".play_video_aria", title: video.title) %>  </span>
+    </a>
+  </lite-youtube>
+
+  <div role="tablist" class="tabs tabs-lifted">
+    <input type="radio" name="video_information_tab" role="tab" class="tab" aria-label="Description" checked>
+    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+      <h2 class="mb-8"><%= video.title %></h2>
+      <p class="mb-8"><%= video.description %></p>
+      <%= link_to video.vimeo_url, class: "link flex items-center gap-2", target: "_blank" do %>
+        <%= lucide_icon("youtube", "aria-hidden": true) %>
+        <%= t(".link") %>
+      <% end %>
+
+    </div>
+
+    <input type="radio" name="video_information_tab" role="tab" class="tab" aria-label="Transcription">
+    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">Coming soon ...</div>
+  </div>
+</div>
