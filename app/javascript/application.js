@@ -1,5 +1,6 @@
 import "@hotwired/turbo-rails";
 import "./controllers";
+import "lite-youtube-embed";
 
 // add the ability to debounce events in the html attributes debounced:keyup->form#submit
 import debounced from "debounced";
