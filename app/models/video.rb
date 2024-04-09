@@ -69,4 +69,8 @@ class Video < ApplicationRecord
   def set_slug
     self.slug = title.parameterize if slug.blank?
   end
+
+  def self.ransackable_associations(auth_object = nil)
+    [ :id, :title, :description, :slug ]
+  end
 end
