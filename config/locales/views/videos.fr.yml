@@ -12,3 +12,6 @@ fr:
       play_video_aria: "Voir la vidéo : %{title}"
       button_label: "Voir la vidéo"
       link: "Voir la vidéo sur YouTube"
+    card:
+      thumbnail_alt: "Vignette de la vidéo : %{title}"
+      watch_video: "Voir la vidéo : %{title}"
