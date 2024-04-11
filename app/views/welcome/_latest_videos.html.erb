@@ -1,0 +1,16 @@
+<section id="latest-videos" class="container flex flex-col gap-8">
+  <div>
+    <h2 class="text-center text-4xl text-primary mb-6"><%= t(".title") %></h2>
+    <div class="text-center"><%= t(".subtitle") %></div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <% videos.each do |video| %>
+      <%= render partial: "videos/compact_card", locals: {video: video} %>
+    <% end %>
+  </div>
+  <%= link_to videos_path, class: 'link link-primary self-end flex items-center gap-2' do %>
+    <%= t('.see_all') %>
+    <%= lucide_icon("move-right") %>
+  <% end %>
+
+</section>
