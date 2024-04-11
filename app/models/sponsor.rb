@@ -12,10 +12,17 @@
 #
 
 class Sponsor < ApplicationRecord
+  # Associations
   has_one_attached :logo
 
+  # Validations
+  validates :website, presence: true
+  validates_format_of :website, with: /\A#{URI::DEFAULT_PARSER.make_regexp([ "http", "https" ])}\z/, message: "is not a valid URL", allow_blank: true
+
+  # Scopes
   scope :current, -> { where("until >= ? OR until IS NULL", Time.current) }
   scope :latest,  ->(count) { order(until: :desc).limit(count) }
+  scope :randomize, -> { order("random()") }
 
   def domain
     return if website.blank?

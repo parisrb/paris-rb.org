@@ -26,4 +26,12 @@ module ApplicationHelper
       concat(content_tag(:span, text)).concat(lucide_icon("external-link", class: "w-[1em] h-[1em]"))
     end
   end
+
+  def safe_website(url)
+    uri = URI.parse(url)
+    return nil unless uri.is_a?(URI::HTTP) || uri.is_a?(URI::HTTPS)
+    url
+  rescue URI::InvalidURIError
+    nil
+  end
 end

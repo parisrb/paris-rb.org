@@ -1,4 +1,6 @@
 fr:
+  or: ou
+  by: par
   welcome:
     index:
       title_html: Paris<span class="text-primary">.rb</span>
@@ -6,7 +8,26 @@ fr:
       subtitle_2_html: "Le meetup Paris.rb c'est <highlighed>le premier mardi de chaque mois</highlighed>, une occasion unique de se rencontrer IRL et d'échanger."
       hero_cta: Participer au prochain meetup
       join_us_on: Rejoingnez la communauté sur
-      twitch_html: "Rejoignez-nous sur <a href='https://www.twitch.tv/parisrb'>Twitch</a> pour suivre les talks en direct !"
+      twitch_html: "Rejoignez-nous sur <a href='https://www.twitch.tv/parisrb'>Twitch</a> pour suivre les talks en direct !"
+      suggest_talk: proposer un talk
+    latest_videos:
+      title: Derniers talks en vidéo
+      subtitle: Toutes les présentations sont filmées, disponible en live sur Twitch et en replay sur YouTube.
+      see_all: Voir toutes les vidéos
+    sponsors:
+      title: Nos sponsors
+      subtitle: Merci à nos derniers sponsors pour leur soutien.
+      sponsor_an_event: Vous souhaitez renforcer votre visibilité dans la communauté Ruby ? Sponsorisez un événement Paris.rb !
+      sponsor_cta: Sponsoriser
+      see_all: Voir tous les sponsors de Paris.rb
+    next_meetup:
+      title: Prochain meetup
+      subtitle_html: Rejoins nous pour le prochain <highlighed>meetup le %{date}</highlighed>.
+      line_up_description: "Au programme nous avons à ce jour les talks suivants :"
+      see_past_videos: Voir les videos des meetups précédents
+      no_line_up_html: Aucun talk n'a encore été annoncé pour ce meetup. Pas d'inquétude, il y a toujours des propositions de dernière minute ! Et pourquoi pas proposer le tiens ?
+      propose_talk: Proposer un talk
+      meetup_information_html: Pour participer, retrouve toutes les informations (lieu, modalités) du prochain meetup sur notre page
   navbar:
     coc: Code de conduite
     videos: Vidéos

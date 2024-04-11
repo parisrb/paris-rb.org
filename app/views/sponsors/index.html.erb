@@ -1,0 +1,11 @@
+<% title t('.title') %>
+<% description t('.description') %>
+
+<div class="container pt-12 pb-20">
+  <h1 class="text-center mb-8 text-primary"><%= t('.title') %></h1>
+  <div class="mb-8 text-xl"><%= t('.sponsor_paris_rb') %></div>
+  <h2 class="text-center mb-6"><%= t(".they_sponsored_us") %></h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+    <%= render partial: "sponsors/card", collection: @sponsors, as: :sponsor %>
+  </div>
+</div>

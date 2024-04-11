@@ -1,4 +1,7 @@
 class WelcomeController < ApplicationController
-  expose(:sponsors) { Sponsor.with_attached_logo.latest(4) }
-  expose(:tweets) { Tweet.all }
+  def index
+    @videos = Video.order("created_at DESC").limit(3)
+    @sponsors = Sponsor.with_attached_logo.latest(4)
+    @lineup_talks = Talk.lineup
+  end
 end
