@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   end
 
   resources :videos, only: [ :index, :show ]
-  resources :talks, only: [ :index, :create ]
+  resources :talks, only: [ :new, :index, :create ]
   resource :lineup, only: [ :show ]
+  resources :sponsors, only: [ :index ]
 
   get "/communique_2022" => "welcome#communique"
 

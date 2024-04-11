@@ -1,0 +1,33 @@
+<section id="next-meetup" class="container flex flex-col gap-8">
+  <div>
+    <h2 class="text-center text-4xl text-primary mb-6"><%= t(".title") %></h2>
+    <div class="text-center text-xl"><%= t(".subtitle_html", date: l(Date.today.first_tuesday_of_the_month, format: :default)) %></div>
+  </div>
+
+  <% if lineup_talks.size.positive? %>
+    <div>
+      <div class="mb-4 underline underline-offset-2 font-semibold"><%= t(".line_up_description") %></div>
+      <div>
+        <% lineup_talks.each do |talk| %>
+          <div class="flex items-center gap-2">
+            <div><%= talk.title_with_emoji %></div>
+            <%= t("by") %>
+            <div class="font-semibold"><%= talk.speaker_name %></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% else %>
+    <div class="flex gap-4">
+      <div class="flex flex-col">
+        <div class="text-xl"><%= t(".no_line_up_html") %></div>
+        <%= link_to t(".propose_talk"), new_talk_path, class: "btn btn-primary mt-4 self-center" %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="text-xl">
+    <span class="conten"><%= t('.meetup_information_html') %></span>
+    <div class="inline-block"><%= external_link_to('Meetup', 'https://www.meetup.com/paris_rb/', class: "link") %></div>
+  </div>
+</section>

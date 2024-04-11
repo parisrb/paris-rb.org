@@ -1,134 +1,47 @@
 <%# .section.section-page.section-showoff %>
-<div class="container hero sm:min-h-[calc(100dvh-5rem)] bg-base-100 py-12">
-  <div class="hero-content text-center">
-    <div class="max-w2xl flex flex-col gap-4 items-start">
-      <div class="flex items-center gap-2">
-        <h1 class="text-5xl font-semibold"><%= t('.title_html') %></h1>
-        <%= lucide_icon "heart", class: 'text-primary h-10 w-10' %>
-      </div>
-      <div class="w-full text-xl text-semibold text-left flex flex-col gap-4 leading-relaxed">
-        <div><%= t('.subtitle_html') %></div>
-        <div><%= t('.subtitle_2_html') %></div>
-      </div>
-      <%= external_link_to t('.hero_cta'), "https://www.meetup.com/paris_rb/", class: "btn btn-secondary", target: "_blank" %>
-      <div class="flex items-center gap-4 mt-8 text-xl flex-wrap">
-        <%= t(".join_us_on") %>
-        <!-- Slack -->
-        <%= link_to "https://join.slack.com/t/parisrb/shared_invite/zt-1io48rnoz-97bt5glsJJAL1f9Gj06CRw", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
-          <%= lucide_icon "slack", class: 'h-6 w-6' %>
-          Slack
-        <% end %>
-        <%= lucide_icon "slash", class: "h-4 w-4" %>
-        <!-- Youtube -->
-        <%= link_to "#", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
-          <%= lucide_icon "youtube", class: 'h-6 w-6' %>
-          Youtube
-        <% end %>
-        <%= lucide_icon "slash", class: "h-4 w-4" %>
-        <!-- Twitch -->
-        <%= link_to "#", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
-          <%= lucide_icon "twitch", class: 'h-6 w-6' %>
-          Twitch
-        <% end %>
+<div class="flex flex-col gap-12 sm:gap-20 py-12">
+  <div class="container hero sm:min-h-[70dvh]">
+    <div class="text-center">
+      <div class="max-w2xl flex flex-col gap-4 items-start">
+        <div class="flex items-center gap-2">
+          <h1 class="text-5xl font-semibold"><%= t('.title_html') %></h1>
+          <%= lucide_icon "heart", class: 'text-primary h-10 w-10' %>
+        </div>
+        <div class="w-full text-xl text-semibold text-left flex flex-col gap-4 leading-relaxed">
+          <div><%= t('.subtitle_html') %></div>
+          <div><%= t('.subtitle_2_html') %></div>
+        </div>
+        <div class="flex items-center gap-2">
+          <%= external_link_to t('.hero_cta'), "https://www.meetup.com/paris_rb/", class: "btn btn-accent", target: "_blank" %>
+          <span><%= t("or") %></span>
+          <%= link_to t(".suggest_talk"), new_talk_path, class: "link link-primary" %>
 
-      </div>
-    </div>
-  </div>
-</div>
-<section class="section section-page section-showoff">
-  <div class="container">
-    <header>
-      <h1><%= t('.show-off.title') %></h1>
-    </header>
-
-    <div class="flex justify-evenly gap-8 flex-wrap">
-      <div class="block">
-        <p><%= t('.show-off.members_count_html', link: link_to('Meetup.com/paris_rb', 'https://www.meetup.com/paris_rb/', target: "_blank")) %></p>
-      </div>
-
-      <div class="block">
-        <p><%= t('.show-off.active_members') %></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<%# .section.section-ellipsis %>
-<section class="section section-ellipsis">
-  <div class="container">
-    <h1><%= t('.ellipsis.title') %></h1>
-  </div>
-</section>
-
-<%# .section.section-talks %>
-<section class="section section-talks">
-  <div class="container">
-    <header>
-      <h1><%= t('.talks.title') %></h1>
-      <p><%= t('.talks.subtitle') %></p>
-    </header>
-
-    <p><%= link_to t('.talks.videos'), videos_path, class: 'btn btn-default btn-lg' %></p>
-  </div>
-</section>
-
-<%# .section.section-sponsors %>
-<section class="section section-sponsors">
-  <div class="container">
-    <header>
-      <h1><%= t('.sponsors.title') %></h1>
-      <p><%= t('.sponsors.subtitle') %></p>
-    </header>
-
-    <div class="flex items-center justify-center sm:justify-between flex-wrap gap-12">
-      <% sponsors.each do |sponsor| %>
-        <% cache sponsor do %>
-          <%= link_to sponsor.website, title: sponsor.name, target: "_blank" do %>
-            <% if sponsor.logo.attached? %>
-              <%= cl_image_tag sponsor.logo.key, width: 200, height: 160, crop: :fit, alt: sponsor.name, srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x" %>
-            <% else %>
-              <%= sponsor.name %>
-            <% end %>
+        </div>
+        <div class="flex items-center gap-4 mt-8 text-xl flex-wrap">
+          <%= t(".join_us_on") %>
+          <!-- Slack -->
+          <%= link_to "https://join.slack.com/t/parisrb/shared_invite/zt-1io48rnoz-97bt5glsJJAL1f9Gj06CRw", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+            <%= lucide_icon "slack", class: 'h-6 w-6' %>
+            Slack
           <% end %>
-        <% end %>
-      <% end %>
+          <%= lucide_icon "slash", class: "h-4 w-4" %>
+          <!-- Youtube -->
+          <%= link_to "#", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+            <%= lucide_icon "youtube", class: 'h-6 w-6' %>
+            Youtube
+          <% end %>
+          <%= lucide_icon "slash", class: "h-4 w-4" %>
+          <!-- Twitch -->
+          <%= link_to "#", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+            <%= lucide_icon "twitch", class: 'h-6 w-6' %>
+            Twitch
+          <% end %>
+
+        </div>
+      </div>
     </div>
   </div>
-</section>
-
-<%# .section.section-you %>
-<section class="section section-you">
-  <div class="container">
-    <header>
-      <h1><%= t('.you.title') %></h1>
-    </header>
-
-    <p><%= link_to t('.you.give_a_talk'), talks_path, class: 'btn btn-default btn-lg' %></p>
-  </div>
-</section>
-
-<%# .section.section-guests %>
-<section class="section section-guests">
-  <div class="container">
-    <header>
-      <h1><%= t('.guests.title') %></h1>
-    </header>
-
-    <% tweets.each_slice(3) do |grouped_tweets| %>
-      <div class="row">
-        <% grouped_tweets.each do |tweet| %>
-          <div class="col-sm-4">
-            <blockquote class="tweet" lang="en">
-              <p><%= tweet.text %></p>
-              <footer>
-                <cite>
-                  <p><%= tweet.author %> (<%= link_to "@#{tweet.twitter_handle}", "https://twitter.com/#{tweet.twitter_handle}" %>) <%= tweet.cool_projects %></p>
-                </cite>
-              </footer>
-            </blockquote>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
-</section>
+  <%= render "latest_videos", videos: @videos %>
+  <%= render "next_meetup", lineup_talks: @lineup_talks %>
+  <%= render "sponsors", sponsors: @sponsors %>
+</div>
