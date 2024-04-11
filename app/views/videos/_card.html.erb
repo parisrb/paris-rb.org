@@ -2,7 +2,11 @@
 
 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
   <%= link_to video_path(video.slug), target: "_top" do %>
-    <%= image_tag video.vimeo_thumbnail, class: 'w-full h-48 object-cover', style: "view-transition-name: #{dom_id(video, :preview)}" %>
+    <%= image_tag video.vimeo_thumbnail,
+                  class: 'w-full object-cover',
+                  alt: t('videos.card.thumbnail_alt', title: video.title),
+                  style: "view-transition-name: #{dom_id(video, :preview)}" %>
+    <span class="sr-only"><%= t('videos.card.watch_video', title: video.title) %></span>
   <% end %>
   <div class="p-4">
     <h2 class="font-semibold"><%= video.title %></h2>
