@@ -1,0 +1,8 @@
+<%# locals: (video:) -%>
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden">
+  <%= link_to video_path(video.slug), target: "_top" do %>
+    <%= image_tag video.vimeo_thumbnail, data: { controller: "view-transition-intersection", view_transition_intersection_name_value: dom_id(video, :preview) }, class: 'w-full h-48 object-cover' %>
+  <% end %>
+
+</div>

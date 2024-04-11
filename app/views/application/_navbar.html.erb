@@ -2,7 +2,7 @@
   <div class="container">
     <div class="flex justify-start w-fit shrink-0">
       <%= link_to root_path, class: "" do %>
-        <%= image_tag 'parisrb-logo-horizontal.png', class: "h-8 md:h-12" %>
+        <%= image_tag 'parisrb-logo-horizontal.png', class: "h-8 md:h-12", alt: "Paris.rb Logo" %>
       <% end %>
       <!--<a class="btn btn-ghost text-xl">daisyUI</a>-->
     </div>
@@ -15,10 +15,11 @@
           <%= link_to t("navbar.coc"), "#" %>
         </li>
         <li>
-          <%= link_to t("navbar.sponsors"), "/#sponsors" %>
+          <%= link_to t("navbar.sponsors"), sponsors_path %>
         </li>
       </ul>
-      <a class="btn btn-primary hidden lg:flex"><%= t("navbar.suggest_talk") %></a>
+
+      <%= link_to t("navbar.suggest_talk"),new_talk_path, class: "btn btn-primary hidden lg:flex" %>
 
       <div class="items-center hidden lg:flex gap-1">
         <%= link_to "FR", "#", class: "" %>
@@ -38,11 +39,11 @@
           <%= link_to t("navbar.coc"), "#" %>
         </li>
         <li>
-          <%= link_to t("navbar.sponsors"), "/#sponsors" %>
+          <%= link_to t("navbar.sponsors"), sponsors_path %>
         </li>
         <div class="divider"></div>
         <li>
-          <%= link_to t("navbar.suggest_talk"), talks_path, class: "link-primary" %>
+          <%= link_to t("navbar.suggest_talk"), new_talk_path, class: "link-primary" %>
         </li>
       </ul>
     </div>

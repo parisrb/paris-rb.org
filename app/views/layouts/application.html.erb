@@ -13,6 +13,7 @@
   <%= csp_meta_tag %>
   <meta name="view-transition" content="same-origin">
   <meta name="turbo-cache-control" content="no-cache">
+  <%= turbo_refreshes_with method: :morph, scroll: :preserve %>
   <%= hotwire_livereload_tags if Rails.env.development? %>
 
   <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
