@@ -13,115 +13,87 @@ two:
 
 permanent:
   name: Scalingo
-  website: http://scalingo.com
+  website: https://scalingo.com
 
 19:
   name: Marcel.cab
-  website: http://marcel.cab/
+  website: https://marcel.cab/
   from: "2014-12-01 00:00:00 +0100"
   until: "2014-12-31 00:00:00 +0100"
 10:
   name: Simplon
-  website: http://simplon.co/
+  website: https://simplon.co/
   from: "2013-01-30 00:00:00 +0100"
   until: "2014-01-30 00:00:00 +0100"
-11:
-  name: Freelance Booking
-  website: http://freelancebooking.pro
-  from: "2013-01-30 00:00:00 +0100"
-  until: "2016-01-30 00:00:00 +0100"
 21:
   name: Breaz.io
-  website: breaz.io
+  website: https://breaz.io
   from: "2015-10-06 00:00:00 +0200"
   until: "2015-11-02 00:00:00 +0100"
 16:
   name: Les Jeudis
-  website: http://www.lesjeudis.com/
+  website: https://www.lesjeudis.com/
   from: "2014-06-03 00:00:00 +0200"
   until: "2015-06-01 00:00:00 +0200"
 9:
   name: Shopify
-  website: http://www.shopify.com/
+  website: https://www.shopify.com/
   until: "2014-02-28 00:00:00 +0100"
 8:
   name: Google
-  website: http://google.fr
+  website: https://google.fr
   until: "2014-02-28 00:00:00 +0100"
 6:
   name: Human Coders
-  website: http://humancoders.com/
-  until: "2014-02-28 00:00:00 +0100"
-5:
-  name: Jumboweb
-  website: http://www.jumboweb.fr/
+  website: https://humancoders.com/
   until: "2014-02-28 00:00:00 +0100"
 4:
   name: Simplib
-  website: http://simplib.com/
+  website: https://simplib.com/
   until: "2014-02-28 00:00:00 +0100"
-14:
-  name: Followanalytics
-  website: http://follow-apps.com/
-  from: "2014-06-03 00:00:00 +0200"
-  until: "2014-08-04 00:00:00 +0200"
 7:
   name: Mipise
-  website: http://www.mipise.com/
+  website: https://www.mipise.com/
   from: "2014-10-02 00:00:00 +0200"
   until: "2014-11-13 00:00:00 +0100"
-13:
-  name: Appsdeck
-  website: https://appsdeck.eu/
-  until: "2014-06-02 00:00:00 +0200"
-15:
-  name: Vodeclic
-  website: http://www.vodeclic.com/fr
-  from: "2014-06-03 00:00:00 +0200"
-  until: "2014-07-01 00:00:00 +0200"
-23:
-  name: Vodeclic
-  website: http://www.vodeclic.com/
-  from: "2015-10-30 00:00:00 +0100"
-  until: "2016-11-30 00:00:00 +0100"
 17:
   name: Fitnext
-  website: http://www.fitnext.com/
+  website: https://www.fitnext.com/
   from: "2014-07-01 00:00:00 +0200"
   until: "2014-08-05 00:00:00 +0200"
 20:
   name: "42"
-  website: 42.fr
+  website: https://42.fr
   from: "2015-01-01 00:00:00 +0100"
   until: "2015-11-30 00:00:00 +0100"
 3:
   name: Epita
-  website: http://epita.fr
+  website: https://epita.fr
   from: "2015-01-01 00:00:00 +0100"
   until: "2015-11-30 00:00:00 +0100"
 2:
   name: Epitech
-  website: http://epitech.eu/
+  website: https://epitech.eu/
   from: "2015-01-01 00:00:00 +0100"
   until: "2015-11-30 00:00:00 +0100"
 27:
   name: TopFive
-  website: http://www.top-five.fr/
+  website: https://www.top-five.fr/
   from: "2016-04-04 00:00:00 +0200"
   until: "2016-04-04 00:00:00 +0200"
 24:
   name: NUMA
-  website: numa.paris
+  website: https://numa.paris
   from: "2015-12-01 00:00:00 +0100"
   until: "2015-12-31 00:00:00 +0100"
 28:
   name: Talent.io
-  website: http://www.talent.io
+  website: https://www.talent.io
   from: "2016-12-01 00:00:00 +0100"
   until: "2016-12-31 00:00:00 +0100"
 30:
   name: Logmatic.io
-  website: http://logmatic.io/
+  website: https://logmatic.io/
   from: "2017-01-01 00:00:00 +0100"
   until: "2017-02-01 00:00:00 +0100"
 36:
@@ -131,12 +103,12 @@ permanent:
   until: "2017-06-05 00:00:00 +0200"
 26:
   name: Le Wagon
-  website: lewagon.org
+  website: https://lewagon.org
   from: "2016-10-03 00:00:00 +0200"
   until: "2016-10-31 00:00:00 +0100"
 31:
   name: Drivy
-  website: drivy.com
+  website: https://drivy.com
   from: "2017-06-27 00:00:00 +0200"
   until: "2017-07-28 00:00:00 +0200"
 33:
@@ -156,35 +128,22 @@ permanent:
   until: "2017-11-30 00:00:00 +0100"
 12:
   name: ChooseYourBoss
-  website: http://chooseyourboss.com/?utm_source=MeetUp-Ruby-fevrier&utm_medium=link&utm_campaign=Meetup-ruby-fevrier
+  website: https://chooseyourboss.com/?utm_source=MeetUp-Ruby-fevrier&utm_medium=link&utm_campaign=Meetup-ruby-fevrier
   from: "2018-01-22 00:00:00 +0100"
   until: "2019-01-23 00:00:00 +0100"
-32:
-  name: Hexagonal Consulting
-  website: http://hexagonalconsulting.com/
-  until: "2018-02-07 00:00:00 +0100"
 25:
   name: ESGI
-  website: esgi.fr
+  website: https://esgi.fr
   until: "2018-01-21 00:00:00 +0100"
 39:
   name: Freelance Academy
   website: https://freelance.academy/
   from: "2017-12-04 00:00:00 +0100"
   until: "2018-01-10 00:00:00 +0100"
-40:
-  name: Microsoft
-  website: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x3095443abcd&ls=Website&lsd=AzureWebsite
-  until: "2019-02-01 01:00:00 +0100"
 22:
   name: JobTeaser
-  website: http://www.jobteaser.com/
+  website: https://www.jobteaser.com/
   until: "2021-10-20 13:13:52 +0200"
-180:
-  name: Matera
-  website: https://www.matera.eu/fr
-  from: "2022-05-30 23:21:00 +0200"
-  until: "2022-06-21 21:39:00 +0200"
 147:
   name: Getaround
   website: https://www.getaround.com/
@@ -203,7 +162,7 @@ permanent:
   until: "2022-05-01 16:47:00 +0200"
 214:
   name: Squadracer
-  website:
+  website: https://squadracer.com/
   from: "2022-09-05 19:20:00 +0200"
   until: "2022-09-14 19:21:00 +0200"
 49:
@@ -218,8 +177,3 @@ permanent:
   name: Aircall
   website: https://aircall.io/
   until: "2022-05-29 23:21:00 +0200"
-181:
-  name: Swile
-  website: https://www.swile.co/en
-  from: "2022-06-21 21:40:00 +0200"
-  until: "2022-07-14 21:40:00 +0200"
