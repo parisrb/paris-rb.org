@@ -8,9 +8,9 @@
     <div>
       <p class="text-sm text-gray-700">
         <%= t('components.pagination.showing') %>
-        <span class="font-medium"><%= (@videos.current_page - 1) * @videos.current_per_page + 1 %></span>
+        <span class="font-medium"><%= (@videos.current_page - 1) * @videos.limit_value + 1 %></span>
         <%= t('components.pagination.to') %>
-        <span class="font-medium"><%= [@videos.current_page * @videos.current_per_page, @videos.total_count].min %></span>
+        <span class="font-medium"><%= [@videos.current_page * @videos.limit_value, @videos.total_count].min %></span>
         <%= t('components.pagination.of') %>
         <span class="font-medium"><%= @videos.total_count %></span>
         <%= t('components.pagination.results') %>

@@ -7,6 +7,10 @@ class TalksController < ApplicationController
 
   expose(:talk, attributes: :talk_params)
 
+  def new
+    @talk = Talk.new
+  end
+
   def create
     if talk.save
       TalkMailer.new_talk(talk.id).deliver_later
