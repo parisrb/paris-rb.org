@@ -37,6 +37,15 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Lint code for consistent style
         run: bin/rubocop -f github
 
