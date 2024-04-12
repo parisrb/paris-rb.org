@@ -6,8 +6,8 @@
     remote:        data-remote
     paginator:     the paginator that renders the pagination tags inside -%>
 <%= paginator.render do %>
-  <div class="text-center" aria-label="Pagination">
-    <nav class="join">
+  <div class="text-center">
+    <nav class="join" aria-label="Video Pagination">
       <%= first_page_tag %>
       <%#= prev_page_tag %>
       <% each_page do |page| %>
