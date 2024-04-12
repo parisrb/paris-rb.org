@@ -57,6 +57,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem "byebug", "~> 11.1"
   gem "erb_lint", require: false
+  gem "erblint-github"
   gem "faker"
 end
 
