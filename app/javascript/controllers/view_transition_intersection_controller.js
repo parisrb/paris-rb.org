@@ -1,5 +1,5 @@
-import { Controller } from "@hotwired/stimulus";
-import { useIntersection } from "stimulus-use";
+import { Controller } from '@hotwired/stimulus'
+import { useIntersection } from 'stimulus-use'
 
 // Connects to data-controller="view-transition-intersection"
 //
@@ -7,26 +7,26 @@ import { useIntersection } from "stimulus-use";
 // This controller is used to the view transition name to the element when it is visible only
 // <%= image_tag video.vimeo_thumbnail, data: { controller: "view-transition-intersection", view_transition_intersection_name_value: dom_id(video, :preview) } %>
 export default class extends Controller {
-  static values = { name: String };
+  static values = { name: String }
 
-  initialize() {
-    useIntersection(this);
+  initialize () {
+    useIntersection(this)
   }
 
-  appear() {
-    this.element.style.cssText += this.transitionStyleValue;
+  appear () {
+    this.element.style.cssText += this.transitionStyleValue
   }
 
-  disappear() {
+  disappear () {
     this.element.style.cssText = this.element.style.cssText.replace(
       this.transitionStyleValue,
-      ""
-    );
+      ''
+    )
   }
 
-  private;
+  private
 
-  get transitionStyleValue() {
-    return `view-transition-name: ${this.nameValue};`;
+  get transitionStyleValue () {
+    return `view-transition-name: ${this.nameValue};`
   }
 }
