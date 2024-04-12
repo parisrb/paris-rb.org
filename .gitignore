@@ -34,3 +34,7 @@ vendor/bundle/
 !/app/assets/builds/.keep
 
 /storage
+
+/config/master.key
+
+/config/credentials/production.key

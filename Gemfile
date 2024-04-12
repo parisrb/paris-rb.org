@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.8"
+gem "rails", "~> 7.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -94,7 +94,7 @@ gem "meta-tags"
 gem "rails-i18n"
 gem "ransack"
 gem "record_tag_helper"
-gem "simple_form", "~> 5.0.0"
+gem "simple_form"
 gem "sitemap_generator", require: false
 gem "sucker_punch"
 gem "faraday"
