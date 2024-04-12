@@ -7,6 +7,10 @@ set -e
 echo "Checking erb files..."
 bundle exec erblint --lint-all --autocorrect
 
+# Check Js code formatting
+echo "Checking JS code formatting..."
+yarn standard --fix
+
 # Rubocop checks
 echo "Running rubocop..."
 bundle exec rubocop -A
