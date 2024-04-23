@@ -1,20 +1,45 @@
-<%= simple_form_for talk, html: { class: 'form-horizontal', role: 'form' } do |f| %>
-  <%= f.input :title %>
-  <%= f.input :speaker_name %>
-  <%= f.input :speaker_email %>
-  <%= f.input :speaker_twitter %>
-  <%= f.input :preferred_month_talk, as: :select, collection: Talk.propose_upcoming_months.invert %>
-  <%= f.input :level, as: :radio_buttons %>
-  <%= f.input :duration, as: :radio_buttons %>
+<%= form_for talk, html: { class: 'flex flex-col gap-4', role: 'form' } do |f| %>
+  <div class="form-control">
+    <%= f.label :title, class: 'label' %>
+    <%= f.text_field :title, required: true, class: 'input input-bordered w-full' %>
+  </div>
 
-  <div class="form-group">
-    <div class="col-sm-9 col-sm-offset-3">
-      <p class="text-left">
-        <a href="https://www.contributor-covenant.org/fr/version/2/0/code_of_conduct/" target="_blank">
-          <%= t('.accept_coc') %>
-        </a>
-      </p>
-      <%= f.button :submit, class: 'btn-default' %>
+  <div class="form-control w-full">
+    <%= f.label :speaker_name, class: 'label', required: true %>
+    <%= f.text_field :speaker_name, required: true, class: 'input input-bordered w-full' %>
+  </div>
+
+  <div class="flex flex-col sm:flex-row gap-4 w-full">
+    <div class="form-control w-full">
+      <%= f.label :speaker_email, required: true, class: 'label' %>
+      <%= f.email_field :speaker_email, required: true, class: 'input input-bordered w-full' %>
     </div>
+
+    <div class="form-control w-full">
+      <%= f.label :speaker_twitter, class: 'label' %>
+      <%= f.text_field :speaker_twitter, class: 'input input-bordered w-full' %>
+    </div>
+  </div>
+
+  <div class="form-control">
+    <%= f.label :preferred_month_talk, class: 'label' %>
+    <%= f.select :preferred_month_talk, Talk.propose_upcoming_months.invert, {}, class: 'select select-bordered w-full' %>
+  </div>
+
+  <div class="flex gap-4 w-full">
+    <div class="form-control full">
+      <%= f.label :duration, class: 'label' %>
+      <%= f.select :duration, Talk.duration.options, {}, { class: 'select select-bordered w-full' } %>
+    </div>
+
+    <div class="form-control full">
+      <%= f.label :level, class: 'label' %>
+      <%= f.select :level, Talk.level.options, {}, { class: 'select select-bordered w-full' } %>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-4 mt-6 items-start">
+    <%= external_link_to t('.accept_coc'), page_path("code_de_conduite"), class: "link" %>
+    <%= f.submit t('.submit'), class: 'btn btn-primary', id: "submit-talk" %>
   </div>
 <% end %>

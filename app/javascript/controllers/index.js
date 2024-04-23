@@ -10,5 +10,8 @@ application.register("dropdown", DropdownController)
 import FormController from "./form_controller"
 application.register("form", FormController)
 
+import LeaveAfterController from "./leave_after_controller"
+application.register("leave-after", LeaveAfterController)
+
 import ViewTransitionIntersectionController from "./view_transition_intersection_controller"
 application.register("view-transition-intersection", ViewTransitionIntersectionController)

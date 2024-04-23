@@ -1,0 +1,5 @@
+<div class="toast">
+  <% flash.each_with_index do |(key, content), ind| %>
+    <%= alert(kind: key, content: content) %>
+  <% end %>
+</div>
