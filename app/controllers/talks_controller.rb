@@ -5,19 +5,19 @@ class TalksController < ApplicationController
 
   expose(:proposed_talks) { Talk.proposed }
 
-  expose(:talk, attributes: :talk_params)
-
   def new
     @talk = Talk.new
+    flash[:success] = "hello"
   end
 
   def create
-    if talk.save
-      TalkMailer.new_talk(talk.id).deliver_later
-      talk.send_slack_notification!
-      redirect_to talks_path(anchor: :talks)
+    @talk = Talk.new(talk_params)
+    if @talk.save
+      TalkMailer.new_talk(@talk.id).deliver_later
+      @talk.send_slack_notification!
+      redirect_to talks_path, notice: "Talk proposed successfully"
     else
-      render action: :index
+      render action: :new
     end
   end
 
