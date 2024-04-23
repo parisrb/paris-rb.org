@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # static pages
+  sitepress_pages
+
   devise_for :users
 
   authenticate :user do
