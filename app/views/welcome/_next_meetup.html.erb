@@ -6,16 +6,16 @@
 
   <% if lineup_talks.size.positive? %>
     <div>
-      <div class="mb-4 underline underline-offset-2 font-semibold"><%= t(".line_up_description") %></div>
-      <div>
+      <h3 class="mb-4"><%= t(".line_up_description") %></h3>
+      <ul class="flex flex-col gap-2 list-disc">
         <% lineup_talks.each do |talk| %>
-          <div class="flex items-center gap-2">
+          <li class="flex items-center gap-2">
             <div><%= talk.title_with_emoji %></div>
             <%= t("by") %>
             <div class="font-semibold"><%= talk.speaker_name %></div>
-          </div>
+          </li>
         <% end %>
-      </div>
+      </ul>
     </div>
   <% else %>
     <div class="flex gap-4">

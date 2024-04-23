@@ -284,6 +284,11 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.4)
+    markdown-rails (2.1.0)
+      actionview (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
+      redcarpet (>= 3.0.0)
     matrix (0.4.2)
     meta-tags (2.19.0)
       actionpack (>= 3.2.0, < 7.2)
@@ -384,6 +389,7 @@ GEM
       psych (>= 4.0.0)
     record_tag_helper (1.0.1)
       actionview (>= 5)
+    redcarpet (3.6.0)
     redis (5.0.8)
       redis-client (>= 0.17.0)
     redis-client (0.18.0)
@@ -446,6 +452,13 @@ GEM
       activemodel (>= 5.2)
     sitemap_generator (6.3.0)
       builder (~> 3.0)
+    sitepress-core (4.0.2)
+      mime-types (>= 2.99)
+    sitepress-rails (4.0.2)
+      actionpack (>= 6.0)
+      railties (>= 6.0)
+      sitepress-core (= 4.0.2)
+      sprockets-rails (>= 2.0.0)
     smart_properties (1.17.0)
     spoon (0.0.6)
       ffi
@@ -528,6 +541,7 @@ DEPENDENCIES
   jsbundling-rails
   kaminari
   lucide-rails (~> 0.4.0)
+  markdown-rails (~> 2.1)
   meta-tags
   pg (~> 1.1)
   puma
@@ -540,6 +554,7 @@ DEPENDENCIES
   selenium-webdriver
   simple_form
   sitemap_generator
+  sitepress-rails
   sprockets-rails
   stimulus-rails
   sucker_punch

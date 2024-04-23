@@ -1,3 +1,4 @@
+
 <%# .section.section-page.section-showoff %>
 <div class="flex flex-col gap-12 sm:gap-20 py-12">
   <div class="container hero sm:min-h-[70dvh]">
@@ -12,7 +13,7 @@
           <div><%= t('.subtitle_2_html') %></div>
         </div>
         <div class="flex items-center gap-2">
-          <%= external_link_to t('.hero_cta'), "https://www.meetup.com/paris_rb/", class: "btn btn-accent", target: "_blank" %>
+          <%= external_link_to t('.hero_cta'), meetup_url, class: "btn btn-accent", target: "_blank" %>
           <span><%= t("or") %></span>
           <%= link_to t(".suggest_talk"), new_talk_path, class: "link link-primary" %>
 
@@ -20,19 +21,19 @@
         <div class="flex items-center gap-4 mt-8 text-xl flex-wrap">
           <%= t(".join_us_on") %>
           <!-- Slack -->
-          <%= link_to "https://join.slack.com/t/parisrb/shared_invite/zt-1io48rnoz-97bt5glsJJAL1f9Gj06CRw", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+          <%= link_to join_slack_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
             <%= lucide_icon "slack", class: 'h-6 w-6' %>
             Slack
           <% end %>
           <%= lucide_icon "slash", class: "h-4 w-4" %>
           <!-- Youtube -->
-          <%= link_to "#", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+          <%= link_to youtube_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
             <%= lucide_icon "youtube", class: 'h-6 w-6' %>
             Youtube
           <% end %>
           <%= lucide_icon "slash", class: "h-4 w-4" %>
           <!-- Twitch -->
-          <%= link_to "#", class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+          <%= link_to twitch_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
             <%= lucide_icon "twitch", class: 'h-6 w-6' %>
             Twitch
           <% end %>
