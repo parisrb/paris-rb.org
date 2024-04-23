@@ -1,127 +1,29 @@
-<%# - title t('.title')
-- description t('.description') %>
-<section class="section section-page">
-  <div class="container">
-    <header>
-      <h1><%= t('.title') %></h1>
-    </header>
+<div class="container pt-12 pb-20">
+  <h1 class="text-center mb-8 text-primary"><%= t('.lineup') %></h1>
+  <div class="mb-8"><%= t(".description") %></div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-        <%= render 'form' %>
-      </div>
-      <div class="col-xs-12 faq col-sm-6">
-        <h2>Je suis un newbie, et j'ai peeeeuuur de présenter</h2>
-        <p>À Paris.rb on n'est pas là pour se moquer des novices. Nous serons TOUJOURS ravis d'accueillir les talks débutants comme confirmés.</p>
-
-        <h2>Je voudrais faire une présentation de + de 20 minutes</h2>
-        <p>Les présentations sont chronométrées, dans le but de ne pas trop fatiguer les rubyistes qui vous écoutent, et des études ont prouvé que les 2 meilleurs timings sont : 5 minutes et 20 minutes.</p>
-
-        <h2>Je veux présenter ma société, ou mon produit</h2>
-        <p>Nous sommes ici pour parler de Ruby, de Rails, et du monde des startups sur Paris. Pour faire la promotion d'une société, d'un produit, ou rechercher un profil, la coutume est d'aider la communauté en sponsorisant les événements Ruby.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<%# .section.talks %>
-<section class="section talks">
-  <div class="container">
-    <h2><%= t('.lineup') %></h2>
-
-    <div class="hidden-xs">
-      <table class="talks-list table table-striped">
-        <thead>
-          <tr>
-            <th><%= Talk.human_attribute_name(:title) %></th>
-            <th><%= Talk.human_attribute_name(:speaker_name) %></th>
-            <th><%= Talk.human_attribute_name(:speaker_twitter) %></th>
-            <th><%= Talk.human_attribute_name(:level) %></th>
-            <th><%= Talk.human_attribute_name(:duration) %></th>
-            <th><%= Talk.human_attribute_name(:preferred_month_talk) %></th>
-            <th><%= Talk.human_attribute_name(:time_position) %></th>
-          </tr>
-        </thead>
-        <tbody>
-          <% lineup_talks.each do |talk| %>
-            <tr>
-              <td><%= talk.title %></td>
-              <td><%= talk.speaker_name %></td>
-              <td><%= talk.speaker_twitter %></td>
-              <td><%= talk.level_text %></td>
-              <td><%= talk.duration_text %></td>
-              <td><%= talk.preferred_month_talk %></td>
-              <td><%= talk.time_position %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="visible-xs">
-      <ul class="talks-list list-unstyled">
-        <% lineup_talks.each do |talk| %>
-          <li>
-            <span class="title"><%= talk.title %></span>
-            <%= "#{talk.speaker_name} - #{talk.level_text} - #{talk.duration_text}" %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-
-    <h2><%= t('.happened_talks') %></h2>
-
-    <div class="hidden-xs">
-      <table class="talks-list table table-striped">
-        <thead>
-          <tr>
-            <th><%= Talk.human_attribute_name(:title) %></th>
-            <th><%= Talk.human_attribute_name(:speaker_name) %></th>
-            <th><%= Talk.human_attribute_name(:level) %></th>
-            <th><%= Talk.human_attribute_name(:duration) %></th>
-            <th><%= t('.resources') %></th>
-          </tr>
-        </thead>
-        <tbody>
-          <% happened_talks.each do |talk| %>
-            <tr>
-              <td><%= talk.title %></td>
-              <td><%= talk.speaker_name %></td>
-              <td><%= talk.level_text %></td>
-              <td><%= talk.duration_text %></td>
-              <td>
-                <% if talk.slides? %>
-                  <%= link_to t('.slides'), talk.slides, rel: 'nofollow' %>
-                <% end %>
-                <% if talk.video_url? %>
-                  <%= link_to t('.video'), talk.video_url, rel: 'nofollow' %>
-                <% end %>
-              </td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="visible-xs">
-      <ul class="talks-list list-unstyled">
-        <% happened_talks.each do |talk| %>
-          <li>
-            <span class="title"><%= talk.title %></span>
-            <%= "#{talk.speaker_name} - #{talk.level_text} - #{talk.duration_text}" %>
-            <% if talk.slides? || talk.video_url? %>
-              <span class="resources">
-                <% if talk.slides? %>
-                  <%= link_to t('.slides'), talk.slides %>
-                <% end %>
-                <% if talk.video_url? %>
-                  <%= link_to t('.video'), talk.video_url, rel: 'nofollow' %>
-                <% end %>
-              </span>
-            <% end %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-</section>
+  <table class="table">
+    <thead>
+      <tr>
+        <th><%= Talk.human_attribute_name(:title) %></th>
+        <th><%= Talk.human_attribute_name(:speaker_name) %></th>
+        <th><%= Talk.human_attribute_name(:speaker_twitter) %></th>
+        <th><%= Talk.human_attribute_name(:level) %></th>
+        <th><%= Talk.human_attribute_name(:duration) %></th>
+        <th><%= Talk.human_attribute_name(:preferred_month_talk) %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% lineup_talks.each do |talk| %>
+        <tr>
+          <td><%= talk.title %></td>
+          <td><%= talk.speaker_name %></td>
+          <td><%= talk.speaker_twitter %></td>
+          <td><%= talk.level_text %></td>
+          <td><%= talk.duration_text %></td>
+          <td><%= talk.preferred_month_talk %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
