@@ -7,6 +7,10 @@
     @apply text-2xl font-semibold;
   }
 
+  h3 {
+    @apply text-xl font-semibold;
+  }
+
   highlighed {
     @apply font-semibold;
   }
