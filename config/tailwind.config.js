@@ -6,7 +6,8 @@ module.exports = {
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,html}',
-    './config/locales/*.yml'
+    './config/locales/*.yml',
+    './app/content/**/*.{erb,html,rb,md}'
   ],
   theme: {
     extend: {
@@ -47,5 +48,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [require('daisyui'), require('@tailwindcss/typography')]
+  plugins: [require('daisyui'), require('@tailwindcss/typography')],
+  safelist: ['markdown']
 }

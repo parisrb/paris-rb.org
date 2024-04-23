@@ -6,7 +6,11 @@
   <body>
     <%= render 'navbar' %>
 
-    <%= yield %>
+    <div class="container my-16">
+      <div class="prose max-w-none">
+        <%= yield %>
+      </div>
+    </div>
 
     <%= render 'footer' %>
   </body>
