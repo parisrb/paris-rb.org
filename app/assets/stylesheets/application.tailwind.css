@@ -3,6 +3,7 @@
 
 /* Custom components */
 @import "components/fields.css";
+@import "components/fonts.css";
 @import "components/markdown";
 @import "components/typography.css";
 
