@@ -78,4 +78,6 @@ Rails.application.configure do
   config.action_controller.raise_on_missing_callback_actions = true
 
   config.hosts << "lvh.me"
+
+  config.hotwire_livereload.listen_paths << Rails.root.join("app/content")
 end
