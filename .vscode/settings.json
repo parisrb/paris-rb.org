@@ -6,7 +6,8 @@
     "erb": "html"
   },
   "files.associations": {
-    "*.html.erb": "erb"
+    "*.html.erb": "erb",
+    "*.markerb": "markdown"
   },
   "rubyLsp.enabledFeatures": {
     "diagnostics": false

@@ -1,0 +1,13 @@
+<% title t('.title') %>
+<% description t('.description') %>
+
+<div class="container pt-12 pb-20">
+  <h1 class="text-center mb-12 text-primary"><%= t('.title') %></h1>
+  <div class="flex flex-col gap-12 max-w-2xl mx-auto">
+    <div><%= t(".description_html", link: external_link_to("#orga", join_slack_url, class: "link inline-block")) %></div>
+    <%= render 'form', talk: @talk %>
+    <div class="prose max-w-none">
+      <%= render "talks/questions_and_answers" %>
+    </div>
+  </div>
+</div>

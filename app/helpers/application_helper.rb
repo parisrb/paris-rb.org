@@ -1,4 +1,16 @@
 module ApplicationHelper
+  ALERT_KIND_MAPPING = {
+    notice: "alert-info",
+    success: "alert-success",
+    error: "alert-error"
+  }
+
+  ALERT_ICON_MAPPING = {
+    notice: "information-circle",
+    success: "check-circle",
+    error: "x-circle"
+  }
+
   def page_rel(page)
     if page.prev?
       "next"
@@ -33,6 +45,20 @@ module ApplicationHelper
     url
   rescue URI::InvalidURIError
     nil
+  end
+
+  def alert(kind:, content:)
+    icon = ALERT_ICON_MAPPING[kind.to_sym]
+    classes = class_names("alert", ALERT_KIND_MAPPING[kind.to_sym])
+    data = {
+      controller: "leave-after",
+      leave_after_transition_class: "transform ease-out duration-300 transition",
+      leave_after_transition_to_class: "opacity-0 scale-90"
+    }
+    content_tag(:div, class: classes, data: data) do
+      # concat lucide icon, class: "h-8 w-8"
+      concat content
+    end
   end
 
   def linkedin_url = "https://www.linkedin.com/company/paris-rb/"
