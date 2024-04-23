@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # static pages
+  sitepress_pages
+
   devise_for :users
 
   authenticate :user do
@@ -10,7 +13,7 @@ Rails.application.routes.draw do
   resource :lineup, only: [ :show ]
   resources :sponsors, only: [ :index ]
 
-  get "/communique_2022" => "welcome#communique"
+  get "/communique_2022" => redirect("/communiques/thibault_assus_comdamnation", status: 301)
 
   root to: "welcome#index"
 end
