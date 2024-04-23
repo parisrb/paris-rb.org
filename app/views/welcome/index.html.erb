@@ -8,7 +8,7 @@
           <h1 class="text-5xl font-semibold"><%= t('.title_html') %></h1>
           <%= lucide_icon "heart", class: 'text-primary h-10 w-10' %>
         </div>
-        <div class="w-full text-xl text-semibold text-left flex flex-col gap-4 leading-relaxed">
+        <div class="w-full text-semibold text-left flex flex-col gap-4 leading-relaxed">
           <div><%= t('.subtitle_html') %></div>
           <div><%= t('.subtitle_2_html') %></div>
         </div>
@@ -18,7 +18,7 @@
           <%= link_to t(".suggest_talk"), new_talk_path, class: "link link-primary" %>
 
         </div>
-        <div class="flex items-center gap-4 mt-8 text-xl flex-wrap">
+        <div class="flex items-center gap-4 mt-8 flex-wrap">
           <%= t(".join_us_on") %>
           <!-- Slack -->
           <%= link_to join_slack_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
