@@ -65,6 +65,10 @@ class Talk < ApplicationRecord
     months_iterator(this_month..this_month + 3)
   end
 
+  def self.next_meetup_date
+    Date.today.first_tuesday_of_the_month < Date.today ? Date.today.next_month.first_tuesday_of_the_month : Date.today.first_tuesday_of_the_month
+  end
+
   ALL_MONTHS = months_iterator(1..12)
 
   enumerize :priority,
