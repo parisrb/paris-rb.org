@@ -7,7 +7,6 @@ class TalksController < ApplicationController
 
   def new
     @talk = Talk.new
-    flash[:success] = "hello"
   end
 
   def create
