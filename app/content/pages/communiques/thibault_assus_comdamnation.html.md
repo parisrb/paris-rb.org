@@ -1,5 +1,5 @@
 ---
-title: comdamnation Thibault Assus
+title: Comdamnation Thibault Assus
 layout: markdown
 ---
 
@@ -13,9 +13,9 @@ Le 28 octobre 2022, Thibaut Assus a été condamné par la Cour d'assises d'appe
 
 Ces crimes sont inacceptables : je les condamne fermement. Je vous présente mes excuses pour la gestion de cette situation et je vous propose de voir comment faire mieux, ensemble, à l'avenir.
 
-Les WomenOnRails ont publié un communiqué que j'appuie sans conditions et que je vous recommande de lire : https://womenonrails.substack.com/p/newsletter-38-me-too. Vous y trouverez notamment des associations pouvant vous accompagner si vous êtes victime ou avez été victime de violences sexistes et sexuelles au travail, ainsi que des ressources pour se former sur le sujet.
+Les WomenOnRails ont publié un communiqué que j'appuie sans conditions et que je vous recommande de lire : [https://womenonrails.substack.com/p/newsletter-38-me-too](https://womenonrails.substack.com/p/newsletter-38-me-too). Vous y trouverez notamment des associations pouvant vous accompagner si vous êtes victime ou avez été victime de violences sexistes et sexuelles au travail, ainsi que des ressources pour se former sur le sujet.
 
-ParisRB est jusqu'à ce jour une communauté de développeuses et développeurs dont Thibaut et moi étions les visages et éléments moteurs. Nous avions mis en place un Code d'Éthique et de Déontologie (Code of Conduct) pour assurer des événements safes pour toute personne présente. À partir du moment où ses fondements moraux n'ont pas été respectés par Thibaut Assus qui en portait le message, c'était une coquille vide. Par ailleurs, l'absence de structure formelle au nom propre de Paris.rb a conduit à une gestion contestable de cette situation.
+ParisRB est jusqu'à ce jour une communauté de développeuses et développeurs dont Thibaut et moi étions les visages et éléments moteurs. Nous avions mis en place un Code d'Éthique et de Déontologie ([Code of Conduct](/code_de_conduite)) pour assurer des événements safes pour toute personne présente. À partir du moment où ses fondements moraux n'ont pas été respectés par Thibaut Assus qui en portait le message, c'était une coquille vide. Par ailleurs, l'absence de structure formelle au nom propre de Paris.rb a conduit à une gestion contestable de cette situation.
 
 Tout d'abord Thibaut Assus n'a pas été mis en retrait de l'organisation dès sa mise en examen. Cela a eu un impact sur la vie personnelle comme professionnelle de la victime. Cela pourrait décourager de nouvelles victimes de dénoncer un agresseur (quel que soit son statut dans la communauté) ou juste de participer à la communauté. Cela pourrait laisser croire aux agresseurs qu'ils peuvent agir en toute impunité. C'est catastrophique et ce n'est pas ce qu'on peut souhaiter pour notre communauté. La présomption d'innocence n'empêche pas le principe de précaution.
 
@@ -27,7 +27,7 @@ Cela afin que chacune et chacun puisse participer à notre communauté en se sen
 
 On le sait, les démarches en justice de victimes de violences sexuelles sont rares, périlleuses pour les victimes et aboutissent peu. Il faut donc leur fournir un cadre qui les protège avant tout et écarte les agresseurs mis en accusation.
 
-Pour continuer à vivre et grandir, ParisRB a besoin de personnes souhaitant s'investir dans la création d'une association, la récupération ou (re)création des outils de communication. Vous pouvez rejoindre des membres déjà actives et actifs (Sonia Prévost, Rémi Mercier, Claire Maffei, Juliette Audema...) sur le Slack : https://join.slack.com/t/parisrb/shared_invite/zt-1l1u1gpp1-Qrq2_6LqSSpeG0I2TKv_lA
+Pour continuer à vivre et grandir, ParisRB a besoin de personnes souhaitant s'investir dans la création d'une association, la récupération ou (re)création des outils de communication. Vous pouvez rejoindre des membres déjà actives et actifs (Sonia Prévost, Rémi Mercier, Claire Maffei, Juliette Audema...) sur [le Slack](https://join.slack.com/t/parisrb/shared_invite/zt-1l1u1gpp1-Qrq2_6LqSSpeG0I2TKv_lA)
 
 Merci.
 
