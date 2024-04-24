@@ -13,7 +13,7 @@ fr:
         le formulaire ci-dessous pour nous la soumettre. Ou vient simplement en discuter sur le channel %{link}.
       submit: Proposer mon talk
     index:
-      description: >-
+      description_html: >-
         Tu trouveras ci-dessous la liste des talks proposés pour les prochains
         meetups de ParisRB. Si tu souhaites proposer un talk, n’hésite pas à le
         faire via ce <a href="/talks/new" class="link">formulaire</a>.
