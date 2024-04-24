@@ -6,10 +6,11 @@
       <% end %>
     </div>
     <div class="flex justify-end gap-2 lg:gap-4 w-full">
-      <ul class="menu menu-horizontal px-1 hidden lg:flex">
-        <li><%= link_to t("navbar.videos"), videos_path %></li>
-        <li><%= link_to t("navbar.job_board"), page_path("job_board") %></li>
-        <li><%= link_to t("navbar.sponsors"), sponsors_path %></li>
+
+      <ul class="items-center px-4 gap-8 hidden lg:flex">
+        <%= render "application/navbar/link", text: t("navbar.videos"), path: videos_path %>
+        <%= render "application/navbar/link", text: t("navbar.job_board"), path: page_path("job_board") %>
+        <%= render "application/navbar/link", text: t("navbar.sponsors"), path: sponsors_path %>
       </ul>
 
       <%= link_to t("navbar.suggest_talk"),new_talk_path, class: "btn btn-primary hidden lg:flex" %>
