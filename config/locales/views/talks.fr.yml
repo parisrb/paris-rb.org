@@ -10,7 +10,7 @@ fr:
         le formulaire ci-dessous pour nous la soumettre.
       description_html: >-
         Tu as une idée de talk à proposer pour un prochain meetup ? Remplis
-        le formulaire ci-dessous pour nous la soumettre. Ou vient simplement en discuter sur le %{link}.
+        le formulaire ci-dessous pour nous la soumettre. Ou vient simplement en discuter sur le channel %{link}.
       submit: Proposer mon talk
     index:
       description: >-
