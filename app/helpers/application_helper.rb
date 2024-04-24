@@ -20,7 +20,8 @@ module ApplicationHelper
   end
 
   def back_to(text = t("back"), path, **attributes)
-    classes = [ class_names("flex items-center gap-2"), attributes.delete(:class) ].compact.uniq.join(" ")
+    classes = class_names("flex items-center gap-2", attributes.delete(:class))
+    path = "javascript:history.back()" if path == :back
 
     link_to path, class: classes, **attributes do
       lucide_icon("move-left").concat(content_tag(:span, text, class: "link-text"))
@@ -33,7 +34,7 @@ module ApplicationHelper
       url = text
     end
 
-    classes = class_names("inline-flex items-center gap-2 flex-nowrap"), attributes.delete(:class)
+    classes = class_names("inline-flex items-center gap-2 flex-nowrap", attributes.delete(:class))
     link_to url, class: classes, target: "_blank", rel: "noopener", **attributes do
       concat(content_tag(:span, text)).concat(lucide_icon("external-link", class: "w-4 h-4"))
     end
