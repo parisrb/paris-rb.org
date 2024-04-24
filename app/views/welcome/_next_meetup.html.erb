@@ -1,7 +1,7 @@
 <section id="next-meetup" class="container flex flex-col gap-8">
   <div>
     <h2 class="text-center text-primary mb-6"><%= t(".title") %></h2>
-    <div class="text-center"><%= t(".subtitle_html", date: l(Date.today.first_tuesday_of_the_month, format: :default)) %></div>
+    <div class="text-center"><%= t(".subtitle_html", date: l(Talk.next_meetup_date, format: :default)) %></div>
   </div>
 
   <% if lineup_talks.size.positive? %>
