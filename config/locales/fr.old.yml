@@ -83,21 +83,6 @@ fr:
       q:
         create: Ok
 
-  talks:
-    form:
-      accept_coc: Je m’engage à respecter le Code of Conduct de ParisRB
-    index:
-      description: >-
-        Voir la liste des talks proposés pour les prochains meetups. Proposez
-        votre talk !
-      lineup: Lineup du prochain meetup
-      proposed_talks: Autres talks proposés
-      happened_talks: Talks ayant déjà eu lieu
-      resources: Ressources
-      slides: slides
-      title: Proposer un talk
-      video: vidéo
-
   sponsoring:
     show:
       description: Sponsoriser le Meetup Paris.rb
