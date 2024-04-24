@@ -5,7 +5,7 @@
 
 <div class="container pt-12 pb-20">
   <%= back_to t(".back"), :back, class: "mb-8" %>
-  <h1 class="text-center mb-8"><%= @video.title %></h1>
+  <h1 class="text-center text-primary mb-8"><%= @video.title %></h1>
 
   <%= render "videos/#{@video.provider}", video: @video if @video.provider %>
 </div>
