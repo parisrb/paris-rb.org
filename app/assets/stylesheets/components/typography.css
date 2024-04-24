@@ -4,15 +4,15 @@
   }
 
   h1 {
-    @apply text-4xl font-bold font-heading;
+    @apply text-6xl font-extralight font-heading;
   }
 
   h2 {
-    @apply text-2xl font-semibold font-heading;
+    @apply text-5xl font-extralight font-heading;
   }
 
   h3 {
-    @apply text-xl font-semibold font-heading;
+    @apply text-xl font-extralight font-heading;
   }
 
   highlighed {
