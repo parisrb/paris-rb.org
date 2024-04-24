@@ -5,10 +5,10 @@
     <div class="text-center">
       <div class="max-w2xl flex flex-col gap-4 items-start">
         <div class="flex items-center gap-2">
-          <h1 class="text-5xl font-normal"><%= t('.title_html') %></h1>
+          <h1 class=""><%= t('.title_html') %></h1>
           <%= lucide_icon "heart", class: 'text-primary h-10 w-10 mb-4' %>
         </div>
-        <div class="w-full text-semibold text-left flex flex-col gap-4 leading-relaxed">
+        <div class="w-full text-left flex flex-col gap-4 leading-relaxed">
           <div><%= t('.subtitle_html') %></div>
           <div><%= t('.subtitle_2_html') %></div>
         </div>
@@ -21,26 +21,26 @@
         <div class="flex items-center gap-2 mt-8 flex-wrap">
           <%= t(".join_us_on") %>
           <!-- Slack -->
-          <%= link_to join_slack_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+          <%= link_to join_slack_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
             <%= lucide_icon "slack", class: 'h-6 w-6' %>
             Slack
           <% end %>
           <%= lucide_icon "slash", class: "h-4 w-4" %>
           <!-- Youtube -->
-          <%= link_to youtube_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+          <%= link_to youtube_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
             <%= lucide_icon "youtube", class: 'h-6 w-6' %>
             Youtube
           <% end %>
           <%= lucide_icon "slash", class: "h-4 w-4" %>
           <!-- Twitch -->
-          <%= link_to twitch_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+          <%= link_to twitch_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
             <%= lucide_icon "twitch", class: 'h-6 w-6' %>
             Twitch
           <% end %>
 
           <%= lucide_icon "slash", class: "h-4 w-4" %>
           <!-- Linkedin -->
-          <%= link_to linkedin_url, class: "flex items-center gap-2 link link-primary font-semibold", target: "_blank" do %>
+          <%= link_to linkedin_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
             <%= lucide_icon "linkedin", class: 'h-6 w-6' %>
             Linkedin
           <% end %>
