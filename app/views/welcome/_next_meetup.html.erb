@@ -4,7 +4,7 @@
     <div class="text-center"><%= t(".subtitle_html", date: l(Talk.next_meetup_date, format: :default)) %></div>
   </div>
 
-  <% if lineup_talks.size.positive? %>
+  <% if lineup_talks.any? %>
     <div>
       <h3 class="mb-4"><%= t(".line_up_description") %></h3>
       <ul class="flex flex-col gap-2 list-disc">
