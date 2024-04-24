@@ -1,18 +1,18 @@
 @layer components {
   .markdown {
-    @apply text-lg leading-loose;
+    @apply leading-relaxed;
   }
   .markdown h1 {
-    @apply text-3xl font-bold mb-4;
+    @apply text-5xl font-extralight mb-4;
   }
   .markdown h2 {
-    @apply text-2xl font-bold mb-4;
+    @apply text-3xl font-extralight mb-4;
   }
   .markdown h3 {
-    @apply text-xl font-bold mb-4;
+    @apply text-xl font-extralight mb-4;
   }
   .markdown h4 {
-    @apply text-lg font-bold mb-4;
+    @apply text-lg font-extralight mb-4;
   }
   .markdown p {
     @apply mb-4;
