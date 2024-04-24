@@ -6,6 +6,7 @@
     "@hotwired/turbo-rails": "^8.0.4",
     "debounced": "^1.0.0",
     "lite-youtube-embed": "^0.3.2",
+    "rfs": "^10.0.0",
     "stimulus-use": "^0.52.2"
   },
   "scripts": {
