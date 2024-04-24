@@ -106,4 +106,10 @@ Rails.application.configure do
     port: 587,
     user_name: ENV["SENDGRID_USERNAME"]
   }
+
+  # cache assets for 1 year
+  config.public_file_server.headers = {
+    "Cache-Control" => "public, max-age=#{2.days.to_i}",
+    "Expires" => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+  }
 end
