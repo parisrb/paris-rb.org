@@ -10,11 +10,13 @@ class HomePageSystemTest < ApplicationSystemTestCase
     end
   end
 
-  test "Update the session count" do
+  test "display the home page and track visits" do
     visit root_path
     assert_text "Le plus grand meetup Ruby d'Europe", normalize_ws: true
     assert_selector ".section-sponsors img", count: 4
     assert_selector "[alt='#{@active_sponsor.name}']", count: 1
     assert_selector "[alt='#{@permanent_sponsor.name}']", count: 1
+    assert_equal 1, Ahoy::Visit.count
+    assert_equal 1, Ahoy::Event.count
   end
 end

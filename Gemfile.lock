@@ -72,6 +72,10 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    ahoy_matey (5.1.0)
+      activesupport (>= 6.1)
+      device_detector (>= 1)
+      safely_block (>= 0.4)
     annotate (3.2.0)
       activerecord (>= 3.2, < 8.0)
       rake (>= 10.4, < 14.0)
@@ -131,6 +135,7 @@ GEM
       paint (>= 0.9, < 3.0)
     decent_exposure (3.0.4)
       activesupport (>= 4.0)
+    device_detector (1.1.2)
     devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -382,6 +387,7 @@ GEM
     ruby_engine (2.0.0)
     ruby_version (1.0.3)
     rubyzip (2.3.2)
+    safely_block (0.4.0)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -453,6 +459,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  ahoy_matey (~> 5.1)
   annotate
   bootsnap
   brakeman

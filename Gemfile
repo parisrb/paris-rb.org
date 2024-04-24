@@ -99,3 +99,5 @@ gem "simple_form", "~> 5.0.0"
 gem "sitemap_generator", require: false
 gem "sucker_punch"
 gem "faraday"
+
+gem "ahoy_matey", "~> 5.1"
