@@ -12,7 +12,7 @@ class TalksController < ApplicationController
   def create
     @talk = Talk.new(talk_params)
     if @talk.save
-      TalkMailer.new_talk(@talk.id).deliver_later
+      TalkMailer.new_talk(@talk).deliver_later
       @talk.send_slack_notification!
       redirect_to talks_path, notice: "Talk proposed successfully"
     else
