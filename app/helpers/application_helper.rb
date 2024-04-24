@@ -35,7 +35,7 @@ module ApplicationHelper
 
     classes = [ class_names("inline-flex items-center gap-2 flex-nowrap"), attributes.delete(:class) ].compact.uniq.join(" ")
     link_to url, class: classes, target: "_blank", rel: "noopener", **attributes do
-      concat(content_tag(:span, text)).concat(lucide_icon("external-link", class: "w-[1em] h-[1em]"))
+      concat(content_tag(:span, text)).concat(lucide_icon("external-link", class: "w-4 h-4"))
     end
   end
 
