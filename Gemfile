@@ -94,7 +94,6 @@ gem "meta-tags"
 gem "rails-i18n"
 gem "ransack"
 gem "record_tag_helper"
-gem "simple_form"
 gem "sitemap_generator", require: false
 gem "sucker_punch"
 gem "faraday"
