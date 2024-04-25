@@ -447,9 +447,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    simple_form (5.3.0)
-      actionpack (>= 5.2)
-      activemodel (>= 5.2)
     sitemap_generator (6.3.0)
       builder (~> 3.0)
     sitepress-core (4.0.2)
@@ -552,7 +549,6 @@ DEPENDENCIES
   redis (~> 5.0)
   rubocop-rails-omakase
   selenium-webdriver
-  simple_form
   sitemap_generator
   sitepress-rails
   sprockets-rails
