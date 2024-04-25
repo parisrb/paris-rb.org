@@ -1,21 +1,20 @@
-<section class="container">
-  <header>
-    <h1><%= t('.title') %></h1>
-  </header>
+<section class="container pt-12 pb-20">
+  <h1 class="text-center mb-8 text-primary"><%= t('.title') %></h1>
 
-  <div class="row">
-    <div class="col-sx-12 col-sm-4 col-sm-offset-4">
-      <%= simple_form_for resource, as: resource_name, url: password_path(resource_name), html: { class: 'form-horizontal', role: 'form' } do |f| %>
-        <%= f.error_notification %>
-        <%= f.input :email, required: true, autofocus: true %>
+  <div class="flex justify-center">
+    <div class="w-full max-w-sm">
+      <%= form_for resource, as: resource_name, url: password_path(resource_name), html: { role: 'form' } do |f| %>
 
-        <div class="form-group">
-          <div class="col-sm-9 col-sm-offset-3">
-            <%= f.button :submit, t('.send_instructions'), class: 'btn-default' %>
-          </div>
+        <div class="form-control w-full">
+          <%= f.label :email, class: 'label' %>
+          <%= f.email_field :email, autofocus: true, required: true, class: 'input input-bordered w-full' %>
         </div>
 
-        <div class="col-sm-offset-3">
+        <div class="flex justify-end mt-6">
+          <%= f.submit t('.send_instructions'), class: 'btn btn-accent' %>
+        </div>
+
+        <div class="pt-4">
           <%= render 'devise/shared/links' %>
         </div>
       <% end %>
