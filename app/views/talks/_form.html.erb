@@ -1,4 +1,4 @@
-<%= form_for talk, html: { class: 'flex flex-col gap-4', role: 'form' } do |f| %>
+<%= form_for talk, html: { class: 'flex flex-col gap-2', role: 'form' } do |f| %>
   <div class="form-control">
     <%= f.label :title, class: 'label' %>
     <%= f.text_field :title, required: true, class: 'input input-bordered w-full' %>
@@ -21,18 +21,18 @@
     </div>
   </div>
 
-  <div class="form-control">
-    <%= f.label :preferred_month_talk, class: 'label' %>
-    <%= f.select :preferred_month_talk, Talk.propose_upcoming_months.invert, {}, class: 'select select-bordered w-full' %>
-  </div>
+  <div class="flex gap-2 flex-col sm:flex-row w-full justify-evenly">
+    <div class="form-control w-full">
+      <%= f.label :preferred_month_talk, class: 'label' %>
+      <%= f.select :preferred_month_talk, Talk.propose_upcoming_months.invert, {}, class: 'select select-bordered w-full' %>
+    </div>
 
-  <div class="flex gap-4 w-full">
-    <div class="form-control full">
+    <div class="form-control w-full">
       <%= f.label :duration, class: 'label' %>
       <%= f.select :duration, Talk.duration.options, {}, { class: 'select select-bordered w-full' } %>
     </div>
 
-    <div class="form-control full">
+    <div class="form-control w-full">
       <%= f.label :level, class: 'label' %>
       <%= f.select :level, Talk.level.options, {}, { class: 'select select-bordered w-full' } %>
     </div>
@@ -40,6 +40,6 @@
 
   <div class="flex flex-col gap-4 mt-6 items-start">
     <%= external_link_to t('.accept_coc'), page_path("code_de_conduite"), class: "link" %>
-    <%= f.submit t('.submit'), class: 'btn btn-primary', id: "submit-talk" %>
+    <%= f.submit t('.submit'), class: 'btn btn-accent', id: "submit-talk" %>
   </div>
 <% end %>
