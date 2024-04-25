@@ -110,21 +110,18 @@ class Talk < ApplicationRecord
     "#{emoji} #{title}"
   end
 
-  def send_slack_notification!
-    return if ENV["SLACK_WEBHOOK_URL"].blank?
-
-    conn = Faraday.new(headers: { "Content-Type" => "application/json" }) do |conn|
-      conn.options.timeout = 5
-    end
-    conn.post(ENV["SLACK_WEBHOOK_URL"], { text: <<~MKDWN }.to_json)
+  def to_slack_message
+    <<~MKDWN
       *Nouveau talk* : _#{title}_ par #{speaker_name}
 
       - #{duration_text}
       - #{level_text}
       - #{preferred_month_talk_text}
     MKDWN
-  rescue => e
-    Rails.logger.error "Couldn't send slack notification because of error: #{e.class} #{e.message}"
+  end
+
+  def send_slack_notification!
+    SlackNotificationJob.perform_later(message: to_slack_message, channel: "orga")
   end
 
   def self.ransackable_associations(auth_object = nil)
