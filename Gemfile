@@ -92,7 +92,6 @@ gem "ransack"
 gem "record_tag_helper"
 gem "sitemap_generator", require: false
 gem "sucker_punch"
-gem "faraday"
 
 gem "ahoy_matey", "~> 5.1"
 
