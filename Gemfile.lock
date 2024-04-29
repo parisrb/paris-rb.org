@@ -325,8 +325,6 @@ GEM
       ffi (~> 1.0)
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
-    record_tag_helper (1.0.1)
-      actionview (>= 5)
     redcarpet (3.6.0)
     redis (5.0.8)
       redis-client (>= 0.17.0)
@@ -470,7 +468,6 @@ DEPENDENCIES
   rails (~> 7.1)
   rails-i18n
   ransack
-  record_tag_helper
   redis (~> 5.0)
   rubocop-rails-omakase
   selenium-webdriver

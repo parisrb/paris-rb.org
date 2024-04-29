@@ -89,7 +89,6 @@ gem "kaminari"
 gem "meta-tags"
 gem "rails-i18n"
 gem "ransack"
-gem "record_tag_helper"
 gem "sitemap_generator", require: false
 gem "sucker_punch"
 
