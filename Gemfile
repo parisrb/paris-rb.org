@@ -58,7 +58,6 @@ group :development, :test do
   gem "byebug", "~> 11.1"
   gem "erb_lint", require: false
   gem "erblint-github"
-  gem "faker"
 end
 
 group :development do
@@ -73,7 +72,6 @@ group :development do
 
   gem "annotate"
   gem "dotenv-rails"
-  gem "irbtools", require: "irbtools/configure"
   gem "hotwire-livereload", "~> 1.3"
 end
 
@@ -84,19 +82,15 @@ group :test do
 end
 
 gem "cloudinary"
-gem "coffee-rails"
 gem "decent_exposure"
 gem "devise"
 gem "enumerize"
-gem "jquery-rails"
 gem "kaminari"
 gem "meta-tags"
 gem "rails-i18n"
 gem "ransack"
-gem "record_tag_helper"
 gem "sitemap_generator", require: false
 gem "sucker_punch"
-gem "faraday"
 
 gem "ahoy_matey", "~> 5.1"
 

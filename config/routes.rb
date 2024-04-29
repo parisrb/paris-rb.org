@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   sitepress_pages
 
   devise_for :users
-
   authenticate :user do
     mount Avo::Engine, at: Avo.configuration.root_path
   end
