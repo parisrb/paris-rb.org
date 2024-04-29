@@ -3,7 +3,7 @@
     <h2 class="text-center text-primary mb-6"><%= t(".title") %></h2>
     <div class="text-center"><%= t(".subtitle") %></div>
   </div>
-  <div class="flex items-center justify-center sm:justify-between flex-wrap gap-12">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
     <%= render partial: "sponsors/card", collection: sponsors, as: :sponsor %>
   </div>
   <%= link_to sponsors_path, class: 'link link-primary self-end flex items-center gap-2' do %>

@@ -12,11 +12,12 @@
           <div><%= t('.subtitle_html') %></div>
           <div><%= t('.subtitle_2_html') %></div>
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex flex-col sm:flex-row items-center gap-2">
           <%= external_link_to t('.hero_cta'), meetup_url, class: "btn btn-accent", target: "_blank" %>
-          <span><%= t("or") %></span>
-          <%= link_to t(".suggest_talk"), new_talk_path, class: "link link-primary" %>
-
+          <div class="flex gap-2">
+            <span><%= t("or") %></span>
+            <%= link_to t(".suggest_talk"), new_talk_path, class: "link link-primary" %>
+          </div>
         </div>
         <div class="flex items-center gap-2 mt-8 flex-wrap">
           <%= t(".join_us_on") %>
