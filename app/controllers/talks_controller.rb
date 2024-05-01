@@ -1,10 +1,4 @@
 class TalksController < ApplicationController
-  expose(:happened_talks) { Talk.happened }
-
-  expose(:lineup_talks) { Talk.lineup }
-
-  expose(:proposed_talks) { Talk.proposed }
-
   def new
     @talk = Talk.new
   end
