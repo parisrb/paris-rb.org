@@ -16,9 +16,9 @@
       <%= link_to t("navbar.suggest_talk"),new_talk_path, class: "btn btn-primary hidden lg:flex" %>
 
       <div class="items-center hidden lg:flex gap-1">
-        <%= link_to "FR", "#", class: "" %>
+        <%= link_to "FR", {locale: :fr}, class: class_names("link-neutral": current_locale == :en) %>
         <%= lucide_icon "slash", class: "h-2 w-2" %>
-        <%= link_to "EN", "#", class: "link-neutral" %>
+        <%= link_to "EN", {locale: :en}, class: class_names("link-neutral": current_locale == :fr) %>
       </div>
     </div>
     <details class="dropdown dropdown-end" data-controller="dropdown" data-action="keydown.esc->dropdown#close">
@@ -37,6 +37,14 @@
         <div class="divider"></div>
 
         <li role="menuitem"><%= link_to t("navbar.suggest_talk"), new_talk_path, class: "link-primary" %></li>
+
+        <div class="divider"></div>
+
+        <div tabindex="-1" class="items-center flex justify-center flex-row gap-1">
+          <%= link_to "FR", {locale: :fr}, class: class_names("link-neutral": current_locale == :en), "aria-label": "Site en Français" %>
+          <%= lucide_icon "slash", class: "fill-black h-2 w-2" %>
+          <%= link_to "EN", {locale: :en}, class: class_names("link-neutral": current_locale == :fr), "aria-label": "Website in English" %>
+        </div>
       </ul>
     </details>
   </div>
