@@ -1,124 +1,124 @@
 fr:
-#   "yes": "Oui"
-#   "no": "Non"
+  "yes": "Oui"
+  "no": "Non"
 
-#   contact_maintainer: Contacter le mainteneur (@happynoff)
-#   project_on_github: Retrouver ce projet sur Github
-#   sponsoring_the_meetup: Sponsoriser le Meetup
+  contact_maintainer: Contacter le mainteneur (@happynoff)
+  project_on_github: Retrouver ce projet sur Github
+  sponsoring_the_meetup: Sponsoriser le Meetup
 
-#   site_name: Paris.rb
+  site_name: Paris.rb
 
-#   admin:
-#     help:
-#       talk:
-#         priority: Optionnel. Une priorité 'basse' peut servir à mettre de côté un talk pour combler un programme, une priorité 'haute' pour les invités spéciaux.
+  admin:
+    help:
+      talk:
+        priority: Optionnel. Une priorité 'basse' peut servir à mettre de côté un talk pour combler un programme, une priorité 'haute' pour les invités spéciaux.
 
-#   activerecord:
-#     attributes:
-#       user:
-#         email: Email
-#         password: Mot de passe
-#         remember_me: Se souvenir de moi
-#       talk:
-#         duration: Durée
-#         happened: A eu lieu
-#         happened_at: Date
-#         level: Difficulté
-#         lineup: Ajouter au lineup
-#         priority: Priorité
-#         slides: Slides
-#         speaker_email: Email
-#         speaker_name: Speaker
-#         speaker_twitter: Twitter
-#         time_position: Heure du talk
-#         title: Titre
-#         video_slug: Vidéo
-#         preferred_month_talk: Quel mois ?
-#         proposed_months:
-#           january: Janvier
-#           february: Février
-#           march: Mars
-#           april: Avril
-#           may: Mai
-#           june: Juin
-#           july: Juillet
-#           august: Août
-#           september: Septembre
-#           october: Octobre
-#           november: Novembre
-#           december: Decembre
+  activerecord:
+    attributes:
+      user:
+        email: Email
+        password: Mot de passe
+        remember_me: Se souvenir de moi
+      talk:
+        duration: Durée
+        happened: A eu lieu
+        happened_at: Date
+        level: Difficulté
+        lineup: Ajouter au lineup
+        priority: Priorité
+        slides: Slides
+        speaker_email: Email
+        speaker_name: Speaker
+        speaker_twitter: Twitter
+        time_position: Heure du talk
+        title: Titre
+        video_slug: Vidéo
+        preferred_month_talk: Quel mois ?
+        proposed_months:
+          january: Janvier
+          february: Février
+          march: Mars
+          april: Avril
+          may: Mai
+          june: Juin
+          july: Juillet
+          august: Août
+          september: Septembre
+          october: Octobre
+          november: Novembre
+          december: Decembre
 
-#   devise:
-#     passwords:
-#       new:
-#         send_instructions: Envoyer les instructions
-#         title: Mot de passe oublié
-#     sessions:
-#       new:
-#         sign_in: Me connecter
-#         title: Connexion
-#     shared:
-#       links:
-#         forgot_password: "Mot de passe oublié ?"
-#         sign_in: Connexion
+  devise:
+    passwords:
+      new:
+        send_instructions: Envoyer les instructions
+        title: Mot de passe oublié
+    sessions:
+      new:
+        sign_in: Me connecter
+        title: Connexion
+    shared:
+      links:
+        forgot_password: "Mot de passe oublié ?"
+        sign_in: Connexion
 
-#   enumerize:
-#     talk:
-#       duration:
-#         lightning: Lightning - 5 min
-#         long: Long - 20 min
-#       level:
-#         easy: Débutant
-#         intermediate: Moyen
-#         expert: Expert
-#       priority:
-#         low: Basse
-#         normal: Normale
-#         high: Haute
+  enumerize:
+    talk:
+      duration:
+        lightning: Lightning - 5 min
+        long: Long - 20 min
+      level:
+        easy: Débutant
+        intermediate: Moyen
+        expert: Expert
+      priority:
+        low: Basse
+        normal: Normale
+        high: Haute
 
-#   helpers:
-#     submit:
-#       talk:
-#         create: Ajouter mon talk
-#       q:
-#         create: Ok
+  helpers:
+    submit:
+      talk:
+        create: Ajouter mon talk
+      q:
+        create: Ok
 
-#   sponsoring:
-#     show:
-#       description: Sponsoriser le Meetup Paris.rb
-#       title: Sponsoring
+  sponsoring:
+    show:
+      description: Sponsoriser le Meetup Paris.rb
+      title: Sponsoring
 
-#   views:
-#     pagination:
-#       first: «
-#       last: »
-#       next: →
-#       previous: ←
-#       truncate: …
+  views:
+    pagination:
+      first: «
+      last: »
+      next: →
+      previous: ←
+      truncate: …
 
-#   welcome:
-#     index:
-#       description: >-
-#         Le plus grand meetup Ruby d'Europe ! Toutes les vidéos de Paris.rb.
-#         Liste des talks des prochains meetups.
-#       ellipsis:
-#         title: Paris.rb c'est aussi...
-#       guests:
-#         title: Ce que nos invités en disent
-#       show-off:
-#         active_members: Plus de 100 membres présents chaque mois.
-#         members_count_html: >-
-#           Plus de 3000 membres sur %{link}
+  welcome:
+    index:
+      description: >-
+        Le plus grand meetup Ruby d'Europe ! Toutes les vidéos de Paris.rb.
+        Liste des talks des prochains meetups.
+      ellipsis:
+        title: Paris.rb c'est aussi...
+      guests:
+        title: Ce que nos invités en disent
+      show-off:
+        active_members: Plus de 100 membres présents chaque mois.
+        members_count_html: >-
+          Plus de 3000 membres sur %{link}
 
-#         title: Le plus grand meetup Ruby d'Europe !
-#       sponsors:
-#         subtitle: À qui nous disons un grand MERCI !
-#         title: Nos sponsors
-#         button: Sponsoriser
-#       talks:
-#         subtitle: Toutes les présentations sont filmées
-#         title: Des talks de qualité
-#         videos: Voir les vidéos
-#       you:
-#         give_a_talk: Proposer un talk !
-#         title: Mais Paris.rb c'est avant tout... VOUS!
+        title: Le plus grand meetup Ruby d'Europe !
+      sponsors:
+        subtitle: À qui nous disons un grand MERCI !
+        title: Nos sponsors
+        button: Sponsoriser
+      talks:
+        subtitle: Toutes les présentations sont filmées
+        title: Des talks de qualité
+        videos: Voir les vidéos
+      you:
+        give_a_talk: Proposer un talk !
+        title: Mais Paris.rb c'est avant tout... VOUS!
