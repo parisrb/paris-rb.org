@@ -26,3 +26,13 @@ en:
       no_line_up_html: No talks have been announced for this meetup yet. Don't worry, there are always last-minute proposals! And why not propose yours?
       propose_talk: Propose a talk
       meetup_information_html: To participate, find all the information (location, terms) of the next meetup on our page
+    data:
+      title: In numbers
+      data_1_title: Members on Slack
+      data_1_value: 2172
+      data_1_desc: and 700+ on the help channel
+      data_2_title: Videos on YouTube
+      data_2_desc: all talks are filmed
+      data_3_title: Sponsors
+      data_3_value: 100
+      data_3_desc: thank you to them

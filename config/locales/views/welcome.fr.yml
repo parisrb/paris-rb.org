@@ -28,7 +28,6 @@ fr:
       meetup_information_html: Pour participer, retrouve toutes les informations (lieu, modalités) du prochain meetup sur notre page
     data:
       title: Quelques chiffres
-      subtitle_html: dfsdfsd
       data_1_title: Membres sur le Slack
       data_1_value: 2172
       data_1_desc: et 700+ sur le channel help
