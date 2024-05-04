@@ -1,4 +1,8 @@
 class TalksController < ApplicationController
+  def index
+    @lineup_talks = Talk.lineup
+  end
+
   def new
     @talk = Talk.new
   end
