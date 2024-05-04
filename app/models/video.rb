@@ -31,7 +31,7 @@ class Video < ApplicationRecord
   def provider_id
     {
       youtube: youtube_id,
-      viemo: vimeo_id
+      vimeo: vimeo_id
     }[provider]
   end
 
