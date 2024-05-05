@@ -28,6 +28,9 @@ fr:
     passwords:
       edit:
         title: Réinitialisation de mot de passe
+      new:
+        send_instructions: Envoyer les instructions
+        title: Mot de passe oublié
       no_token: Vous ne pouvez accéder à cette page sans passer par un e-mail de réinitialisation de mot de passe. Si vous êtes passé par un e-mail de ce type, assurez-vous d'utiliser l'URL complète.
       send_instructions: Vous allez recevoir les instructions de réinitialisation du mot de passe dans quelques instants
       send_paranoid_instructions: Si votre e-mail existe dans notre base de données, vous allez recevoir un lien de réinitialisation par e-mail
@@ -42,8 +45,15 @@ fr:
       update_needs_confirmation: Votre compte a bien été mis à jour mais nous devons vérifier votre nouvelle adresse email. Merci de vérifier vos emails et de cliquer sur le lien de confirmation pour finaliser la validation de votre nouvelle adresse.
       updated: Votre compte a été modifié avec succès.
     sessions:
+      new:
+        sign_in: Me connecter
+        title: Connexion
       signed_in: Connecté.
       signed_out: Déconnecté.
+    shared:
+      links:
+        forgot_password: Mot de passe oublié ?
+        sign_in: Connexion
     unlocks:
       send_instructions: Vous allez recevoir les instructions nécessaires au déverrouillage de votre compte dans quelques instants
       send_paranoid_instructions: Si votre compte existe, vous allez bientôt recevoir un email contenant les instructions pour le déverrouiller.

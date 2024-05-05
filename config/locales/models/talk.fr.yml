@@ -1,0 +1,45 @@
+---
+fr:
+  activerecord:
+    attributes:
+      talk:
+        duration: Durée
+        happened: A eu lieu
+        happened_at: Date
+        level: Difficulté
+        lineup: Ajouter au lineup
+        preferred_month_talk: Quel mois ?
+        priority: Priorité
+        proposed_months:
+          april: Avril
+          august: Août
+          december: Decembre
+          february: Février
+          january: Janvier
+          july: Juillet
+          june: Juin
+          march: Mars
+          may: Mai
+          november: Novembre
+          october: Octobre
+          september: Septembre
+        slides: Slides
+        speaker_email: Email
+        speaker_name: Speaker
+        speaker_twitter: Twitter
+        time_position: Heure du talk
+        title: Titre
+        video_slug: Vidéo
+  enumerize:
+    talk:
+      duration:
+        lightning: Lightning - 5 min
+        long: Long - 20 min
+      level:
+        easy: Débutant
+        expert: Expert
+        intermediate: Moyen
+      priority:
+        high: Haute
+        low: Basse
+        normal: Normale

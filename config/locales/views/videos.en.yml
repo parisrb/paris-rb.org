@@ -1,6 +1,9 @@
 ---
 en:
   videos:
+    card:
+      thumbnail_alt: 'Thumbnail of the video: %{title}'
+      watch_video: 'Watch the video: %{title}'
     index:
       description: All the videos of the Paris.rb meetup talks
       title: Videos of the talks

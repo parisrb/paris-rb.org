@@ -19,4 +19,11 @@ class HomePageSystemTest < ApplicationSystemTestCase
     assert_equal 1, Ahoy::Visit.count
     assert_equal 1, Ahoy::Event.count
   end
+
+
+  test "display the home page in english" do
+    visit root_path(locale: :en)
+
+    assert_selector "h1", text: "Paris.rb"
+  end
 end
