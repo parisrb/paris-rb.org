@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :talks, only: [ :new, :index, :create ]
   resource :lineup, only: [ :show ]
   resources :sponsors, only: [ :index ]
+  resource :locale, only: [ :update ]
 
   get "/communique_2022" => redirect("/communiques/thibault_assus_comdamnation", status: 301)
 
