@@ -22,8 +22,10 @@ class HomePageSystemTest < ApplicationSystemTestCase
 
 
   test "display the home page in english" do
-    visit root_path(locale: :en)
+    with_locale(:en) do
+      visit root_path
 
-    assert_selector "h1", text: "Paris.rb"
+      assert_selector "h1", text: "Paris.rb"
+    end
   end
 end

@@ -18,4 +18,9 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   end
 
   ENV["DEBUG"] ? driven_by(:chrome) : driven_by(:headless_chrome)
+
+  def with_locale(locale)
+    visit root_path(locale: locale)
+    yield if block_given?
+  end
 end
