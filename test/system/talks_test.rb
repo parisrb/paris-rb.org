@@ -7,8 +7,10 @@ class TalksTest < ApplicationSystemTestCase
   end
 
   test "visit talks in english" do
-    visit talks_path(locale: :en)
-    assert_selector "h1", text: I18n.t("talks.index.lineup", locale: :en)
+    with_locale(:en) do
+      visit talks_path
+      assert_selector "h1", text: I18n.t("talks.index.lineup", locale: :en)
+    end
   end
 
 
