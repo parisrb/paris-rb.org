@@ -17,7 +17,7 @@ class SlackNotificationJob < ApplicationJob
     http.use_ssl = true
     request = Net::HTTP::Post.new(uri.request_uri, "Content-Type" => "application/json")
     request.body = { text: message, channel: channel_by_envrionment }.to_json
-    puts channel_by_envrionment
+
     http.request(request)
   rescue => e
     Rails.logger.error "Couldn't send slack notification because of error: #{e.class} #{e.message}"
