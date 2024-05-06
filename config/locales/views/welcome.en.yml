@@ -15,7 +15,7 @@ en:
       hero_cta: Participate in the next meetup
       join_us_on: Join the community on
       subtitle_2_html: The Paris.rb meetup takes place <highlighed>on the first Tuesday of each month</highlighed>, a unique opportunity to meet IRL and exchange.
-      subtitle_html: Bringing together the <highlighed>French-speaking Ruby developers</highlighed> community around the values of sharing, mutual aid, and meetings.
+      subtitle_html: Connects the community of <highlighed>French-speaking Ruby developers</highlighed> to enhance sharing, support, and networking opportunities.
       suggest_talk: suggest a talk
       title_html: Paris<span class="text-primary">.rb</span>
       twitch_html: Join us on <a href='https://www.twitch.tv/parisrb'>Twitch</a> to follow the talks live !
@@ -24,7 +24,7 @@ en:
       subtitle: All presentations are filmed, available live on Twitch and replayed on YouTube.
       title: Latest videos
     next_meetup:
-      line_up_description: 'The program currently includes the following talks:'
+      line_up_description: "The program currently includes the following talks:"
       meetup_information_html: To participate, find all the information (location, terms) of the next meetup on our page
       no_line_up_html: No talks have been announced for this meetup yet. Don't worry, there are always last-minute proposals! And why not propose yours?
       propose_talk: Propose a talk
