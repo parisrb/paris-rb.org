@@ -5,6 +5,6 @@ class LocalesController < ApplicationController
 
   def referer
     # referer url without the locale params
-    request.referer.gsub(/(\?|&)locale=[a-z]{2}/, '') if request.referer
+    request.referer.gsub(/(\?|&)locale=[a-z]{2}/, "") if request.referer
   end
 end
