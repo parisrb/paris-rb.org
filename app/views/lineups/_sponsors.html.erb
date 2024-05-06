@@ -3,7 +3,7 @@
 
   <% sponsors.each do |sponsor| %>
     <% if sponsor.logo.present? %>
-      <%= image_tag sponsor.logo.url, alt: sponsor.name %>
+      <%= image_tag sponsor.logo.url, alt: sponsor.name, class: "sponsor__logo" %>
     <% else %>
       <%= sponsor.name %>
     <% end %>
