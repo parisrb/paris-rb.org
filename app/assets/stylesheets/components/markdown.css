@@ -6,13 +6,13 @@
     @apply text-6xl text-primary text-center font-extralight mb-4;
   }
   .markdown h2 {
-    @apply text-4xl font-extralight mb-4;
+    @apply text-4xl font-light mb-4;
   }
   .markdown h3 {
-    @apply text-xl font-extralight mb-4;
+    @apply text-xl font-light mb-4;
   }
   .markdown h4 {
-    @apply text-lg font-extralight mb-4;
+    @apply text-lg font-light mb-4;
   }
   .markdown p {
     @apply mb-4;

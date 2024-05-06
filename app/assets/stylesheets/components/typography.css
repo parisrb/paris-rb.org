@@ -8,7 +8,7 @@
   }
 
   h2 {
-    @apply text-4xl font-extralight font-heading;
+    @apply text-4xl font-light font-heading;
   }
 
   h3 {
