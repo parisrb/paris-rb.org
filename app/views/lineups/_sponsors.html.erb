@@ -1,13 +1,12 @@
 <section>
-  <h2>Sponsors &lt;3</h2>
+  <div class="text-6xl font-extralight font-heading flex items-center gap-2 justify-center mb-8">
+    <div>Sponsors</div>
+    <%= lucide_icon "heart", class: 'text-primary h-10 w-10 mb-4' %>
+  </div>
 
-  <% sponsors.each do |sponsor| %>
-    <% if sponsor.logo.present? %>
-      <%= image_tag sponsor.logo.url, alt: sponsor.name, class: "sponsor__logo" %>
-    <% else %>
-      <%= sponsor.name %>
-    <% end %>
-  <% end %>
+  <div class="flex items-center justify-center gap-12">
+    <%= render partial: "sponsors/card", collection: @sponsors, as: :sponsor %>
+  </div>
 
-  <p>... et vous ?</p>
+  <div class="mt-8 text-xl">... et vous ?</div>
 </section>

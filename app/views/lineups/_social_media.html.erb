@@ -1,17 +1,29 @@
 <section>
-  <h2>Connect with us!</h2>
+  <div class="text-6xl font-extralight font-heading flex items-center gap-2 justify-center mb-8">
+    <div>Connect with us!</div>
+    <%= lucide_icon "heart", class: 'text-primary h-10 w-10 mb-4' %>
+  </div>
 
-  <%= image_tag "twitch.jpg", class: "social_media__logo" %>
-  <%= image_tag "youtube.png", class: "social_media__logo" %>
-  <%= image_tag "slack.png", class: "social_media__logo" %>
-  <%= image_tag "meetup.png", class: "social_media__logo" %>
-  <%= image_tag "linkedin.svg", class: "social_media__logo" %>
-
-  <ul>
-    <li><%= link_to 'Twitch.tv/paris_rb', 'https://www.twitch.tv/paris_rb', target: "_blank" %></li>
-    <li><%= link_to 'YouTube.com/@paris-rb', 'https://www.youtube.com/@paris-rb', target: "_blank" %></li>
-    <li><%= link_to 'Join Slack', 'https://join.slack.com/t/parisrb/shared_invite/zt-1io48rnoz-97bt5glsJJAL1f9Gj06CRw', target: "_blank" %></li>
-    <li><%= link_to 'Meetup.com/paris_rb', 'https://www.meetup.com/paris_rb/', target: "_blank" %></li>
-    <li><%= link_to 'Follow us on LinkedIn', 'https://www.linkedin.com/company/paris-rb', target: "_blank" %></li>
-  </ul>
+  <div class="flex flex-wrap gap-8 justify-center items-center">
+    <div class="flex flex-col gap-4 justify-center items-center">
+      <%= image_tag "twitch.jpg", class: "h-20 w-auto" %>
+      <div><%= link_to 'twitch.tv/paris_rb', 'https://www.twitch.tv/paris_rb', target: "_blank" %></div>
+    </div>
+    <div class="flex flex-col gap-4 justify-center items-center">
+      <%= image_tag "youtube.png", class: "h-20 w-auto" %>
+      <div><%= link_to 'youtube.com/@paris-rb', 'https://www.youtube.com/@paris-rb', target: "_blank" %></div>
+    </div>
+    <div class="flex flex-col gap-4 justify-center items-center">
+      <%= image_tag "slack.png", class: "h-20 w-auto" %>
+      <div><%= link_to 'Join Slack', 'https://join.slack.com/t/parisrb/shared_invite/zt-1io48rnoz-97bt5glsJJAL1f9Gj06CRw', target: "_blank" %></div>
+    </div>
+    <div class="flex flex-col gap-4 justify-center items-center">
+      <%= image_tag "meetup.png", class: "h-20 w-auto" %>
+      <div><%= link_to 'meetup.com/paris_rb', 'https://www.meetup.com/paris_rb/', target: "_blank" %></div>
+    </div>
+    <div class="flex flex-col gap-4 justify-center items-center">
+      <%= image_tag "linkedin.svg", class: "h-20 w-auto" %>
+      <div><%= link_to 'linkedin.com/company/paris-rb', 'https://www.linkedin.com/company/paris-rb', target: "_blank" %></div>
+    <div>
+  </div>
 </section>
