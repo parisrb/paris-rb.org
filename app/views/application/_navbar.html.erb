@@ -13,7 +13,7 @@
         <%= render "application/navbar/link", text: t("navbar.sponsors"), path: sponsors_path %>
       </ul>
 
-      <%= link_to t("navbar.suggest_talk"),new_talk_path, class: "btn btn-primary hidden lg:flex" %>
+      <%= link_to t("navbar.suggest_talk"),new_talk_path, class: "btn btn-secondary hidden lg:flex" %>
 
       <div class="items-center hidden lg:flex gap-1">
         <%= button_to "FR", locale_path, id: "locale-fr", params: {locale: :fr}, method: :patch, class: class_names("link-neutral": current_locale == :en) %>

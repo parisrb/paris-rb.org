@@ -44,7 +44,8 @@ module.exports = {
         parisrb: {
           primary: '#D62828',
           'primary-content': '#FFFFFF',
-          secondary: '#efe7E9',
+          secondary: 'fbf2f4',
+          'secondary-content': '#D62828',
           accent: '#fcd34d',
           neutral: '#EFE7E9',
           'base-100': '#FFFFFF',
