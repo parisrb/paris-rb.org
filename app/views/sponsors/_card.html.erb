@@ -1,7 +1,7 @@
 
-<div class="flex flex-col gap-4 items-center justify-end p-2 sm:p-4">
+<div class="flex flex-col gap-4 items-center p-2 sm:p-4">
   <% if sponsor.logo.attached? %>
-    <%= link_to safe_website(sponsor.website), title: sponsor.name, target: "_blank", rel: "noopener noreferrer" do %>
+    <%= link_to safe_website(sponsor.website), title: sponsor.name, class: "h-full flex items-center", target: "_blank", rel: "noopener noreferrer" do %>
       <%= cl_image_tag sponsor.logo.key,
                         width: 200,
                         height: 160,
