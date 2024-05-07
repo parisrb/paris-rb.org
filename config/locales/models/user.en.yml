@@ -1,0 +1,8 @@
+---
+en:
+  activerecord:
+    attributes:
+      user:
+        email: Email
+        password: Password
+        remember_me: Remember me

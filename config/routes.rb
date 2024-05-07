@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
+  # static pages
+  sitepress_pages
+
   devise_for :users
-  mount RailsAdmin::Engine => "/admin", as: "rails_admin"
+  authenticate :user do
+    mount Avo::Engine, at: Avo.configuration.root_path
+  end
 
   resources :videos, only: [ :index, :show ]
-  resources :talks, only: [ :index, :create ]
+  resources :talks, only: [ :new, :index, :create ]
   resource :lineup, only: [ :show ]
+  resources :sponsors, only: [ :index ]
+  resource :locale, only: [ :update ]
 
-  get "/communique_2022" => "welcome#communique"
+  get "/communique_2022" => redirect("/communiques/thibault_assus_comdamnation", status: 301)
 
   root to: "welcome#index"
 end

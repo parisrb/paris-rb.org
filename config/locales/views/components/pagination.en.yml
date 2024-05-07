@@ -1,0 +1,17 @@
+---
+en:
+  components:
+    pagination:
+      first:
+        aria_label: First page
+      last:
+        aria_label: Last page
+      next:
+        aria_label: Next page
+      of: of
+      previous:
+        aria_label: Previous page
+      results: results
+      showing: Showing
+      to: to
+      truncate: "…"

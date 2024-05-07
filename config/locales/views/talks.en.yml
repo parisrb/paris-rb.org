@@ -1,0 +1,20 @@
+---
+en:
+  talks:
+    form:
+      accept_coc: I agree to respect the ParisRB Code of Conduct
+      submit: Submit my talk
+    index:
+      description_html: Below you will find the list of talks proposed for the next ParisRB meetups. If you would like to propose a talk, do not hesitate to do so via this <a href="/talks/new" class="link">form</a>.
+      happened_talks: Talks that have already taken place
+      lineup: Lineup of the next meetup
+      proposed_talks: Other proposed talks
+      resources: Resources
+      slides: slides
+      title: Propose a talk
+      video: video
+    new:
+      description: Do you have an idea for a talk to propose for an upcoming ParisRB meetup? Fill out the form below to submit it to us.
+      description_html: Do you have an idea for a talk to propose for an upcoming meetup? Fill out the form below to submit it to us. Or just come and discuss it on the %{link} channel.
+      submit: Submit my talk
+      title: Propose a talk

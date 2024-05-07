@@ -1,0 +1,21 @@
+@layer components {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    @apply text-6xl font-extralight font-heading;
+  }
+
+  h2 {
+    @apply text-4xl font-light font-heading;
+  }
+
+  h3 {
+    @apply text-xl font-extralight font-heading;
+  }
+
+  highlighed {
+    @apply font-semibold;
+  }
+}

@@ -1,9 +1,10 @@
 class VideosController < ApplicationController
-  expose(:search) { Video.ransack(params[:q]) }
-  expose(:video) { Video.where(slug: params[:id]).first }
-  expose(:videos) do |default|
-    search.result(distinct: true)
-          .order(event_date: :desc)
-          .page(params[:page])
+  def index
+    @search = Video.ransack(params[:q])
+    @videos = @search.result(distinct: true).order(event_date: :desc).page(params[:page])
+  end
+
+  def show
+    @video = Video.where(slug: params[:id]).first
   end
 end

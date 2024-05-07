@@ -1,0 +1,39 @@
+---
+en:
+  welcome:
+    data:
+      data_1_desc: and 700+ on the help channel
+      data_1_title: Members on Slack
+      data_1_value: 2172
+      data_2_desc: all talks are filmed
+      data_2_title: Videos on YouTube
+      data_3_desc: thank you to them
+      data_3_title: Sponsors
+      data_3_value: 100
+      title: In numbers
+    index:
+      hero_cta: Participate in the next meetup
+      join_us_on: Join the community on
+      subtitle_2_html: The Paris.rb meetup takes place <highlighed>on the first Tuesday of each month</highlighed>, a unique opportunity to meet IRL and exchange.
+      subtitle_html: Connects the community of <highlighed>French-speaking Ruby developers</highlighed> to enhance sharing, support, and networking opportunities.
+      suggest_talk: suggest a talk
+      title_html: Paris<span class="text-primary">.rb</span>
+      twitch_html: Join us on <a href='https://www.twitch.tv/parisrb'>Twitch</a> to follow the talks live !
+    latest_videos:
+      see_all: See all videos
+      subtitle: All presentations are filmed, available live on Twitch and replayed on YouTube.
+      title: Latest videos
+    next_meetup:
+      line_up_description: "The program currently includes the following talks:"
+      meetup_information_html: To participate, find all the information (location, terms) of the next meetup on our page
+      no_line_up_html: No talks have been announced for this meetup yet. Don't worry, there are always last-minute proposals! And why not propose yours?
+      propose_talk: Propose a talk
+      see_past_videos: See videos from previous meetups
+      subtitle_html: Join us for the next <highlighed>meetup on %{date}</highlighed>.
+      title: Next meetup
+    sponsors:
+      see_all: See all Paris.rb sponsors
+      sponsor_an_event: Would you like to strengthen your visibility in the Ruby community? Sponsor a Paris.rb event!
+      sponsor_cta: Sponsor
+      subtitle: Thank you to our latest sponsors for their support.
+      title: Our sponsors

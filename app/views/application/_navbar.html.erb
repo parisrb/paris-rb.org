@@ -1,0 +1,51 @@
+<div class="navbar bg-base-100 justify-between flex items-center h-20 border-b border-base-200 sticky top-0 z-50" style="view-transition-name: navbar">
+  <div class="container">
+    <div class="flex justify-start w-fit shrink-0">
+      <%= link_to root_path, class: "" do %>
+        <%= image_tag 'parisrb-logo-horizontal.png', class: "h-8 md:h-12", alt: "Paris.rb Logo" %>
+      <% end %>
+    </div>
+    <div class="flex justify-end gap-2 lg:gap-4 w-full">
+
+      <ul class="items-center px-4 gap-8 hidden lg:flex">
+        <%= render "application/navbar/link", text: t("navbar.videos"), path: videos_path %>
+        <%= render "application/navbar/link", text: t("navbar.job_board"), path: page_path("job_board") %>
+        <%= render "application/navbar/link", text: t("navbar.sponsors"), path: sponsors_path %>
+      </ul>
+
+      <%= link_to t("navbar.suggest_talk"),new_talk_path, class: "btn btn-secondary hidden lg:flex" %>
+
+      <div class="items-center hidden lg:flex gap-1">
+        <%= button_to "FR", locale_path, id: "locale-fr", params: {locale: :fr}, method: :patch, class: class_names("link-neutral": current_locale == :en) %>
+        <%= lucide_icon "slash", class: "h-2 w-2" %>
+        <%= button_to "EN", locale_path, id: "locale-en", params: {locale: :en}, method: :patch, class: class_names("link-neutral": current_locale == :fr) %>
+      </div>
+    </div>
+    <details class="dropdown dropdown-end" data-controller="dropdown" data-action="keydown.esc->dropdown#close">
+      <summary id="menu-button" aria-haspopup="true" class="btn btn-ghost lg:hidden">
+        <span class="sr-only">Menu</span>
+        <div class="swap" data-dropdown-target="swap" aria-hidden="true">
+          <%= lucide_icon('x', class: "h-6 w-6 swap-on" ) %>
+          <%= lucide_icon('menu', class: "h-6 w-6 swap-off") %>
+        </div>
+      </summary>
+      <ul role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="menu menu-lg md:menu-md dropdown-content mt-5 z-[1] p-4 shadow-xl bg-base-100 md:rounded-box w-screen !-right-2 sm:w-72">
+        <li role="menuitem" tabindex="-1"><%= link_to t("navbar.videos"), videos_path %></li>
+        <li role="menuitem" tabindex="-1"><%= link_to t("navbar.job_board"), page_path("job_board") %></li>
+        <li role="menuitem" tabindex="-1"><%= link_to t("navbar.sponsors"), sponsors_path %></li>
+
+        <div class="divider"></div>
+
+        <li role="menuitem"><%= link_to t("navbar.suggest_talk"), new_talk_path, class: "link-primary" %></li>
+
+        <div class="divider"></div>
+
+        <div tabindex="-1" class="items-center flex justify-center flex-row gap-1">
+          <%= button_to "FR", locale_path, id: "dropdown-locale-fr", params: {locale: :fr}, method: :patch, class: class_names("link-neutral": current_locale == :en) %>
+          <%= lucide_icon "slash", class: "fill-black h-2 w-2" %>
+          <%= button_to "EN", locale_path, id: "dropdown-locale-en", params: {locale: :en}, method: :patch, class: class_names("link-neutral": current_locale == :fr) %>
+        </div>
+      </ul>
+    </details>
+  </div>
+</div>

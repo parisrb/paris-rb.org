@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <%= render "layouts/head" %>
+  </head>
+  <body>
+    <%= render 'navbar' %>
+
+    <div class="container my-12">
+      <div class="prose max-w-none markdown">
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= render 'flashes' %>
+    <%= render 'footer' %>
+  </body>
+</html>

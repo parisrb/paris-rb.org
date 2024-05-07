@@ -1,0 +1,38 @@
+<section id="next-meetup" class="container flex flex-col gap-8">
+  <div>
+    <h2 class="text-center text-primary mb-6"><%= t(".title") %></h2>
+  </div>
+  <div class="flex flex-wrap justify-evenly gap-8">
+    <div class="stats bg-secondary text-primary w-full sm:w-auto sm:min-w-64">
+      <div class="stat">
+        <div class="stat-figure">
+          <%= lucide_icon "users" %>
+        </div>
+        <div class="stat-title"><%= t(".data_1_title") %></div>
+        <div class="stat-value"><%= t(".data_1_value") %></div>
+        <div class="stat-desc"><%= t(".data_1_desc") %></div>
+      </div>
+    </div>
+
+    <div class="stats bg-secondary text-primary w-full sm:w-auto sm:min-w-64">
+      <div class="stat">
+        <div class="stat-figure">
+          <%= lucide_icon "video" %>
+        </div>
+        <div class="stat-title"><%= t(".data_2_title") %></div>
+        <div class="stat-value"><%= videos_count %></div>
+        <div class="stat-desc"><%= t(".data_2_desc") %></div>
+      </div>
+    </div>
+    <div class="stats bg-secondary text-primary w-full sm:w-auto sm:min-w-64">
+      <div class="stat">
+        <div class="stat-figure">
+          <%= lucide_icon "handshake" %>
+        </div>
+        <div class="stat-title"><%= t(".data_3_title") %></div>
+        <div class="stat-value"><%= sponsors_count %></div>
+        <div class="stat-desc"><%= t(".data_3_desc") %></div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+---
+en:
+  sponsors:
+    card:
+      sponsor_logo: Sponsor logo %{name}
+    index:
+      button: Sponsor
+      description: They support the French-speaking Ruby community, thank you to them!
+      sponsor_paris_rb: Would you like to strengthen your visibility in the Ruby community or simply support Paris.rb? Sponsor a Paris.rb event by hosting a meetup in your premises.
+      they_sponsored_us: "They have already supported us. Thank you 🙏"
+      title: Our sponsors

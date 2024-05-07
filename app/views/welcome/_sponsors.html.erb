@@ -1,0 +1,13 @@
+<section id="sponsors" class="container flex flex-col gap-8">
+  <div>
+    <h2 class="text-center text-primary mb-6"><%= t(".title") %></h2>
+    <div class="text-center"><%= t(".subtitle") %></div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+    <%= render partial: "sponsors/card", collection: sponsors, as: :sponsor %>
+  </div>
+  <%= link_to sponsors_path, class: 'link link-primary self-end flex items-center gap-2' do %>
+    <%= t('.see_all') %>
+    <%= lucide_icon("move-right") %>
+  <% end %>
+</section>

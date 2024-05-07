@@ -1,0 +1,26 @@
+{
+  "editor.tabSize": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "html.erb": "html",
+    "erb": "html"
+  },
+  "files.associations": {
+    "*.html.erb": "erb",
+    "*.markerb": "markdown"
+  },
+  "rubyLsp.enabledFeatures": {
+    "diagnostics": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "tailwindCSS.includeLanguages": {
+    "erb": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.validate": true
+}

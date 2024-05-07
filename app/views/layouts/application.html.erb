@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <% if ENV["GOOGLE_WEB_TOOLS_ID"] %>
-    <meta name="google-site-verification" content="<%= ENV["GOOGLE_WEB_TOOLS_ID"] %>">
-  <% end %>
-
-  <%= display_meta_tags reverse: true, site: t('site_name'), separator: '·' %>
-  <%= render 'application/favicon' %>
-
-  <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css' %>
-  <%= stylesheet_link_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <%= render 'shared/navbar' %>
-  <div class="main-content">
-    <% if notice %>
-      <p class="notice"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert"><%= alert %></p>
-    <% end %>
+  <head>
+    <%= render "layouts/head" %>
+  </head>
+  <body>
+    <%= render 'navbar' %>
 
     <%= yield %>
-  </div>
 
-  <footer>
-    <p>
-      <%= link_to t('project_on_github'), 'https://github.com/parisrb/rubyparis.org' %>
-      <%= link_to t('contact_maintainer'), 'https://twitter.com/happynoff' %>
-    </p>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
-</body>
+    <%= render 'flashes' %>
+    <%= render 'footer' %>
+  </body>
 </html>

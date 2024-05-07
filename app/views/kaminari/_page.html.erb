@@ -3,7 +3,11 @@
 <%# current_page: a page object for the currently displayed page %>
 <%# total_pages: total number of pages %>
 <%# per_page: number of items to fetch per page %>
-<%# remote: data-remote %>
-<li class="<%= 'active' if page.current? %>">
-  <%= link_to page, url, remote: remote, rel: page_rel(page) %>
-</li>
+<%= link_to page, url,
+            class: class_names(
+              "join-item relative z-10 inline-flex items-center px-4 py-2 text-sm font-semibold",
+              'focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral text-neutral-content bg-neutral': page.current?,
+              'text-base-300 ring-1 ring-inset ring-base-300 hover:bg-base-200 focus:z-20 focus:outline-offset-0': !page.current?
+            ),
+            rel: page_rel(page),
+            "aria-current": "page" %>

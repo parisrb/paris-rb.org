@@ -1,0 +1,18 @@
+---
+fr:
+  videos:
+    card:
+      thumbnail_alt: 'Vignette de la vidéo : %{title}'
+      watch_video: 'Voir la vidéo : %{title}'
+    index:
+      description: Toutes les vidéos des talks du meetup Paris.rb
+      title: Vidéos des talks
+    search_form:
+      aria_search: Recherche de vidéos par titre, description, speaker...
+      search_placeholder: Titre, description, speaker...
+    show:
+      back: Retour à la liste des vidéos
+    youtube:
+      button_label: Voir la vidéo
+      link: Voir la vidéo sur YouTube
+      play_video_aria: 'Voir la vidéo : %{title}'

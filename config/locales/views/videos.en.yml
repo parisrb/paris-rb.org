@@ -1,0 +1,18 @@
+---
+en:
+  videos:
+    card:
+      thumbnail_alt: 'Thumbnail of the video: %{title}'
+      watch_video: 'Watch the video: %{title}'
+    index:
+      description: All the videos of the Paris.rb meetup talks
+      title: Videos of the talks
+    search_form:
+      aria_search: Search videos by title, description, speaker...
+      search_placeholder: Title, description, speaker...
+    show:
+      back: Back to the list of videos
+    youtube:
+      button_label: Watch the video
+      link: Watch the video on YouTube
+      play_video_aria: 'Watch the video: %{title}'

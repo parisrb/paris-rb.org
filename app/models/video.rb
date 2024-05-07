@@ -31,7 +31,7 @@ class Video < ApplicationRecord
   def provider_id
     {
       youtube: youtube_id,
-      viemo: vimeo_id
+      vimeo: vimeo_id
     }[provider]
   end
 
@@ -68,5 +68,9 @@ class Video < ApplicationRecord
 
   def set_slug
     self.slug = title.parameterize if slug.blank?
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    []
   end
 end

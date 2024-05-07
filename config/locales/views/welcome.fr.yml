@@ -1,0 +1,39 @@
+---
+fr:
+  welcome:
+    data:
+      data_1_desc: et 700+ sur le channel help
+      data_1_title: Membres sur le Slack
+      data_1_value: 2172
+      data_2_desc: tous les talks sont filmés
+      data_2_title: Videos sur YouTube
+      data_3_desc: merci à eux
+      data_3_title: Sponsors
+      data_3_value: 100
+      title: Quelques chiffres
+    index:
+      hero_cta: Participer au prochain meetup
+      join_us_on: Rejoins la communauté sur
+      subtitle_2_html: <highlighed>Le premier mardi de chaque mois</highlighed>, le meetup Paris.rb est une occasion unique de se retrouver IRL et d’échanger.
+      subtitle_html: Connecte les <highlighed>développeurs et développeuses Ruby</highlighed> francophones autour du partage, de l’entraide et des rencontres.
+      suggest_talk: proposer un talk
+      title_html: Paris<span class="text-primary">.rb</span>
+      twitch_html: Rejoins-nous sur <a href='https://www.twitch.tv/parisrb'>Twitch</a> pour suivre les talks en direct !
+    latest_videos:
+      see_all: Voir toutes les vidéos
+      subtitle: Toutes les présentations sont filmées, disponible en live sur Twitch et en replay sur YouTube.
+      title: Derniers talks en vidéo
+    next_meetup:
+      line_up_description: "Au programme nous avons à ce jour les talks suivants :"
+      meetup_information_html: Pour participer, retrouve toutes les informations (lieu, modalités) du prochain meetup sur notre page
+      no_line_up_html: Aucun talk n'a encore été annoncé pour ce meetup. Pas d'inquétude, il y a toujours des propositions de dernière minute ! Et pourquoi pas proposer le tiens ?
+      propose_talk: Proposer un talk
+      see_past_videos: Voir les videos des meetups précédents
+      subtitle_html: Rejoins nous pour le prochain <highlighed>meetup le %{date}</highlighed>.
+      title: Prochain meetup
+    sponsors:
+      see_all: Voir tous les sponsors de Paris.rb
+      sponsor_an_event: Vous souhaitez renforcer votre visibilité dans la communauté Ruby ? Sponsorisez un événement Paris.rb !
+      sponsor_cta: Sponsoriser
+      subtitle: Merci à nos derniers sponsors pour leur soutien.
+      title: Nos sponsors

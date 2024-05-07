@@ -12,11 +12,20 @@ class HomePageSystemTest < ApplicationSystemTestCase
 
   test "display the home page and track visits" do
     visit root_path
-    assert_text "Le plus grand meetup Ruby d'Europe", normalize_ws: true
-    assert_selector ".section-sponsors img", count: 4
-    assert_selector "[alt='#{@active_sponsor.name}']", count: 1
-    assert_selector "[alt='#{@permanent_sponsor.name}']", count: 1
+
+    assert_selector "#sponsors img", count: 4
+    assert_selector "[alt='#{I18n.t("sponsors.card.sponsor_logo", name: @active_sponsor.name)}']", count: 1
+    assert_selector "[alt='#{I18n.t("sponsors.card.sponsor_logo", name: @permanent_sponsor.name)}']", count: 1
     assert_equal 1, Ahoy::Visit.count
     assert_equal 1, Ahoy::Event.count
+  end
+
+
+  test "display the home page in english" do
+    with_locale(:en) do
+      visit root_path
+
+      assert_selector "h1", text: "Paris.rb"
+    end
   end
 end

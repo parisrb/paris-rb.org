@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <%= render "layouts/head" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        Reveal.initialize({
+            controls: false,
+            history: true,
+            progress: false,
+            transition: 'linear'
+          })
+      })
+    </script>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

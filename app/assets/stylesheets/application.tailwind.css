@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* Custom components */
+@import "components/fields.css";
+@import "components/fonts.css";
+@import "components/markdown";
+@import "components/typography.css";
+
+@import "tailwindcss/utilities";
+
+/* Libraries CSS */
+@import "lite-youtube-embed";

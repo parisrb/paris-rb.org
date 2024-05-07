@@ -1,20 +1,18 @@
 <section>
-  <h2>Talks &lt;3</h2>
+  <div class="text-6xl font-extralight font-heading flex items-center gap-2 justify-center mb-8">
+    <div>Talks</div>
+    <%= lucide_icon "heart", class: 'text-primary h-10 w-10 mb-4' %>
+  </div>
 
-  <table>
-    <tbody>
-      <tr>
-        <th>ParisRB</th>
-        <td>Welcome</td>
-      </tr>
-      <% talks.each do |talk| %>
-        <tr>
-          <th><%= talk.speaker_name %></th>
-          <td><%= talk.title_with_emoji %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+  <ul class="flex flex-col gap-4 list-disc text-left text-xl max-w-4xl">
+    <% @talks.each do |talk| %>
+      <li class="block -indent-6 ml-8 leading-relaxed">
+        <span><%= talk.title_with_emoji %></span>
+        <span><%= t("by") %></span>
+        <span class="font-semibold"><%= talk.speaker_name %></span>
+      </li>
+    <% end %>
+  </ul>
 
-  <p>[Food, Drinks, Networking] at some point ;)</p>
+  <div class="mt-8 text-xl">[Food, Drinks, Networking] at some point ;)</div>
 </section>

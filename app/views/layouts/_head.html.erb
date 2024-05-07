@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<% if ENV["GOOGLE_WEB_TOOLS_ID"] %>
+  <meta name="google-site-verification" content="<%= ENV["GOOGLE_WEB_TOOLS_ID"] %>">
+<% end %>
+
+<%= display_meta_tags reverse: true, site: t('site_name'), separator: '·' %>
+<%#= render 'application/favicon' %>
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+<meta name="view-transition" content="same-origin">
+<meta name="turbo-cache-control" content="no-cache">
+<%= turbo_refreshes_with method: :morph, scroll: :preserve %>
+<%= hotwire_livereload_tags if Rails.env.development? %>
+
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module", defer: true %>
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+<%= yield :head %>

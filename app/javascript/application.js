@@ -1,2 +1,19 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails"
+import '@hotwired/turbo-rails'
+import './controllers'
+import 'lite-youtube-embed'
+
+// add the ability to debounce events in the html attributes debounced:keyup->form#submit
+import debounced from 'debounced'
+debounced.initialize(debounced.defaultEventNames, { wait: 100 })
+
+// apply view transition on turbo frame
+window.addEventListener('turbo:before-frame-render', (event) => {
+  if (document.startViewTransition) {
+    const originalRender = event.detail.render
+    event.detail.render = (currentElement, newElement) => {
+      document.startViewTransition(() =>
+        originalRender(currentElement, newElement)
+      )
+    }
+  }
+})

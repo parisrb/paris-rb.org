@@ -4,5 +4,5 @@
 <%# per_page: number of items to fetch per page %>
 <%# remote: data-remote %>
 <li class="<%= 'disabled' if current_page.first? %>">
-  <%= link_to t('views.pagination.previous'), url, rel: 'prev', remote: remote %>
+  <%= link_to t('components.pagination.previous'), url, rel: 'prev' %>
 </li>

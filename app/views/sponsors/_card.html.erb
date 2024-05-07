@@ -1,0 +1,15 @@
+
+<div class="flex flex-col gap-4 items-center justify-end p-2 sm:p-4">
+  <% if sponsor.logo.attached? %>
+    <%= link_to safe_website(sponsor.website), title: sponsor.name, target: "_blank", rel: "noopener noreferrer" do %>
+      <%= cl_image_tag sponsor.logo.key,
+                        width: 200,
+                        height: 160,
+                        crop: :fit,
+                        class: "transition duration-300 ease-in-out object-contain",
+                        alt: t(".sponsor_logo", name: sponsor.name),
+                        srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x" %>
+    <% end %>
+  <% end %>
+  <%= external_link_to sponsor.name, sponsor.website, class: "link" %>
+</div>
