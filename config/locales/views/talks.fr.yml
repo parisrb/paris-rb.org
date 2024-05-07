@@ -3,7 +3,7 @@ fr:
   talks:
     form:
       accept_coc: Je m’engage à respecter le Code of Conduct de ParisRB
-      submit: Proposer mon talk
+      submit: Envoyer ma proposition de talk
     index:
       description_html: Tu trouveras ci-dessous la liste des talks proposés pour les prochains meetups de ParisRB. Si tu souhaites proposer un talk, n’hésite pas à le faire via ce <a href="/talks/new" class="link">formulaire</a>.
       happened_talks: Talks ayant déjà eu lieu
@@ -16,5 +16,4 @@ fr:
     new:
       description: Tu as une idée de talk à proposer pour un prochain meetup ParisRB ? Remplis le formulaire ci-dessous pour nous la soumettre.
       description_html: Tu as une idée de talk à proposer pour un prochain meetup ? Remplis le formulaire ci-dessous pour nous la soumettre. Ou vient simplement en discuter sur le channel %{link}.
-      submit: Proposer mon talk
       title: Proposer un talk
