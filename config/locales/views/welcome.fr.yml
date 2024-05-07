@@ -14,8 +14,8 @@ fr:
     index:
       hero_cta: Participer au prochain meetup
       join_us_on: Rejoins la communauté sur
-      subtitle_2_html: Le meetup Paris.rb c'est <highlighed>le premier mardi de chaque mois</highlighed>, une occasion unique de se rencontrer IRL et d'échanger.
-      subtitle_html: Connecte la communauté des <highlighed>développeurs et développeuses Ruby</highlighed> francophones pour favoriser le partage, le soutien et  les rencontres.
+      subtitle_2_html: <highlighed>Le premier mardi de chaque mois</highlighed>, le meetup Paris.rb est une occasion unique de se retrouver IRL et d’échanger.
+      subtitle_html: Connecte les <highlighed>développeurs et développeuses Ruby</highlighed> francophones autour du partage, de l’entraide et des rencontres.
       suggest_talk: proposer un talk
       title_html: Paris<span class="text-primary">.rb</span>
       twitch_html: Rejoins-nous sur <a href='https://www.twitch.tv/parisrb'>Twitch</a> pour suivre les talks en direct !
