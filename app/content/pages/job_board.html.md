@@ -7,7 +7,7 @@ layout: markdown
 
 ## Offres d'emploi
 
-Vous souhaitez publier une offre d'emploi à destination de la communauté Ruby, rien de plus simple, dans le Slack il y a un channel [#job](https://slack.com/app_redirect?channel=C0B4481QX&selected_team_id=T042KF3JR) qui est fait pour ça.
+Vous souhaitez publier une offre d'emploi à destination de la communauté Ruby, rien de plus simple, dans le Slack il y a un channel [#job](https://parisrb.slack.com/archives/jobs) qui est fait pour ça.
 
 Merci de respecter les règles suivantes :
 
@@ -21,6 +21,6 @@ Merci de respecter les règles suivantes :
 
 Si vous êtes à la recherche d'un emploi dans le domaine Ruby, vous pouvez :
 
-- consultez les offres disponibles sur le canal [#job](https://slack.com/app_redirect?channel=C0B4481QX&selected_team_id=T042KF3JR) de notre Slack.
+- consultez les offres disponibles sur le canal [#job](https://parisrb.slack.com/archives/jobs) de notre Slack.
 - participer aux meetup en spectateur ou **speaker** pour renforcer votre réseau dans la communauté Ruby.
-- publier une annonce dans le canal [#job](https://slack.com/app_redirect?channel=C0B4481QX&selected_team_id=T042KF3JR) pour vous présenter et indiquer que vous êtes à la recherche d'un emploi
+- publier une annonce dans le canal [#job](https://parisrb.slack.com/archives/jobs) pour vous présenter et indiquer que vous êtes à la recherche d'un emploi
