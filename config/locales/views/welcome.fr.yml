@@ -26,7 +26,7 @@ fr:
     next_meetup:
       line_up_description: "Au programme nous avons à ce jour les talks suivants :"
       meetup_information_html: Pour participer, retrouve toutes les informations (lieu, modalités) du prochain meetup sur notre page
-      no_line_up_html: Aucun talk n'a encore été annoncé pour ce meetup. Pas d'inquétude, il y a toujours des propositions de dernière minute ! Et pourquoi pas proposer le tiens ?
+      no_line_up_html: Aucun talk n'a encore été annoncé pour ce meetup. Pas d'inquétude, il y a toujours des propositions ! Et pourquoi pas proposer le tiens ?
       propose_talk: Proposer un talk
       see_past_videos: Voir les videos des meetups précédents
       subtitle_html: Rejoins nous pour le prochain <highlighed>meetup le %{date}</highlighed>.

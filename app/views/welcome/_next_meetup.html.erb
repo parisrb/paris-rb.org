@@ -1,4 +1,4 @@
-<section id="next-meetup" class="container flex flex-col gap-8">
+<section id="next-meetup" class="container flex flex-col items-center gap-8">
   <div>
     <h2 class="text-center text-primary mb-6"><%= t(".title") %></h2>
     <div class="text-center"><%= t(".subtitle_html", date: l(Talk.next_meetup_date, format: :default)) %></div>
@@ -19,9 +19,9 @@
     </div>
   <% else %>
     <div class="flex gap-4">
-      <div class="flex flex-col">
+      <div class="flex flex-col items-center">
         <div class=""><%= t(".no_line_up_html") %></div>
-        <%= link_to t(".propose_talk"), new_talk_path, class: "btn btn-primary mt-4 self-center" %>
+        <%= link_to t(".propose_talk"), new_talk_path, class: "btn btn-secondary mt-4 self-center" %>
       </div>
     </div>
   <% end %>
