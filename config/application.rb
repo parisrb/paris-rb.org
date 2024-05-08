@@ -51,5 +51,7 @@ module RubyparisOrg
       g.helper false
       g.stylesheets false
     end
+
+    config.action_view.image_loading = "lazy"
   end
 end
