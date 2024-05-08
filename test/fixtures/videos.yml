@@ -1224,3 +1224,36 @@ level-up-your-capybara-acceptance-tests-using-siteprism:
   description: Level up your Capybara acceptance tests using SitePrism
   event_date: 2022-11-08
   slug: level-up-your-capybara-acceptance-tests-using-siteprism
+
+# Ajouter ici les vidéos manquantes
+
+debugger-ses-tests-grace-aux-enregistrements-d-ecran:
+  vimeo_url: https://www.youtube.com/watch?v=1Puywv2b-I8
+  vimeo_thumbnail: https://img.youtube.com/vi/1Puywv2b-I8/maxresdefault.jpg
+  title: Debugger ses tests grace aux enregistrements d’écran
+  description: |
+    Debugger ses tests grace aux enregistrements d'écran
+    Par Dorian @Botyglot
+    Paris.rb Meetup Mars 2024
+  event_date: 2024-03-05
+  slug: debugger-ses-tests-grace-aux-enregistrements-d-ecran
+faciliter-les-revues-de-code-avec-rubocop:
+  vimeo_url: https://www.youtube.com/watch?v=Il1DI9mgdvI
+  vimeo_thumbnail: https://img.youtube.com/vi/Il1DI9mgdvI/maxresdefault.jpg
+  title: Faciliter les revues de code avec Rubocop
+  description: |
+    Faciliter les revues de code avec Rubocop
+    Par Clément Prod'homme
+    Paris.rb Meetup Mars 2024
+  event_date: 2024-03-05
+  slug: faciliter-les-revues-de-code-avec-rubocop
+devenir-proactifs-grace-a-l-observabilite:
+  vimeo_url: https://www.youtube.com/watch?v=f7U7HLAgElE
+  vimeo_thumbnail: https://img.youtube.com/vi/f7U7HLAgElE/maxresdefault.jpg
+  title: Devenir proactifs grace à l’observabilité
+  description: |
+    Devenir proactifs grace à l’observabilité
+    Par Johann Wilfrid-Calixte
+    Paris.rb Meetup Mars 2024
+  event_date: 2024-03-05
+  slug: devenir-proactifs-grace-a-l-observabilite
