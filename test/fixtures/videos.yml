@@ -29,7 +29,6 @@ vimeo:
   slug: contest-dimelo-2011-et-presentation-de-jobteaser
 youtube:
   vimeo_url: https://www.youtube.com/watch?v=OS7lsnN6j8U
-  vimeo_thumbnail: https://img.youtube.com/vi/OS7lsnN6j8U/maxresdefault.jpg
   title: Lesson Learned from DB issues
   description:
   event_date: 2022-06-07
@@ -1114,112 +1113,96 @@ ruby-not-only-for-servers-loic-boutet:
   slug: ruby-not-only-for-servers-loic-boutet
 comment-on-a-ameliore-le-lien-back-front-en-utilisant-des-fichiers-openapi:
   vimeo_url: https://www.youtube.com/watch?v=2Vno981d2IU
-  vimeo_thumbnail: https://img.youtube.com/vi/2Vno981d2IU/maxresdefault.jpg
   title: Comment on a amélioré le lien back-front en utilisant des fichiers openAPI
   description:
   event_date: 2022-06-07
   slug: comment-on-a-ameliore-le-lien-back-front-en-utilisant-des-fichiers-openapi
 build-a-web-app-with-dry-system:
   vimeo_url: https://www.youtube.com/watch?v=74Wd_HueAJM
-  vimeo_thumbnail: https://img.youtube.com/vi/74Wd_HueAJM/maxresdefault.jpg
   title: Build a web app with Dry-System
   description:
   event_date: 2022-06-07
   slug: build-a-web-app-with-dry-system
 les-10-erreurs-les-plus-courantes-en-entretien-technique:
   vimeo_url: https://www.youtube.com/watch?v=i1MXyoJSRDc
-  vimeo_thumbnail: https://img.youtube.com/vi/i1MXyoJSRDc/maxresdefault.jpg
   title: Les 10 erreurs les plus courantes en entretien technique
   description:
   event_date: 2022-06-07
   slug: les-10-erreurs-les-plus-courantes-en-entretien-technique
 redis-avec-heroku-pourquoi-et-comment-separer-son-cache:
   vimeo_url: https://www.youtube.com/watch?v=lnfc61qjxME
-  vimeo_thumbnail: https://img.youtube.com/vi/lnfc61qjxME/maxresdefault.jpg
   title: Redis avec Heroku - Pourquoi et comment séparer son cache
   description:
   event_date: 2022-06-07
   slug: redis-avec-heroku-pourquoi-et-comment-separer-son-cache
 react-on-rails-le-meilleur-des-deux-mondes:
   vimeo_url: https://www.youtube.com/watch?v=4aCYr7d-Fok
-  vimeo_thumbnail: https://img.youtube.com/vi/4aCYr7d-Fok/maxresdefault.jpg
   title: React on Rails, le meilleur des deux mondes
   description:
   event_date: 2022-06-07
   slug: react-on-rails-le-meilleur-des-deux-mondes
 comment-ecrire-son-code-sur-un-ticket-de-metro:
   vimeo_url: https://www.youtube.com/watch?v=pWxNtCa2atw
-  vimeo_thumbnail: https://img.youtube.com/vi/pWxNtCa2atw/maxresdefault.jpg
   title: Comment écrire son code sur un ticket de métro?
   description:
   event_date: 2022-06-07
   slug: comment-ecrire-son-code-sur-un-ticket-de-metro
 service-objects-la-brique-manquante-de-rails:
   vimeo_url: https://www.youtube.com/watch?v=xVdDBpcvEYM
-  vimeo_thumbnail: https://img.youtube.com/vi/xVdDBpcvEYM/maxresdefault.jpg
   title: Service Objects, la brique manquante de Rails
   description:
   event_date: 2022-06-07
   slug: service-objects-la-brique-manquante-de-rails
 better-safe-than-sorry:
   vimeo_url: https://www.youtube.com/watch?v=ioxG8mKR1zw
-  vimeo_thumbnail: https://img.youtube.com/vi/ioxG8mKR1zw/maxresdefault.jpg
   title: Better safe than sorry
   description:
   event_date: 2022-06-07
   slug: better-safe-than-sorry
 implementing-blackout-period-on-puma-workers:
   vimeo_url: https://www.youtube.com/watch?v=l9ie8M3RhdE
-  vimeo_thumbnail: https://img.youtube.com/vi/l9ie8M3RhdE/maxresdefault.jpg
   title: Implementing blackout period on Puma workers
   description:
   event_date: 2022-06-07
   slug: implementing-blackout-period-on-puma-workers
 on-a-recrute-un-e-dev-junior-ama:
   vimeo_url: https://www.youtube.com/watch?v=pAmY8GJvqK0
-  vimeo_thumbnail: https://img.youtube.com/vi/pAmY8GJvqK0/maxresdefault.jpg
   title: On a recruté un.e dev junior ! AMA
   description:
   event_date: 2022-06-07
   slug: on-a-recrute-un-e-dev-junior-ama
 industrialiser-une-api:
   vimeo_url: https://www.youtube.com/watch?v=sX8ELUVHV0U
-  vimeo_thumbnail: https://img.youtube.com/vi/sX8ELUVHV0U/maxresdefault.jpg
   title: Industrialiser une API
   description:
   event_date: 2022-06-07
   slug: industrialiser-une-api
 commit-comme-un-hipster-avec-gitmoji:
   vimeo_url: https://www.youtube.com/watch?v=1Lvr0Hr_ot0
-  vimeo_thumbnail: https://img.youtube.com/vi/1Lvr0Hr_ot0/maxresdefault.jpg
   title: Commit comme un hipster avec Gitmoji !
   description:
   event_date: 2022-06-07
   slug: commit-comme-un-hipster-avec-gitmoji
 rails-xss-protection:
   vimeo_url: https://www.youtube.com/watch?v=SFuGfTqSFvU
-  vimeo_thumbnail: https://img.youtube.com/vi/SFuGfTqSFvU/maxresdefault.jpg
   title: "Rails : XSS protection"
   description:
   event_date: 2022-09-11
   slug: rails-xss-protection
 produire-du-logiciel-dans-une-cooperative-ouvriere:
   vimeo_url: https://www.youtube.com/watch?v=lNbCLgJvuFA
-  vimeo_thumbnail: https://img.youtube.com/vi/lNbCLgJvuFA/maxresdefault.jpg
   title: Produire du logiciel dans une coopérative ouvrière
   description:
   event_date: 2022-10-08
   slug: produire-du-logiciel-dans-une-cooperative-ouvriere
 how-music-works-using-ruby-english:
   vimeo_url: https://www.youtube.com/watch?v=j5o9HbSaL8w
-  vimeo_thumbnail: https://img.youtube.com/vi/j5o9HbSaL8w/maxresdefault.jpg
   title: How music works, using Ruby [English]
   description:
   event_date: 2022-09-06
   slug: how-music-works-using-ruby-english
 level-up-your-capybara-acceptance-tests-using-siteprism:
   vimeo_url: https://www.youtube.com/watch?v=Yf09FVj_hG4
-  vimeo_thumbnail: https://img.youtube.com/vi/Yf09FVj_hG4/maxresdefault.jpg
   title: Level up your Capybara acceptance tests using SitePrism
   description: Level up your Capybara acceptance tests using SitePrism
   event_date: 2022-11-08
@@ -1229,7 +1212,6 @@ level-up-your-capybara-acceptance-tests-using-siteprism:
 
 debugger-ses-tests-grace-aux-enregistrements-d-ecran:
   vimeo_url: https://www.youtube.com/watch?v=1Puywv2b-I8
-  vimeo_thumbnail: https://img.youtube.com/vi/1Puywv2b-I8/maxresdefault.jpg
   title: Debugger ses tests grace aux enregistrements d’écran
   description: |
     Debugger ses tests grace aux enregistrements d'écran
@@ -1239,7 +1221,6 @@ debugger-ses-tests-grace-aux-enregistrements-d-ecran:
   slug: debugger-ses-tests-grace-aux-enregistrements-d-ecran
 faciliter-les-revues-de-code-avec-rubocop:
   vimeo_url: https://www.youtube.com/watch?v=Il1DI9mgdvI
-  vimeo_thumbnail: https://img.youtube.com/vi/Il1DI9mgdvI/maxresdefault.jpg
   title: Faciliter les revues de code avec Rubocop
   description: |
     Faciliter les revues de code avec Rubocop
@@ -1249,7 +1230,6 @@ faciliter-les-revues-de-code-avec-rubocop:
   slug: faciliter-les-revues-de-code-avec-rubocop
 devenir-proactifs-grace-a-l-observabilite:
   vimeo_url: https://www.youtube.com/watch?v=f7U7HLAgElE
-  vimeo_thumbnail: https://img.youtube.com/vi/f7U7HLAgElE/maxresdefault.jpg
   title: Devenir proactifs grace à l’observabilité
   description: |
     Devenir proactifs grace à l’observabilité
