@@ -53,3 +53,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: InterVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("InterVariable.woff2?v=4.0") format("woff2");
+}
