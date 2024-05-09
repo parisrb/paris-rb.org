@@ -13,6 +13,6 @@ class Avo::Resources::Video < Avo::BaseResource
     field :vimeo_url, as: :text, hide_on: [ :index ]
     field :description, as: :textarea, hide_on: [ :index ]
     field :event_date, as: :date
-    field :slug, as: :text, hide_on: [ :index ]
+    field :slug, as: :text, hide_on: [ :index ], help: "Laissez le champs vide pour qu'il soit complété automatiquement"
   end
 end
