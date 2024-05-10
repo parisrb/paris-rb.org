@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   before_action :set_counters, only: :index
 
   def index
-    @videos = Video.order("created_at DESC").limit(3)
+    @videos = Video.chronologically.limit(3)
     @sponsors = Sponsor.with_attached_logo.latest(4)
     @lineup_talks = Talk.lineup
   end
