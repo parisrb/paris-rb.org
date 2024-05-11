@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
   def index
     @search = Video.ransack(params[:q])
-    @videos = @search.result(distinct: true).chronologically.page(params[:page])
+    @videos = @search.result(distinct: true).reverse_chronologically.page(params[:page])
   end
 
   def show

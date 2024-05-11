@@ -25,7 +25,9 @@
 class Video < ApplicationRecord
   attr_accessor :skip_sitemap
 
-  scope :chronologically, -> { order(event_date: :desc) }
+  scope :chronologically, -> { order(event_date: :asc) }
+  scope :reverse_chronologically, -> { order(event_date: :desc) }
+  scope :latest,  ->(count) { reverse_chronologically.limit(count) }
 
   before_save :set_slug
   after_save :refresh_sitemap, unless: :skip_sitemap
