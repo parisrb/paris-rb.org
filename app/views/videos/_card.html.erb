@@ -9,7 +9,10 @@
     <span class="sr-only"><%= t('videos.card.watch_video', title: video.title) %></span>
   <% end %>
   <div class="p-4">
-    <h2 class="font-sans font-normal text-lg"><%= video.title %></h2>
+    <%= link_to video.title,
+                video_path(video.slug),
+                target: "_top",
+                class: "font-sans font-normal text-lg" %>
     <p class="text-gray-600 text-sm mt-2"><%= time_ago_in_words video.event_date %></p>
   </div>
 </div>
