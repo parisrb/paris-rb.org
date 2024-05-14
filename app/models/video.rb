@@ -9,8 +9,8 @@
 #  title           :string
 #  vimeo_thumbnail :string
 #  vimeo_url       :string
-#  created_at      :datetime
-#  updated_at      :datetime
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
 #
 # Indexes
 #
