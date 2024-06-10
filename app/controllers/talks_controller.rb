@@ -1,4 +1,7 @@
 class TalksController < ApplicationController
+  include Captcha
+  protect_from_spam_with_honeypot only: [ :create ]
+
   def index
     @lineup_talks = Talk.lineup
   end

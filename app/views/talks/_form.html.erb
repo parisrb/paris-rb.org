@@ -36,6 +36,9 @@
       <%= f.label :level, class: 'label' %>
       <%= f.select :level, Talk.level.options, {}, { class: 'select select-bordered w-full' } %>
     </div>
+
+    <%# honeypot captcha field to detect bots %>
+    <%= captcha_field_tag %>
   </div>
 
   <div class="flex flex-col gap-4 mt-6 items-start">
