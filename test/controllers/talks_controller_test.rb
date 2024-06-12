@@ -31,4 +31,13 @@ class TalksControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to talks_path
   end
+
+  test "should detect bots with an honeypot field" do
+    @talk.preferred_month_talk = Talk.propose_upcoming_months.keys.sample
+    assert_no_difference("Talk.count") do
+      post talks_url, params: { talk: @talk.attributes.except("id", "created_at", "updated_at"), color: "honey" }
+    end
+
+    assert_redirected_to root_path
+  end
 end
