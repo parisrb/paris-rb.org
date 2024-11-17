@@ -13,6 +13,6 @@
                 video_path(video.slug),
                 target: "_top",
                 class: "font-sans font-normal text-lg" %>
-    <p class="text-gray-600 text-sm mt-2"><%= time_ago_in_words video.event_date %></p>
+    <p class="text-gray-600 text-sm mt-2"><%= video.event_date.strftime("%B %Y") %></p>
   </div>
 </div>
