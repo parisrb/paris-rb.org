@@ -5,7 +5,8 @@
     <%= image_tag video.thumbnail_url,
                   class: 'w-full object-cover',
                   alt: t('videos.card.thumbnail_alt', title: video.title),
-                  style: "view-transition-name: #{dom_id(video, :preview)}" %>
+                  style: "view-transition-name: #{dom_id(video, :preview)}".
+                  loading: "lazy" %>
     <span class="sr-only"><%= t('videos.card.watch_video', title: video.title) %></span>
   <% end %>
   <div class="p-4">
