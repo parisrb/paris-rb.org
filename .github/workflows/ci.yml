@@ -53,7 +53,7 @@ jobs:
         run: yarn standard
 
       - name: erb-lint
-        run: bundle exec erblint --lint-all
+        run: bundle exec erb_lint --lint-all
 
   test:
     name: Test
