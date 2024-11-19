@@ -227,7 +227,7 @@ GEM
     loofah (2.23.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    lucide-rails (0.4.0)
+    lucide-rails (0.5.1)
       railties (>= 4.1.0)
     mail (2.8.1)
       mini_mime (>= 0.1.1)
@@ -423,7 +423,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
-    uri (0.13.1)
+    uri (1.0.2)
     view_component (3.20.0)
       activesupport (>= 5.2.0, < 8.1)
       concurrent-ruby (~> 1.0)
@@ -470,7 +470,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jsbundling-rails
   kaminari
-  lucide-rails (~> 0.4.0)
+  lucide-rails
   markdown-rails (~> 2.1)
   meta-tags
   pg (~> 1.1)

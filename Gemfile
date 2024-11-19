@@ -94,7 +94,7 @@ gem "sucker_punch"
 
 gem "ahoy_matey", "~> 5.1"
 
-gem "lucide-rails", "~> 0.4.0"
+gem "lucide-rails"
 gem "avo", ">= 3.2"
 gem "sitepress-rails"
 
