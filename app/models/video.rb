@@ -2,15 +2,15 @@
 #
 # Table name: videos
 #
-#  id              :bigint           not null, primary key
-#  description     :text
-#  event_date      :date
-#  slug            :string
-#  title           :string
-#  vimeo_thumbnail :string
-#  vimeo_url       :string
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
+#  id            :bigint           not null, primary key
+#  description   :text
+#  event_date    :date
+#  slug          :string
+#  thumbnail_url :string
+#  title         :string
+#  url           :string
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
 #
 # Indexes
 #
@@ -44,10 +44,10 @@ class Video < ApplicationRecord
     }[provider]
   end
 
-  def vimeo_thumbnail
+  def thumbnail_url
     return "https://img.youtube.com/vi/#{youtube_id}/maxresdefault.jpg" if youtube?
 
-    self[:vimeo_thumbnail].presence || "#"
+    self[:thumbnail_url].presence || "#"
   end
 
   def short_description
@@ -55,22 +55,21 @@ class Video < ApplicationRecord
   end
 
   def self.ransackable_attributes(auth_object = nil)
-    %w[vimeo_url title description slug]
+    %w[url title description slug]
   end
 
   private
 
   def vimeo_id
-    vimeo_url[/vimeo.com\/(\d+)/, 1]
+    url[/vimeo.com\/(\d+)/, 1]
   end
-
 
   def vimeo?
     vimeo_id.present?
   end
 
   def youtube_id
-    vimeo_url[/youtube.com\/watch\?v=(.*)/, 1]
+    url[/youtube.com\/watch\?v=(.*)/, 1]
   end
 
   def youtube?

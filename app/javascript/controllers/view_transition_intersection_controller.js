@@ -5,7 +5,7 @@ import { useIntersection } from 'stimulus-use'
 //
 // Somethime we need to transition element only if they are within the view port
 // This controller is used to the view transition name to the element when it is visible only
-// <%= image_tag video.vimeo_thumbnail, data: { controller: "view-transition-intersection", view_transition_intersection_name_value: dom_id(video, :preview) } %>
+// <%= image_tag video.thumbnail_url, data: { controller: "view-transition-intersection", view_transition_intersection_name_value: dom_id(video, :preview) } %>
 export default class extends Controller {
   static values = { name: String }
 
