@@ -10,7 +10,7 @@
     <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
       <div class="font-semibold mb-8"><%= video.title %></div>
       <p class="mb-8"><%= video.description %></p>
-      <%= link_to video.vimeo_url, class: "link flex items-center gap-2", target: "_blank" do %>
+      <%= link_to video.url, class: "link flex items-center gap-2", target: "_blank" do %>
         <%= lucide_icon("youtube", "aria-hidden": true) %>
         <%= t(".link") %>
       <% end %>
