@@ -17,7 +17,7 @@
     "@tailwindcss/typography": "^0.5.12",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.10.0",
-    "esbuild": "^0.20.2",
+    "esbuild": "^0.25.0",
     "postcss": "^8.4.38",
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^12.1.1",
