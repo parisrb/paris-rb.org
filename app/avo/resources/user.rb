@@ -7,5 +7,8 @@ class Avo::Resources::User < Avo::BaseResource
   def fields
     field :id, as: :id
     field :email, as: :text
+    field :password, as: :password, only_on: [ :new, :edit ]
+
+    field :password_confirmation, as: :password, only_on: [ :new, :edit ], nullable: true
   end
 end
