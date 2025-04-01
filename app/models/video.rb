@@ -14,7 +14,8 @@
 #
 # Indexes
 #
-#  index_videos_on_slug  (slug) UNIQUE
+#  index_videos_on_event_date  (event_date)
+#  index_videos_on_slug        (slug) UNIQUE
 #
 
 
