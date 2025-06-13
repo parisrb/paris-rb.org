@@ -67,5 +67,5 @@ module ApplicationHelper
   def youtube_url = "https://www.youtube.com/@paris-rb"
   def meetup_url = "https://www.meetup.com/paris_rb/"
   def github_url = "https://github.com/parisrb/paris-rb.org"
-  def join_slack_url = "https://join.slack.com/t/parisrb/shared_invite/zt-1io48rnoz-97bt5glsJJAL1f9Gj06CRw"
+  def join_slack_url = "https://join.slack.com/t/parisrb/shared_invite/zt-2gqmx0xph-guw535snhYofUjjB9rNvCQ"
 end

@@ -27,7 +27,7 @@ Cela afin que chacune et chacun puisse participer à notre communauté en se sen
 
 On le sait, les démarches en justice de victimes de violences sexuelles sont rares, périlleuses pour les victimes et aboutissent peu. Il faut donc leur fournir un cadre qui les protège avant tout et écarte les agresseurs mis en accusation.
 
-Pour continuer à vivre et grandir, ParisRB a besoin de personnes souhaitant s'investir dans la création d'une association, la récupération ou (re)création des outils de communication. Vous pouvez rejoindre des membres déjà actives et actifs (Sonia Prévost, Rémi Mercier, Claire Maffei, Juliette Audema...) sur [le Slack](https://join.slack.com/t/parisrb/shared_invite/zt-1l1u1gpp1-Qrq2_6LqSSpeG0I2TKv_lA)
+Pour continuer à vivre et grandir, ParisRB a besoin de personnes souhaitant s'investir dans la création d'une association, la récupération ou (re)création des outils de communication. Vous pouvez rejoindre des membres déjà actives et actifs (Sonia Prévost, Rémi Mercier, Claire Maffei, Juliette Audema...) sur [le Slack](https://join.slack.com/t/parisrb/shared_invite/zt-2gqmx0xph-guw535snhYofUjjB9rNvCQ)
 
 Merci.
 
