@@ -23,7 +23,6 @@
 #  index_talks_on_created_at   (created_at)
 #  index_talks_on_happened_at  (happened_at)
 #
-# this sub model is used to display a custom view in the Admin
 class Lineup < Talk
   default_scope { lineup }
 end
