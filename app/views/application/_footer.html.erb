@@ -9,23 +9,23 @@
       <div class="text-center font-extralight mb-6">Meetup Ruby depuis 2011</div>
       <div><%= t("welcome.index.join_us_on") %></div>
       <div class="flex flex-wrap items-center gap-4 justify-center">
-        <%= link_to join_slack_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
+        <%= link_to JOIN_SLACK_URL, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
           <%= lucide_icon "slack", class: 'h-6 w-6' %>
           Slack
         <% end %>
         <!-- Youtube -->
-        <%= link_to youtube_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
+        <%= link_to YOUTUBE_URL, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
           <%= lucide_icon "youtube", class: 'h-6 w-6' %>
           Youtube
         <% end %>
         <!-- Twitch -->
-        <%= link_to twitch_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
+        <%= link_to TWITCH_URL, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
           <%= lucide_icon "twitch", class: 'h-6 w-6' %>
           Twitch
         <% end %>
 
         <!-- Linkedin -->
-        <%= link_to linkedin_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
+        <%= link_to LINKEDIN_URL, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
           <%= lucide_icon "linkedin", class: 'h-6 w-6' %>
           Linkedin
         <% end %>
@@ -33,9 +33,9 @@
     </div>
   </div>
   <div class="flex flex-wrap justify-center gap-8 mt-8">
-    <%= external_link_to "Code source", github_url, class: "link" %>
+    <%= external_link_to "Code source", GITHUB_URL, class: "link" %>
     <%= link_to "Mentions légales", page_path("legals"), class: "link" %>
     <%= link_to "Code de conduite", page_path("code_de_conduite"), class: "link" %>
-    <%= external_link_to "Meetup", meetup_url, class: "link" %>
+    <%= external_link_to "Meetup", MEETUP_URL, class: "link" %>
   </div>
 </footer>
