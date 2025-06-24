@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resource :locale, only: [ :update ]
 
   get "/communique_2022" => redirect("/communiques/thibault_assus_comdamnation", status: 301)
+  get "/redirection/slack" => redirect(JOIN_SLACK_URL, status: 308)
 
   root to: "welcome#index"
 end

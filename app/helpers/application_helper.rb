@@ -61,11 +61,4 @@ module ApplicationHelper
       concat content
     end
   end
-
-  def linkedin_url = "https://www.linkedin.com/company/paris-rb/"
-  def twitch_url = "https://www.twitch.tv/paris_rb"
-  def youtube_url = "https://www.youtube.com/@paris-rb"
-  def meetup_url = "https://www.meetup.com/paris_rb/"
-  def github_url = "https://github.com/parisrb/paris-rb.org"
-  def join_slack_url = "https://join.slack.com/t/parisrb/shared_invite/zt-2gqmx0xph-guw535snhYofUjjB9rNvCQ"
 end

@@ -1,0 +1,6 @@
+LINKEDIN_URL = "https://www.linkedin.com/company/paris-rb/"
+TWITCH_URL = "https://www.twitch.tv/paris_rb"
+YOUTUBE_URL = "https://www.youtube.com/@paris-rb"
+MEETUP_URL = "https://www.meetup.com/paris_rb/"
+GITHUB_URL = "https://github.com/parisrb/paris-rb.org"
+JOIN_SLACK_URL = "https://join.slack.com/t/parisrb/shared_invite/zt-2gqmx0xph-guw535snhYofUjjB9rNvCQ"
