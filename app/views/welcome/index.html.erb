@@ -21,7 +21,7 @@
         <div class="flex items-center gap-2 mt-8 flex-wrap">
           <%= t(".join_us_on") %>
           <!-- Slack -->
-          <%= link_to JOIN_SLACK_URL, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
+          <%= link_to redirection_slack_url, class: "flex items-center gap-2 link link-primary", target: "_blank" do %>
             <%= lucide_icon "slack", class: 'h-6 w-6' %>
             Slack
           <% end %>
