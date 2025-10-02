@@ -5,11 +5,13 @@ default: &default
 
 development:
   <<: *default
-  url: <%= ENV.fetch("DATABASE_URL", "paris_rb_development") %>
+  database: paris_rb_development
+  url: <%= ENV["DATABASE_URL_TEST"] %>
 
 test:
   <<: *default
-  url: <%= ENV.fetch("DATABASE_URL_TEST", "paris_rb_test") %>
+  database: paris_rb_test
+  url: <%= ENV["DATABASE_URL_TEST"] %>
 
 production:
   <<: *default
