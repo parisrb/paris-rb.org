@@ -1,4 +1,4 @@
-FROM ruby:3.3.0
+FROM ruby:3.4.6
 
 RUN apt-get update
 RUN apt-get install apt-transport-https
