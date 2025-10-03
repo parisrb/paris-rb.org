@@ -6,7 +6,6 @@ default: &default
 development:
   <<: *default
   database: paris_rb_development
-  url: <%= ENV["DATABASE_URL_TEST"] %>
 
 test:
   <<: *default
