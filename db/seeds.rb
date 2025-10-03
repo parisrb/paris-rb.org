@@ -1,3 +1,5 @@
+require "open-uri"
+
 User.create_with(password: 'password').find_or_create_by!(email: 'admin@example.org')
 
 puts "Creating sponsors"
