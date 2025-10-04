@@ -42,8 +42,8 @@ module RubyparisOrg
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :fr
 
-    # User sucker_punch as Active Job adapter
-    config.active_job.queue_adapter = :sucker_punch
+    # We don't have any heavy background jobs, so we can use the async adapter
+    config.active_job.queue_adapter = :async
 
     config.generators do |g|
       g.test_framework :test_unit, fixture: true

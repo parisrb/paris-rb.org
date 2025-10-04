@@ -90,7 +90,6 @@ gem "meta-tags"
 gem "rails-i18n"
 gem "ransack"
 gem "sitemap_generator", require: false
-gem "sucker_punch"
 
 gem "ahoy_matey", "~> 5.1"
 
