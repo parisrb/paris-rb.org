@@ -14,11 +14,8 @@ sponsors.first(2).each do |sponsor_attributes|
     s.from = Time.current
     s.until = Time.current + 2.months
   end
-
-  # use Clearbit api to get the logo
-
-  image = URI.open(sponsor.clearbit_logo_url)
-  sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
+  image = File.open("test/fixtures/files/#{sponsor.name}.png")
+  sponsor.logo.attach(io: image, filename: "#{sponsor.name}.png")
   sponsor.save!
 end
 
@@ -30,10 +27,9 @@ sponsor = Sponsor.find_or_create_by!(name: sponsor_attributes['name']) do |s|
   s.from = nil
   s.until = nil
 end
-# use Clearbit api to get the logo
 
-image = URI.open(sponsor.clearbit_logo_url)
-sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
+image = File.open("test/fixtures/files/#{sponsor.name}.png")
+sponsor.logo.attach(io: image, filename: "#{sponsor.name}.png")
 sponsor.save!
 
 puts "create a past sponsors"
@@ -46,12 +42,9 @@ sponsors[3..].each do |sponsor_attributes|
     s.until = Time.current - months.month
   end
 
-  # use Clearbit api to get the logo
-
-  puts sponsor.clearbit_logo_url
   begin
-    image = URI.open(sponsor.clearbit_logo_url)
-    sponsor.logo.attach(io: image, filename: "#{sponsor.name}")
+    image = File.open("test/fixtures/files/#{sponsor.name}.png")
+    sponsor.logo.attach(io: image, filename: "#{sponsor.name}.png")
     sponsor.save!
   rescue => e
     puts "logo not found for #{sponsor.name}"
