@@ -1,15 +1,22 @@
-
 <div class="flex flex-col gap-4 items-center p-2 sm:p-4">
-  <% if sponsor.logo.attached? %>
-    <%= link_to safe_website(sponsor.website), title: sponsor.name, class: "h-full flex items-center", target: "_blank", rel: "noopener noreferrer" do %>
-      <%= cl_image_tag sponsor.logo.key,
-                        width: 200,
-                        height: 160,
-                        crop: :fit,
-                        class: "transition duration-300 ease-in-out object-contain",
-                        alt: t(".sponsor_logo", name: sponsor.name),
-                        srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x" %>
+  <%= link_to safe_website(sponsor.website),
+              title: sponsor.name,
+              class: "flex flex-col items-center group",
+              target: "_blank",
+              rel: "noopener noreferrer" do %>
+
+    <% if sponsor.logo.attached? %>
+      <div class="w-[200px] h-[160px] flex items-center overflow-hidden">
+        <%= cl_image_tag sponsor.logo.key,
+                          width: 200,
+                          height: 160,
+                          crop: :fit,
+                          class: "object-contain max-w-full max-h-full transition duration-500 ease-in-out group-hover:scale-110",
+                          alt: t(".sponsor_logo", name: sponsor.name),
+                          srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x" %>
+      </div>
     <% end %>
+
+    <span class="link mt-2"><%= sponsor.name %></span>
   <% end %>
-  <%= external_link_to sponsor.name, sponsor.website, class: "link" %>
 </div>
