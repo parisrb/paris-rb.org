@@ -6,7 +6,7 @@
               rel: "noopener noreferrer" do %>
 
     <% if sponsor.logo.attached? %>
-      <div class="w-[200px] h-[160px] flex items-center overflow-hidden">
+      <div class="w-[200px] h-[160px] flex items-center justify-center overflow-hidden">
         <%= cl_image_tag sponsor.logo.key,
                           width: 200,
                           height: 160,
