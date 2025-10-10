@@ -14,8 +14,8 @@ class HomePageSystemTest < ApplicationSystemTestCase
     visit root_path
 
     assert_selector "#sponsors img", count: 4
-    assert_selector "[alt='#{I18n.t("sponsors.card.sponsor_logo", name: @active_sponsor.name)}']", count: 1
-    assert_selector "[alt='#{I18n.t("sponsors.card.sponsor_logo", name: @permanent_sponsor.name)}']", count: 1
+    assert_selector "[alt='#{I18n.t("sponsors.image.sponsor_logo", name: @active_sponsor.name)}']", count: 1
+    assert_selector "[alt='#{I18n.t("sponsors.image.sponsor_logo", name: @permanent_sponsor.name)}']", count: 1
     assert_equal 1, Ahoy::Visit.count
     assert_equal 1, Ahoy::Event.count
   end
