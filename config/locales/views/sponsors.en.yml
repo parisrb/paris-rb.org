@@ -1,7 +1,7 @@
 ---
 en:
   sponsors:
-    card:
+    image:
       sponsor_logo: Sponsor logo %{name}
     index:
       button: Sponsor

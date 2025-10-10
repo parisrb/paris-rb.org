@@ -1,7 +1,7 @@
 ---
 fr:
   sponsors:
-    card:
+    image:
       sponsor_logo: Logo du sponsor %{name}
     index:
       button: Sponsoriser
