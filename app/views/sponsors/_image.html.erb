@@ -6,12 +6,12 @@
                     alt: t(".sponsor_logo", name: sponsor.name) %>
     <% else %>
       <%= cl_image_tag sponsor.logo.key,
-                        width: 200,
-                        height: 160,
-                        crop: :fit,
-                        class: "object-contain max-w-full max-h-full transition duration-500 ease-in-out group-hover:scale-110",
-                        alt: t(".sponsor_logo", name: sponsor.name),
-                        srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x" %>
+                       width: 200,
+                       height: 160,
+                       crop: :fit,
+                       class: "object-contain max-w-full max-h-full transition duration-500 ease-in-out group-hover:scale-110",
+                       alt: t(".sponsor_logo", name: sponsor.name),
+                       srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x" %>
     <% end %>
   </div>
 <% end %>
