@@ -1,5 +1,5 @@
 <div class="flex flex-col gap-4 items-center p-2 sm:p-4">
-  <% if sponsor.website %>
+  <% if sponsor.website.present? %>
     <%= link_to safe_website(sponsor.website),
                 title: sponsor.name,
                 class: "flex flex-col items-center group link",
