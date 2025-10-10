@@ -5,11 +5,11 @@
                 class: "flex flex-col items-center group link",
                 target: "_blank",
                 rel: "noopener noreferrer" do %>
-      <%= render "image", sponsor: sponsor %>
+      <%= render "sponsors/image", sponsor: sponsor %>
       <span class="mt-2"><%= sponsor.name %></span>
     <% end %>
   <% else %>
-      <%= render "image", sponsor: sponsor %>
+      <%= render "sponsors/image", sponsor: sponsor %>
       <span class="mt-2"><%= sponsor.name %></span>
   <% end %>
 </div>
