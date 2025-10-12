@@ -3,7 +3,7 @@
 <% image_class = "object-contain max-w-full max-h-full transition duration-500 ease-in-out group-hover:scale-110" %>
 
 <% if sponsor.logo.attached? %>
-  <div style="background-color: <%= sponsor.background_color %>;" class="rounded-md w-[200px] h-[200px] p-4 flex items-center justify-center overflow-hidden">
+  <div style="background-color: <%= sponsor.background_color %>;" class="rounded-md w-[150px] h-[150px] md:w-[200px] md:h-[200px] p-4 flex items-center justify-center overflow-hidden">
     <% if Rails.application.config.active_storage.service == :local %>
       <%= image_tag sponsor.logo,
                     class: image_class,
