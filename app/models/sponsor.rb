@@ -2,13 +2,14 @@
 #
 # Table name: sponsors
 #
-#  id         :bigint           not null, primary key
-#  from       :datetime
-#  name       :string
-#  until      :datetime
-#  website    :string
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id               :bigint           not null, primary key
+#  background_color :string
+#  from             :datetime
+#  name             :string
+#  until            :datetime
+#  website          :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
 #
 
 class Sponsor < ApplicationRecord
