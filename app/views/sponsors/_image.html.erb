@@ -1,17 +1,23 @@
+<% height = 200 %>
+<% width = 200 %>
+<% image_class = "object-contain max-w-full max-h-full transition duration-500 ease-in-out group-hover:scale-110" %>
+
 <% if sponsor.logo.attached? %>
-  <div class="w-[200px] h-[160px] flex items-center justify-center overflow-hidden">
+  <div style="background-color: <%= sponsor.background_color %>;" class="rounded-md w-[150px] h-[150px] md:w-[200px] md:h-[200px] p-4 flex items-center justify-center overflow-hidden">
     <% if Rails.application.config.active_storage.service == :local %>
       <%= image_tag sponsor.logo,
-                    class: "object-contain max-w-full max-h-full transition duration-500 ease-in-out group-hover:scale-110",
+                    class: image_class,
+                    height: height,
+                    width: width,
                     alt: t(".sponsor_logo", name: sponsor.name) %>
     <% else %>
       <%= cl_image_tag sponsor.logo.key,
-                       width: 200,
-                       height: 160,
+                       width: width,
+                       height: height,
                        crop: :fit,
-                       class: "object-contain max-w-full max-h-full transition duration-500 ease-in-out group-hover:scale-110",
+                       class: image_class,
                        alt: t(".sponsor_logo", name: sponsor.name),
-                       srcset: "#{cl_image_path sponsor.logo.key, width: 400, height: 320, crop: :fit} 2x" %>
+                       srcset: "#{cl_image_path sponsor.logo.key, width: width * 2, height: height * 2, crop: :fit} 2x" %>
     <% end %>
   </div>
 <% end %>

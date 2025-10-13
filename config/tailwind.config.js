@@ -7,7 +7,8 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,html}',
     './config/locales/*.yml',
-    './app/content/**/*.{erb,html,rb,md}'
+    './app/content/**/*.{erb,html,rb,md}',
+    './app/components/**/*.{erb,html,rb,md}'
   ],
   theme: {
     extend: {

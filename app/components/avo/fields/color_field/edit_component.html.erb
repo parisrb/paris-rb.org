@@ -1,0 +1,7 @@
+<%= field_wrapper **field_wrapper_args do %>
+  <%= @form.color_field @field.id,
+    class: classes("flex p-1").gsub("py-2 px-3", ""),
+    style: "width: 40px; height: 40px",
+    placeholder: @field.placeholder,
+    disabled: disabled? %>
+<% end %>
