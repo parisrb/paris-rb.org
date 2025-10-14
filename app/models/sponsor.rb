@@ -3,7 +3,7 @@
 # Table name: sponsors
 #
 #  id               :bigint           not null, primary key
-#  background_color :string
+#  background_color :string           default("#ffffff")
 #  from             :datetime
 #  name             :string
 #  until            :datetime
