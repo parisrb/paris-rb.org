@@ -22,7 +22,6 @@ class Sponsor < ApplicationRecord
   # Scopes
   scope :current, -> { where("until >= ? OR until IS NULL", Time.current) }
   scope :latest,  -> { order(until: :desc) }
-  scope :randomize, -> { order("random()") }
 
   def domain
     return if website.blank?
