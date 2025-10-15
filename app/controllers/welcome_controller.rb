@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
 
   def index
     @videos = Video.latest(3)
-    @sponsors = Sponsor.with_attached_logo.latest(4)
+    @sponsors = Sponsor.with_attached_logo.latest.limit(4)
     @lineup_talks = Talk.lineup
   end
 
