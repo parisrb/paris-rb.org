@@ -1,20 +1,18 @@
 FROM ruby:3.4.6
 
 RUN apt-get update
-RUN apt-get install apt-transport-https
+RUN apt-get install apt-transport-https -y
 
-RUN apt-get update && apt-get install sudo && apt-get clean &&\
+RUN apt-get update && apt-get install sudo -y && apt-get clean &&\
     sed -i s+secure_path=.*+secure_path="$PATH"+ /etc/sudoers
 
-RUN curl -fsSL https://deb.nodesource.com/setup_8.x | sudo -E bash - &&\
-    apt-cache policy nodejs &&\
-    apt-get install -y nodejs=8.17.0-1nodesource1
+# Node.js setup
+RUN curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+RUN apt-get update
+RUN apt-get install nodejs
 
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
 RUN apt-get update
-RUN apt-get install -y yarn
 RUN apt-get install -y imagemagick
 RUN apt-get install -y locales
 RUN apt-get install -y postgresql-client
