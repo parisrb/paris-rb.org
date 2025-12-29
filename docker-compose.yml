@@ -1,4 +1,3 @@
-version: '2'
 services:
   postgresql:
     image: scalingo/postgresql:10.4.0-1
