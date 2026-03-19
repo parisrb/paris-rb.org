@@ -55,7 +55,7 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-  gem "byebug", "~> 11.1"
+  gem "byebug"
   gem "erb_lint", require: false
   gem "erblint-github"
 end
@@ -72,7 +72,7 @@ group :development do
 
   gem "annotate"
   gem "dotenv-rails"
-  gem "hotwire-livereload", "~> 1.3"
+  gem "hotwire-livereload"
 end
 
 group :test do
