@@ -40,7 +40,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: latest
+          node-version: 24
           cache: yarn
 
       - name: Enable Corepack

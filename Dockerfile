@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install sudo -y && apt-get clean &&\
     sed -i s+secure_path=.*+secure_path="$PATH"+ /etc/sudoers
 
 # Node.js setup
-RUN curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_24.x | sudo -E bash -
 RUN apt-get update
 RUN apt-get install nodejs
 
