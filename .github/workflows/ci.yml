@@ -43,8 +43,11 @@ jobs:
           node-version: latest
           cache: yarn
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Lint code for consistent style
         run: bin/rubocop -f github

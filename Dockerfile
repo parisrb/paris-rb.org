@@ -11,6 +11,8 @@ RUN curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 RUN apt-get update
 RUN apt-get install nodejs
 
+RUN corepack enable
+
 
 RUN apt-get update
 RUN apt-get install -y imagemagick
