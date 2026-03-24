@@ -25,6 +25,10 @@
 /elm-stuff
 /node_modules
 
+# Yarn Berry (Corepack, no zero-installs)
+.yarn/cache
+.yarn/install-state.gz
+
 docker
 vendor/.bundle/
 vendor/bundle/

@@ -37,14 +37,17 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: latest
+          node-version: 24
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Lint code for consistent style
         run: bin/rubocop -f github
@@ -87,6 +90,18 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 24
+          cache: yarn
+
+      - name: Install JS dependencies
+        run: yarn install --immutable
 
       - name: Prepare database
         env:
