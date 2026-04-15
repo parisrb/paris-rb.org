@@ -8,6 +8,9 @@ on:
 
 concurrency: ci-${{ github.ref }}
 
+permissions:
+  contents: read
+
 jobs:
   scan_ruby:
     runs-on: ubuntu-latest
