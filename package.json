@@ -18,7 +18,7 @@
     "autoprefixer": "^10.4.27",
     "daisyui": "^4.12.24",
     "esbuild": "^0.27.4",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.10",
     "postcss-import": "^16.1.1",
     "postcss-nesting": "^12.1.5",
     "standard": "^17.1.2",
