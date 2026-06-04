@@ -16,6 +16,15 @@ class Sponsor < ApplicationRecord
   # Associations
   has_one_attached :logo
 
+  # Ransack search allowlist
+  def self.ransackable_attributes(auth_object = nil)
+    %w[name]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    []
+  end
+
   # Validations
   validates_format_of :website, with: /\A#{URI::DEFAULT_PARSER.make_regexp([ "http", "https" ])}\z/, message: "is not a valid URL", allow_blank: true
 
