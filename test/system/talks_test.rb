@@ -25,6 +25,7 @@ class TalksTest < ApplicationSystemTestCase
       select "Long - 20 min", from: "talk_duration"
       select "Moyen", from: "talk_level"
       select Talk.propose_upcoming_months.values.sample, from: "talk_preferred_month_talk"
+      take_the_time_a_human_would
       click_on "submit-talk"
       assert_text "Talk proposed successfully"
     end
@@ -42,8 +43,17 @@ class TalksTest < ApplicationSystemTestCase
       select "Long - 20 min", from: "talk_duration"
       select "Intermediate", from: "talk_level"
       select I18n.t(Talk.propose_upcoming_months.keys.sample, scope: "activerecord.attributes.talk.proposed_months", locale: :en), from: "talk_preferred_month_talk"
+      take_the_time_a_human_would
       click_on "submit-talk"
       assert_text "Talk proposed successfully"
     end
+  end
+
+  private
+
+  # Selenium fills the form in faster than any human, which is precisely what
+  # the captcha turns away.
+  def take_the_time_a_human_would
+    sleep Captcha::MIN_FILL_TIME
   end
 end

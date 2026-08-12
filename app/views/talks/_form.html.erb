@@ -37,7 +37,7 @@
       <%= f.select :level, Talk.level.options, {}, { class: 'select select-bordered w-full' } %>
     </div>
 
-    <%# honeypot captcha field to detect bots %>
+    <%# honeypot + signed stamp, see Captcha concern %>
     <%= captcha_field_tag %>
   </div>
 
