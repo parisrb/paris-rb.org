@@ -51,8 +51,8 @@ class TalksTest < ApplicationSystemTestCase
 
   private
 
-  # Selenium fills the form in faster than any human, which is precisely what
-  # the captcha turns away.
+  # Selenium remplit le formulaire plus vite que n'importe quel humain, ce qui
+  # est exactement ce que le captcha refuse.
   def take_the_time_a_human_would
     sleep Captcha::MIN_FILL_TIME
   end

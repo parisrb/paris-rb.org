@@ -1,11 +1,11 @@
 module Captcha
   extend ActiveSupport::Concern
 
-  # Name of the hidden field carrying the signed stamp, and of the message
-  # verifier used to sign it.
+  # Nom du champ caché qui porte le stamp signé, et du message verifier qui le
+  # signe.
   STAMP_FIELD_NAME = "form_stamp"
 
-  # A form filled in faster than this was not filled in by a human.
+  # Un formulaire rempli plus vite que ça ne l'a pas été par un humain.
   MIN_FILL_TIME = 3.seconds
 
   included do
@@ -26,12 +26,14 @@ module Captcha
 
   private
 
-  # Signed proof that we rendered the form, and when. Most spam never fetches
-  # the form at all: it posts straight to the endpoint with the params it
-  # harvested once, so it has no stamp to send back.
+  # Preuve signée que le formulaire vient bien de chez nous, et de l'heure à
+  # laquelle il a été rendu. La plupart des bots ne le chargent jamais : ils
+  # postent directement sur l'endpoint avec les params récupérés une fois pour
+  # toutes, et n'ont donc aucun stamp à renvoyer.
   #
-  # When a submission bounces back on a validation error, the incoming stamp is
-  # reused: someone fixing a typo and submitting again right away is not a bot.
+  # Quand une soumission revient sur une erreur de validation, on réutilise le
+  # stamp reçu : quelqu'un qui corrige une typo et renvoie dans la foulée n'est
+  # pas un bot.
   def captcha_form_stamp
     @captcha_form_stamp ||= stamp_age ? submitted_stamp : generate_stamp
   end
@@ -40,14 +42,14 @@ module Captcha
     stamp_verifier.generate(Time.current.to_i)
   end
 
-  # Seconds since the form was rendered, or nil when the stamp is missing or
-  # was not signed by us.
+  # Secondes écoulées depuis le rendu du formulaire, ou nil quand le stamp est
+  # absent ou n'a pas été signé par nous.
   def stamp_age
     issued_at = stamp_verifier.verified(submitted_stamp)
     Time.current.to_i - issued_at if issued_at.is_a?(Integer)
   end
 
-  # Anything but a string here (`form_stamp[]=x`) is someone poking at us.
+  # Autre chose qu'une chaîne ici (`form_stamp[]=x`), c'est qu'on nous cherche.
   def submitted_stamp
     stamp = params[STAMP_FIELD_NAME]
     stamp if stamp.is_a?(String)
@@ -81,8 +83,8 @@ module Captcha
     params[honeypot_field_name]
   end
 
-  # Silently dropping submissions makes it impossible to tell whether this
-  # still works, or whether it started eating real proposals.
+  # Jeter les soumissions en silence empêche de savoir si tout ça marche
+  # encore, ou si ça s'est mis à manger de vraies propositions.
   def log_spam(reason)
     Rails.logger.warn(
       "[Captcha] Blocked #{controller_name}##{action_name}: #{reason} " \

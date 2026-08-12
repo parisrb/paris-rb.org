@@ -5,9 +5,9 @@ module CaptchaHelper
 
   private
 
-  # Bots fill in every input they find, humans never see this one. It is kept
-  # out of the tab order and away from password managers so it cannot be
-  # filled in by accident.
+  # Les bots remplissent tous les champs qu'ils trouvent, les humains ne voient
+  # jamais celui-ci. Il est sorti de l'ordre de tabulation et caché aux
+  # gestionnaires de mots de passe pour qu'il ne soit pas rempli par accident.
   def honeypot_tag
     tag :input,
       type: "text",
@@ -27,9 +27,9 @@ module CaptchaHelper
     controller.class.honeypot_field_name
   end
 
-  # Various ways to hide the honeypot field. All of them keep it out of the
-  # flow: an in-flow field of zero size still counts as a flex item and adds a
-  # gap to the row it sits in.
+  # Plusieurs façons de cacher le honeypot. Toutes le sortent du flux : un
+  # champ de taille nulle resté dans le flux compte quand même comme flex item
+  # et ajoute un gap à la rangée où il se trouve.
   def style
     [
       "display:none;",

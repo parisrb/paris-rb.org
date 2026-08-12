@@ -53,8 +53,8 @@ class TalksControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_path
   end
 
-  # The common case: spam that posts straight to the endpoint with harvested
-  # params, without ever fetching the form.
+  # Le cas courant : du spam qui poste directement sur l'endpoint avec des
+  # params récupérés d'avance, sans jamais charger le formulaire.
   test "should reject a submission that never fetched the form" do
     assert_no_difference("Talk.count") do
       post talks_url, params: { talk: talk_attributes }
@@ -89,8 +89,8 @@ class TalksControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_path
   end
 
-  # A stamp is spent on filling the form in, not on getting it right the first
-  # time: correcting an error and submitting again right away is human.
+  # Un stamp se dépense à remplir le formulaire, pas à le réussir du premier
+  # coup : corriger une erreur et renvoyer aussitôt, c'est humain.
   test "should keep the stamp when the form comes back on a validation error" do
     stamp = stamp_from_new_form
     travel human_fill_time
