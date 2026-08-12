@@ -9,6 +9,10 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
+  # Le cache porte les compteurs de `rate_limit` : sans ça ils s'additionnent
+  # d'un test à l'autre et finissent par refuser des requêtes légitimes.
+  setup { Rails.cache.clear }
+
   # Add more helper methods to be used by all tests here...
 end
 

@@ -107,12 +107,58 @@ class TalksControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to talks_path
   end
 
+  # Sans borne, un stamp récupéré une fois se rejoue pour toujours et ne vaut
+  # pas mieux qu'une constante cachée dans le formulaire.
+  test "should reject a form left open for longer than a day" do
+    stamp = stamp_from_new_form
+    travel Captcha::MAX_FORM_AGE + 1.minute
+
+    assert_no_difference("Talk.count") do
+      post talks_url, params: { talk: talk_attributes, form_stamp: stamp }
+    end
+
+    assert_response :success
+    assert_select ".alert", text: I18n.t("talks.form.expired_stamp")
+    assert_select "#talk_title[value=?]", @talk.title
+  end
+
+  # Renvoyer le stamp périmé dans le formulaire enfermerait la personne dans
+  # une boucle de rejets.
+  test "an expired form comes back with a stamp that works" do
+    stamp = stamp_from_new_form
+    travel Captcha::MAX_FORM_AGE + 1.minute
+    post talks_url, params: { talk: talk_attributes, form_stamp: stamp }
+
+    fresh_stamp = css_select("input[name='form_stamp']").first["value"]
+    assert_not_equal stamp, fresh_stamp
+
+    travel human_fill_time
+    assert_difference("Talk.count") do
+      post talks_url, params: { talk: talk_attributes, form_stamp: fresh_stamp }
+    end
+    assert_redirected_to talks_path
+  end
+
+  # Le stamp n'empêche pas le rejeu, il le borne. Ce plafond est ce qui limite
+  # ce qu'un bot ayant récupéré un stamp valide peut envoyer.
+  test "should refuse a flood of proposals from the same address" do
+    TalksController::MAX_PROPOSALS_PER_HOUR.times do |index|
+      submit_talk(title: "Talk #{index}")
+      assert_redirected_to talks_path
+    end
+
+    assert_no_difference("Talk.count") do
+      submit_talk
+    end
+    assert_redirected_to root_path
+  end
+
   test "should log blocked submissions" do
     logs = capture_logs do
       post talks_url, params: { talk: talk_attributes }
     end
 
-    assert_match(/\[Captcha\] Blocked talks#create: form was never fetched/, logs)
+    assert_match(/\[Captcha\] Blocked talks#create: never_fetched/, logs)
   end
 
   private
@@ -124,6 +170,12 @@ class TalksControllerTest < ActionDispatch::IntegrationTest
   def stamp_from_new_form
     get new_talk_path
     css_select("input[name='form_stamp']").first["value"]
+  end
+
+  def submit_talk(**overrides)
+    stamp = stamp_from_new_form
+    travel human_fill_time
+    post talks_url, params: { talk: talk_attributes(**overrides), form_stamp: stamp }
   end
 
   def human_fill_time

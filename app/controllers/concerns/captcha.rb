@@ -8,9 +8,14 @@ module Captcha
   # Un formulaire rempli plus vite que ça ne l'a pas été par un humain.
   MIN_FILL_TIME = 3.seconds
 
+  # Passé ce délai le stamp ne vaut plus rien. Sans borne, un stamp récupéré
+  # une seule fois se rejoue indéfiniment et redevient une simple constante.
+  MAX_FORM_AGE = 24.hours
+
   included do
     class_attribute :captcha_actions, default: []
     class_attribute :honeypot_field_name, default: "color"
+    class_attribute :expired_form_action, default: nil
 
     before_action :verify_captcha, if: :action_enforced?
 
@@ -21,6 +26,7 @@ module Captcha
     def protect_from_spam_with_honeypot(options = {})
       self.captcha_actions = Array(options[:only])
       self.honeypot_field_name = options[:field_name].to_s if options[:field_name].present?
+      self.expired_form_action = options[:on_expired_form]
     end
   end
 
@@ -30,12 +36,16 @@ module Captcha
   # laquelle il a été rendu. La plupart des bots ne le chargent jamais : ils
   # postent directement sur l'endpoint avec les params récupérés une fois pour
   # toutes, et n'ont donc aucun stamp à renvoyer.
-  #
+  def captcha_form_stamp
+    @captcha_form_stamp ||= reusable_stamp || generate_stamp
+  end
+
   # Quand une soumission revient sur une erreur de validation, on réutilise le
   # stamp reçu : quelqu'un qui corrige une typo et renvoie dans la foulée n'est
-  # pas un bot.
-  def captcha_form_stamp
-    @captcha_form_stamp ||= stamp_age ? submitted_stamp : generate_stamp
+  # pas un bot. Un stamp périmé, lui, ne repart jamais dans le formulaire, il
+  # enverrait la personne dans une boucle de rejets.
+  def reusable_stamp
+    submitted_stamp if stamp_age && stamp_age <= MAX_FORM_AGE
   end
 
   def generate_stamp
@@ -45,8 +55,10 @@ module Captcha
   # Secondes écoulées depuis le rendu du formulaire, ou nil quand le stamp est
   # absent ou n'a pas été signé par nous.
   def stamp_age
+    return @stamp_age if defined?(@stamp_age)
+
     issued_at = stamp_verifier.verified(submitted_stamp)
-    Time.current.to_i - issued_at if issued_at.is_a?(Integer)
+    @stamp_age = (Time.current.to_i - issued_at if issued_at.is_a?(Integer))
   end
 
   # Autre chose qu'une chaîne ici (`form_stamp[]=x`), c'est qu'on nous cherche.
@@ -64,18 +76,26 @@ module Captcha
     return if reason.nil?
 
     log_spam(reason)
-    redirect_to root_path
+
+    # Le stamp périmé est le seul rejet qu'un humain peut déclencher. Le
+    # contrôleur a donc l'occasion de lui rendre son formulaire plutôt que de
+    # le renvoyer à l'accueil avec sa proposition perdue.
+    if reason == :expired_form && expired_form_action
+      send(expired_form_action)
+    else
+      redirect_to root_path
+    end
   end
 
   def spam_reason
-    age = stamp_age
-
     if honeypot_value.present?
-      "honeypot field was filled in"
-    elsif age.nil?
-      "form was never fetched"
-    elsif age < MIN_FILL_TIME
-      "form was submitted in #{age}s"
+      :honeypot_filled
+    elsif stamp_age.nil?
+      :never_fetched
+    elsif stamp_age < MIN_FILL_TIME
+      :too_fast
+    elsif stamp_age > MAX_FORM_AGE
+      :expired_form
     end
   end
 
@@ -88,7 +108,7 @@ module Captcha
   def log_spam(reason)
     Rails.logger.warn(
       "[Captcha] Blocked #{controller_name}##{action_name}: #{reason} " \
-      "(ip=#{request.remote_ip} user_agent=#{request.user_agent.inspect})"
+      "(age=#{stamp_age.inspect} ip=#{request.remote_ip} user_agent=#{request.user_agent.inspect})"
     )
   end
 
