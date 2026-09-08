@@ -26,7 +26,10 @@ Rails.application.configure do
   # Show full error reports and disable caching.
   config.consider_all_requests_local = true
   config.action_controller.perform_caching = false
-  config.cache_store = :null_store
+  # Pas de :null_store : les compteurs de `rate_limit` y sont muets, et le
+  # plafond de propositions ne serait jamais testé. Le cache est vidé avant
+  # chaque test, cf. test_helper.
+  config.cache_store = :memory_store
 
   # Render exception templates for rescuable exceptions and raise for other exceptions.
   config.action_dispatch.show_exceptions = :rescuable
