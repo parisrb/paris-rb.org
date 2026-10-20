@@ -3,6 +3,8 @@ fr:
   talks:
     form:
       accept_coc: Je m’engage à respecter le Code of Conduct de ParisRB
+      expired_stamp: Cette page est restée ouverte trop longtemps. Vérifie ta proposition et renvoie-la.
+      rate_limited: Trop de propositions envoyées depuis cette connexion. Réessaie dans une heure.
       submit: Envoyer ma proposition de talk
     index:
       description_html: Tu trouveras ci-dessous la liste des talks proposés pour les prochains meetups de ParisRB. Si tu souhaites proposer un talk, n’hésite pas à le faire via ce <a href="/talks/new" class="link">formulaire</a>.

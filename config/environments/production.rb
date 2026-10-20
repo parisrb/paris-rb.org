@@ -67,8 +67,10 @@ Rails.application.configure do
   # want to log everything, set the level to "debug".
   config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
 
-  # Use a different cache store in production.
-  # config.cache_store = :mem_cache_store
+  # Redis plutôt que le file store par défaut, qui est local au dyno : les
+  # compteurs de `rate_limit` doivent être partagés pour plafonner quoi que ce
+  # soit. Une panne Redis les rend inertes, elle ne casse pas les requêtes.
+  config.cache_store = :redis_cache_store, { url: ENV["REDIS_URL"] }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :resque

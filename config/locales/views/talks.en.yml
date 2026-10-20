@@ -3,6 +3,8 @@ en:
   talks:
     form:
       accept_coc: I agree to respect the ParisRB Code of Conduct
+      expired_stamp: This page stayed open for too long. Check your proposal and send it again.
+      rate_limited: Too many proposals sent from this connection. Try again in an hour.
       submit: Submit my talk
     index:
       description_html: Below you will find the list of talks proposed for the next ParisRB meetups. If you would like to propose a talk, do not hesitate to do so via this <a href="/talks/new" class="link">form</a>.
